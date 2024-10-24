@@ -1,12 +1,15 @@
-{
+{ 
+  "homepage": "https://adarshsingh888.github.io/portfolio",
   "name": "portfolio",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "parcel index.html",
-    "build": "parcel build index.html",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "start": "parcel index.html",
+  "build": "parcel build index.html",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist",
+  "test": "echo \"Error: no test specified\" && exit 1"
+}  ,
   "author": "Adarsh",
   "license": "ISC",
   "description": "",
@@ -16,6 +19,7 @@
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
+    "gh-pages": "^6.2.0",
     "parcel": "^2.12.0",
     "process": "^0.11.10"
   }
