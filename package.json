@@ -2,7 +2,7 @@
   "homepage": "https://adarshsingh888.github.io/portfolio",
   "name": "portfolio",
   "version": "1.0.0",
-  "main": "index.html",
+ 
   "scripts": {
   "start": "parcel index.html",
   "build": "parcel build index.html",
