@@ -3034,7 +3034,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","bootstrap/dist/css/bootstrap.min.css":"i5LP7","bootstrap/dist/js/bootstrap.bundle.min.js":"gCRej","./components/Navbar.js":"9QpvA","./components/Skills.js":"3DzfS","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/Projects.js":"hLP5s","./components/Profile.js":"dI4A5","./components/Intro.js":"67C8t","./components/Work.js":"dqyiE","./components/Footer.js":"gIRCJ"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","bootstrap/dist/css/bootstrap.min.css":"i5LP7","bootstrap/dist/js/bootstrap.bundle.min.js":"gCRej","./components/Navbar.js":"9QpvA","./components/Intro.js":"67C8t","./components/Skills.js":"3DzfS","./components/Projects.js":"hLP5s","./components/Profile.js":"dI4A5","./components/Work.js":"dqyiE","./components/Footer.js":"gIRCJ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("ee51401569654d91");
 
@@ -30679,7 +30679,301 @@ function registerExportsForReactRefresh(module1) {
     }
 }
 
-},{"7422ead32dcc1e6b":"786KC"}],"3DzfS":[function(require,module,exports) {
+},{"7422ead32dcc1e6b":"786KC"}],"67C8t":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$660b = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$660b.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _profilePng = require("../assets/profile.png");
+var _profilePngDefault = parcelHelpers.interopDefault(_profilePng);
+const Intro = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "container",
+        id: "about",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "row",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "col-sm-6 mb-3 mb-sm-0 welcome",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "card",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "card-body welcome",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                                    className: "card-title",
+                                    children: "Welcome"
+                                }, void 0, false, {
+                                    fileName: "components/Intro.js",
+                                    lineNumber: 14,
+                                    columnNumber: 9
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                    className: "card-text",
+                                    children: [
+                                        "Hi, I\u2019m Adarsh Singh, a final-year B.Tech student specializing in ",
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("b", {
+                                            children: "Information Technology"
+                                        }, void 0, false, {
+                                            fileName: "components/Intro.js",
+                                            lineNumber: 15,
+                                            columnNumber: 100
+                                        }, undefined),
+                                        " at",
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("b", {
+                                            children: " Madan Mohan Malviya University of Technology"
+                                        }, void 0, false, {
+                                            fileName: "components/Intro.js",
+                                            lineNumber: 16,
+                                            columnNumber: 10
+                                        }, undefined),
+                                        ". My passion lies in building efficient, scalable applications and solving complex technical problems. Over the years, I have developed a strong foundation in data structures and algorithms, as well as practical experience in web development, particularly using the ",
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("b", {
+                                            children: "MERN"
+                                        }, void 0, false, {
+                                            fileName: "components/Intro.js",
+                                            lineNumber: 18,
+                                            columnNumber: 87
+                                        }, undefined),
+                                        " stack (MongoDB, Express.js, React, Node.js)."
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "components/Intro.js",
+                                    lineNumber: 15,
+                                    columnNumber: 9
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "container",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "row",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "icon",
+                                                children: [
+                                                    " ",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
+                                                            class: "fa-brands fa-linkedin"
+                                                        }, void 0, false, {
+                                                            fileName: "components/Intro.js",
+                                                            lineNumber: 21,
+                                                            columnNumber: 43
+                                                        }, undefined)
+                                                    }, void 0, false, {
+                                                        fileName: "components/Intro.js",
+                                                        lineNumber: 21,
+                                                        columnNumber: 40
+                                                    }, undefined)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "components/Intro.js",
+                                                lineNumber: 21,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "icon ",
+                                                children: [
+                                                    " ",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
+                                                            class: "fa-brands fa-facebook"
+                                                        }, void 0, false, {
+                                                            fileName: "components/Intro.js",
+                                                            lineNumber: 22,
+                                                            columnNumber: 44
+                                                        }, undefined)
+                                                    }, void 0, false, {
+                                                        fileName: "components/Intro.js",
+                                                        lineNumber: 22,
+                                                        columnNumber: 41
+                                                    }, undefined)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "components/Intro.js",
+                                                lineNumber: 22,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "icon",
+                                                children: [
+                                                    " ",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
+                                                            class: "fa-brands fa-twitter"
+                                                        }, void 0, false, {
+                                                            fileName: "components/Intro.js",
+                                                            lineNumber: 23,
+                                                            columnNumber: 43
+                                                        }, undefined)
+                                                    }, void 0, false, {
+                                                        fileName: "components/Intro.js",
+                                                        lineNumber: 23,
+                                                        columnNumber: 40
+                                                    }, undefined)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "components/Intro.js",
+                                                lineNumber: 23,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "icon ",
+                                                children: [
+                                                    " ",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
+                                                            class: "fa-brands fa-github"
+                                                        }, void 0, false, {
+                                                            fileName: "components/Intro.js",
+                                                            lineNumber: 24,
+                                                            columnNumber: 44
+                                                        }, undefined)
+                                                    }, void 0, false, {
+                                                        fileName: "components/Intro.js",
+                                                        lineNumber: 24,
+                                                        columnNumber: 41
+                                                    }, undefined)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "components/Intro.js",
+                                                lineNumber: 24,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "icon",
+                                                children: [
+                                                    " ",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
+                                                            class: "fa-solid fa-at"
+                                                        }, void 0, false, {
+                                                            fileName: "components/Intro.js",
+                                                            lineNumber: 25,
+                                                            columnNumber: 43
+                                                        }, undefined)
+                                                    }, void 0, false, {
+                                                        fileName: "components/Intro.js",
+                                                        lineNumber: 25,
+                                                        columnNumber: 40
+                                                    }, undefined)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "components/Intro.js",
+                                                lineNumber: 25,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "icon",
+                                                children: [
+                                                    " ",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
+                                                            class: "fa-brands fa-instagram"
+                                                        }, void 0, false, {
+                                                            fileName: "components/Intro.js",
+                                                            lineNumber: 26,
+                                                            columnNumber: 43
+                                                        }, undefined)
+                                                    }, void 0, false, {
+                                                        fileName: "components/Intro.js",
+                                                        lineNumber: 26,
+                                                        columnNumber: 40
+                                                    }, undefined)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "components/Intro.js",
+                                                lineNumber: 26,
+                                                columnNumber: 17
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "components/Intro.js",
+                                        lineNumber: 20,
+                                        columnNumber: 14
+                                    }, undefined)
+                                }, void 0, false, {
+                                    fileName: "components/Intro.js",
+                                    lineNumber: 19,
+                                    columnNumber: 10
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "components/Intro.js",
+                            lineNumber: 13,
+                            columnNumber: 7
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "components/Intro.js",
+                        lineNumber: 12,
+                        columnNumber: 5
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "components/Intro.js",
+                    lineNumber: 11,
+                    columnNumber: 3
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "col-sm-6",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "card",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "card-body profile-img ",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                src: (0, _profilePngDefault.default),
+                                className: " text-center row justify-content-center img-fluid"
+                            }, void 0, false, {
+                                fileName: "components/Intro.js",
+                                lineNumber: 36,
+                                columnNumber: 9
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "components/Intro.js",
+                            lineNumber: 35,
+                            columnNumber: 7
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "components/Intro.js",
+                        lineNumber: 34,
+                        columnNumber: 5
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "components/Intro.js",
+                    lineNumber: 33,
+                    columnNumber: 3
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "components/Intro.js",
+            lineNumber: 10,
+            columnNumber: 1
+        }, undefined)
+    }, void 0, false, {
+        fileName: "components/Intro.js",
+        lineNumber: 9,
+        columnNumber: 1
+    }, undefined);
+};
+_c = Intro;
+exports.default = Intro;
+var _c;
+$RefreshReg$(_c, "Intro");
+
+  $parcel$ReactRefreshHelpers$660b.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../assets/profile.png":"8JrqM","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8JrqM":[function(require,module,exports) {
+module.exports = require("31e99bc0b96e072b").getBundleURL("lly8x") + "profile.f6dbac75.png" + "?" + Date.now();
+
+},{"31e99bc0b96e072b":"lgJ39"}],"3DzfS":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$b0c2 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -31204,7 +31498,7 @@ $RefreshReg$(_c, "Profile");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../assets/Profiles/gfg.png":"8lgP9","../assets/Profiles/HackerRank.png":"1TxVN","../assets/Profiles/Leetcode.png":"61QA5","./Cards":"1ZgNj"}],"8lgP9":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Cards":"1ZgNj","../assets/Profiles/gfg.png":"8lgP9","../assets/Profiles/HackerRank.png":"1TxVN","../assets/Profiles/Leetcode.png":"61QA5","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8lgP9":[function(require,module,exports) {
 module.exports = require("c26ae4d3a890aa4b").getBundleURL("lly8x") + "gfg.4f055657.png" + "?" + Date.now();
 
 },{"c26ae4d3a890aa4b":"lgJ39"}],"1TxVN":[function(require,module,exports) {
@@ -31213,301 +31507,7 @@ module.exports = require("13512f3de6f9fc4e").getBundleURL("lly8x") + "HackerRank
 },{"13512f3de6f9fc4e":"lgJ39"}],"61QA5":[function(require,module,exports) {
 module.exports = require("39ed7fe60bec2d8b").getBundleURL("lly8x") + "Leetcode.36c3a25f.png" + "?" + Date.now();
 
-},{"39ed7fe60bec2d8b":"lgJ39"}],"67C8t":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$660b = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$660b.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _profilePng = require("../assets/profile.png");
-var _profilePngDefault = parcelHelpers.interopDefault(_profilePng);
-const Intro = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "container",
-        id: "about",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "row",
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "col-sm-6 mb-3 mb-sm-0 welcome",
-                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "card",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "card-body welcome",
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                                    className: "card-title",
-                                    children: "Welcome"
-                                }, void 0, false, {
-                                    fileName: "components/Intro.js",
-                                    lineNumber: 14,
-                                    columnNumber: 9
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                    className: "card-text",
-                                    children: [
-                                        "Hi, I\u2019m Adarsh Singh, a final-year B.Tech student specializing in ",
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("b", {
-                                            children: "Information Technology"
-                                        }, void 0, false, {
-                                            fileName: "components/Intro.js",
-                                            lineNumber: 15,
-                                            columnNumber: 100
-                                        }, undefined),
-                                        " at",
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("b", {
-                                            children: " Madan Mohan Malviya University of Technology"
-                                        }, void 0, false, {
-                                            fileName: "components/Intro.js",
-                                            lineNumber: 16,
-                                            columnNumber: 10
-                                        }, undefined),
-                                        ". My passion lies in building efficient, scalable applications and solving complex technical problems. Over the years, I have developed a strong foundation in data structures and algorithms, as well as practical experience in web development, particularly using the ",
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("b", {
-                                            children: "MERN"
-                                        }, void 0, false, {
-                                            fileName: "components/Intro.js",
-                                            lineNumber: 18,
-                                            columnNumber: 87
-                                        }, undefined),
-                                        " stack (MongoDB, Express.js, React, Node.js)."
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "components/Intro.js",
-                                    lineNumber: 15,
-                                    columnNumber: 9
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "container",
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "row",
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "icon",
-                                                children: [
-                                                    " ",
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                                                            class: "fa-brands fa-linkedin"
-                                                        }, void 0, false, {
-                                                            fileName: "components/Intro.js",
-                                                            lineNumber: 21,
-                                                            columnNumber: 43
-                                                        }, undefined)
-                                                    }, void 0, false, {
-                                                        fileName: "components/Intro.js",
-                                                        lineNumber: 21,
-                                                        columnNumber: 40
-                                                    }, undefined)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "components/Intro.js",
-                                                lineNumber: 21,
-                                                columnNumber: 17
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "icon ",
-                                                children: [
-                                                    " ",
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                                                            class: "fa-brands fa-facebook"
-                                                        }, void 0, false, {
-                                                            fileName: "components/Intro.js",
-                                                            lineNumber: 22,
-                                                            columnNumber: 44
-                                                        }, undefined)
-                                                    }, void 0, false, {
-                                                        fileName: "components/Intro.js",
-                                                        lineNumber: 22,
-                                                        columnNumber: 41
-                                                    }, undefined)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "components/Intro.js",
-                                                lineNumber: 22,
-                                                columnNumber: 17
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "icon",
-                                                children: [
-                                                    " ",
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                                                            class: "fa-brands fa-twitter"
-                                                        }, void 0, false, {
-                                                            fileName: "components/Intro.js",
-                                                            lineNumber: 23,
-                                                            columnNumber: 43
-                                                        }, undefined)
-                                                    }, void 0, false, {
-                                                        fileName: "components/Intro.js",
-                                                        lineNumber: 23,
-                                                        columnNumber: 40
-                                                    }, undefined)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "components/Intro.js",
-                                                lineNumber: 23,
-                                                columnNumber: 17
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "icon ",
-                                                children: [
-                                                    " ",
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                                                            class: "fa-brands fa-github"
-                                                        }, void 0, false, {
-                                                            fileName: "components/Intro.js",
-                                                            lineNumber: 24,
-                                                            columnNumber: 44
-                                                        }, undefined)
-                                                    }, void 0, false, {
-                                                        fileName: "components/Intro.js",
-                                                        lineNumber: 24,
-                                                        columnNumber: 41
-                                                    }, undefined)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "components/Intro.js",
-                                                lineNumber: 24,
-                                                columnNumber: 17
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "icon",
-                                                children: [
-                                                    " ",
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                                                            class: "fa-solid fa-at"
-                                                        }, void 0, false, {
-                                                            fileName: "components/Intro.js",
-                                                            lineNumber: 25,
-                                                            columnNumber: 43
-                                                        }, undefined)
-                                                    }, void 0, false, {
-                                                        fileName: "components/Intro.js",
-                                                        lineNumber: 25,
-                                                        columnNumber: 40
-                                                    }, undefined)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "components/Intro.js",
-                                                lineNumber: 25,
-                                                columnNumber: 17
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "icon",
-                                                children: [
-                                                    " ",
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                                                            class: "fa-brands fa-instagram"
-                                                        }, void 0, false, {
-                                                            fileName: "components/Intro.js",
-                                                            lineNumber: 26,
-                                                            columnNumber: 43
-                                                        }, undefined)
-                                                    }, void 0, false, {
-                                                        fileName: "components/Intro.js",
-                                                        lineNumber: 26,
-                                                        columnNumber: 40
-                                                    }, undefined)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "components/Intro.js",
-                                                lineNumber: 26,
-                                                columnNumber: 17
-                                            }, undefined)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "components/Intro.js",
-                                        lineNumber: 20,
-                                        columnNumber: 14
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "components/Intro.js",
-                                    lineNumber: 19,
-                                    columnNumber: 10
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "components/Intro.js",
-                            lineNumber: 13,
-                            columnNumber: 7
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "components/Intro.js",
-                        lineNumber: 12,
-                        columnNumber: 5
-                    }, undefined)
-                }, void 0, false, {
-                    fileName: "components/Intro.js",
-                    lineNumber: 11,
-                    columnNumber: 3
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "col-sm-6",
-                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "card",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "card-body profile-img ",
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                src: (0, _profilePngDefault.default),
-                                className: " text-center row justify-content-center img-fluid"
-                            }, void 0, false, {
-                                fileName: "components/Intro.js",
-                                lineNumber: 36,
-                                columnNumber: 9
-                            }, undefined)
-                        }, void 0, false, {
-                            fileName: "components/Intro.js",
-                            lineNumber: 35,
-                            columnNumber: 7
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "components/Intro.js",
-                        lineNumber: 34,
-                        columnNumber: 5
-                    }, undefined)
-                }, void 0, false, {
-                    fileName: "components/Intro.js",
-                    lineNumber: 33,
-                    columnNumber: 3
-                }, undefined)
-            ]
-        }, void 0, true, {
-            fileName: "components/Intro.js",
-            lineNumber: 10,
-            columnNumber: 1
-        }, undefined)
-    }, void 0, false, {
-        fileName: "components/Intro.js",
-        lineNumber: 9,
-        columnNumber: 1
-    }, undefined);
-};
-_c = Intro;
-exports.default = Intro;
-var _c;
-$RefreshReg$(_c, "Intro");
-
-  $parcel$ReactRefreshHelpers$660b.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../assets/profile.png":"8JrqM","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8JrqM":[function(require,module,exports) {
-module.exports = require("31e99bc0b96e072b").getBundleURL("lly8x") + "profile.f6dbac75.png" + "?" + Date.now();
-
-},{"31e99bc0b96e072b":"lgJ39"}],"dqyiE":[function(require,module,exports) {
+},{"39ed7fe60bec2d8b":"lgJ39"}],"dqyiE":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$d104 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
