@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <nav className="sticky top-0 right-0 left-0">
     <div className="flex bg-green-100 justify-between items-center">
-       <a className="" href="#">
+       <a className="" href="/">
         <img src={logo} className='h-12 m-4'></img>
        </a>
       <div className="" id="navbarNav">

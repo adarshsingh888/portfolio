@@ -1,15 +1,16 @@
-import React from 'react'
+import React from 'react';
+import { Fb_URL,Insta_URL,GitHub_URL,gmail,whatsapp,twitter_URL,LinkedIn_URL } from '../utils/data';
 
 const Footer = () => {
   return (
-    <div className='bg-gray-500 flex-col items-center p-5'>
+    <div className='bg-gray-500 flex-col items-center p-5 '>
    
         <div className='flex justify-center px-4 mx-4 '>
-                <div className='mx-2'> <a><i className="fa-brands fa-linkedin"></i></a></div>
-                <div className='mx-2 '> <a><i className="fa-brands fa-facebook"></i></a></div>
-                <div className='mx-2'> <a><i className="fa-brands fa-twitter"></i></a></div>
-                <div className='mx-2 '> <a><i className="fa-brands fa-github"></i></a></div>
-                <div className='mx-2'> <a><i className="fa-brands fa-instagram"></i></a></div>
+                <div className='mx-2'> <a href={LinkedIn_URL}><i className="fa-brands fa-linkedin"></i></a></div>
+                <div className='mx-2 '> <a href={Fb_URL}><i className="fa-brands fa-facebook"></i></a></div>
+                <div className='mx-2'> <a href={twitter_URL}><i className="fa-brands fa-twitter"></i></a></div>
+                <div className='mx-2 '> <a href={GitHub_URL}><i className="fa-brands fa-github"></i></a></div>
+                <div className='mx-2'> <a href={Insta_URL}><i className="fa-brands fa-instagram"></i></a></div>
              </div>
        
              <div className=' flex justify-center px-4 mx-4 my-4'>

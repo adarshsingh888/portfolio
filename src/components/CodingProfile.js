@@ -35,7 +35,7 @@ function CodingProfile() {
               <p className='font-bold text-lg'>Contest Info</p>
               <p>Global rank {contestData?.user_global_rank} out of {contestData?.total_users}</p>
               <p> No of Star : {contestData?.user_stars} </p>
-              <p> Rating :{contestData?.user_contest_data?.current_ratings}</p>
+              <p> Rating : {contestData?.user_contest_data?.current_rating}</p>
 
            </div>
 
