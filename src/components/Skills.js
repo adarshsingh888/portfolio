@@ -16,7 +16,7 @@ import {
   python,
   mongodb,
   express
-} from '../assets/skills/images';
+} from '../../assets/skills/images';
 
 const skills = [
   { imageSrc: chip, title: 'Artificial Intelligence' },
@@ -38,13 +38,13 @@ const skills = [
 
 export const Skill_List = () => {
   return (
-    <div className="container-fluid text-center">
-      <div className="row row-cols-2 row-cols-lg-5 g-2 g-lg-3 justify-content-center">
+    <div className="">
+      <div className="flex flex-wrap m-5 p-4 justify-start bg-green-100 ">
         {skills.map((skill, index) => (
-             <div className="card" style={{ width: '10rem' }} key={index}>
-             <img src={skill.imageSrc} className="card-img-top rounded float-start" alt={skill.title} />
+             <div className="bg-yellow-500 flex m-4 p-4 justify-center items-center rounded-md"  key={index}>
+             <img src={skill.imageSrc} className="w-5 h-5 mx-1" alt={skill.title} />
              <div className="card-body">
-                 <h5 className="card-title">{skill.title}</h5>
+                 <h5 className="mx-1">{skill.title}</h5>
              </div>
            </div>
         ))}
@@ -55,9 +55,10 @@ export const Skill_List = () => {
 
 const Skills = () => {
   return (
-    <div className="container">
-      <div className="heading">Skills</div>
+    <div className="m-5 p-4 bg-orange-50 ">
+      <div className="font-bold  p-4 text-2xl bg-amber-200"><p>Skills</p></div>
       <Skill_List />
+      <hr></hr>
     </div>
   );
 };

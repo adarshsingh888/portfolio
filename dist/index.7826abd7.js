@@ -2955,75 +2955,116 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
+var _indexCss = require("./index.css");
 var _client = require("react-dom/client");
 var _clientDefault = parcelHelpers.interopDefault(_client);
-var _bootstrapMinCss = require("bootstrap/dist/css/bootstrap.min.css"); // Bootstrap CSS
-var _bootstrapBundleMinJs = require("bootstrap/dist/js/bootstrap.bundle.min.js"); // Bootstrap JS (with Popper.js bundled)
-var _navbarJs = require("./components/Navbar.js");
+var _navbarJs = require("./src/components/Navbar.js");
 var _navbarJsDefault = parcelHelpers.interopDefault(_navbarJs);
-var _introJs = require("./components/Intro.js");
-var _introJsDefault = parcelHelpers.interopDefault(_introJs);
-var _skillsJs = require("./components/Skills.js");
-var _skillsJsDefault = parcelHelpers.interopDefault(_skillsJs);
-var _projectsJs = require("./components/Projects.js");
-var _projectsJsDefault = parcelHelpers.interopDefault(_projectsJs);
-var _profileJs = require("./components/Profile.js");
-var _profileJsDefault = parcelHelpers.interopDefault(_profileJs);
-var _workJs = require("./components/Work.js");
-var _workJsDefault = parcelHelpers.interopDefault(_workJs);
-var _footerJs = require("./components/Footer.js");
+var _bodyJs = require("./src/components/Body.js");
+var _bodyJsDefault = parcelHelpers.interopDefault(_bodyJs);
+var _footerJs = require("./src/components/Footer.js");
 var _footerJsDefault = parcelHelpers.interopDefault(_footerJs);
+var _reactRouterDom = require("react-router-dom");
+var _aboutJs = require("./src/components/About.js");
+var _aboutJsDefault = parcelHelpers.interopDefault(_aboutJs);
+var _contactJs = require("./src/components/Contact.js");
+var _contactJsDefault = parcelHelpers.interopDefault(_contactJs);
+var _errorJs = require("./src/components/Error.js");
+var _errorJsDefault = parcelHelpers.interopDefault(_errorJs);
+var _codingProfileJs = require("./src/components/CodingProfile.js");
+var _codingProfileJsDefault = parcelHelpers.interopDefault(_codingProfileJs);
+var _projectPageJs = require("./src/components/ProjectPage.js");
+var _projectPageJsDefault = parcelHelpers.interopDefault(_projectPageJs);
 const App = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navbarJsDefault.default), {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 16,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _introJsDefault.default), {}, void 0, false, {
-                fileName: "App.js",
                 lineNumber: 17,
                 columnNumber: 7
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _skillsJsDefault.default), {}, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Outlet), {}, void 0, false, {
                 fileName: "App.js",
                 lineNumber: 18,
                 columnNumber: 7
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _projectsJsDefault.default), {}, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 19,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profileJsDefault.default), {}, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 20,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _workJsDefault.default), {}, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 21,
-                columnNumber: 7
-            }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerJsDefault.default), {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 22,
+                lineNumber: 19,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "App.js",
-        lineNumber: 15,
+        lineNumber: 16,
         columnNumber: 5
     }, undefined);
 };
 _c = App;
+const router = (0, _reactRouterDom.createBrowserRouter)([
+    {
+        path: "/",
+        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(App, {}, void 0, false, {
+            fileName: "App.js",
+            lineNumber: 25,
+            columnNumber: 11
+        }, undefined),
+        children: [
+            {
+                path: "/",
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyJsDefault.default), {}, void 0, false, {
+                    fileName: "App.js",
+                    lineNumber: 29,
+                    columnNumber: 15
+                }, undefined)
+            },
+            {
+                path: "/about",
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutJsDefault.default), {}, void 0, false, {
+                    fileName: "App.js",
+                    lineNumber: 33,
+                    columnNumber: 15
+                }, undefined)
+            },
+            {
+                path: "/contact",
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactJsDefault.default), {}, void 0, false, {
+                    fileName: "App.js",
+                    lineNumber: 37,
+                    columnNumber: 15
+                }, undefined)
+            },
+            {
+                path: "/codingprofile",
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _codingProfileJsDefault.default), {}, void 0, false, {
+                    fileName: "App.js",
+                    lineNumber: 41,
+                    columnNumber: 15
+                }, undefined)
+            },
+            {
+                path: "/projectpage",
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _projectPageJsDefault.default), {}, void 0, false, {
+                    fileName: "App.js",
+                    lineNumber: 45,
+                    columnNumber: 15
+                }, undefined)
+            }
+        ],
+        errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorJsDefault.default), {}, void 0, false, {
+            fileName: "App.js",
+            lineNumber: 48,
+            columnNumber: 16
+        }, undefined)
+    }
+]);
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
-root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(App, {}, void 0, false, {
+root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.RouterProvider), {
+    router: router
+}, void 0, false, {
     fileName: "App.js",
-    lineNumber: 28,
+    lineNumber: 53,
     columnNumber: 13
 }, undefined));
 var _c;
@@ -3034,7 +3075,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","bootstrap/dist/css/bootstrap.min.css":"i5LP7","bootstrap/dist/js/bootstrap.bundle.min.js":"gCRej","./components/Navbar.js":"9QpvA","./components/Skills.js":"3DzfS","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/Projects.js":"hLP5s","./components/Profile.js":"dI4A5","./components/Intro.js":"67C8t","./components/Work.js":"dqyiE","./components/Footer.js":"gIRCJ"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./index.css":"giGSC","react-dom/client":"lOjBx","./src/components/Navbar.js":"5EEXV","./src/components/Body.js":"8yaV8","./src/components/Footer.js":"8pPOA","react-router-dom":"9xmpe","./src/components/About.js":"9R1Eu","./src/components/Contact.js":"cgAOG","./src/components/Error.js":"kvula","./src/components/CodingProfile.js":"7uU3x","./src/components/ProjectPage.js":"jGIyM","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("ee51401569654d91");
 
@@ -5753,7 +5794,7 @@ module.exports = require("a569817e6ea559f6");
     /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop === "function") __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
 })();
 
-},{}],"lOjBx":[function(require,module,exports) {
+},{}],"giGSC":[function() {},{}],"lOjBx":[function(require,module,exports) {
 "use strict";
 var m = require("aaccff5d309d9239");
 var i = m.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
@@ -27277,3047 +27318,11 @@ module.exports = require("ef03b89c8fe2794e");
     /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop === "function") __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
 })();
 
-},{}],"i5LP7":[function() {},{}],"gCRej":[function(require,module,exports) {
-/*!
-  * Bootstrap v5.3.3 (https://getbootstrap.com/)
-  * Copyright 2011-2024 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
-  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
-  */ !function(t, e) {
-    module.exports = e();
-}(this, function() {
-    "use strict";
-    const t = new Map, e = {
-        set (e, i, n) {
-            t.has(e) || t.set(e, new Map);
-            const s = t.get(e);
-            s.has(i) || 0 === s.size ? s.set(i, n) : console.error(`Bootstrap doesn't allow more than one instance per element. Bound instance: ${Array.from(s.keys())[0]}.`);
-        },
-        get: (e, i)=>t.has(e) && t.get(e).get(i) || null,
-        remove (e, i) {
-            if (!t.has(e)) return;
-            const n = t.get(e);
-            n.delete(i), 0 === n.size && t.delete(e);
-        }
-    }, i = "transitionend", n = (t)=>(t && window.CSS && window.CSS.escape && (t = t.replace(/#([^\s"#']+)/g, (t, e)=>`#${CSS.escape(e)}`)), t), s = (t)=>{
-        t.dispatchEvent(new Event(i));
-    }, o = (t)=>!(!t || "object" != typeof t) && (void 0 !== t.jquery && (t = t[0]), void 0 !== t.nodeType), r = (t)=>o(t) ? t.jquery ? t[0] : t : "string" == typeof t && t.length > 0 ? document.querySelector(n(t)) : null, a = (t)=>{
-        if (!o(t) || 0 === t.getClientRects().length) return !1;
-        const e = "visible" === getComputedStyle(t).getPropertyValue("visibility"), i = t.closest("details:not([open])");
-        if (!i) return e;
-        if (i !== t) {
-            const e = t.closest("summary");
-            if (e && e.parentNode !== i) return !1;
-            if (null === e) return !1;
-        }
-        return e;
-    }, l = (t)=>!t || t.nodeType !== Node.ELEMENT_NODE || !!t.classList.contains("disabled") || (void 0 !== t.disabled ? t.disabled : t.hasAttribute("disabled") && "false" !== t.getAttribute("disabled")), c = (t)=>{
-        if (!document.documentElement.attachShadow) return null;
-        if ("function" == typeof t.getRootNode) {
-            const e = t.getRootNode();
-            return e instanceof ShadowRoot ? e : null;
-        }
-        return t instanceof ShadowRoot ? t : t.parentNode ? c(t.parentNode) : null;
-    }, h = ()=>{}, d = (t)=>{
-        t.offsetHeight;
-    }, u = ()=>window.jQuery && !document.body.hasAttribute("data-bs-no-jquery") ? window.jQuery : null, f = [], p = ()=>"rtl" === document.documentElement.dir, m = (t)=>{
-        var e;
-        e = ()=>{
-            const e = u();
-            if (e) {
-                const i = t.NAME, n = e.fn[i];
-                e.fn[i] = t.jQueryInterface, e.fn[i].Constructor = t, e.fn[i].noConflict = ()=>(e.fn[i] = n, t.jQueryInterface);
-            }
-        }, "loading" === document.readyState ? (f.length || document.addEventListener("DOMContentLoaded", ()=>{
-            for (const t of f)t();
-        }), f.push(e)) : e();
-    }, g = (t, e = [], i = t)=>"function" == typeof t ? t(...e) : i, _ = (t, e, n = !0)=>{
-        if (!n) return void g(t);
-        const o = ((t)=>{
-            if (!t) return 0;
-            let { transitionDuration: e, transitionDelay: i } = window.getComputedStyle(t);
-            const n = Number.parseFloat(e), s = Number.parseFloat(i);
-            return n || s ? (e = e.split(",")[0], i = i.split(",")[0], 1e3 * (Number.parseFloat(e) + Number.parseFloat(i))) : 0;
-        })(e) + 5;
-        let r = !1;
-        const a = ({ target: n })=>{
-            n === e && (r = !0, e.removeEventListener(i, a), g(t));
-        };
-        e.addEventListener(i, a), setTimeout(()=>{
-            r || s(e);
-        }, o);
-    }, b = (t, e, i, n)=>{
-        const s = t.length;
-        let o = t.indexOf(e);
-        return -1 === o ? !i && n ? t[s - 1] : t[0] : (o += i ? 1 : -1, n && (o = (o + s) % s), t[Math.max(0, Math.min(o, s - 1))]);
-    }, v = /[^.]*(?=\..*)\.|.*/, y = /\..*/, w = /::\d+$/, A = {};
-    let E = 1;
-    const T = {
-        mouseenter: "mouseover",
-        mouseleave: "mouseout"
-    }, C = new Set([
-        "click",
-        "dblclick",
-        "mouseup",
-        "mousedown",
-        "contextmenu",
-        "mousewheel",
-        "DOMMouseScroll",
-        "mouseover",
-        "mouseout",
-        "mousemove",
-        "selectstart",
-        "selectend",
-        "keydown",
-        "keypress",
-        "keyup",
-        "orientationchange",
-        "touchstart",
-        "touchmove",
-        "touchend",
-        "touchcancel",
-        "pointerdown",
-        "pointermove",
-        "pointerup",
-        "pointerleave",
-        "pointercancel",
-        "gesturestart",
-        "gesturechange",
-        "gestureend",
-        "focus",
-        "blur",
-        "change",
-        "reset",
-        "select",
-        "submit",
-        "focusin",
-        "focusout",
-        "load",
-        "unload",
-        "beforeunload",
-        "resize",
-        "move",
-        "DOMContentLoaded",
-        "readystatechange",
-        "error",
-        "abort",
-        "scroll"
-    ]);
-    function O(t, e) {
-        return e && `${e}::${E++}` || t.uidEvent || E++;
-    }
-    function x(t) {
-        const e = O(t);
-        return t.uidEvent = e, A[e] = A[e] || {}, A[e];
-    }
-    function k(t, e, i = null) {
-        return Object.values(t).find((t)=>t.callable === e && t.delegationSelector === i);
-    }
-    function L(t, e, i) {
-        const n = "string" == typeof e, s = n ? i : e || i;
-        let o = I(t);
-        return C.has(o) || (o = t), [
-            n,
-            s,
-            o
-        ];
-    }
-    function S(t, e, i, n, s) {
-        if ("string" != typeof e || !t) return;
-        let [o, r, a] = L(e, i, n);
-        if (e in T) {
-            const t = (t)=>function(e) {
-                    if (!e.relatedTarget || e.relatedTarget !== e.delegateTarget && !e.delegateTarget.contains(e.relatedTarget)) return t.call(this, e);
-                };
-            r = t(r);
-        }
-        const l = x(t), c = l[a] || (l[a] = {}), h = k(c, r, o ? i : null);
-        if (h) return void (h.oneOff = h.oneOff && s);
-        const d = O(r, e.replace(v, "")), u = o ? function(t, e, i) {
-            return function n(s) {
-                const o = t.querySelectorAll(e);
-                for(let { target: r } = s; r && r !== this; r = r.parentNode)for (const a of o)if (a === r) return P(s, {
-                    delegateTarget: r
-                }), n.oneOff && N.off(t, s.type, e, i), i.apply(r, [
-                    s
-                ]);
-            };
-        }(t, i, r) : function(t, e) {
-            return function i(n) {
-                return P(n, {
-                    delegateTarget: t
-                }), i.oneOff && N.off(t, n.type, e), e.apply(t, [
-                    n
-                ]);
-            };
-        }(t, r);
-        u.delegationSelector = o ? i : null, u.callable = r, u.oneOff = s, u.uidEvent = d, c[d] = u, t.addEventListener(a, u, o);
-    }
-    function D(t, e, i, n, s) {
-        const o = k(e[i], n, s);
-        o && (t.removeEventListener(i, o, Boolean(s)), delete e[i][o.uidEvent]);
-    }
-    function $(t, e, i, n) {
-        const s = e[i] || {};
-        for (const [o, r] of Object.entries(s))o.includes(n) && D(t, e, i, r.callable, r.delegationSelector);
-    }
-    function I(t) {
-        return t = t.replace(y, ""), T[t] || t;
-    }
-    const N = {
-        on (t, e, i, n) {
-            S(t, e, i, n, !1);
-        },
-        one (t, e, i, n) {
-            S(t, e, i, n, !0);
-        },
-        off (t, e, i, n) {
-            if ("string" != typeof e || !t) return;
-            const [s, o, r] = L(e, i, n), a = r !== e, l = x(t), c = l[r] || {}, h = e.startsWith(".");
-            if (void 0 === o) {
-                if (h) for (const i of Object.keys(l))$(t, l, i, e.slice(1));
-                for (const [i, n] of Object.entries(c)){
-                    const s = i.replace(w, "");
-                    a && !e.includes(s) || D(t, l, r, n.callable, n.delegationSelector);
-                }
-            } else {
-                if (!Object.keys(c).length) return;
-                D(t, l, r, o, s ? i : null);
-            }
-        },
-        trigger (t, e, i) {
-            if ("string" != typeof e || !t) return null;
-            const n = u();
-            let s = null, o = !0, r = !0, a = !1;
-            e !== I(e) && n && (s = n.Event(e, i), n(t).trigger(s), o = !s.isPropagationStopped(), r = !s.isImmediatePropagationStopped(), a = s.isDefaultPrevented());
-            const l = P(new Event(e, {
-                bubbles: o,
-                cancelable: !0
-            }), i);
-            return a && l.preventDefault(), r && t.dispatchEvent(l), l.defaultPrevented && s && s.preventDefault(), l;
-        }
-    };
-    function P(t, e = {}) {
-        for (const [i, n] of Object.entries(e))try {
-            t[i] = n;
-        } catch (e) {
-            Object.defineProperty(t, i, {
-                configurable: !0,
-                get: ()=>n
-            });
-        }
-        return t;
-    }
-    function j(t) {
-        if ("true" === t) return !0;
-        if ("false" === t) return !1;
-        if (t === Number(t).toString()) return Number(t);
-        if ("" === t || "null" === t) return null;
-        if ("string" != typeof t) return t;
-        try {
-            return JSON.parse(decodeURIComponent(t));
-        } catch (e) {
-            return t;
-        }
-    }
-    function M(t) {
-        return t.replace(/[A-Z]/g, (t)=>`-${t.toLowerCase()}`);
-    }
-    const F = {
-        setDataAttribute (t, e, i) {
-            t.setAttribute(`data-bs-${M(e)}`, i);
-        },
-        removeDataAttribute (t, e) {
-            t.removeAttribute(`data-bs-${M(e)}`);
-        },
-        getDataAttributes (t) {
-            if (!t) return {};
-            const e = {}, i = Object.keys(t.dataset).filter((t)=>t.startsWith("bs") && !t.startsWith("bsConfig"));
-            for (const n of i){
-                let i = n.replace(/^bs/, "");
-                i = i.charAt(0).toLowerCase() + i.slice(1, i.length), e[i] = j(t.dataset[n]);
-            }
-            return e;
-        },
-        getDataAttribute: (t, e)=>j(t.getAttribute(`data-bs-${M(e)}`))
-    };
-    class H {
-        static get Default() {
-            return {};
-        }
-        static get DefaultType() {
-            return {};
-        }
-        static get NAME() {
-            throw new Error('You have to implement the static method "NAME", for each component!');
-        }
-        _getConfig(t) {
-            return t = this._mergeConfigObj(t), t = this._configAfterMerge(t), this._typeCheckConfig(t), t;
-        }
-        _configAfterMerge(t) {
-            return t;
-        }
-        _mergeConfigObj(t, e) {
-            const i = o(e) ? F.getDataAttribute(e, "config") : {};
-            return {
-                ...this.constructor.Default,
-                ..."object" == typeof i ? i : {},
-                ...o(e) ? F.getDataAttributes(e) : {},
-                ..."object" == typeof t ? t : {}
-            };
-        }
-        _typeCheckConfig(t, e = this.constructor.DefaultType) {
-            for (const [n, s] of Object.entries(e)){
-                const e = t[n], r = o(e) ? "element" : null == (i = e) ? `${i}` : Object.prototype.toString.call(i).match(/\s([a-z]+)/i)[1].toLowerCase();
-                if (!new RegExp(s).test(r)) throw new TypeError(`${this.constructor.NAME.toUpperCase()}: Option "${n}" provided type "${r}" but expected type "${s}".`);
-            }
-            var i;
-        }
-    }
-    class W extends H {
-        constructor(t, i){
-            super(), (t = r(t)) && (this._element = t, this._config = this._getConfig(i), e.set(this._element, this.constructor.DATA_KEY, this));
-        }
-        dispose() {
-            e.remove(this._element, this.constructor.DATA_KEY), N.off(this._element, this.constructor.EVENT_KEY);
-            for (const t of Object.getOwnPropertyNames(this))this[t] = null;
-        }
-        _queueCallback(t, e, i = !0) {
-            _(t, e, i);
-        }
-        _getConfig(t) {
-            return t = this._mergeConfigObj(t, this._element), t = this._configAfterMerge(t), this._typeCheckConfig(t), t;
-        }
-        static getInstance(t) {
-            return e.get(r(t), this.DATA_KEY);
-        }
-        static getOrCreateInstance(t, e = {}) {
-            return this.getInstance(t) || new this(t, "object" == typeof e ? e : null);
-        }
-        static get VERSION() {
-            return "5.3.3";
-        }
-        static get DATA_KEY() {
-            return `bs.${this.NAME}`;
-        }
-        static get EVENT_KEY() {
-            return `.${this.DATA_KEY}`;
-        }
-        static eventName(t) {
-            return `${t}${this.EVENT_KEY}`;
-        }
-    }
-    const B = (t)=>{
-        let e = t.getAttribute("data-bs-target");
-        if (!e || "#" === e) {
-            let i = t.getAttribute("href");
-            if (!i || !i.includes("#") && !i.startsWith(".")) return null;
-            i.includes("#") && !i.startsWith("#") && (i = `#${i.split("#")[1]}`), e = i && "#" !== i ? i.trim() : null;
-        }
-        return e ? e.split(",").map((t)=>n(t)).join(",") : null;
-    }, z = {
-        find: (t, e = document.documentElement)=>[].concat(...Element.prototype.querySelectorAll.call(e, t)),
-        findOne: (t, e = document.documentElement)=>Element.prototype.querySelector.call(e, t),
-        children: (t, e)=>[].concat(...t.children).filter((t)=>t.matches(e)),
-        parents (t, e) {
-            const i = [];
-            let n = t.parentNode.closest(e);
-            for(; n;)i.push(n), n = n.parentNode.closest(e);
-            return i;
-        },
-        prev (t, e) {
-            let i = t.previousElementSibling;
-            for(; i;){
-                if (i.matches(e)) return [
-                    i
-                ];
-                i = i.previousElementSibling;
-            }
-            return [];
-        },
-        next (t, e) {
-            let i = t.nextElementSibling;
-            for(; i;){
-                if (i.matches(e)) return [
-                    i
-                ];
-                i = i.nextElementSibling;
-            }
-            return [];
-        },
-        focusableChildren (t) {
-            const e = [
-                "a",
-                "button",
-                "input",
-                "textarea",
-                "select",
-                "details",
-                "[tabindex]",
-                '[contenteditable="true"]'
-            ].map((t)=>`${t}:not([tabindex^="-"])`).join(",");
-            return this.find(e, t).filter((t)=>!l(t) && a(t));
-        },
-        getSelectorFromElement (t) {
-            const e = B(t);
-            return e && z.findOne(e) ? e : null;
-        },
-        getElementFromSelector (t) {
-            const e = B(t);
-            return e ? z.findOne(e) : null;
-        },
-        getMultipleElementsFromSelector (t) {
-            const e = B(t);
-            return e ? z.find(e) : [];
-        }
-    }, R = (t, e = "hide")=>{
-        const i = `click.dismiss${t.EVENT_KEY}`, n = t.NAME;
-        N.on(document, i, `[data-bs-dismiss="${n}"]`, function(i) {
-            if ([
-                "A",
-                "AREA"
-            ].includes(this.tagName) && i.preventDefault(), l(this)) return;
-            const s = z.getElementFromSelector(this) || this.closest(`.${n}`);
-            t.getOrCreateInstance(s)[e]();
-        });
-    }, q = ".bs.alert", V = `close${q}`, K = `closed${q}`;
-    class Q extends W {
-        static get NAME() {
-            return "alert";
-        }
-        close() {
-            if (N.trigger(this._element, V).defaultPrevented) return;
-            this._element.classList.remove("show");
-            const t = this._element.classList.contains("fade");
-            this._queueCallback(()=>this._destroyElement(), this._element, t);
-        }
-        _destroyElement() {
-            this._element.remove(), N.trigger(this._element, K), this.dispose();
-        }
-        static jQueryInterface(t) {
-            return this.each(function() {
-                const e = Q.getOrCreateInstance(this);
-                if ("string" == typeof t) {
-                    if (void 0 === e[t] || t.startsWith("_") || "constructor" === t) throw new TypeError(`No method named "${t}"`);
-                    e[t](this);
-                }
-            });
-        }
-    }
-    R(Q, "close"), m(Q);
-    const X = '[data-bs-toggle="button"]';
-    class Y extends W {
-        static get NAME() {
-            return "button";
-        }
-        toggle() {
-            this._element.setAttribute("aria-pressed", this._element.classList.toggle("active"));
-        }
-        static jQueryInterface(t) {
-            return this.each(function() {
-                const e = Y.getOrCreateInstance(this);
-                "toggle" === t && e[t]();
-            });
-        }
-    }
-    N.on(document, "click.bs.button.data-api", X, (t)=>{
-        t.preventDefault();
-        const e = t.target.closest(X);
-        Y.getOrCreateInstance(e).toggle();
-    }), m(Y);
-    const U = ".bs.swipe", G = `touchstart${U}`, J = `touchmove${U}`, Z = `touchend${U}`, tt = `pointerdown${U}`, et = `pointerup${U}`, it = {
-        endCallback: null,
-        leftCallback: null,
-        rightCallback: null
-    }, nt = {
-        endCallback: "(function|null)",
-        leftCallback: "(function|null)",
-        rightCallback: "(function|null)"
-    };
-    class st extends H {
-        constructor(t, e){
-            super(), this._element = t, t && st.isSupported() && (this._config = this._getConfig(e), this._deltaX = 0, this._supportPointerEvents = Boolean(window.PointerEvent), this._initEvents());
-        }
-        static get Default() {
-            return it;
-        }
-        static get DefaultType() {
-            return nt;
-        }
-        static get NAME() {
-            return "swipe";
-        }
-        dispose() {
-            N.off(this._element, U);
-        }
-        _start(t) {
-            this._supportPointerEvents ? this._eventIsPointerPenTouch(t) && (this._deltaX = t.clientX) : this._deltaX = t.touches[0].clientX;
-        }
-        _end(t) {
-            this._eventIsPointerPenTouch(t) && (this._deltaX = t.clientX - this._deltaX), this._handleSwipe(), g(this._config.endCallback);
-        }
-        _move(t) {
-            this._deltaX = t.touches && t.touches.length > 1 ? 0 : t.touches[0].clientX - this._deltaX;
-        }
-        _handleSwipe() {
-            const t = Math.abs(this._deltaX);
-            if (t <= 40) return;
-            const e = t / this._deltaX;
-            this._deltaX = 0, e && g(e > 0 ? this._config.rightCallback : this._config.leftCallback);
-        }
-        _initEvents() {
-            this._supportPointerEvents ? (N.on(this._element, tt, (t)=>this._start(t)), N.on(this._element, et, (t)=>this._end(t)), this._element.classList.add("pointer-event")) : (N.on(this._element, G, (t)=>this._start(t)), N.on(this._element, J, (t)=>this._move(t)), N.on(this._element, Z, (t)=>this._end(t)));
-        }
-        _eventIsPointerPenTouch(t) {
-            return this._supportPointerEvents && ("pen" === t.pointerType || "touch" === t.pointerType);
-        }
-        static isSupported() {
-            return "ontouchstart" in document.documentElement || navigator.maxTouchPoints > 0;
-        }
-    }
-    const ot = ".bs.carousel", rt = ".data-api", at = "next", lt = "prev", ct = "left", ht = "right", dt = `slide${ot}`, ut = `slid${ot}`, ft = `keydown${ot}`, pt = `mouseenter${ot}`, mt = `mouseleave${ot}`, gt = `dragstart${ot}`, _t = `load${ot}${rt}`, bt = `click${ot}${rt}`, vt = "carousel", yt = "active", wt = ".active", At = ".carousel-item", Et = wt + At, Tt = {
-        ArrowLeft: ht,
-        ArrowRight: ct
-    }, Ct = {
-        interval: 5e3,
-        keyboard: !0,
-        pause: "hover",
-        ride: !1,
-        touch: !0,
-        wrap: !0
-    }, Ot = {
-        interval: "(number|boolean)",
-        keyboard: "boolean",
-        pause: "(string|boolean)",
-        ride: "(boolean|string)",
-        touch: "boolean",
-        wrap: "boolean"
-    };
-    class xt extends W {
-        constructor(t, e){
-            super(t, e), this._interval = null, this._activeElement = null, this._isSliding = !1, this.touchTimeout = null, this._swipeHelper = null, this._indicatorsElement = z.findOne(".carousel-indicators", this._element), this._addEventListeners(), this._config.ride === vt && this.cycle();
-        }
-        static get Default() {
-            return Ct;
-        }
-        static get DefaultType() {
-            return Ot;
-        }
-        static get NAME() {
-            return "carousel";
-        }
-        next() {
-            this._slide(at);
-        }
-        nextWhenVisible() {
-            !document.hidden && a(this._element) && this.next();
-        }
-        prev() {
-            this._slide(lt);
-        }
-        pause() {
-            this._isSliding && s(this._element), this._clearInterval();
-        }
-        cycle() {
-            this._clearInterval(), this._updateInterval(), this._interval = setInterval(()=>this.nextWhenVisible(), this._config.interval);
-        }
-        _maybeEnableCycle() {
-            this._config.ride && (this._isSliding ? N.one(this._element, ut, ()=>this.cycle()) : this.cycle());
-        }
-        to(t) {
-            const e = this._getItems();
-            if (t > e.length - 1 || t < 0) return;
-            if (this._isSliding) return void N.one(this._element, ut, ()=>this.to(t));
-            const i = this._getItemIndex(this._getActive());
-            if (i === t) return;
-            const n = t > i ? at : lt;
-            this._slide(n, e[t]);
-        }
-        dispose() {
-            this._swipeHelper && this._swipeHelper.dispose(), super.dispose();
-        }
-        _configAfterMerge(t) {
-            return t.defaultInterval = t.interval, t;
-        }
-        _addEventListeners() {
-            this._config.keyboard && N.on(this._element, ft, (t)=>this._keydown(t)), "hover" === this._config.pause && (N.on(this._element, pt, ()=>this.pause()), N.on(this._element, mt, ()=>this._maybeEnableCycle())), this._config.touch && st.isSupported() && this._addTouchEventListeners();
-        }
-        _addTouchEventListeners() {
-            for (const t of z.find(".carousel-item img", this._element))N.on(t, gt, (t)=>t.preventDefault());
-            const t = {
-                leftCallback: ()=>this._slide(this._directionToOrder(ct)),
-                rightCallback: ()=>this._slide(this._directionToOrder(ht)),
-                endCallback: ()=>{
-                    "hover" === this._config.pause && (this.pause(), this.touchTimeout && clearTimeout(this.touchTimeout), this.touchTimeout = setTimeout(()=>this._maybeEnableCycle(), 500 + this._config.interval));
-                }
-            };
-            this._swipeHelper = new st(this._element, t);
-        }
-        _keydown(t) {
-            if (/input|textarea/i.test(t.target.tagName)) return;
-            const e = Tt[t.key];
-            e && (t.preventDefault(), this._slide(this._directionToOrder(e)));
-        }
-        _getItemIndex(t) {
-            return this._getItems().indexOf(t);
-        }
-        _setActiveIndicatorElement(t) {
-            if (!this._indicatorsElement) return;
-            const e = z.findOne(wt, this._indicatorsElement);
-            e.classList.remove(yt), e.removeAttribute("aria-current");
-            const i = z.findOne(`[data-bs-slide-to="${t}"]`, this._indicatorsElement);
-            i && (i.classList.add(yt), i.setAttribute("aria-current", "true"));
-        }
-        _updateInterval() {
-            const t = this._activeElement || this._getActive();
-            if (!t) return;
-            const e = Number.parseInt(t.getAttribute("data-bs-interval"), 10);
-            this._config.interval = e || this._config.defaultInterval;
-        }
-        _slide(t, e = null) {
-            if (this._isSliding) return;
-            const i = this._getActive(), n = t === at, s = e || b(this._getItems(), i, n, this._config.wrap);
-            if (s === i) return;
-            const o = this._getItemIndex(s), r = (e)=>N.trigger(this._element, e, {
-                    relatedTarget: s,
-                    direction: this._orderToDirection(t),
-                    from: this._getItemIndex(i),
-                    to: o
-                });
-            if (r(dt).defaultPrevented) return;
-            if (!i || !s) return;
-            const a = Boolean(this._interval);
-            this.pause(), this._isSliding = !0, this._setActiveIndicatorElement(o), this._activeElement = s;
-            const l = n ? "carousel-item-start" : "carousel-item-end", c = n ? "carousel-item-next" : "carousel-item-prev";
-            s.classList.add(c), d(s), i.classList.add(l), s.classList.add(l), this._queueCallback(()=>{
-                s.classList.remove(l, c), s.classList.add(yt), i.classList.remove(yt, c, l), this._isSliding = !1, r(ut);
-            }, i, this._isAnimated()), a && this.cycle();
-        }
-        _isAnimated() {
-            return this._element.classList.contains("slide");
-        }
-        _getActive() {
-            return z.findOne(Et, this._element);
-        }
-        _getItems() {
-            return z.find(At, this._element);
-        }
-        _clearInterval() {
-            this._interval && (clearInterval(this._interval), this._interval = null);
-        }
-        _directionToOrder(t) {
-            return p() ? t === ct ? lt : at : t === ct ? at : lt;
-        }
-        _orderToDirection(t) {
-            return p() ? t === lt ? ct : ht : t === lt ? ht : ct;
-        }
-        static jQueryInterface(t) {
-            return this.each(function() {
-                const e = xt.getOrCreateInstance(this, t);
-                if ("number" != typeof t) {
-                    if ("string" == typeof t) {
-                        if (void 0 === e[t] || t.startsWith("_") || "constructor" === t) throw new TypeError(`No method named "${t}"`);
-                        e[t]();
-                    }
-                } else e.to(t);
-            });
-        }
-    }
-    N.on(document, bt, "[data-bs-slide], [data-bs-slide-to]", function(t) {
-        const e = z.getElementFromSelector(this);
-        if (!e || !e.classList.contains(vt)) return;
-        t.preventDefault();
-        const i = xt.getOrCreateInstance(e), n = this.getAttribute("data-bs-slide-to");
-        return n ? (i.to(n), void i._maybeEnableCycle()) : "next" === F.getDataAttribute(this, "slide") ? (i.next(), void i._maybeEnableCycle()) : (i.prev(), void i._maybeEnableCycle());
-    }), N.on(window, _t, ()=>{
-        const t = z.find('[data-bs-ride="carousel"]');
-        for (const e of t)xt.getOrCreateInstance(e);
-    }), m(xt);
-    const kt = ".bs.collapse", Lt = `show${kt}`, St = `shown${kt}`, Dt = `hide${kt}`, $t = `hidden${kt}`, It = `click${kt}.data-api`, Nt = "show", Pt = "collapse", jt = "collapsing", Mt = `:scope .${Pt} .${Pt}`, Ft = '[data-bs-toggle="collapse"]', Ht = {
-        parent: null,
-        toggle: !0
-    }, Wt = {
-        parent: "(null|element)",
-        toggle: "boolean"
-    };
-    class Bt extends W {
-        constructor(t, e){
-            super(t, e), this._isTransitioning = !1, this._triggerArray = [];
-            const i = z.find(Ft);
-            for (const t of i){
-                const e = z.getSelectorFromElement(t), i = z.find(e).filter((t)=>t === this._element);
-                null !== e && i.length && this._triggerArray.push(t);
-            }
-            this._initializeChildren(), this._config.parent || this._addAriaAndCollapsedClass(this._triggerArray, this._isShown()), this._config.toggle && this.toggle();
-        }
-        static get Default() {
-            return Ht;
-        }
-        static get DefaultType() {
-            return Wt;
-        }
-        static get NAME() {
-            return "collapse";
-        }
-        toggle() {
-            this._isShown() ? this.hide() : this.show();
-        }
-        show() {
-            if (this._isTransitioning || this._isShown()) return;
-            let t = [];
-            if (this._config.parent && (t = this._getFirstLevelChildren(".collapse.show, .collapse.collapsing").filter((t)=>t !== this._element).map((t)=>Bt.getOrCreateInstance(t, {
-                    toggle: !1
-                }))), t.length && t[0]._isTransitioning) return;
-            if (N.trigger(this._element, Lt).defaultPrevented) return;
-            for (const e of t)e.hide();
-            const e = this._getDimension();
-            this._element.classList.remove(Pt), this._element.classList.add(jt), this._element.style[e] = 0, this._addAriaAndCollapsedClass(this._triggerArray, !0), this._isTransitioning = !0;
-            const i = `scroll${e[0].toUpperCase() + e.slice(1)}`;
-            this._queueCallback(()=>{
-                this._isTransitioning = !1, this._element.classList.remove(jt), this._element.classList.add(Pt, Nt), this._element.style[e] = "", N.trigger(this._element, St);
-            }, this._element, !0), this._element.style[e] = `${this._element[i]}px`;
-        }
-        hide() {
-            if (this._isTransitioning || !this._isShown()) return;
-            if (N.trigger(this._element, Dt).defaultPrevented) return;
-            const t = this._getDimension();
-            this._element.style[t] = `${this._element.getBoundingClientRect()[t]}px`, d(this._element), this._element.classList.add(jt), this._element.classList.remove(Pt, Nt);
-            for (const t of this._triggerArray){
-                const e = z.getElementFromSelector(t);
-                e && !this._isShown(e) && this._addAriaAndCollapsedClass([
-                    t
-                ], !1);
-            }
-            this._isTransitioning = !0, this._element.style[t] = "", this._queueCallback(()=>{
-                this._isTransitioning = !1, this._element.classList.remove(jt), this._element.classList.add(Pt), N.trigger(this._element, $t);
-            }, this._element, !0);
-        }
-        _isShown(t = this._element) {
-            return t.classList.contains(Nt);
-        }
-        _configAfterMerge(t) {
-            return t.toggle = Boolean(t.toggle), t.parent = r(t.parent), t;
-        }
-        _getDimension() {
-            return this._element.classList.contains("collapse-horizontal") ? "width" : "height";
-        }
-        _initializeChildren() {
-            if (!this._config.parent) return;
-            const t = this._getFirstLevelChildren(Ft);
-            for (const e of t){
-                const t = z.getElementFromSelector(e);
-                t && this._addAriaAndCollapsedClass([
-                    e
-                ], this._isShown(t));
-            }
-        }
-        _getFirstLevelChildren(t) {
-            const e = z.find(Mt, this._config.parent);
-            return z.find(t, this._config.parent).filter((t)=>!e.includes(t));
-        }
-        _addAriaAndCollapsedClass(t, e) {
-            if (t.length) for (const i of t)i.classList.toggle("collapsed", !e), i.setAttribute("aria-expanded", e);
-        }
-        static jQueryInterface(t) {
-            const e = {};
-            return "string" == typeof t && /show|hide/.test(t) && (e.toggle = !1), this.each(function() {
-                const i = Bt.getOrCreateInstance(this, e);
-                if ("string" == typeof t) {
-                    if (void 0 === i[t]) throw new TypeError(`No method named "${t}"`);
-                    i[t]();
-                }
-            });
-        }
-    }
-    N.on(document, It, Ft, function(t) {
-        ("A" === t.target.tagName || t.delegateTarget && "A" === t.delegateTarget.tagName) && t.preventDefault();
-        for (const t of z.getMultipleElementsFromSelector(this))Bt.getOrCreateInstance(t, {
-            toggle: !1
-        }).toggle();
-    }), m(Bt);
-    var zt = "top", Rt = "bottom", qt = "right", Vt = "left", Kt = "auto", Qt = [
-        zt,
-        Rt,
-        qt,
-        Vt
-    ], Xt = "start", Yt = "end", Ut = "clippingParents", Gt = "viewport", Jt = "popper", Zt = "reference", te = Qt.reduce(function(t, e) {
-        return t.concat([
-            e + "-" + Xt,
-            e + "-" + Yt
-        ]);
-    }, []), ee = [].concat(Qt, [
-        Kt
-    ]).reduce(function(t, e) {
-        return t.concat([
-            e,
-            e + "-" + Xt,
-            e + "-" + Yt
-        ]);
-    }, []), ie = "beforeRead", ne = "read", se = "afterRead", oe = "beforeMain", re = "main", ae = "afterMain", le = "beforeWrite", ce = "write", he = "afterWrite", de = [
-        ie,
-        ne,
-        se,
-        oe,
-        re,
-        ae,
-        le,
-        ce,
-        he
-    ];
-    function ue(t) {
-        return t ? (t.nodeName || "").toLowerCase() : null;
-    }
-    function fe(t) {
-        if (null == t) return window;
-        if ("[object Window]" !== t.toString()) {
-            var e = t.ownerDocument;
-            return e && e.defaultView || window;
-        }
-        return t;
-    }
-    function pe(t) {
-        return t instanceof fe(t).Element || t instanceof Element;
-    }
-    function me(t) {
-        return t instanceof fe(t).HTMLElement || t instanceof HTMLElement;
-    }
-    function ge(t) {
-        return "undefined" != typeof ShadowRoot && (t instanceof fe(t).ShadowRoot || t instanceof ShadowRoot);
-    }
-    const _e = {
-        name: "applyStyles",
-        enabled: !0,
-        phase: "write",
-        fn: function(t) {
-            var e = t.state;
-            Object.keys(e.elements).forEach(function(t) {
-                var i = e.styles[t] || {}, n = e.attributes[t] || {}, s = e.elements[t];
-                me(s) && ue(s) && (Object.assign(s.style, i), Object.keys(n).forEach(function(t) {
-                    var e = n[t];
-                    !1 === e ? s.removeAttribute(t) : s.setAttribute(t, !0 === e ? "" : e);
-                }));
-            });
-        },
-        effect: function(t) {
-            var e = t.state, i = {
-                popper: {
-                    position: e.options.strategy,
-                    left: "0",
-                    top: "0",
-                    margin: "0"
-                },
-                arrow: {
-                    position: "absolute"
-                },
-                reference: {}
-            };
-            return Object.assign(e.elements.popper.style, i.popper), e.styles = i, e.elements.arrow && Object.assign(e.elements.arrow.style, i.arrow), function() {
-                Object.keys(e.elements).forEach(function(t) {
-                    var n = e.elements[t], s = e.attributes[t] || {}, o = Object.keys(e.styles.hasOwnProperty(t) ? e.styles[t] : i[t]).reduce(function(t, e) {
-                        return t[e] = "", t;
-                    }, {});
-                    me(n) && ue(n) && (Object.assign(n.style, o), Object.keys(s).forEach(function(t) {
-                        n.removeAttribute(t);
-                    }));
-                });
-            };
-        },
-        requires: [
-            "computeStyles"
-        ]
-    };
-    function be(t) {
-        return t.split("-")[0];
-    }
-    var ve = Math.max, ye = Math.min, we = Math.round;
-    function Ae() {
-        var t = navigator.userAgentData;
-        return null != t && t.brands && Array.isArray(t.brands) ? t.brands.map(function(t) {
-            return t.brand + "/" + t.version;
-        }).join(" ") : navigator.userAgent;
-    }
-    function Ee() {
-        return !/^((?!chrome|android).)*safari/i.test(Ae());
-    }
-    function Te(t, e, i) {
-        void 0 === e && (e = !1), void 0 === i && (i = !1);
-        var n = t.getBoundingClientRect(), s = 1, o = 1;
-        e && me(t) && (s = t.offsetWidth > 0 && we(n.width) / t.offsetWidth || 1, o = t.offsetHeight > 0 && we(n.height) / t.offsetHeight || 1);
-        var r = (pe(t) ? fe(t) : window).visualViewport, a = !Ee() && i, l = (n.left + (a && r ? r.offsetLeft : 0)) / s, c = (n.top + (a && r ? r.offsetTop : 0)) / o, h = n.width / s, d = n.height / o;
-        return {
-            width: h,
-            height: d,
-            top: c,
-            right: l + h,
-            bottom: c + d,
-            left: l,
-            x: l,
-            y: c
-        };
-    }
-    function Ce(t) {
-        var e = Te(t), i = t.offsetWidth, n = t.offsetHeight;
-        return Math.abs(e.width - i) <= 1 && (i = e.width), Math.abs(e.height - n) <= 1 && (n = e.height), {
-            x: t.offsetLeft,
-            y: t.offsetTop,
-            width: i,
-            height: n
-        };
-    }
-    function Oe(t, e) {
-        var i = e.getRootNode && e.getRootNode();
-        if (t.contains(e)) return !0;
-        if (i && ge(i)) {
-            var n = e;
-            do {
-                if (n && t.isSameNode(n)) return !0;
-                n = n.parentNode || n.host;
-            }while (n);
-        }
-        return !1;
-    }
-    function xe(t) {
-        return fe(t).getComputedStyle(t);
-    }
-    function ke(t) {
-        return [
-            "table",
-            "td",
-            "th"
-        ].indexOf(ue(t)) >= 0;
-    }
-    function Le(t) {
-        return ((pe(t) ? t.ownerDocument : t.document) || window.document).documentElement;
-    }
-    function Se(t) {
-        return "html" === ue(t) ? t : t.assignedSlot || t.parentNode || (ge(t) ? t.host : null) || Le(t);
-    }
-    function De(t) {
-        return me(t) && "fixed" !== xe(t).position ? t.offsetParent : null;
-    }
-    function $e(t) {
-        for(var e = fe(t), i = De(t); i && ke(i) && "static" === xe(i).position;)i = De(i);
-        return i && ("html" === ue(i) || "body" === ue(i) && "static" === xe(i).position) ? e : i || function(t) {
-            var e = /firefox/i.test(Ae());
-            if (/Trident/i.test(Ae()) && me(t) && "fixed" === xe(t).position) return null;
-            var i = Se(t);
-            for(ge(i) && (i = i.host); me(i) && [
-                "html",
-                "body"
-            ].indexOf(ue(i)) < 0;){
-                var n = xe(i);
-                if ("none" !== n.transform || "none" !== n.perspective || "paint" === n.contain || -1 !== [
-                    "transform",
-                    "perspective"
-                ].indexOf(n.willChange) || e && "filter" === n.willChange || e && n.filter && "none" !== n.filter) return i;
-                i = i.parentNode;
-            }
-            return null;
-        }(t) || e;
-    }
-    function Ie(t) {
-        return [
-            "top",
-            "bottom"
-        ].indexOf(t) >= 0 ? "x" : "y";
-    }
-    function Ne(t, e, i) {
-        return ve(t, ye(e, i));
-    }
-    function Pe(t) {
-        return Object.assign({}, {
-            top: 0,
-            right: 0,
-            bottom: 0,
-            left: 0
-        }, t);
-    }
-    function je(t, e) {
-        return e.reduce(function(e, i) {
-            return e[i] = t, e;
-        }, {});
-    }
-    const Me = {
-        name: "arrow",
-        enabled: !0,
-        phase: "main",
-        fn: function(t) {
-            var e, i = t.state, n = t.name, s = t.options, o = i.elements.arrow, r = i.modifiersData.popperOffsets, a = be(i.placement), l = Ie(a), c = [
-                Vt,
-                qt
-            ].indexOf(a) >= 0 ? "height" : "width";
-            if (o && r) {
-                var h = function(t, e) {
-                    return Pe("number" != typeof (t = "function" == typeof t ? t(Object.assign({}, e.rects, {
-                        placement: e.placement
-                    })) : t) ? t : je(t, Qt));
-                }(s.padding, i), d = Ce(o), u = "y" === l ? zt : Vt, f = "y" === l ? Rt : qt, p = i.rects.reference[c] + i.rects.reference[l] - r[l] - i.rects.popper[c], m = r[l] - i.rects.reference[l], g = $e(o), _ = g ? "y" === l ? g.clientHeight || 0 : g.clientWidth || 0 : 0, b = p / 2 - m / 2, v = h[u], y = _ - d[c] - h[f], w = _ / 2 - d[c] / 2 + b, A = Ne(v, w, y), E = l;
-                i.modifiersData[n] = ((e = {})[E] = A, e.centerOffset = A - w, e);
-            }
-        },
-        effect: function(t) {
-            var e = t.state, i = t.options.element, n = void 0 === i ? "[data-popper-arrow]" : i;
-            null != n && ("string" != typeof n || (n = e.elements.popper.querySelector(n))) && Oe(e.elements.popper, n) && (e.elements.arrow = n);
-        },
-        requires: [
-            "popperOffsets"
-        ],
-        requiresIfExists: [
-            "preventOverflow"
-        ]
-    };
-    function Fe(t) {
-        return t.split("-")[1];
-    }
-    var He = {
-        top: "auto",
-        right: "auto",
-        bottom: "auto",
-        left: "auto"
-    };
-    function We(t) {
-        var e, i = t.popper, n = t.popperRect, s = t.placement, o = t.variation, r = t.offsets, a = t.position, l = t.gpuAcceleration, c = t.adaptive, h = t.roundOffsets, d = t.isFixed, u = r.x, f = void 0 === u ? 0 : u, p = r.y, m = void 0 === p ? 0 : p, g = "function" == typeof h ? h({
-            x: f,
-            y: m
-        }) : {
-            x: f,
-            y: m
-        };
-        f = g.x, m = g.y;
-        var _ = r.hasOwnProperty("x"), b = r.hasOwnProperty("y"), v = Vt, y = zt, w = window;
-        if (c) {
-            var A = $e(i), E = "clientHeight", T = "clientWidth";
-            A === fe(i) && "static" !== xe(A = Le(i)).position && "absolute" === a && (E = "scrollHeight", T = "scrollWidth"), (s === zt || (s === Vt || s === qt) && o === Yt) && (y = Rt, m -= (d && A === w && w.visualViewport ? w.visualViewport.height : A[E]) - n.height, m *= l ? 1 : -1), s !== Vt && (s !== zt && s !== Rt || o !== Yt) || (v = qt, f -= (d && A === w && w.visualViewport ? w.visualViewport.width : A[T]) - n.width, f *= l ? 1 : -1);
-        }
-        var C, O = Object.assign({
-            position: a
-        }, c && He), x = !0 === h ? function(t, e) {
-            var i = t.x, n = t.y, s = e.devicePixelRatio || 1;
-            return {
-                x: we(i * s) / s || 0,
-                y: we(n * s) / s || 0
-            };
-        }({
-            x: f,
-            y: m
-        }, fe(i)) : {
-            x: f,
-            y: m
-        };
-        return f = x.x, m = x.y, l ? Object.assign({}, O, ((C = {})[y] = b ? "0" : "", C[v] = _ ? "0" : "", C.transform = (w.devicePixelRatio || 1) <= 1 ? "translate(" + f + "px, " + m + "px)" : "translate3d(" + f + "px, " + m + "px, 0)", C)) : Object.assign({}, O, ((e = {})[y] = b ? m + "px" : "", e[v] = _ ? f + "px" : "", e.transform = "", e));
-    }
-    const Be = {
-        name: "computeStyles",
-        enabled: !0,
-        phase: "beforeWrite",
-        fn: function(t) {
-            var e = t.state, i = t.options, n = i.gpuAcceleration, s = void 0 === n || n, o = i.adaptive, r = void 0 === o || o, a = i.roundOffsets, l = void 0 === a || a, c = {
-                placement: be(e.placement),
-                variation: Fe(e.placement),
-                popper: e.elements.popper,
-                popperRect: e.rects.popper,
-                gpuAcceleration: s,
-                isFixed: "fixed" === e.options.strategy
-            };
-            null != e.modifiersData.popperOffsets && (e.styles.popper = Object.assign({}, e.styles.popper, We(Object.assign({}, c, {
-                offsets: e.modifiersData.popperOffsets,
-                position: e.options.strategy,
-                adaptive: r,
-                roundOffsets: l
-            })))), null != e.modifiersData.arrow && (e.styles.arrow = Object.assign({}, e.styles.arrow, We(Object.assign({}, c, {
-                offsets: e.modifiersData.arrow,
-                position: "absolute",
-                adaptive: !1,
-                roundOffsets: l
-            })))), e.attributes.popper = Object.assign({}, e.attributes.popper, {
-                "data-popper-placement": e.placement
-            });
-        },
-        data: {}
-    };
-    var ze = {
-        passive: !0
-    };
-    const Re = {
-        name: "eventListeners",
-        enabled: !0,
-        phase: "write",
-        fn: function() {},
-        effect: function(t) {
-            var e = t.state, i = t.instance, n = t.options, s = n.scroll, o = void 0 === s || s, r = n.resize, a = void 0 === r || r, l = fe(e.elements.popper), c = [].concat(e.scrollParents.reference, e.scrollParents.popper);
-            return o && c.forEach(function(t) {
-                t.addEventListener("scroll", i.update, ze);
-            }), a && l.addEventListener("resize", i.update, ze), function() {
-                o && c.forEach(function(t) {
-                    t.removeEventListener("scroll", i.update, ze);
-                }), a && l.removeEventListener("resize", i.update, ze);
-            };
-        },
-        data: {}
-    };
-    var qe = {
-        left: "right",
-        right: "left",
-        bottom: "top",
-        top: "bottom"
-    };
-    function Ve(t) {
-        return t.replace(/left|right|bottom|top/g, function(t) {
-            return qe[t];
-        });
-    }
-    var Ke = {
-        start: "end",
-        end: "start"
-    };
-    function Qe(t) {
-        return t.replace(/start|end/g, function(t) {
-            return Ke[t];
-        });
-    }
-    function Xe(t) {
-        var e = fe(t);
-        return {
-            scrollLeft: e.pageXOffset,
-            scrollTop: e.pageYOffset
-        };
-    }
-    function Ye(t) {
-        return Te(Le(t)).left + Xe(t).scrollLeft;
-    }
-    function Ue(t) {
-        var e = xe(t), i = e.overflow, n = e.overflowX, s = e.overflowY;
-        return /auto|scroll|overlay|hidden/.test(i + s + n);
-    }
-    function Ge(t) {
-        return [
-            "html",
-            "body",
-            "#document"
-        ].indexOf(ue(t)) >= 0 ? t.ownerDocument.body : me(t) && Ue(t) ? t : Ge(Se(t));
-    }
-    function Je(t, e) {
-        var i;
-        void 0 === e && (e = []);
-        var n = Ge(t), s = n === (null == (i = t.ownerDocument) ? void 0 : i.body), o = fe(n), r = s ? [
-            o
-        ].concat(o.visualViewport || [], Ue(n) ? n : []) : n, a = e.concat(r);
-        return s ? a : a.concat(Je(Se(r)));
-    }
-    function Ze(t) {
-        return Object.assign({}, t, {
-            left: t.x,
-            top: t.y,
-            right: t.x + t.width,
-            bottom: t.y + t.height
-        });
-    }
-    function ti(t, e, i) {
-        return e === Gt ? Ze(function(t, e) {
-            var i = fe(t), n = Le(t), s = i.visualViewport, o = n.clientWidth, r = n.clientHeight, a = 0, l = 0;
-            if (s) {
-                o = s.width, r = s.height;
-                var c = Ee();
-                (c || !c && "fixed" === e) && (a = s.offsetLeft, l = s.offsetTop);
-            }
-            return {
-                width: o,
-                height: r,
-                x: a + Ye(t),
-                y: l
-            };
-        }(t, i)) : pe(e) ? function(t, e) {
-            var i = Te(t, !1, "fixed" === e);
-            return i.top = i.top + t.clientTop, i.left = i.left + t.clientLeft, i.bottom = i.top + t.clientHeight, i.right = i.left + t.clientWidth, i.width = t.clientWidth, i.height = t.clientHeight, i.x = i.left, i.y = i.top, i;
-        }(e, i) : Ze(function(t) {
-            var e, i = Le(t), n = Xe(t), s = null == (e = t.ownerDocument) ? void 0 : e.body, o = ve(i.scrollWidth, i.clientWidth, s ? s.scrollWidth : 0, s ? s.clientWidth : 0), r = ve(i.scrollHeight, i.clientHeight, s ? s.scrollHeight : 0, s ? s.clientHeight : 0), a = -n.scrollLeft + Ye(t), l = -n.scrollTop;
-            return "rtl" === xe(s || i).direction && (a += ve(i.clientWidth, s ? s.clientWidth : 0) - o), {
-                width: o,
-                height: r,
-                x: a,
-                y: l
-            };
-        }(Le(t)));
-    }
-    function ei(t) {
-        var e, i = t.reference, n = t.element, s = t.placement, o = s ? be(s) : null, r = s ? Fe(s) : null, a = i.x + i.width / 2 - n.width / 2, l = i.y + i.height / 2 - n.height / 2;
-        switch(o){
-            case zt:
-                e = {
-                    x: a,
-                    y: i.y - n.height
-                };
-                break;
-            case Rt:
-                e = {
-                    x: a,
-                    y: i.y + i.height
-                };
-                break;
-            case qt:
-                e = {
-                    x: i.x + i.width,
-                    y: l
-                };
-                break;
-            case Vt:
-                e = {
-                    x: i.x - n.width,
-                    y: l
-                };
-                break;
-            default:
-                e = {
-                    x: i.x,
-                    y: i.y
-                };
-        }
-        var c = o ? Ie(o) : null;
-        if (null != c) {
-            var h = "y" === c ? "height" : "width";
-            switch(r){
-                case Xt:
-                    e[c] = e[c] - (i[h] / 2 - n[h] / 2);
-                    break;
-                case Yt:
-                    e[c] = e[c] + (i[h] / 2 - n[h] / 2);
-            }
-        }
-        return e;
-    }
-    function ii(t, e) {
-        void 0 === e && (e = {});
-        var i = e, n = i.placement, s = void 0 === n ? t.placement : n, o = i.strategy, r = void 0 === o ? t.strategy : o, a = i.boundary, l = void 0 === a ? Ut : a, c = i.rootBoundary, h = void 0 === c ? Gt : c, d = i.elementContext, u = void 0 === d ? Jt : d, f = i.altBoundary, p = void 0 !== f && f, m = i.padding, g = void 0 === m ? 0 : m, _ = Pe("number" != typeof g ? g : je(g, Qt)), b = u === Jt ? Zt : Jt, v = t.rects.popper, y = t.elements[p ? b : u], w = function(t, e, i, n) {
-            var s = "clippingParents" === e ? function(t) {
-                var e = Je(Se(t)), i = [
-                    "absolute",
-                    "fixed"
-                ].indexOf(xe(t).position) >= 0 && me(t) ? $e(t) : t;
-                return pe(i) ? e.filter(function(t) {
-                    return pe(t) && Oe(t, i) && "body" !== ue(t);
-                }) : [];
-            }(t) : [].concat(e), o = [].concat(s, [
-                i
-            ]), r = o[0], a = o.reduce(function(e, i) {
-                var s = ti(t, i, n);
-                return e.top = ve(s.top, e.top), e.right = ye(s.right, e.right), e.bottom = ye(s.bottom, e.bottom), e.left = ve(s.left, e.left), e;
-            }, ti(t, r, n));
-            return a.width = a.right - a.left, a.height = a.bottom - a.top, a.x = a.left, a.y = a.top, a;
-        }(pe(y) ? y : y.contextElement || Le(t.elements.popper), l, h, r), A = Te(t.elements.reference), E = ei({
-            reference: A,
-            element: v,
-            strategy: "absolute",
-            placement: s
-        }), T = Ze(Object.assign({}, v, E)), C = u === Jt ? T : A, O = {
-            top: w.top - C.top + _.top,
-            bottom: C.bottom - w.bottom + _.bottom,
-            left: w.left - C.left + _.left,
-            right: C.right - w.right + _.right
-        }, x = t.modifiersData.offset;
-        if (u === Jt && x) {
-            var k = x[s];
-            Object.keys(O).forEach(function(t) {
-                var e = [
-                    qt,
-                    Rt
-                ].indexOf(t) >= 0 ? 1 : -1, i = [
-                    zt,
-                    Rt
-                ].indexOf(t) >= 0 ? "y" : "x";
-                O[t] += k[i] * e;
-            });
-        }
-        return O;
-    }
-    function ni(t, e) {
-        void 0 === e && (e = {});
-        var i = e, n = i.placement, s = i.boundary, o = i.rootBoundary, r = i.padding, a = i.flipVariations, l = i.allowedAutoPlacements, c = void 0 === l ? ee : l, h = Fe(n), d = h ? a ? te : te.filter(function(t) {
-            return Fe(t) === h;
-        }) : Qt, u = d.filter(function(t) {
-            return c.indexOf(t) >= 0;
-        });
-        0 === u.length && (u = d);
-        var f = u.reduce(function(e, i) {
-            return e[i] = ii(t, {
-                placement: i,
-                boundary: s,
-                rootBoundary: o,
-                padding: r
-            })[be(i)], e;
-        }, {});
-        return Object.keys(f).sort(function(t, e) {
-            return f[t] - f[e];
-        });
-    }
-    const si = {
-        name: "flip",
-        enabled: !0,
-        phase: "main",
-        fn: function(t) {
-            var e = t.state, i = t.options, n = t.name;
-            if (!e.modifiersData[n]._skip) {
-                for(var s = i.mainAxis, o = void 0 === s || s, r = i.altAxis, a = void 0 === r || r, l = i.fallbackPlacements, c = i.padding, h = i.boundary, d = i.rootBoundary, u = i.altBoundary, f = i.flipVariations, p = void 0 === f || f, m = i.allowedAutoPlacements, g = e.options.placement, _ = be(g), b = l || (_ !== g && p ? function(t) {
-                    if (be(t) === Kt) return [];
-                    var e = Ve(t);
-                    return [
-                        Qe(t),
-                        e,
-                        Qe(e)
-                    ];
-                }(g) : [
-                    Ve(g)
-                ]), v = [
-                    g
-                ].concat(b).reduce(function(t, i) {
-                    return t.concat(be(i) === Kt ? ni(e, {
-                        placement: i,
-                        boundary: h,
-                        rootBoundary: d,
-                        padding: c,
-                        flipVariations: p,
-                        allowedAutoPlacements: m
-                    }) : i);
-                }, []), y = e.rects.reference, w = e.rects.popper, A = new Map, E = !0, T = v[0], C = 0; C < v.length; C++){
-                    var O = v[C], x = be(O), k = Fe(O) === Xt, L = [
-                        zt,
-                        Rt
-                    ].indexOf(x) >= 0, S = L ? "width" : "height", D = ii(e, {
-                        placement: O,
-                        boundary: h,
-                        rootBoundary: d,
-                        altBoundary: u,
-                        padding: c
-                    }), $ = L ? k ? qt : Vt : k ? Rt : zt;
-                    y[S] > w[S] && ($ = Ve($));
-                    var I = Ve($), N = [];
-                    if (o && N.push(D[x] <= 0), a && N.push(D[$] <= 0, D[I] <= 0), N.every(function(t) {
-                        return t;
-                    })) {
-                        T = O, E = !1;
-                        break;
-                    }
-                    A.set(O, N);
-                }
-                if (E) for(var P = function(t) {
-                    var e = v.find(function(e) {
-                        var i = A.get(e);
-                        if (i) return i.slice(0, t).every(function(t) {
-                            return t;
-                        });
-                    });
-                    if (e) return T = e, "break";
-                }, j = p ? 3 : 1; j > 0 && "break" !== P(j); j--);
-                e.placement !== T && (e.modifiersData[n]._skip = !0, e.placement = T, e.reset = !0);
-            }
-        },
-        requiresIfExists: [
-            "offset"
-        ],
-        data: {
-            _skip: !1
-        }
-    };
-    function oi(t, e, i) {
-        return void 0 === i && (i = {
-            x: 0,
-            y: 0
-        }), {
-            top: t.top - e.height - i.y,
-            right: t.right - e.width + i.x,
-            bottom: t.bottom - e.height + i.y,
-            left: t.left - e.width - i.x
-        };
-    }
-    function ri(t) {
-        return [
-            zt,
-            qt,
-            Rt,
-            Vt
-        ].some(function(e) {
-            return t[e] >= 0;
-        });
-    }
-    const ai = {
-        name: "hide",
-        enabled: !0,
-        phase: "main",
-        requiresIfExists: [
-            "preventOverflow"
-        ],
-        fn: function(t) {
-            var e = t.state, i = t.name, n = e.rects.reference, s = e.rects.popper, o = e.modifiersData.preventOverflow, r = ii(e, {
-                elementContext: "reference"
-            }), a = ii(e, {
-                altBoundary: !0
-            }), l = oi(r, n), c = oi(a, s, o), h = ri(l), d = ri(c);
-            e.modifiersData[i] = {
-                referenceClippingOffsets: l,
-                popperEscapeOffsets: c,
-                isReferenceHidden: h,
-                hasPopperEscaped: d
-            }, e.attributes.popper = Object.assign({}, e.attributes.popper, {
-                "data-popper-reference-hidden": h,
-                "data-popper-escaped": d
-            });
-        }
-    }, li = {
-        name: "offset",
-        enabled: !0,
-        phase: "main",
-        requires: [
-            "popperOffsets"
-        ],
-        fn: function(t) {
-            var e = t.state, i = t.options, n = t.name, s = i.offset, o = void 0 === s ? [
-                0,
-                0
-            ] : s, r = ee.reduce(function(t, i) {
-                return t[i] = function(t, e, i) {
-                    var n = be(t), s = [
-                        Vt,
-                        zt
-                    ].indexOf(n) >= 0 ? -1 : 1, o = "function" == typeof i ? i(Object.assign({}, e, {
-                        placement: t
-                    })) : i, r = o[0], a = o[1];
-                    return r = r || 0, a = (a || 0) * s, [
-                        Vt,
-                        qt
-                    ].indexOf(n) >= 0 ? {
-                        x: a,
-                        y: r
-                    } : {
-                        x: r,
-                        y: a
-                    };
-                }(i, e.rects, o), t;
-            }, {}), a = r[e.placement], l = a.x, c = a.y;
-            null != e.modifiersData.popperOffsets && (e.modifiersData.popperOffsets.x += l, e.modifiersData.popperOffsets.y += c), e.modifiersData[n] = r;
-        }
-    }, ci = {
-        name: "popperOffsets",
-        enabled: !0,
-        phase: "read",
-        fn: function(t) {
-            var e = t.state, i = t.name;
-            e.modifiersData[i] = ei({
-                reference: e.rects.reference,
-                element: e.rects.popper,
-                strategy: "absolute",
-                placement: e.placement
-            });
-        },
-        data: {}
-    }, hi = {
-        name: "preventOverflow",
-        enabled: !0,
-        phase: "main",
-        fn: function(t) {
-            var e = t.state, i = t.options, n = t.name, s = i.mainAxis, o = void 0 === s || s, r = i.altAxis, a = void 0 !== r && r, l = i.boundary, c = i.rootBoundary, h = i.altBoundary, d = i.padding, u = i.tether, f = void 0 === u || u, p = i.tetherOffset, m = void 0 === p ? 0 : p, g = ii(e, {
-                boundary: l,
-                rootBoundary: c,
-                padding: d,
-                altBoundary: h
-            }), _ = be(e.placement), b = Fe(e.placement), v = !b, y = Ie(_), w = "x" === y ? "y" : "x", A = e.modifiersData.popperOffsets, E = e.rects.reference, T = e.rects.popper, C = "function" == typeof m ? m(Object.assign({}, e.rects, {
-                placement: e.placement
-            })) : m, O = "number" == typeof C ? {
-                mainAxis: C,
-                altAxis: C
-            } : Object.assign({
-                mainAxis: 0,
-                altAxis: 0
-            }, C), x = e.modifiersData.offset ? e.modifiersData.offset[e.placement] : null, k = {
-                x: 0,
-                y: 0
-            };
-            if (A) {
-                if (o) {
-                    var L, S = "y" === y ? zt : Vt, D = "y" === y ? Rt : qt, $ = "y" === y ? "height" : "width", I = A[y], N = I + g[S], P = I - g[D], j = f ? -T[$] / 2 : 0, M = b === Xt ? E[$] : T[$], F = b === Xt ? -T[$] : -E[$], H = e.elements.arrow, W = f && H ? Ce(H) : {
-                        width: 0,
-                        height: 0
-                    }, B = e.modifiersData["arrow#persistent"] ? e.modifiersData["arrow#persistent"].padding : {
-                        top: 0,
-                        right: 0,
-                        bottom: 0,
-                        left: 0
-                    }, z = B[S], R = B[D], q = Ne(0, E[$], W[$]), V = v ? E[$] / 2 - j - q - z - O.mainAxis : M - q - z - O.mainAxis, K = v ? -E[$] / 2 + j + q + R + O.mainAxis : F + q + R + O.mainAxis, Q = e.elements.arrow && $e(e.elements.arrow), X = Q ? "y" === y ? Q.clientTop || 0 : Q.clientLeft || 0 : 0, Y = null != (L = null == x ? void 0 : x[y]) ? L : 0, U = I + K - Y, G = Ne(f ? ye(N, I + V - Y - X) : N, I, f ? ve(P, U) : P);
-                    A[y] = G, k[y] = G - I;
-                }
-                if (a) {
-                    var J, Z = "x" === y ? zt : Vt, tt = "x" === y ? Rt : qt, et = A[w], it = "y" === w ? "height" : "width", nt = et + g[Z], st = et - g[tt], ot = -1 !== [
-                        zt,
-                        Vt
-                    ].indexOf(_), rt = null != (J = null == x ? void 0 : x[w]) ? J : 0, at = ot ? nt : et - E[it] - T[it] - rt + O.altAxis, lt = ot ? et + E[it] + T[it] - rt - O.altAxis : st, ct = f && ot ? function(t, e, i) {
-                        var n = Ne(t, e, i);
-                        return n > i ? i : n;
-                    }(at, et, lt) : Ne(f ? at : nt, et, f ? lt : st);
-                    A[w] = ct, k[w] = ct - et;
-                }
-                e.modifiersData[n] = k;
-            }
-        },
-        requiresIfExists: [
-            "offset"
-        ]
-    };
-    function di(t, e, i) {
-        void 0 === i && (i = !1);
-        var n, s, o = me(e), r = me(e) && function(t) {
-            var e = t.getBoundingClientRect(), i = we(e.width) / t.offsetWidth || 1, n = we(e.height) / t.offsetHeight || 1;
-            return 1 !== i || 1 !== n;
-        }(e), a = Le(e), l = Te(t, r, i), c = {
-            scrollLeft: 0,
-            scrollTop: 0
-        }, h = {
-            x: 0,
-            y: 0
-        };
-        return (o || !o && !i) && (("body" !== ue(e) || Ue(a)) && (c = (n = e) !== fe(n) && me(n) ? {
-            scrollLeft: (s = n).scrollLeft,
-            scrollTop: s.scrollTop
-        } : Xe(n)), me(e) ? ((h = Te(e, !0)).x += e.clientLeft, h.y += e.clientTop) : a && (h.x = Ye(a))), {
-            x: l.left + c.scrollLeft - h.x,
-            y: l.top + c.scrollTop - h.y,
-            width: l.width,
-            height: l.height
-        };
-    }
-    function ui(t) {
-        var e = new Map, i = new Set, n = [];
-        function s(t) {
-            i.add(t.name), [].concat(t.requires || [], t.requiresIfExists || []).forEach(function(t) {
-                if (!i.has(t)) {
-                    var n = e.get(t);
-                    n && s(n);
-                }
-            }), n.push(t);
-        }
-        return t.forEach(function(t) {
-            e.set(t.name, t);
-        }), t.forEach(function(t) {
-            i.has(t.name) || s(t);
-        }), n;
-    }
-    var fi = {
-        placement: "bottom",
-        modifiers: [],
-        strategy: "absolute"
-    };
-    function pi() {
-        for(var t = arguments.length, e = new Array(t), i = 0; i < t; i++)e[i] = arguments[i];
-        return !e.some(function(t) {
-            return !(t && "function" == typeof t.getBoundingClientRect);
-        });
-    }
-    function mi(t) {
-        void 0 === t && (t = {});
-        var e = t, i = e.defaultModifiers, n = void 0 === i ? [] : i, s = e.defaultOptions, o = void 0 === s ? fi : s;
-        return function(t, e, i) {
-            void 0 === i && (i = o);
-            var s, r, a = {
-                placement: "bottom",
-                orderedModifiers: [],
-                options: Object.assign({}, fi, o),
-                modifiersData: {},
-                elements: {
-                    reference: t,
-                    popper: e
-                },
-                attributes: {},
-                styles: {}
-            }, l = [], c = !1, h = {
-                state: a,
-                setOptions: function(i) {
-                    var s = "function" == typeof i ? i(a.options) : i;
-                    d(), a.options = Object.assign({}, o, a.options, s), a.scrollParents = {
-                        reference: pe(t) ? Je(t) : t.contextElement ? Je(t.contextElement) : [],
-                        popper: Je(e)
-                    };
-                    var r, c, u = function(t) {
-                        var e = ui(t);
-                        return de.reduce(function(t, i) {
-                            return t.concat(e.filter(function(t) {
-                                return t.phase === i;
-                            }));
-                        }, []);
-                    }((r = [].concat(n, a.options.modifiers), c = r.reduce(function(t, e) {
-                        var i = t[e.name];
-                        return t[e.name] = i ? Object.assign({}, i, e, {
-                            options: Object.assign({}, i.options, e.options),
-                            data: Object.assign({}, i.data, e.data)
-                        }) : e, t;
-                    }, {}), Object.keys(c).map(function(t) {
-                        return c[t];
-                    })));
-                    return a.orderedModifiers = u.filter(function(t) {
-                        return t.enabled;
-                    }), a.orderedModifiers.forEach(function(t) {
-                        var e = t.name, i = t.options, n = void 0 === i ? {} : i, s = t.effect;
-                        if ("function" == typeof s) {
-                            var o = s({
-                                state: a,
-                                name: e,
-                                instance: h,
-                                options: n
-                            });
-                            l.push(o || function() {});
-                        }
-                    }), h.update();
-                },
-                forceUpdate: function() {
-                    if (!c) {
-                        var t = a.elements, e = t.reference, i = t.popper;
-                        if (pi(e, i)) {
-                            a.rects = {
-                                reference: di(e, $e(i), "fixed" === a.options.strategy),
-                                popper: Ce(i)
-                            }, a.reset = !1, a.placement = a.options.placement, a.orderedModifiers.forEach(function(t) {
-                                return a.modifiersData[t.name] = Object.assign({}, t.data);
-                            });
-                            for(var n = 0; n < a.orderedModifiers.length; n++)if (!0 !== a.reset) {
-                                var s = a.orderedModifiers[n], o = s.fn, r = s.options, l = void 0 === r ? {} : r, d = s.name;
-                                "function" == typeof o && (a = o({
-                                    state: a,
-                                    options: l,
-                                    name: d,
-                                    instance: h
-                                }) || a);
-                            } else a.reset = !1, n = -1;
-                        }
-                    }
-                },
-                update: (s = function() {
-                    return new Promise(function(t) {
-                        h.forceUpdate(), t(a);
-                    });
-                }, function() {
-                    return r || (r = new Promise(function(t) {
-                        Promise.resolve().then(function() {
-                            r = void 0, t(s());
-                        });
-                    })), r;
-                }),
-                destroy: function() {
-                    d(), c = !0;
-                }
-            };
-            if (!pi(t, e)) return h;
-            function d() {
-                l.forEach(function(t) {
-                    return t();
-                }), l = [];
-            }
-            return h.setOptions(i).then(function(t) {
-                !c && i.onFirstUpdate && i.onFirstUpdate(t);
-            }), h;
-        };
-    }
-    var gi = mi(), _i = mi({
-        defaultModifiers: [
-            Re,
-            ci,
-            Be,
-            _e
-        ]
-    }), bi = mi({
-        defaultModifiers: [
-            Re,
-            ci,
-            Be,
-            _e,
-            li,
-            si,
-            hi,
-            Me,
-            ai
-        ]
-    });
-    const vi = Object.freeze(Object.defineProperty({
-        __proto__: null,
-        afterMain: ae,
-        afterRead: se,
-        afterWrite: he,
-        applyStyles: _e,
-        arrow: Me,
-        auto: Kt,
-        basePlacements: Qt,
-        beforeMain: oe,
-        beforeRead: ie,
-        beforeWrite: le,
-        bottom: Rt,
-        clippingParents: Ut,
-        computeStyles: Be,
-        createPopper: bi,
-        createPopperBase: gi,
-        createPopperLite: _i,
-        detectOverflow: ii,
-        end: Yt,
-        eventListeners: Re,
-        flip: si,
-        hide: ai,
-        left: Vt,
-        main: re,
-        modifierPhases: de,
-        offset: li,
-        placements: ee,
-        popper: Jt,
-        popperGenerator: mi,
-        popperOffsets: ci,
-        preventOverflow: hi,
-        read: ne,
-        reference: Zt,
-        right: qt,
-        start: Xt,
-        top: zt,
-        variationPlacements: te,
-        viewport: Gt,
-        write: ce
-    }, Symbol.toStringTag, {
-        value: "Module"
-    })), yi = "dropdown", wi = ".bs.dropdown", Ai = ".data-api", Ei = "ArrowUp", Ti = "ArrowDown", Ci = `hide${wi}`, Oi = `hidden${wi}`, xi = `show${wi}`, ki = `shown${wi}`, Li = `click${wi}${Ai}`, Si = `keydown${wi}${Ai}`, Di = `keyup${wi}${Ai}`, $i = "show", Ii = '[data-bs-toggle="dropdown"]:not(.disabled):not(:disabled)', Ni = `${Ii}.${$i}`, Pi = ".dropdown-menu", ji = p() ? "top-end" : "top-start", Mi = p() ? "top-start" : "top-end", Fi = p() ? "bottom-end" : "bottom-start", Hi = p() ? "bottom-start" : "bottom-end", Wi = p() ? "left-start" : "right-start", Bi = p() ? "right-start" : "left-start", zi = {
-        autoClose: !0,
-        boundary: "clippingParents",
-        display: "dynamic",
-        offset: [
-            0,
-            2
-        ],
-        popperConfig: null,
-        reference: "toggle"
-    }, Ri = {
-        autoClose: "(boolean|string)",
-        boundary: "(string|element)",
-        display: "string",
-        offset: "(array|string|function)",
-        popperConfig: "(null|object|function)",
-        reference: "(string|element|object)"
-    };
-    class qi extends W {
-        constructor(t, e){
-            super(t, e), this._popper = null, this._parent = this._element.parentNode, this._menu = z.next(this._element, Pi)[0] || z.prev(this._element, Pi)[0] || z.findOne(Pi, this._parent), this._inNavbar = this._detectNavbar();
-        }
-        static get Default() {
-            return zi;
-        }
-        static get DefaultType() {
-            return Ri;
-        }
-        static get NAME() {
-            return yi;
-        }
-        toggle() {
-            return this._isShown() ? this.hide() : this.show();
-        }
-        show() {
-            if (l(this._element) || this._isShown()) return;
-            const t = {
-                relatedTarget: this._element
-            };
-            if (!N.trigger(this._element, xi, t).defaultPrevented) {
-                if (this._createPopper(), "ontouchstart" in document.documentElement && !this._parent.closest(".navbar-nav")) for (const t of [].concat(...document.body.children))N.on(t, "mouseover", h);
-                this._element.focus(), this._element.setAttribute("aria-expanded", !0), this._menu.classList.add($i), this._element.classList.add($i), N.trigger(this._element, ki, t);
-            }
-        }
-        hide() {
-            if (l(this._element) || !this._isShown()) return;
-            const t = {
-                relatedTarget: this._element
-            };
-            this._completeHide(t);
-        }
-        dispose() {
-            this._popper && this._popper.destroy(), super.dispose();
-        }
-        update() {
-            this._inNavbar = this._detectNavbar(), this._popper && this._popper.update();
-        }
-        _completeHide(t) {
-            if (!N.trigger(this._element, Ci, t).defaultPrevented) {
-                if ("ontouchstart" in document.documentElement) for (const t of [].concat(...document.body.children))N.off(t, "mouseover", h);
-                this._popper && this._popper.destroy(), this._menu.classList.remove($i), this._element.classList.remove($i), this._element.setAttribute("aria-expanded", "false"), F.removeDataAttribute(this._menu, "popper"), N.trigger(this._element, Oi, t);
-            }
-        }
-        _getConfig(t) {
-            if ("object" == typeof (t = super._getConfig(t)).reference && !o(t.reference) && "function" != typeof t.reference.getBoundingClientRect) throw new TypeError(`${yi.toUpperCase()}: Option "reference" provided type "object" without a required "getBoundingClientRect" method.`);
-            return t;
-        }
-        _createPopper() {
-            if (void 0 === vi) throw new TypeError("Bootstrap's dropdowns require Popper (https://popper.js.org)");
-            let t = this._element;
-            "parent" === this._config.reference ? t = this._parent : o(this._config.reference) ? t = r(this._config.reference) : "object" == typeof this._config.reference && (t = this._config.reference);
-            const e = this._getPopperConfig();
-            this._popper = bi(t, this._menu, e);
-        }
-        _isShown() {
-            return this._menu.classList.contains($i);
-        }
-        _getPlacement() {
-            const t = this._parent;
-            if (t.classList.contains("dropend")) return Wi;
-            if (t.classList.contains("dropstart")) return Bi;
-            if (t.classList.contains("dropup-center")) return "top";
-            if (t.classList.contains("dropdown-center")) return "bottom";
-            const e = "end" === getComputedStyle(this._menu).getPropertyValue("--bs-position").trim();
-            return t.classList.contains("dropup") ? e ? Mi : ji : e ? Hi : Fi;
-        }
-        _detectNavbar() {
-            return null !== this._element.closest(".navbar");
-        }
-        _getOffset() {
-            const { offset: t } = this._config;
-            return "string" == typeof t ? t.split(",").map((t)=>Number.parseInt(t, 10)) : "function" == typeof t ? (e)=>t(e, this._element) : t;
-        }
-        _getPopperConfig() {
-            const t = {
-                placement: this._getPlacement(),
-                modifiers: [
-                    {
-                        name: "preventOverflow",
-                        options: {
-                            boundary: this._config.boundary
-                        }
-                    },
-                    {
-                        name: "offset",
-                        options: {
-                            offset: this._getOffset()
-                        }
-                    }
-                ]
-            };
-            return (this._inNavbar || "static" === this._config.display) && (F.setDataAttribute(this._menu, "popper", "static"), t.modifiers = [
-                {
-                    name: "applyStyles",
-                    enabled: !1
-                }
-            ]), {
-                ...t,
-                ...g(this._config.popperConfig, [
-                    t
-                ])
-            };
-        }
-        _selectMenuItem({ key: t, target: e }) {
-            const i = z.find(".dropdown-menu .dropdown-item:not(.disabled):not(:disabled)", this._menu).filter((t)=>a(t));
-            i.length && b(i, e, t === Ti, !i.includes(e)).focus();
-        }
-        static jQueryInterface(t) {
-            return this.each(function() {
-                const e = qi.getOrCreateInstance(this, t);
-                if ("string" == typeof t) {
-                    if (void 0 === e[t]) throw new TypeError(`No method named "${t}"`);
-                    e[t]();
-                }
-            });
-        }
-        static clearMenus(t) {
-            if (2 === t.button || "keyup" === t.type && "Tab" !== t.key) return;
-            const e = z.find(Ni);
-            for (const i of e){
-                const e = qi.getInstance(i);
-                if (!e || !1 === e._config.autoClose) continue;
-                const n = t.composedPath(), s = n.includes(e._menu);
-                if (n.includes(e._element) || "inside" === e._config.autoClose && !s || "outside" === e._config.autoClose && s) continue;
-                if (e._menu.contains(t.target) && ("keyup" === t.type && "Tab" === t.key || /input|select|option|textarea|form/i.test(t.target.tagName))) continue;
-                const o = {
-                    relatedTarget: e._element
-                };
-                "click" === t.type && (o.clickEvent = t), e._completeHide(o);
-            }
-        }
-        static dataApiKeydownHandler(t) {
-            const e = /input|textarea/i.test(t.target.tagName), i = "Escape" === t.key, n = [
-                Ei,
-                Ti
-            ].includes(t.key);
-            if (!n && !i) return;
-            if (e && !i) return;
-            t.preventDefault();
-            const s = this.matches(Ii) ? this : z.prev(this, Ii)[0] || z.next(this, Ii)[0] || z.findOne(Ii, t.delegateTarget.parentNode), o = qi.getOrCreateInstance(s);
-            if (n) return t.stopPropagation(), o.show(), void o._selectMenuItem(t);
-            o._isShown() && (t.stopPropagation(), o.hide(), s.focus());
-        }
-    }
-    N.on(document, Si, Ii, qi.dataApiKeydownHandler), N.on(document, Si, Pi, qi.dataApiKeydownHandler), N.on(document, Li, qi.clearMenus), N.on(document, Di, qi.clearMenus), N.on(document, Li, Ii, function(t) {
-        t.preventDefault(), qi.getOrCreateInstance(this).toggle();
-    }), m(qi);
-    const Vi = "backdrop", Ki = "show", Qi = `mousedown.bs.${Vi}`, Xi = {
-        className: "modal-backdrop",
-        clickCallback: null,
-        isAnimated: !1,
-        isVisible: !0,
-        rootElement: "body"
-    }, Yi = {
-        className: "string",
-        clickCallback: "(function|null)",
-        isAnimated: "boolean",
-        isVisible: "boolean",
-        rootElement: "(element|string)"
-    };
-    class Ui extends H {
-        constructor(t){
-            super(), this._config = this._getConfig(t), this._isAppended = !1, this._element = null;
-        }
-        static get Default() {
-            return Xi;
-        }
-        static get DefaultType() {
-            return Yi;
-        }
-        static get NAME() {
-            return Vi;
-        }
-        show(t) {
-            if (!this._config.isVisible) return void g(t);
-            this._append();
-            const e = this._getElement();
-            this._config.isAnimated && d(e), e.classList.add(Ki), this._emulateAnimation(()=>{
-                g(t);
-            });
-        }
-        hide(t) {
-            this._config.isVisible ? (this._getElement().classList.remove(Ki), this._emulateAnimation(()=>{
-                this.dispose(), g(t);
-            })) : g(t);
-        }
-        dispose() {
-            this._isAppended && (N.off(this._element, Qi), this._element.remove(), this._isAppended = !1);
-        }
-        _getElement() {
-            if (!this._element) {
-                const t = document.createElement("div");
-                t.className = this._config.className, this._config.isAnimated && t.classList.add("fade"), this._element = t;
-            }
-            return this._element;
-        }
-        _configAfterMerge(t) {
-            return t.rootElement = r(t.rootElement), t;
-        }
-        _append() {
-            if (this._isAppended) return;
-            const t = this._getElement();
-            this._config.rootElement.append(t), N.on(t, Qi, ()=>{
-                g(this._config.clickCallback);
-            }), this._isAppended = !0;
-        }
-        _emulateAnimation(t) {
-            _(t, this._getElement(), this._config.isAnimated);
-        }
-    }
-    const Gi = ".bs.focustrap", Ji = `focusin${Gi}`, Zi = `keydown.tab${Gi}`, tn = "backward", en = {
-        autofocus: !0,
-        trapElement: null
-    }, nn = {
-        autofocus: "boolean",
-        trapElement: "element"
-    };
-    class sn extends H {
-        constructor(t){
-            super(), this._config = this._getConfig(t), this._isActive = !1, this._lastTabNavDirection = null;
-        }
-        static get Default() {
-            return en;
-        }
-        static get DefaultType() {
-            return nn;
-        }
-        static get NAME() {
-            return "focustrap";
-        }
-        activate() {
-            this._isActive || (this._config.autofocus && this._config.trapElement.focus(), N.off(document, Gi), N.on(document, Ji, (t)=>this._handleFocusin(t)), N.on(document, Zi, (t)=>this._handleKeydown(t)), this._isActive = !0);
-        }
-        deactivate() {
-            this._isActive && (this._isActive = !1, N.off(document, Gi));
-        }
-        _handleFocusin(t) {
-            const { trapElement: e } = this._config;
-            if (t.target === document || t.target === e || e.contains(t.target)) return;
-            const i = z.focusableChildren(e);
-            0 === i.length ? e.focus() : this._lastTabNavDirection === tn ? i[i.length - 1].focus() : i[0].focus();
-        }
-        _handleKeydown(t) {
-            "Tab" === t.key && (this._lastTabNavDirection = t.shiftKey ? tn : "forward");
-        }
-    }
-    const on = ".fixed-top, .fixed-bottom, .is-fixed, .sticky-top", rn = ".sticky-top", an = "padding-right", ln = "margin-right";
-    class cn {
-        constructor(){
-            this._element = document.body;
-        }
-        getWidth() {
-            const t = document.documentElement.clientWidth;
-            return Math.abs(window.innerWidth - t);
-        }
-        hide() {
-            const t = this.getWidth();
-            this._disableOverFlow(), this._setElementAttributes(this._element, an, (e)=>e + t), this._setElementAttributes(on, an, (e)=>e + t), this._setElementAttributes(rn, ln, (e)=>e - t);
-        }
-        reset() {
-            this._resetElementAttributes(this._element, "overflow"), this._resetElementAttributes(this._element, an), this._resetElementAttributes(on, an), this._resetElementAttributes(rn, ln);
-        }
-        isOverflowing() {
-            return this.getWidth() > 0;
-        }
-        _disableOverFlow() {
-            this._saveInitialAttribute(this._element, "overflow"), this._element.style.overflow = "hidden";
-        }
-        _setElementAttributes(t, e, i) {
-            const n = this.getWidth();
-            this._applyManipulationCallback(t, (t)=>{
-                if (t !== this._element && window.innerWidth > t.clientWidth + n) return;
-                this._saveInitialAttribute(t, e);
-                const s = window.getComputedStyle(t).getPropertyValue(e);
-                t.style.setProperty(e, `${i(Number.parseFloat(s))}px`);
-            });
-        }
-        _saveInitialAttribute(t, e) {
-            const i = t.style.getPropertyValue(e);
-            i && F.setDataAttribute(t, e, i);
-        }
-        _resetElementAttributes(t, e) {
-            this._applyManipulationCallback(t, (t)=>{
-                const i = F.getDataAttribute(t, e);
-                null !== i ? (F.removeDataAttribute(t, e), t.style.setProperty(e, i)) : t.style.removeProperty(e);
-            });
-        }
-        _applyManipulationCallback(t, e) {
-            if (o(t)) e(t);
-            else for (const i of z.find(t, this._element))e(i);
-        }
-    }
-    const hn = ".bs.modal", dn = `hide${hn}`, un = `hidePrevented${hn}`, fn = `hidden${hn}`, pn = `show${hn}`, mn = `shown${hn}`, gn = `resize${hn}`, _n = `click.dismiss${hn}`, bn = `mousedown.dismiss${hn}`, vn = `keydown.dismiss${hn}`, yn = `click${hn}.data-api`, wn = "modal-open", An = "show", En = "modal-static", Tn = {
-        backdrop: !0,
-        focus: !0,
-        keyboard: !0
-    }, Cn = {
-        backdrop: "(boolean|string)",
-        focus: "boolean",
-        keyboard: "boolean"
-    };
-    class On extends W {
-        constructor(t, e){
-            super(t, e), this._dialog = z.findOne(".modal-dialog", this._element), this._backdrop = this._initializeBackDrop(), this._focustrap = this._initializeFocusTrap(), this._isShown = !1, this._isTransitioning = !1, this._scrollBar = new cn, this._addEventListeners();
-        }
-        static get Default() {
-            return Tn;
-        }
-        static get DefaultType() {
-            return Cn;
-        }
-        static get NAME() {
-            return "modal";
-        }
-        toggle(t) {
-            return this._isShown ? this.hide() : this.show(t);
-        }
-        show(t) {
-            this._isShown || this._isTransitioning || N.trigger(this._element, pn, {
-                relatedTarget: t
-            }).defaultPrevented || (this._isShown = !0, this._isTransitioning = !0, this._scrollBar.hide(), document.body.classList.add(wn), this._adjustDialog(), this._backdrop.show(()=>this._showElement(t)));
-        }
-        hide() {
-            this._isShown && !this._isTransitioning && (N.trigger(this._element, dn).defaultPrevented || (this._isShown = !1, this._isTransitioning = !0, this._focustrap.deactivate(), this._element.classList.remove(An), this._queueCallback(()=>this._hideModal(), this._element, this._isAnimated())));
-        }
-        dispose() {
-            N.off(window, hn), N.off(this._dialog, hn), this._backdrop.dispose(), this._focustrap.deactivate(), super.dispose();
-        }
-        handleUpdate() {
-            this._adjustDialog();
-        }
-        _initializeBackDrop() {
-            return new Ui({
-                isVisible: Boolean(this._config.backdrop),
-                isAnimated: this._isAnimated()
-            });
-        }
-        _initializeFocusTrap() {
-            return new sn({
-                trapElement: this._element
-            });
-        }
-        _showElement(t) {
-            document.body.contains(this._element) || document.body.append(this._element), this._element.style.display = "block", this._element.removeAttribute("aria-hidden"), this._element.setAttribute("aria-modal", !0), this._element.setAttribute("role", "dialog"), this._element.scrollTop = 0;
-            const e = z.findOne(".modal-body", this._dialog);
-            e && (e.scrollTop = 0), d(this._element), this._element.classList.add(An), this._queueCallback(()=>{
-                this._config.focus && this._focustrap.activate(), this._isTransitioning = !1, N.trigger(this._element, mn, {
-                    relatedTarget: t
-                });
-            }, this._dialog, this._isAnimated());
-        }
-        _addEventListeners() {
-            N.on(this._element, vn, (t)=>{
-                "Escape" === t.key && (this._config.keyboard ? this.hide() : this._triggerBackdropTransition());
-            }), N.on(window, gn, ()=>{
-                this._isShown && !this._isTransitioning && this._adjustDialog();
-            }), N.on(this._element, bn, (t)=>{
-                N.one(this._element, _n, (e)=>{
-                    this._element === t.target && this._element === e.target && ("static" !== this._config.backdrop ? this._config.backdrop && this.hide() : this._triggerBackdropTransition());
-                });
-            });
-        }
-        _hideModal() {
-            this._element.style.display = "none", this._element.setAttribute("aria-hidden", !0), this._element.removeAttribute("aria-modal"), this._element.removeAttribute("role"), this._isTransitioning = !1, this._backdrop.hide(()=>{
-                document.body.classList.remove(wn), this._resetAdjustments(), this._scrollBar.reset(), N.trigger(this._element, fn);
-            });
-        }
-        _isAnimated() {
-            return this._element.classList.contains("fade");
-        }
-        _triggerBackdropTransition() {
-            if (N.trigger(this._element, un).defaultPrevented) return;
-            const t = this._element.scrollHeight > document.documentElement.clientHeight, e = this._element.style.overflowY;
-            "hidden" === e || this._element.classList.contains(En) || (t || (this._element.style.overflowY = "hidden"), this._element.classList.add(En), this._queueCallback(()=>{
-                this._element.classList.remove(En), this._queueCallback(()=>{
-                    this._element.style.overflowY = e;
-                }, this._dialog);
-            }, this._dialog), this._element.focus());
-        }
-        _adjustDialog() {
-            const t = this._element.scrollHeight > document.documentElement.clientHeight, e = this._scrollBar.getWidth(), i = e > 0;
-            if (i && !t) {
-                const t = p() ? "paddingLeft" : "paddingRight";
-                this._element.style[t] = `${e}px`;
-            }
-            if (!i && t) {
-                const t = p() ? "paddingRight" : "paddingLeft";
-                this._element.style[t] = `${e}px`;
-            }
-        }
-        _resetAdjustments() {
-            this._element.style.paddingLeft = "", this._element.style.paddingRight = "";
-        }
-        static jQueryInterface(t, e) {
-            return this.each(function() {
-                const i = On.getOrCreateInstance(this, t);
-                if ("string" == typeof t) {
-                    if (void 0 === i[t]) throw new TypeError(`No method named "${t}"`);
-                    i[t](e);
-                }
-            });
-        }
-    }
-    N.on(document, yn, '[data-bs-toggle="modal"]', function(t) {
-        const e = z.getElementFromSelector(this);
-        [
-            "A",
-            "AREA"
-        ].includes(this.tagName) && t.preventDefault(), N.one(e, pn, (t)=>{
-            t.defaultPrevented || N.one(e, fn, ()=>{
-                a(this) && this.focus();
-            });
-        });
-        const i = z.findOne(".modal.show");
-        i && On.getInstance(i).hide(), On.getOrCreateInstance(e).toggle(this);
-    }), R(On), m(On);
-    const xn = ".bs.offcanvas", kn = ".data-api", Ln = `load${xn}${kn}`, Sn = "show", Dn = "showing", $n = "hiding", In = ".offcanvas.show", Nn = `show${xn}`, Pn = `shown${xn}`, jn = `hide${xn}`, Mn = `hidePrevented${xn}`, Fn = `hidden${xn}`, Hn = `resize${xn}`, Wn = `click${xn}${kn}`, Bn = `keydown.dismiss${xn}`, zn = {
-        backdrop: !0,
-        keyboard: !0,
-        scroll: !1
-    }, Rn = {
-        backdrop: "(boolean|string)",
-        keyboard: "boolean",
-        scroll: "boolean"
-    };
-    class qn extends W {
-        constructor(t, e){
-            super(t, e), this._isShown = !1, this._backdrop = this._initializeBackDrop(), this._focustrap = this._initializeFocusTrap(), this._addEventListeners();
-        }
-        static get Default() {
-            return zn;
-        }
-        static get DefaultType() {
-            return Rn;
-        }
-        static get NAME() {
-            return "offcanvas";
-        }
-        toggle(t) {
-            return this._isShown ? this.hide() : this.show(t);
-        }
-        show(t) {
-            this._isShown || N.trigger(this._element, Nn, {
-                relatedTarget: t
-            }).defaultPrevented || (this._isShown = !0, this._backdrop.show(), this._config.scroll || (new cn).hide(), this._element.setAttribute("aria-modal", !0), this._element.setAttribute("role", "dialog"), this._element.classList.add(Dn), this._queueCallback(()=>{
-                this._config.scroll && !this._config.backdrop || this._focustrap.activate(), this._element.classList.add(Sn), this._element.classList.remove(Dn), N.trigger(this._element, Pn, {
-                    relatedTarget: t
-                });
-            }, this._element, !0));
-        }
-        hide() {
-            this._isShown && (N.trigger(this._element, jn).defaultPrevented || (this._focustrap.deactivate(), this._element.blur(), this._isShown = !1, this._element.classList.add($n), this._backdrop.hide(), this._queueCallback(()=>{
-                this._element.classList.remove(Sn, $n), this._element.removeAttribute("aria-modal"), this._element.removeAttribute("role"), this._config.scroll || (new cn).reset(), N.trigger(this._element, Fn);
-            }, this._element, !0)));
-        }
-        dispose() {
-            this._backdrop.dispose(), this._focustrap.deactivate(), super.dispose();
-        }
-        _initializeBackDrop() {
-            const t = Boolean(this._config.backdrop);
-            return new Ui({
-                className: "offcanvas-backdrop",
-                isVisible: t,
-                isAnimated: !0,
-                rootElement: this._element.parentNode,
-                clickCallback: t ? ()=>{
-                    "static" !== this._config.backdrop ? this.hide() : N.trigger(this._element, Mn);
-                } : null
-            });
-        }
-        _initializeFocusTrap() {
-            return new sn({
-                trapElement: this._element
-            });
-        }
-        _addEventListeners() {
-            N.on(this._element, Bn, (t)=>{
-                "Escape" === t.key && (this._config.keyboard ? this.hide() : N.trigger(this._element, Mn));
-            });
-        }
-        static jQueryInterface(t) {
-            return this.each(function() {
-                const e = qn.getOrCreateInstance(this, t);
-                if ("string" == typeof t) {
-                    if (void 0 === e[t] || t.startsWith("_") || "constructor" === t) throw new TypeError(`No method named "${t}"`);
-                    e[t](this);
-                }
-            });
-        }
-    }
-    N.on(document, Wn, '[data-bs-toggle="offcanvas"]', function(t) {
-        const e = z.getElementFromSelector(this);
-        if ([
-            "A",
-            "AREA"
-        ].includes(this.tagName) && t.preventDefault(), l(this)) return;
-        N.one(e, Fn, ()=>{
-            a(this) && this.focus();
-        });
-        const i = z.findOne(In);
-        i && i !== e && qn.getInstance(i).hide(), qn.getOrCreateInstance(e).toggle(this);
-    }), N.on(window, Ln, ()=>{
-        for (const t of z.find(In))qn.getOrCreateInstance(t).show();
-    }), N.on(window, Hn, ()=>{
-        for (const t of z.find("[aria-modal][class*=show][class*=offcanvas-]"))"fixed" !== getComputedStyle(t).position && qn.getOrCreateInstance(t).hide();
-    }), R(qn), m(qn);
-    const Vn = {
-        "*": [
-            "class",
-            "dir",
-            "id",
-            "lang",
-            "role",
-            /^aria-[\w-]*$/i
-        ],
-        a: [
-            "target",
-            "href",
-            "title",
-            "rel"
-        ],
-        area: [],
-        b: [],
-        br: [],
-        col: [],
-        code: [],
-        dd: [],
-        div: [],
-        dl: [],
-        dt: [],
-        em: [],
-        hr: [],
-        h1: [],
-        h2: [],
-        h3: [],
-        h4: [],
-        h5: [],
-        h6: [],
-        i: [],
-        img: [
-            "src",
-            "srcset",
-            "alt",
-            "title",
-            "width",
-            "height"
-        ],
-        li: [],
-        ol: [],
-        p: [],
-        pre: [],
-        s: [],
-        small: [],
-        span: [],
-        sub: [],
-        sup: [],
-        strong: [],
-        u: [],
-        ul: []
-    }, Kn = new Set([
-        "background",
-        "cite",
-        "href",
-        "itemtype",
-        "longdesc",
-        "poster",
-        "src",
-        "xlink:href"
-    ]), Qn = /^(?!javascript:)(?:[a-z0-9+.-]+:|[^&:/?#]*(?:[/?#]|$))/i, Xn = (t, e)=>{
-        const i = t.nodeName.toLowerCase();
-        return e.includes(i) ? !Kn.has(i) || Boolean(Qn.test(t.nodeValue)) : e.filter((t)=>t instanceof RegExp).some((t)=>t.test(i));
-    }, Yn = {
-        allowList: Vn,
-        content: {},
-        extraClass: "",
-        html: !1,
-        sanitize: !0,
-        sanitizeFn: null,
-        template: "<div></div>"
-    }, Un = {
-        allowList: "object",
-        content: "object",
-        extraClass: "(string|function)",
-        html: "boolean",
-        sanitize: "boolean",
-        sanitizeFn: "(null|function)",
-        template: "string"
-    }, Gn = {
-        entry: "(string|element|function|null)",
-        selector: "(string|element)"
-    };
-    class Jn extends H {
-        constructor(t){
-            super(), this._config = this._getConfig(t);
-        }
-        static get Default() {
-            return Yn;
-        }
-        static get DefaultType() {
-            return Un;
-        }
-        static get NAME() {
-            return "TemplateFactory";
-        }
-        getContent() {
-            return Object.values(this._config.content).map((t)=>this._resolvePossibleFunction(t)).filter(Boolean);
-        }
-        hasContent() {
-            return this.getContent().length > 0;
-        }
-        changeContent(t) {
-            return this._checkContent(t), this._config.content = {
-                ...this._config.content,
-                ...t
-            }, this;
-        }
-        toHtml() {
-            const t = document.createElement("div");
-            t.innerHTML = this._maybeSanitize(this._config.template);
-            for (const [e, i] of Object.entries(this._config.content))this._setContent(t, i, e);
-            const e = t.children[0], i = this._resolvePossibleFunction(this._config.extraClass);
-            return i && e.classList.add(...i.split(" ")), e;
-        }
-        _typeCheckConfig(t) {
-            super._typeCheckConfig(t), this._checkContent(t.content);
-        }
-        _checkContent(t) {
-            for (const [e, i] of Object.entries(t))super._typeCheckConfig({
-                selector: e,
-                entry: i
-            }, Gn);
-        }
-        _setContent(t, e, i) {
-            const n = z.findOne(i, t);
-            n && ((e = this._resolvePossibleFunction(e)) ? o(e) ? this._putElementInTemplate(r(e), n) : this._config.html ? n.innerHTML = this._maybeSanitize(e) : n.textContent = e : n.remove());
-        }
-        _maybeSanitize(t) {
-            return this._config.sanitize ? function(t, e, i) {
-                if (!t.length) return t;
-                if (i && "function" == typeof i) return i(t);
-                const n = (new window.DOMParser).parseFromString(t, "text/html"), s = [].concat(...n.body.querySelectorAll("*"));
-                for (const t of s){
-                    const i = t.nodeName.toLowerCase();
-                    if (!Object.keys(e).includes(i)) {
-                        t.remove();
-                        continue;
-                    }
-                    const n = [].concat(...t.attributes), s = [].concat(e["*"] || [], e[i] || []);
-                    for (const e of n)Xn(e, s) || t.removeAttribute(e.nodeName);
-                }
-                return n.body.innerHTML;
-            }(t, this._config.allowList, this._config.sanitizeFn) : t;
-        }
-        _resolvePossibleFunction(t) {
-            return g(t, [
-                this
-            ]);
-        }
-        _putElementInTemplate(t, e) {
-            if (this._config.html) return e.innerHTML = "", void e.append(t);
-            e.textContent = t.textContent;
-        }
-    }
-    const Zn = new Set([
-        "sanitize",
-        "allowList",
-        "sanitizeFn"
-    ]), ts = "fade", es = "show", is = ".modal", ns = "hide.bs.modal", ss = "hover", os = "focus", rs = {
-        AUTO: "auto",
-        TOP: "top",
-        RIGHT: p() ? "left" : "right",
-        BOTTOM: "bottom",
-        LEFT: p() ? "right" : "left"
-    }, as = {
-        allowList: Vn,
-        animation: !0,
-        boundary: "clippingParents",
-        container: !1,
-        customClass: "",
-        delay: 0,
-        fallbackPlacements: [
-            "top",
-            "right",
-            "bottom",
-            "left"
-        ],
-        html: !1,
-        offset: [
-            0,
-            6
-        ],
-        placement: "top",
-        popperConfig: null,
-        sanitize: !0,
-        sanitizeFn: null,
-        selector: !1,
-        template: '<div class="tooltip" role="tooltip"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div>',
-        title: "",
-        trigger: "hover focus"
-    }, ls = {
-        allowList: "object",
-        animation: "boolean",
-        boundary: "(string|element)",
-        container: "(string|element|boolean)",
-        customClass: "(string|function)",
-        delay: "(number|object)",
-        fallbackPlacements: "array",
-        html: "boolean",
-        offset: "(array|string|function)",
-        placement: "(string|function)",
-        popperConfig: "(null|object|function)",
-        sanitize: "boolean",
-        sanitizeFn: "(null|function)",
-        selector: "(string|boolean)",
-        template: "string",
-        title: "(string|element|function)",
-        trigger: "string"
-    };
-    class cs extends W {
-        constructor(t, e){
-            if (void 0 === vi) throw new TypeError("Bootstrap's tooltips require Popper (https://popper.js.org)");
-            super(t, e), this._isEnabled = !0, this._timeout = 0, this._isHovered = null, this._activeTrigger = {}, this._popper = null, this._templateFactory = null, this._newContent = null, this.tip = null, this._setListeners(), this._config.selector || this._fixTitle();
-        }
-        static get Default() {
-            return as;
-        }
-        static get DefaultType() {
-            return ls;
-        }
-        static get NAME() {
-            return "tooltip";
-        }
-        enable() {
-            this._isEnabled = !0;
-        }
-        disable() {
-            this._isEnabled = !1;
-        }
-        toggleEnabled() {
-            this._isEnabled = !this._isEnabled;
-        }
-        toggle() {
-            this._isEnabled && (this._activeTrigger.click = !this._activeTrigger.click, this._isShown() ? this._leave() : this._enter());
-        }
-        dispose() {
-            clearTimeout(this._timeout), N.off(this._element.closest(is), ns, this._hideModalHandler), this._element.getAttribute("data-bs-original-title") && this._element.setAttribute("title", this._element.getAttribute("data-bs-original-title")), this._disposePopper(), super.dispose();
-        }
-        show() {
-            if ("none" === this._element.style.display) throw new Error("Please use show on visible elements");
-            if (!this._isWithContent() || !this._isEnabled) return;
-            const t = N.trigger(this._element, this.constructor.eventName("show")), e = (c(this._element) || this._element.ownerDocument.documentElement).contains(this._element);
-            if (t.defaultPrevented || !e) return;
-            this._disposePopper();
-            const i = this._getTipElement();
-            this._element.setAttribute("aria-describedby", i.getAttribute("id"));
-            const { container: n } = this._config;
-            if (this._element.ownerDocument.documentElement.contains(this.tip) || (n.append(i), N.trigger(this._element, this.constructor.eventName("inserted"))), this._popper = this._createPopper(i), i.classList.add(es), "ontouchstart" in document.documentElement) for (const t of [].concat(...document.body.children))N.on(t, "mouseover", h);
-            this._queueCallback(()=>{
-                N.trigger(this._element, this.constructor.eventName("shown")), !1 === this._isHovered && this._leave(), this._isHovered = !1;
-            }, this.tip, this._isAnimated());
-        }
-        hide() {
-            if (this._isShown() && !N.trigger(this._element, this.constructor.eventName("hide")).defaultPrevented) {
-                if (this._getTipElement().classList.remove(es), "ontouchstart" in document.documentElement) for (const t of [].concat(...document.body.children))N.off(t, "mouseover", h);
-                this._activeTrigger.click = !1, this._activeTrigger[os] = !1, this._activeTrigger[ss] = !1, this._isHovered = null, this._queueCallback(()=>{
-                    this._isWithActiveTrigger() || (this._isHovered || this._disposePopper(), this._element.removeAttribute("aria-describedby"), N.trigger(this._element, this.constructor.eventName("hidden")));
-                }, this.tip, this._isAnimated());
-            }
-        }
-        update() {
-            this._popper && this._popper.update();
-        }
-        _isWithContent() {
-            return Boolean(this._getTitle());
-        }
-        _getTipElement() {
-            return this.tip || (this.tip = this._createTipElement(this._newContent || this._getContentForTemplate())), this.tip;
-        }
-        _createTipElement(t) {
-            const e = this._getTemplateFactory(t).toHtml();
-            if (!e) return null;
-            e.classList.remove(ts, es), e.classList.add(`bs-${this.constructor.NAME}-auto`);
-            const i = ((t)=>{
-                do t += Math.floor(1e6 * Math.random());
-                while (document.getElementById(t));
-                return t;
-            })(this.constructor.NAME).toString();
-            return e.setAttribute("id", i), this._isAnimated() && e.classList.add(ts), e;
-        }
-        setContent(t) {
-            this._newContent = t, this._isShown() && (this._disposePopper(), this.show());
-        }
-        _getTemplateFactory(t) {
-            return this._templateFactory ? this._templateFactory.changeContent(t) : this._templateFactory = new Jn({
-                ...this._config,
-                content: t,
-                extraClass: this._resolvePossibleFunction(this._config.customClass)
-            }), this._templateFactory;
-        }
-        _getContentForTemplate() {
-            return {
-                ".tooltip-inner": this._getTitle()
-            };
-        }
-        _getTitle() {
-            return this._resolvePossibleFunction(this._config.title) || this._element.getAttribute("data-bs-original-title");
-        }
-        _initializeOnDelegatedTarget(t) {
-            return this.constructor.getOrCreateInstance(t.delegateTarget, this._getDelegateConfig());
-        }
-        _isAnimated() {
-            return this._config.animation || this.tip && this.tip.classList.contains(ts);
-        }
-        _isShown() {
-            return this.tip && this.tip.classList.contains(es);
-        }
-        _createPopper(t) {
-            const e = g(this._config.placement, [
-                this,
-                t,
-                this._element
-            ]), i = rs[e.toUpperCase()];
-            return bi(this._element, t, this._getPopperConfig(i));
-        }
-        _getOffset() {
-            const { offset: t } = this._config;
-            return "string" == typeof t ? t.split(",").map((t)=>Number.parseInt(t, 10)) : "function" == typeof t ? (e)=>t(e, this._element) : t;
-        }
-        _resolvePossibleFunction(t) {
-            return g(t, [
-                this._element
-            ]);
-        }
-        _getPopperConfig(t) {
-            const e = {
-                placement: t,
-                modifiers: [
-                    {
-                        name: "flip",
-                        options: {
-                            fallbackPlacements: this._config.fallbackPlacements
-                        }
-                    },
-                    {
-                        name: "offset",
-                        options: {
-                            offset: this._getOffset()
-                        }
-                    },
-                    {
-                        name: "preventOverflow",
-                        options: {
-                            boundary: this._config.boundary
-                        }
-                    },
-                    {
-                        name: "arrow",
-                        options: {
-                            element: `.${this.constructor.NAME}-arrow`
-                        }
-                    },
-                    {
-                        name: "preSetPlacement",
-                        enabled: !0,
-                        phase: "beforeMain",
-                        fn: (t)=>{
-                            this._getTipElement().setAttribute("data-popper-placement", t.state.placement);
-                        }
-                    }
-                ]
-            };
-            return {
-                ...e,
-                ...g(this._config.popperConfig, [
-                    e
-                ])
-            };
-        }
-        _setListeners() {
-            const t = this._config.trigger.split(" ");
-            for (const e of t)if ("click" === e) N.on(this._element, this.constructor.eventName("click"), this._config.selector, (t)=>{
-                this._initializeOnDelegatedTarget(t).toggle();
-            });
-            else if ("manual" !== e) {
-                const t = e === ss ? this.constructor.eventName("mouseenter") : this.constructor.eventName("focusin"), i = e === ss ? this.constructor.eventName("mouseleave") : this.constructor.eventName("focusout");
-                N.on(this._element, t, this._config.selector, (t)=>{
-                    const e = this._initializeOnDelegatedTarget(t);
-                    e._activeTrigger["focusin" === t.type ? os : ss] = !0, e._enter();
-                }), N.on(this._element, i, this._config.selector, (t)=>{
-                    const e = this._initializeOnDelegatedTarget(t);
-                    e._activeTrigger["focusout" === t.type ? os : ss] = e._element.contains(t.relatedTarget), e._leave();
-                });
-            }
-            this._hideModalHandler = ()=>{
-                this._element && this.hide();
-            }, N.on(this._element.closest(is), ns, this._hideModalHandler);
-        }
-        _fixTitle() {
-            const t = this._element.getAttribute("title");
-            t && (this._element.getAttribute("aria-label") || this._element.textContent.trim() || this._element.setAttribute("aria-label", t), this._element.setAttribute("data-bs-original-title", t), this._element.removeAttribute("title"));
-        }
-        _enter() {
-            this._isShown() || this._isHovered ? this._isHovered = !0 : (this._isHovered = !0, this._setTimeout(()=>{
-                this._isHovered && this.show();
-            }, this._config.delay.show));
-        }
-        _leave() {
-            this._isWithActiveTrigger() || (this._isHovered = !1, this._setTimeout(()=>{
-                this._isHovered || this.hide();
-            }, this._config.delay.hide));
-        }
-        _setTimeout(t, e) {
-            clearTimeout(this._timeout), this._timeout = setTimeout(t, e);
-        }
-        _isWithActiveTrigger() {
-            return Object.values(this._activeTrigger).includes(!0);
-        }
-        _getConfig(t) {
-            const e = F.getDataAttributes(this._element);
-            for (const t of Object.keys(e))Zn.has(t) && delete e[t];
-            return t = {
-                ...e,
-                ..."object" == typeof t && t ? t : {}
-            }, t = this._mergeConfigObj(t), t = this._configAfterMerge(t), this._typeCheckConfig(t), t;
-        }
-        _configAfterMerge(t) {
-            return t.container = !1 === t.container ? document.body : r(t.container), "number" == typeof t.delay && (t.delay = {
-                show: t.delay,
-                hide: t.delay
-            }), "number" == typeof t.title && (t.title = t.title.toString()), "number" == typeof t.content && (t.content = t.content.toString()), t;
-        }
-        _getDelegateConfig() {
-            const t = {};
-            for (const [e, i] of Object.entries(this._config))this.constructor.Default[e] !== i && (t[e] = i);
-            return t.selector = !1, t.trigger = "manual", t;
-        }
-        _disposePopper() {
-            this._popper && (this._popper.destroy(), this._popper = null), this.tip && (this.tip.remove(), this.tip = null);
-        }
-        static jQueryInterface(t) {
-            return this.each(function() {
-                const e = cs.getOrCreateInstance(this, t);
-                if ("string" == typeof t) {
-                    if (void 0 === e[t]) throw new TypeError(`No method named "${t}"`);
-                    e[t]();
-                }
-            });
-        }
-    }
-    m(cs);
-    const hs = {
-        ...cs.Default,
-        content: "",
-        offset: [
-            0,
-            8
-        ],
-        placement: "right",
-        template: '<div class="popover" role="tooltip"><div class="popover-arrow"></div><h3 class="popover-header"></h3><div class="popover-body"></div></div>',
-        trigger: "click"
-    }, ds = {
-        ...cs.DefaultType,
-        content: "(null|string|element|function)"
-    };
-    class us extends cs {
-        static get Default() {
-            return hs;
-        }
-        static get DefaultType() {
-            return ds;
-        }
-        static get NAME() {
-            return "popover";
-        }
-        _isWithContent() {
-            return this._getTitle() || this._getContent();
-        }
-        _getContentForTemplate() {
-            return {
-                ".popover-header": this._getTitle(),
-                ".popover-body": this._getContent()
-            };
-        }
-        _getContent() {
-            return this._resolvePossibleFunction(this._config.content);
-        }
-        static jQueryInterface(t) {
-            return this.each(function() {
-                const e = us.getOrCreateInstance(this, t);
-                if ("string" == typeof t) {
-                    if (void 0 === e[t]) throw new TypeError(`No method named "${t}"`);
-                    e[t]();
-                }
-            });
-        }
-    }
-    m(us);
-    const fs = ".bs.scrollspy", ps = `activate${fs}`, ms = `click${fs}`, gs = `load${fs}.data-api`, _s = "active", bs = "[href]", vs = ".nav-link", ys = `${vs}, .nav-item > ${vs}, .list-group-item`, ws = {
-        offset: null,
-        rootMargin: "0px 0px -25%",
-        smoothScroll: !1,
-        target: null,
-        threshold: [
-            .1,
-            .5,
-            1
-        ]
-    }, As = {
-        offset: "(number|null)",
-        rootMargin: "string",
-        smoothScroll: "boolean",
-        target: "element",
-        threshold: "array"
-    };
-    class Es extends W {
-        constructor(t, e){
-            super(t, e), this._targetLinks = new Map, this._observableSections = new Map, this._rootElement = "visible" === getComputedStyle(this._element).overflowY ? null : this._element, this._activeTarget = null, this._observer = null, this._previousScrollData = {
-                visibleEntryTop: 0,
-                parentScrollTop: 0
-            }, this.refresh();
-        }
-        static get Default() {
-            return ws;
-        }
-        static get DefaultType() {
-            return As;
-        }
-        static get NAME() {
-            return "scrollspy";
-        }
-        refresh() {
-            this._initializeTargetsAndObservables(), this._maybeEnableSmoothScroll(), this._observer ? this._observer.disconnect() : this._observer = this._getNewObserver();
-            for (const t of this._observableSections.values())this._observer.observe(t);
-        }
-        dispose() {
-            this._observer.disconnect(), super.dispose();
-        }
-        _configAfterMerge(t) {
-            return t.target = r(t.target) || document.body, t.rootMargin = t.offset ? `${t.offset}px 0px -30%` : t.rootMargin, "string" == typeof t.threshold && (t.threshold = t.threshold.split(",").map((t)=>Number.parseFloat(t))), t;
-        }
-        _maybeEnableSmoothScroll() {
-            this._config.smoothScroll && (N.off(this._config.target, ms), N.on(this._config.target, ms, bs, (t)=>{
-                const e = this._observableSections.get(t.target.hash);
-                if (e) {
-                    t.preventDefault();
-                    const i = this._rootElement || window, n = e.offsetTop - this._element.offsetTop;
-                    if (i.scrollTo) return void i.scrollTo({
-                        top: n,
-                        behavior: "smooth"
-                    });
-                    i.scrollTop = n;
-                }
-            }));
-        }
-        _getNewObserver() {
-            const t = {
-                root: this._rootElement,
-                threshold: this._config.threshold,
-                rootMargin: this._config.rootMargin
-            };
-            return new IntersectionObserver((t)=>this._observerCallback(t), t);
-        }
-        _observerCallback(t) {
-            const e = (t)=>this._targetLinks.get(`#${t.target.id}`), i = (t)=>{
-                this._previousScrollData.visibleEntryTop = t.target.offsetTop, this._process(e(t));
-            }, n = (this._rootElement || document.documentElement).scrollTop, s = n >= this._previousScrollData.parentScrollTop;
-            this._previousScrollData.parentScrollTop = n;
-            for (const o of t){
-                if (!o.isIntersecting) {
-                    this._activeTarget = null, this._clearActiveClass(e(o));
-                    continue;
-                }
-                const t = o.target.offsetTop >= this._previousScrollData.visibleEntryTop;
-                if (s && t) {
-                    if (i(o), !n) return;
-                } else s || t || i(o);
-            }
-        }
-        _initializeTargetsAndObservables() {
-            this._targetLinks = new Map, this._observableSections = new Map;
-            const t = z.find(bs, this._config.target);
-            for (const e of t){
-                if (!e.hash || l(e)) continue;
-                const t = z.findOne(decodeURI(e.hash), this._element);
-                a(t) && (this._targetLinks.set(decodeURI(e.hash), e), this._observableSections.set(e.hash, t));
-            }
-        }
-        _process(t) {
-            this._activeTarget !== t && (this._clearActiveClass(this._config.target), this._activeTarget = t, t.classList.add(_s), this._activateParents(t), N.trigger(this._element, ps, {
-                relatedTarget: t
-            }));
-        }
-        _activateParents(t) {
-            if (t.classList.contains("dropdown-item")) z.findOne(".dropdown-toggle", t.closest(".dropdown")).classList.add(_s);
-            else for (const e of z.parents(t, ".nav, .list-group"))for (const t of z.prev(e, ys))t.classList.add(_s);
-        }
-        _clearActiveClass(t) {
-            t.classList.remove(_s);
-            const e = z.find(`${bs}.${_s}`, t);
-            for (const t of e)t.classList.remove(_s);
-        }
-        static jQueryInterface(t) {
-            return this.each(function() {
-                const e = Es.getOrCreateInstance(this, t);
-                if ("string" == typeof t) {
-                    if (void 0 === e[t] || t.startsWith("_") || "constructor" === t) throw new TypeError(`No method named "${t}"`);
-                    e[t]();
-                }
-            });
-        }
-    }
-    N.on(window, gs, ()=>{
-        for (const t of z.find('[data-bs-spy="scroll"]'))Es.getOrCreateInstance(t);
-    }), m(Es);
-    const Ts = ".bs.tab", Cs = `hide${Ts}`, Os = `hidden${Ts}`, xs = `show${Ts}`, ks = `shown${Ts}`, Ls = `click${Ts}`, Ss = `keydown${Ts}`, Ds = `load${Ts}`, $s = "ArrowLeft", Is = "ArrowRight", Ns = "ArrowUp", Ps = "ArrowDown", js = "Home", Ms = "End", Fs = "active", Hs = "fade", Ws = "show", Bs = ".dropdown-toggle", zs = `:not(${Bs})`, Rs = '[data-bs-toggle="tab"], [data-bs-toggle="pill"], [data-bs-toggle="list"]', qs = `.nav-link${zs}, .list-group-item${zs}, [role="tab"]${zs}, ${Rs}`, Vs = `.${Fs}[data-bs-toggle="tab"], .${Fs}[data-bs-toggle="pill"], .${Fs}[data-bs-toggle="list"]`;
-    class Ks extends W {
-        constructor(t){
-            super(t), this._parent = this._element.closest('.list-group, .nav, [role="tablist"]'), this._parent && (this._setInitialAttributes(this._parent, this._getChildren()), N.on(this._element, Ss, (t)=>this._keydown(t)));
-        }
-        static get NAME() {
-            return "tab";
-        }
-        show() {
-            const t = this._element;
-            if (this._elemIsActive(t)) return;
-            const e = this._getActiveElem(), i = e ? N.trigger(e, Cs, {
-                relatedTarget: t
-            }) : null;
-            N.trigger(t, xs, {
-                relatedTarget: e
-            }).defaultPrevented || i && i.defaultPrevented || (this._deactivate(e, t), this._activate(t, e));
-        }
-        _activate(t, e) {
-            t && (t.classList.add(Fs), this._activate(z.getElementFromSelector(t)), this._queueCallback(()=>{
-                "tab" === t.getAttribute("role") ? (t.removeAttribute("tabindex"), t.setAttribute("aria-selected", !0), this._toggleDropDown(t, !0), N.trigger(t, ks, {
-                    relatedTarget: e
-                })) : t.classList.add(Ws);
-            }, t, t.classList.contains(Hs)));
-        }
-        _deactivate(t, e) {
-            t && (t.classList.remove(Fs), t.blur(), this._deactivate(z.getElementFromSelector(t)), this._queueCallback(()=>{
-                "tab" === t.getAttribute("role") ? (t.setAttribute("aria-selected", !1), t.setAttribute("tabindex", "-1"), this._toggleDropDown(t, !1), N.trigger(t, Os, {
-                    relatedTarget: e
-                })) : t.classList.remove(Ws);
-            }, t, t.classList.contains(Hs)));
-        }
-        _keydown(t) {
-            if (![
-                $s,
-                Is,
-                Ns,
-                Ps,
-                js,
-                Ms
-            ].includes(t.key)) return;
-            t.stopPropagation(), t.preventDefault();
-            const e = this._getChildren().filter((t)=>!l(t));
-            let i;
-            if ([
-                js,
-                Ms
-            ].includes(t.key)) i = e[t.key === js ? 0 : e.length - 1];
-            else {
-                const n = [
-                    Is,
-                    Ps
-                ].includes(t.key);
-                i = b(e, t.target, n, !0);
-            }
-            i && (i.focus({
-                preventScroll: !0
-            }), Ks.getOrCreateInstance(i).show());
-        }
-        _getChildren() {
-            return z.find(qs, this._parent);
-        }
-        _getActiveElem() {
-            return this._getChildren().find((t)=>this._elemIsActive(t)) || null;
-        }
-        _setInitialAttributes(t, e) {
-            this._setAttributeIfNotExists(t, "role", "tablist");
-            for (const t of e)this._setInitialAttributesOnChild(t);
-        }
-        _setInitialAttributesOnChild(t) {
-            t = this._getInnerElement(t);
-            const e = this._elemIsActive(t), i = this._getOuterElement(t);
-            t.setAttribute("aria-selected", e), i !== t && this._setAttributeIfNotExists(i, "role", "presentation"), e || t.setAttribute("tabindex", "-1"), this._setAttributeIfNotExists(t, "role", "tab"), this._setInitialAttributesOnTargetPanel(t);
-        }
-        _setInitialAttributesOnTargetPanel(t) {
-            const e = z.getElementFromSelector(t);
-            e && (this._setAttributeIfNotExists(e, "role", "tabpanel"), t.id && this._setAttributeIfNotExists(e, "aria-labelledby", `${t.id}`));
-        }
-        _toggleDropDown(t, e) {
-            const i = this._getOuterElement(t);
-            if (!i.classList.contains("dropdown")) return;
-            const n = (t, n)=>{
-                const s = z.findOne(t, i);
-                s && s.classList.toggle(n, e);
-            };
-            n(Bs, Fs), n(".dropdown-menu", Ws), i.setAttribute("aria-expanded", e);
-        }
-        _setAttributeIfNotExists(t, e, i) {
-            t.hasAttribute(e) || t.setAttribute(e, i);
-        }
-        _elemIsActive(t) {
-            return t.classList.contains(Fs);
-        }
-        _getInnerElement(t) {
-            return t.matches(qs) ? t : z.findOne(qs, t);
-        }
-        _getOuterElement(t) {
-            return t.closest(".nav-item, .list-group-item") || t;
-        }
-        static jQueryInterface(t) {
-            return this.each(function() {
-                const e = Ks.getOrCreateInstance(this);
-                if ("string" == typeof t) {
-                    if (void 0 === e[t] || t.startsWith("_") || "constructor" === t) throw new TypeError(`No method named "${t}"`);
-                    e[t]();
-                }
-            });
-        }
-    }
-    N.on(document, Ls, Rs, function(t) {
-        [
-            "A",
-            "AREA"
-        ].includes(this.tagName) && t.preventDefault(), l(this) || Ks.getOrCreateInstance(this).show();
-    }), N.on(window, Ds, ()=>{
-        for (const t of z.find(Vs))Ks.getOrCreateInstance(t);
-    }), m(Ks);
-    const Qs = ".bs.toast", Xs = `mouseover${Qs}`, Ys = `mouseout${Qs}`, Us = `focusin${Qs}`, Gs = `focusout${Qs}`, Js = `hide${Qs}`, Zs = `hidden${Qs}`, to = `show${Qs}`, eo = `shown${Qs}`, io = "hide", no = "show", so = "showing", oo = {
-        animation: "boolean",
-        autohide: "boolean",
-        delay: "number"
-    }, ro = {
-        animation: !0,
-        autohide: !0,
-        delay: 5e3
-    };
-    class ao extends W {
-        constructor(t, e){
-            super(t, e), this._timeout = null, this._hasMouseInteraction = !1, this._hasKeyboardInteraction = !1, this._setListeners();
-        }
-        static get Default() {
-            return ro;
-        }
-        static get DefaultType() {
-            return oo;
-        }
-        static get NAME() {
-            return "toast";
-        }
-        show() {
-            N.trigger(this._element, to).defaultPrevented || (this._clearTimeout(), this._config.animation && this._element.classList.add("fade"), this._element.classList.remove(io), d(this._element), this._element.classList.add(no, so), this._queueCallback(()=>{
-                this._element.classList.remove(so), N.trigger(this._element, eo), this._maybeScheduleHide();
-            }, this._element, this._config.animation));
-        }
-        hide() {
-            this.isShown() && (N.trigger(this._element, Js).defaultPrevented || (this._element.classList.add(so), this._queueCallback(()=>{
-                this._element.classList.add(io), this._element.classList.remove(so, no), N.trigger(this._element, Zs);
-            }, this._element, this._config.animation)));
-        }
-        dispose() {
-            this._clearTimeout(), this.isShown() && this._element.classList.remove(no), super.dispose();
-        }
-        isShown() {
-            return this._element.classList.contains(no);
-        }
-        _maybeScheduleHide() {
-            this._config.autohide && (this._hasMouseInteraction || this._hasKeyboardInteraction || (this._timeout = setTimeout(()=>{
-                this.hide();
-            }, this._config.delay)));
-        }
-        _onInteraction(t, e) {
-            switch(t.type){
-                case "mouseover":
-                case "mouseout":
-                    this._hasMouseInteraction = e;
-                    break;
-                case "focusin":
-                case "focusout":
-                    this._hasKeyboardInteraction = e;
-            }
-            if (e) return void this._clearTimeout();
-            const i = t.relatedTarget;
-            this._element === i || this._element.contains(i) || this._maybeScheduleHide();
-        }
-        _setListeners() {
-            N.on(this._element, Xs, (t)=>this._onInteraction(t, !0)), N.on(this._element, Ys, (t)=>this._onInteraction(t, !1)), N.on(this._element, Us, (t)=>this._onInteraction(t, !0)), N.on(this._element, Gs, (t)=>this._onInteraction(t, !1));
-        }
-        _clearTimeout() {
-            clearTimeout(this._timeout), this._timeout = null;
-        }
-        static jQueryInterface(t) {
-            return this.each(function() {
-                const e = ao.getOrCreateInstance(this, t);
-                if ("string" == typeof t) {
-                    if (void 0 === e[t]) throw new TypeError(`No method named "${t}"`);
-                    e[t](this);
-                }
-            });
-        }
-    }
-    return R(ao), m(ao), {
-        Alert: Q,
-        Button: Y,
-        Carousel: xt,
-        Collapse: Bt,
-        Dropdown: qi,
-        Modal: On,
-        Offcanvas: qn,
-        Popover: us,
-        ScrollSpy: Es,
-        Tab: Ks,
-        Toast: ao,
-        Tooltip: cs
-    };
-});
-
-},{}],"9QpvA":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$04f2 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{}],"5EEXV":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$8fbf = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$04f2.prelude(module);
+$parcel$ReactRefreshHelpers$8fbf.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -30325,141 +27330,132 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-var _logoPng = require("../assets/logo.png");
+var _logoPng = require("../../assets/logo.png");
 var _logoPngDefault = parcelHelpers.interopDefault(_logoPng);
+var _reactRouterDom = require("react-router-dom");
 const Navbar = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
-        className: "navbar navbar-expand-lg bg-body-tertiary",
+        className: "sticky top-0 right-0 left-0",
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "container-fluid",
+            className: "flex bg-green-100 justify-between items-center",
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                    className: "navbar-brand",
+                    className: "",
                     href: "#",
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                         src: (0, _logoPngDefault.default),
-                        className: "img-fluid"
+                        className: "h-12 m-4"
                     }, void 0, false, {
-                        fileName: "components/Navbar.js",
-                        lineNumber: 9,
+                        fileName: "src/components/Navbar.js",
+                        lineNumber: 10,
                         columnNumber: 9
                     }, undefined)
                 }, void 0, false, {
-                    fileName: "components/Navbar.js",
-                    lineNumber: 8,
-                    columnNumber: 7
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                    className: "navbar-toggler",
-                    type: "button",
-                    "data-bs-toggle": "collapse",
-                    "data-bs-target": "#navbarNav",
-                    "aria-controls": "navbarNav",
-                    "aria-expanded": "false",
-                    "aria-label": "Toggle navigation",
-                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                        className: "navbar-toggler-icon"
-                    }, void 0, false, {
-                        fileName: "components/Navbar.js",
-                        lineNumber: 20,
-                        columnNumber: 9
-                    }, undefined)
-                }, void 0, false, {
-                    fileName: "components/Navbar.js",
-                    lineNumber: 11,
-                    columnNumber: 7
+                    fileName: "src/components/Navbar.js",
+                    lineNumber: 9,
+                    columnNumber: 8
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "collapse navbar-collapse",
+                    className: "",
                     id: "navbarNav",
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-                        className: "navbar-nav ms-auto",
+                        className: "flex m-4 p-4",
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                className: "nav-item",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                    className: "nav-link active",
-                                    "aria-current": "page",
-                                    href: "#",
+                                className: "mx-4",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                    to: "/",
                                     children: "Home"
                                 }, void 0, false, {
-                                    fileName: "components/Navbar.js",
-                                    lineNumber: 25,
+                                    fileName: "src/components/Navbar.js",
+                                    lineNumber: 15,
                                     columnNumber: 13
                                 }, undefined)
                             }, void 0, false, {
-                                fileName: "components/Navbar.js",
-                                lineNumber: 24,
+                                fileName: "src/components/Navbar.js",
+                                lineNumber: 14,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                className: "nav-item",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                    className: "nav-link",
-                                    href: "#about",
-                                    children: "About"
+                                className: "mx-4",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                    to: "/About",
+                                    children: " About"
                                 }, void 0, false, {
-                                    fileName: "components/Navbar.js",
-                                    lineNumber: 28,
-                                    columnNumber: 13
+                                    fileName: "src/components/Navbar.js",
+                                    lineNumber: 18,
+                                    columnNumber: 14
                                 }, undefined)
                             }, void 0, false, {
-                                fileName: "components/Navbar.js",
-                                lineNumber: 27,
+                                fileName: "src/components/Navbar.js",
+                                lineNumber: 17,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                className: "nav-item",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                    className: "nav-link",
-                                    href: "#Projects",
-                                    children: "Projects"
+                                className: "mx-4",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                    to: "/projectpage",
+                                    children: " Project"
                                 }, void 0, false, {
-                                    fileName: "components/Navbar.js",
-                                    lineNumber: 31,
-                                    columnNumber: 13
+                                    fileName: "src/components/Navbar.js",
+                                    lineNumber: 21,
+                                    columnNumber: 15
                                 }, undefined)
                             }, void 0, false, {
-                                fileName: "components/Navbar.js",
-                                lineNumber: 30,
+                                fileName: "src/components/Navbar.js",
+                                lineNumber: 20,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                className: "nav-item",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                    className: "nav-link ",
-                                    href: "#Contact",
-                                    children: "Contact"
+                                className: "mx-4",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                    to: "/contact",
+                                    children: " Contact"
                                 }, void 0, false, {
-                                    fileName: "components/Navbar.js",
-                                    lineNumber: 34,
-                                    columnNumber: 13
+                                    fileName: "src/components/Navbar.js",
+                                    lineNumber: 24,
+                                    columnNumber: 15
                                 }, undefined)
                             }, void 0, false, {
-                                fileName: "components/Navbar.js",
-                                lineNumber: 33,
+                                fileName: "src/components/Navbar.js",
+                                lineNumber: 23,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                className: "mx-4",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                    to: "/codingprofile",
+                                    children: " Profile"
+                                }, void 0, false, {
+                                    fileName: "src/components/Navbar.js",
+                                    lineNumber: 27,
+                                    columnNumber: 15
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/components/Navbar.js",
+                                lineNumber: 26,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
-                        fileName: "components/Navbar.js",
-                        lineNumber: 23,
+                        fileName: "src/components/Navbar.js",
+                        lineNumber: 13,
                         columnNumber: 9
                     }, undefined)
                 }, void 0, false, {
-                    fileName: "components/Navbar.js",
-                    lineNumber: 22,
+                    fileName: "src/components/Navbar.js",
+                    lineNumber: 12,
                     columnNumber: 7
                 }, undefined)
             ]
         }, void 0, true, {
-            fileName: "components/Navbar.js",
-            lineNumber: 7,
+            fileName: "src/components/Navbar.js",
+            lineNumber: 8,
             columnNumber: 5
         }, undefined)
     }, void 0, false, {
-        fileName: "components/Navbar.js",
-        lineNumber: 6,
+        fileName: "src/components/Navbar.js",
+        lineNumber: 7,
         columnNumber: 5
     }, undefined);
 };
@@ -30468,12 +27464,12 @@ exports.default = Navbar;
 var _c;
 $RefreshReg$(_c, "Navbar");
 
-  $parcel$ReactRefreshHelpers$04f2.postlude(module);
+  $parcel$ReactRefreshHelpers$8fbf.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../assets/logo.png":"kRPTR","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"kRPTR":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../assets/logo.png":"kRPTR","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"kRPTR":[function(require,module,exports) {
 module.exports = require("ed31f8490754b7f8").getBundleURL("lly8x") + "logo.f0c67fd0.png" + "?" + Date.now();
 
 },{"ed31f8490754b7f8":"lgJ39"}],"lgJ39":[function(require,module,exports) {
@@ -30511,7 +27507,7214 @@ exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
 exports.getOrigin = getOrigin;
 
-},{}],"gkKU3":[function(require,module,exports) {
+},{}],"9xmpe":[function(require,module,exports) {
+/**
+ * React Router DOM v6.28.1
+ *
+ * Copyright (c) Remix Software Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE.md file in the root directory of this source tree.
+ *
+ * @license MIT
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "AbortedDeferredError", ()=>(0, _reactRouter.AbortedDeferredError));
+parcelHelpers.export(exports, "Await", ()=>(0, _reactRouter.Await));
+parcelHelpers.export(exports, "MemoryRouter", ()=>(0, _reactRouter.MemoryRouter));
+parcelHelpers.export(exports, "Navigate", ()=>(0, _reactRouter.Navigate));
+parcelHelpers.export(exports, "NavigationType", ()=>(0, _reactRouter.NavigationType));
+parcelHelpers.export(exports, "Outlet", ()=>(0, _reactRouter.Outlet));
+parcelHelpers.export(exports, "Route", ()=>(0, _reactRouter.Route));
+parcelHelpers.export(exports, "Router", ()=>(0, _reactRouter.Router));
+parcelHelpers.export(exports, "Routes", ()=>(0, _reactRouter.Routes));
+parcelHelpers.export(exports, "UNSAFE_DataRouterContext", ()=>(0, _reactRouter.UNSAFE_DataRouterContext));
+parcelHelpers.export(exports, "UNSAFE_DataRouterStateContext", ()=>(0, _reactRouter.UNSAFE_DataRouterStateContext));
+parcelHelpers.export(exports, "UNSAFE_LocationContext", ()=>(0, _reactRouter.UNSAFE_LocationContext));
+parcelHelpers.export(exports, "UNSAFE_NavigationContext", ()=>(0, _reactRouter.UNSAFE_NavigationContext));
+parcelHelpers.export(exports, "UNSAFE_RouteContext", ()=>(0, _reactRouter.UNSAFE_RouteContext));
+parcelHelpers.export(exports, "UNSAFE_useRouteId", ()=>(0, _reactRouter.UNSAFE_useRouteId));
+parcelHelpers.export(exports, "createMemoryRouter", ()=>(0, _reactRouter.createMemoryRouter));
+parcelHelpers.export(exports, "createPath", ()=>(0, _reactRouter.createPath));
+parcelHelpers.export(exports, "createRoutesFromChildren", ()=>(0, _reactRouter.createRoutesFromChildren));
+parcelHelpers.export(exports, "createRoutesFromElements", ()=>(0, _reactRouter.createRoutesFromElements));
+parcelHelpers.export(exports, "defer", ()=>(0, _reactRouter.defer));
+parcelHelpers.export(exports, "generatePath", ()=>(0, _reactRouter.generatePath));
+parcelHelpers.export(exports, "isRouteErrorResponse", ()=>(0, _reactRouter.isRouteErrorResponse));
+parcelHelpers.export(exports, "json", ()=>(0, _reactRouter.json));
+parcelHelpers.export(exports, "matchPath", ()=>(0, _reactRouter.matchPath));
+parcelHelpers.export(exports, "matchRoutes", ()=>(0, _reactRouter.matchRoutes));
+parcelHelpers.export(exports, "parsePath", ()=>(0, _reactRouter.parsePath));
+parcelHelpers.export(exports, "redirect", ()=>(0, _reactRouter.redirect));
+parcelHelpers.export(exports, "redirectDocument", ()=>(0, _reactRouter.redirectDocument));
+parcelHelpers.export(exports, "renderMatches", ()=>(0, _reactRouter.renderMatches));
+parcelHelpers.export(exports, "replace", ()=>(0, _reactRouter.replace));
+parcelHelpers.export(exports, "resolvePath", ()=>(0, _reactRouter.resolvePath));
+parcelHelpers.export(exports, "useActionData", ()=>(0, _reactRouter.useActionData));
+parcelHelpers.export(exports, "useAsyncError", ()=>(0, _reactRouter.useAsyncError));
+parcelHelpers.export(exports, "useAsyncValue", ()=>(0, _reactRouter.useAsyncValue));
+parcelHelpers.export(exports, "useBlocker", ()=>(0, _reactRouter.useBlocker));
+parcelHelpers.export(exports, "useHref", ()=>(0, _reactRouter.useHref));
+parcelHelpers.export(exports, "useInRouterContext", ()=>(0, _reactRouter.useInRouterContext));
+parcelHelpers.export(exports, "useLoaderData", ()=>(0, _reactRouter.useLoaderData));
+parcelHelpers.export(exports, "useLocation", ()=>(0, _reactRouter.useLocation));
+parcelHelpers.export(exports, "useMatch", ()=>(0, _reactRouter.useMatch));
+parcelHelpers.export(exports, "useMatches", ()=>(0, _reactRouter.useMatches));
+parcelHelpers.export(exports, "useNavigate", ()=>(0, _reactRouter.useNavigate));
+parcelHelpers.export(exports, "useNavigation", ()=>(0, _reactRouter.useNavigation));
+parcelHelpers.export(exports, "useNavigationType", ()=>(0, _reactRouter.useNavigationType));
+parcelHelpers.export(exports, "useOutlet", ()=>(0, _reactRouter.useOutlet));
+parcelHelpers.export(exports, "useOutletContext", ()=>(0, _reactRouter.useOutletContext));
+parcelHelpers.export(exports, "useParams", ()=>(0, _reactRouter.useParams));
+parcelHelpers.export(exports, "useResolvedPath", ()=>(0, _reactRouter.useResolvedPath));
+parcelHelpers.export(exports, "useRevalidator", ()=>(0, _reactRouter.useRevalidator));
+parcelHelpers.export(exports, "useRouteError", ()=>(0, _reactRouter.useRouteError));
+parcelHelpers.export(exports, "useRouteLoaderData", ()=>(0, _reactRouter.useRouteLoaderData));
+parcelHelpers.export(exports, "useRoutes", ()=>(0, _reactRouter.useRoutes));
+parcelHelpers.export(exports, "UNSAFE_ErrorResponseImpl", ()=>(0, _router.UNSAFE_ErrorResponseImpl));
+//#endregion
+parcelHelpers.export(exports, "BrowserRouter", ()=>BrowserRouter);
+parcelHelpers.export(exports, "Form", ()=>Form);
+parcelHelpers.export(exports, "HashRouter", ()=>HashRouter);
+parcelHelpers.export(exports, "Link", ()=>Link);
+parcelHelpers.export(exports, "NavLink", ()=>NavLink);
+parcelHelpers.export(exports, "RouterProvider", ()=>RouterProvider);
+parcelHelpers.export(exports, "ScrollRestoration", ()=>ScrollRestoration);
+parcelHelpers.export(exports, "UNSAFE_FetchersContext", ()=>FetchersContext);
+parcelHelpers.export(exports, "UNSAFE_ViewTransitionContext", ()=>ViewTransitionContext);
+parcelHelpers.export(exports, "UNSAFE_useScrollRestoration", ()=>useScrollRestoration);
+parcelHelpers.export(exports, "createBrowserRouter", ()=>createBrowserRouter);
+parcelHelpers.export(exports, "createHashRouter", ()=>createHashRouter);
+parcelHelpers.export(exports, "createSearchParams", ()=>createSearchParams);
+parcelHelpers.export(exports, "unstable_HistoryRouter", ()=>HistoryRouter);
+parcelHelpers.export(exports, "unstable_usePrompt", ()=>usePrompt);
+parcelHelpers.export(exports, "useBeforeUnload", ()=>useBeforeUnload);
+parcelHelpers.export(exports, "useFetcher", ()=>useFetcher);
+parcelHelpers.export(exports, "useFetchers", ()=>useFetchers);
+parcelHelpers.export(exports, "useFormAction", ()=>useFormAction);
+parcelHelpers.export(exports, "useLinkClickHandler", ()=>useLinkClickHandler);
+parcelHelpers.export(exports, "useSearchParams", ()=>useSearchParams);
+parcelHelpers.export(exports, "useSubmit", ()=>useSubmit);
+parcelHelpers.export(exports, "useViewTransitionState", ()=>useViewTransitionState);
+var _react = require("react");
+var _reactDom = require("react-dom");
+var _reactRouter = require("react-router");
+var _router = require("@remix-run/router");
+function _extends() {
+    _extends = Object.assign ? Object.assign.bind() : function(target) {
+        for(var i = 1; i < arguments.length; i++){
+            var source = arguments[i];
+            for(var key in source)if (Object.prototype.hasOwnProperty.call(source, key)) target[key] = source[key];
+        }
+        return target;
+    };
+    return _extends.apply(this, arguments);
+}
+function _objectWithoutPropertiesLoose(source, excluded) {
+    if (source == null) return {};
+    var target = {};
+    var sourceKeys = Object.keys(source);
+    var key, i;
+    for(i = 0; i < sourceKeys.length; i++){
+        key = sourceKeys[i];
+        if (excluded.indexOf(key) >= 0) continue;
+        target[key] = source[key];
+    }
+    return target;
+}
+const defaultMethod = "get";
+const defaultEncType = "application/x-www-form-urlencoded";
+function isHtmlElement(object) {
+    return object != null && typeof object.tagName === "string";
+}
+function isButtonElement(object) {
+    return isHtmlElement(object) && object.tagName.toLowerCase() === "button";
+}
+function isFormElement(object) {
+    return isHtmlElement(object) && object.tagName.toLowerCase() === "form";
+}
+function isInputElement(object) {
+    return isHtmlElement(object) && object.tagName.toLowerCase() === "input";
+}
+function isModifiedEvent(event) {
+    return !!(event.metaKey || event.altKey || event.ctrlKey || event.shiftKey);
+}
+function shouldProcessLinkClick(event, target) {
+    return event.button === 0 && // Ignore everything but left clicks
+    (!target || target === "_self") && // Let browser handle "target=_blank" etc.
+    !isModifiedEvent(event) // Ignore clicks with modifier keys
+    ;
+}
+/**
+ * Creates a URLSearchParams object using the given initializer.
+ *
+ * This is identical to `new URLSearchParams(init)` except it also
+ * supports arrays as values in the object form of the initializer
+ * instead of just strings. This is convenient when you need multiple
+ * values for a given key, but don't want to use an array initializer.
+ *
+ * For example, instead of:
+ *
+ *   let searchParams = new URLSearchParams([
+ *     ['sort', 'name'],
+ *     ['sort', 'price']
+ *   ]);
+ *
+ * you can do:
+ *
+ *   let searchParams = createSearchParams({
+ *     sort: ['name', 'price']
+ *   });
+ */ function createSearchParams(init) {
+    if (init === void 0) init = "";
+    return new URLSearchParams(typeof init === "string" || Array.isArray(init) || init instanceof URLSearchParams ? init : Object.keys(init).reduce((memo, key)=>{
+        let value = init[key];
+        return memo.concat(Array.isArray(value) ? value.map((v)=>[
+                key,
+                v
+            ]) : [
+            [
+                key,
+                value
+            ]
+        ]);
+    }, []));
+}
+function getSearchParamsForLocation(locationSearch, defaultSearchParams) {
+    let searchParams = createSearchParams(locationSearch);
+    if (defaultSearchParams) // Use `defaultSearchParams.forEach(...)` here instead of iterating of
+    // `defaultSearchParams.keys()` to work-around a bug in Firefox related to
+    // web extensions. Relevant Bugzilla tickets:
+    // https://bugzilla.mozilla.org/show_bug.cgi?id=1414602
+    // https://bugzilla.mozilla.org/show_bug.cgi?id=1023984
+    defaultSearchParams.forEach((_, key)=>{
+        if (!searchParams.has(key)) defaultSearchParams.getAll(key).forEach((value)=>{
+            searchParams.append(key, value);
+        });
+    });
+    return searchParams;
+}
+// One-time check for submitter support
+let _formDataSupportsSubmitter = null;
+function isFormDataSubmitterSupported() {
+    if (_formDataSupportsSubmitter === null) try {
+        new FormData(document.createElement("form"), // @ts-expect-error if FormData supports the submitter parameter, this will throw
+        0);
+        _formDataSupportsSubmitter = false;
+    } catch (e) {
+        _formDataSupportsSubmitter = true;
+    }
+    return _formDataSupportsSubmitter;
+}
+const supportedFormEncTypes = new Set([
+    "application/x-www-form-urlencoded",
+    "multipart/form-data",
+    "text/plain"
+]);
+function getFormEncType(encType) {
+    if (encType != null && !supportedFormEncTypes.has(encType)) {
+        (0, _router.UNSAFE_warning)(false, '"' + encType + '" is not a valid `encType` for `<Form>`/`<fetcher.Form>` ' + ('and will default to "' + defaultEncType + '"'));
+        return null;
+    }
+    return encType;
+}
+function getFormSubmissionInfo(target, basename) {
+    let method;
+    let action;
+    let encType;
+    let formData;
+    let body;
+    if (isFormElement(target)) {
+        // When grabbing the action from the element, it will have had the basename
+        // prefixed to ensure non-JS scenarios work, so strip it since we'll
+        // re-prefix in the router
+        let attr = target.getAttribute("action");
+        action = attr ? (0, _router.stripBasename)(attr, basename) : null;
+        method = target.getAttribute("method") || defaultMethod;
+        encType = getFormEncType(target.getAttribute("enctype")) || defaultEncType;
+        formData = new FormData(target);
+    } else if (isButtonElement(target) || isInputElement(target) && (target.type === "submit" || target.type === "image")) {
+        let form = target.form;
+        if (form == null) throw new Error('Cannot submit a <button> or <input type="submit"> without a <form>');
+        // <button>/<input type="submit"> may override attributes of <form>
+        // When grabbing the action from the element, it will have had the basename
+        // prefixed to ensure non-JS scenarios work, so strip it since we'll
+        // re-prefix in the router
+        let attr = target.getAttribute("formaction") || form.getAttribute("action");
+        action = attr ? (0, _router.stripBasename)(attr, basename) : null;
+        method = target.getAttribute("formmethod") || form.getAttribute("method") || defaultMethod;
+        encType = getFormEncType(target.getAttribute("formenctype")) || getFormEncType(form.getAttribute("enctype")) || defaultEncType;
+        // Build a FormData object populated from a form and submitter
+        formData = new FormData(form, target);
+        // If this browser doesn't support the `FormData(el, submitter)` format,
+        // then tack on the submitter value at the end.  This is a lightweight
+        // solution that is not 100% spec compliant.  For complete support in older
+        // browsers, consider using the `formdata-submitter-polyfill` package
+        if (!isFormDataSubmitterSupported()) {
+            let { name, type, value } = target;
+            if (type === "image") {
+                let prefix = name ? name + "." : "";
+                formData.append(prefix + "x", "0");
+                formData.append(prefix + "y", "0");
+            } else if (name) formData.append(name, value);
+        }
+    } else if (isHtmlElement(target)) throw new Error('Cannot submit element that is not <form>, <button>, or <input type="submit|image">');
+    else {
+        method = defaultMethod;
+        action = null;
+        encType = defaultEncType;
+        body = target;
+    }
+    // Send body for <Form encType="text/plain" so we encode it into text
+    if (formData && encType === "text/plain") {
+        body = formData;
+        formData = undefined;
+    }
+    return {
+        action,
+        method: method.toLowerCase(),
+        encType,
+        formData,
+        body
+    };
+}
+const _excluded = [
+    "onClick",
+    "relative",
+    "reloadDocument",
+    "replace",
+    "state",
+    "target",
+    "to",
+    "preventScrollReset",
+    "viewTransition"
+], _excluded2 = [
+    "aria-current",
+    "caseSensitive",
+    "className",
+    "end",
+    "style",
+    "to",
+    "viewTransition",
+    "children"
+], _excluded3 = [
+    "fetcherKey",
+    "navigate",
+    "reloadDocument",
+    "replace",
+    "state",
+    "method",
+    "action",
+    "onSubmit",
+    "relative",
+    "preventScrollReset",
+    "viewTransition"
+];
+// HEY YOU! DON'T TOUCH THIS VARIABLE!
+//
+// It is replaced with the proper version at build time via a babel plugin in
+// the rollup config.
+//
+// Export a global property onto the window for React Router detection by the
+// Core Web Vitals Technology Report.  This way they can configure the `wappalyzer`
+// to detect and properly classify live websites as being built with React Router:
+// https://github.com/HTTPArchive/wappalyzer/blob/main/src/technologies/r.json
+const REACT_ROUTER_VERSION = "6";
+try {
+    window.__reactRouterVersion = REACT_ROUTER_VERSION;
+} catch (e) {
+// no-op
+}
+function createBrowserRouter(routes, opts) {
+    return (0, _router.createRouter)({
+        basename: opts == null ? void 0 : opts.basename,
+        future: _extends({}, opts == null ? void 0 : opts.future, {
+            v7_prependBasename: true
+        }),
+        history: (0, _router.createBrowserHistory)({
+            window: opts == null ? void 0 : opts.window
+        }),
+        hydrationData: (opts == null ? void 0 : opts.hydrationData) || parseHydrationData(),
+        routes,
+        mapRouteProperties: (0, _reactRouter.UNSAFE_mapRouteProperties),
+        dataStrategy: opts == null ? void 0 : opts.dataStrategy,
+        patchRoutesOnNavigation: opts == null ? void 0 : opts.patchRoutesOnNavigation,
+        window: opts == null ? void 0 : opts.window
+    }).initialize();
+}
+function createHashRouter(routes, opts) {
+    return (0, _router.createRouter)({
+        basename: opts == null ? void 0 : opts.basename,
+        future: _extends({}, opts == null ? void 0 : opts.future, {
+            v7_prependBasename: true
+        }),
+        history: (0, _router.createHashHistory)({
+            window: opts == null ? void 0 : opts.window
+        }),
+        hydrationData: (opts == null ? void 0 : opts.hydrationData) || parseHydrationData(),
+        routes,
+        mapRouteProperties: (0, _reactRouter.UNSAFE_mapRouteProperties),
+        dataStrategy: opts == null ? void 0 : opts.dataStrategy,
+        patchRoutesOnNavigation: opts == null ? void 0 : opts.patchRoutesOnNavigation,
+        window: opts == null ? void 0 : opts.window
+    }).initialize();
+}
+function parseHydrationData() {
+    var _window;
+    let state = (_window = window) == null ? void 0 : _window.__staticRouterHydrationData;
+    if (state && state.errors) state = _extends({}, state, {
+        errors: deserializeErrors(state.errors)
+    });
+    return state;
+}
+function deserializeErrors(errors) {
+    if (!errors) return null;
+    let entries = Object.entries(errors);
+    let serialized = {};
+    for (let [key, val] of entries){
+        // Hey you!  If you change this, please change the corresponding logic in
+        // serializeErrors in react-router-dom/server.tsx :)
+        if (val && val.__type === "RouteErrorResponse") serialized[key] = new (0, _router.UNSAFE_ErrorResponseImpl)(val.status, val.statusText, val.data, val.internal === true);
+        else if (val && val.__type === "Error") {
+            // Attempt to reconstruct the right type of Error (i.e., ReferenceError)
+            if (val.__subType) {
+                let ErrorConstructor = window[val.__subType];
+                if (typeof ErrorConstructor === "function") try {
+                    // @ts-expect-error
+                    let error = new ErrorConstructor(val.message);
+                    // Wipe away the client-side stack trace.  Nothing to fill it in with
+                    // because we don't serialize SSR stack traces for security reasons
+                    error.stack = "";
+                    serialized[key] = error;
+                } catch (e) {
+                // no-op - fall through and create a normal Error
+                }
+            }
+            if (serialized[key] == null) {
+                let error = new Error(val.message);
+                // Wipe away the client-side stack trace.  Nothing to fill it in with
+                // because we don't serialize SSR stack traces for security reasons
+                error.stack = "";
+                serialized[key] = error;
+            }
+        } else serialized[key] = val;
+    }
+    return serialized;
+}
+const ViewTransitionContext = /*#__PURE__*/ _react.createContext({
+    isTransitioning: false
+});
+ViewTransitionContext.displayName = "ViewTransition";
+const FetchersContext = /*#__PURE__*/ _react.createContext(new Map());
+FetchersContext.displayName = "Fetchers";
+//#endregion
+////////////////////////////////////////////////////////////////////////////////
+//#region Components
+////////////////////////////////////////////////////////////////////////////////
+/**
+  Webpack + React 17 fails to compile on any of the following because webpack
+  complains that `startTransition` doesn't exist in `React`:
+  * import { startTransition } from "react"
+  * import * as React from from "react";
+    "startTransition" in React ? React.startTransition(() => setState()) : setState()
+  * import * as React from from "react";
+    "startTransition" in React ? React["startTransition"](() => setState()) : setState()
+
+  Moving it to a constant such as the following solves the Webpack/React 17 issue:
+  * import * as React from from "react";
+    const START_TRANSITION = "startTransition";
+    START_TRANSITION in React ? React[START_TRANSITION](() => setState()) : setState()
+
+  However, that introduces webpack/terser minification issues in production builds
+  in React 18 where minification/obfuscation ends up removing the call of
+  React.startTransition entirely from the first half of the ternary.  Grabbing
+  this exported reference once up front resolves that issue.
+
+  See https://github.com/remix-run/react-router/issues/10579
+*/ const START_TRANSITION = "startTransition";
+const startTransitionImpl = _react[START_TRANSITION];
+const FLUSH_SYNC = "flushSync";
+const flushSyncImpl = _reactDom[FLUSH_SYNC];
+const USE_ID = "useId";
+const useIdImpl = _react[USE_ID];
+function startTransitionSafe(cb) {
+    if (startTransitionImpl) startTransitionImpl(cb);
+    else cb();
+}
+function flushSyncSafe(cb) {
+    if (flushSyncImpl) flushSyncImpl(cb);
+    else cb();
+}
+class Deferred {
+    constructor(){
+        this.status = "pending";
+        this.promise = new Promise((resolve, reject)=>{
+            this.resolve = (value)=>{
+                if (this.status === "pending") {
+                    this.status = "resolved";
+                    resolve(value);
+                }
+            };
+            this.reject = (reason)=>{
+                if (this.status === "pending") {
+                    this.status = "rejected";
+                    reject(reason);
+                }
+            };
+        });
+    }
+}
+/**
+ * Given a Remix Router instance, render the appropriate UI
+ */ function RouterProvider(_ref) {
+    let { fallbackElement, router, future } = _ref;
+    let [state, setStateImpl] = _react.useState(router.state);
+    let [pendingState, setPendingState] = _react.useState();
+    let [vtContext, setVtContext] = _react.useState({
+        isTransitioning: false
+    });
+    let [renderDfd, setRenderDfd] = _react.useState();
+    let [transition, setTransition] = _react.useState();
+    let [interruption, setInterruption] = _react.useState();
+    let fetcherData = _react.useRef(new Map());
+    let { v7_startTransition } = future || {};
+    let optInStartTransition = _react.useCallback((cb)=>{
+        if (v7_startTransition) startTransitionSafe(cb);
+        else cb();
+    }, [
+        v7_startTransition
+    ]);
+    let setState = _react.useCallback((newState, _ref2)=>{
+        let { deletedFetchers, flushSync: flushSync, viewTransitionOpts: viewTransitionOpts } = _ref2;
+        deletedFetchers.forEach((key)=>fetcherData.current.delete(key));
+        newState.fetchers.forEach((fetcher, key)=>{
+            if (fetcher.data !== undefined) fetcherData.current.set(key, fetcher.data);
+        });
+        let isViewTransitionUnavailable = router.window == null || router.window.document == null || typeof router.window.document.startViewTransition !== "function";
+        // If this isn't a view transition or it's not available in this browser,
+        // just update and be done with it
+        if (!viewTransitionOpts || isViewTransitionUnavailable) {
+            if (flushSync) flushSyncSafe(()=>setStateImpl(newState));
+            else optInStartTransition(()=>setStateImpl(newState));
+            return;
+        }
+        // flushSync + startViewTransition
+        if (flushSync) {
+            // Flush through the context to mark DOM elements as transition=ing
+            flushSyncSafe(()=>{
+                // Cancel any pending transitions
+                if (transition) {
+                    renderDfd && renderDfd.resolve();
+                    transition.skipTransition();
+                }
+                setVtContext({
+                    isTransitioning: true,
+                    flushSync: true,
+                    currentLocation: viewTransitionOpts.currentLocation,
+                    nextLocation: viewTransitionOpts.nextLocation
+                });
+            });
+            // Update the DOM
+            let t = router.window.document.startViewTransition(()=>{
+                flushSyncSafe(()=>setStateImpl(newState));
+            });
+            // Clean up after the animation completes
+            t.finished.finally(()=>{
+                flushSyncSafe(()=>{
+                    setRenderDfd(undefined);
+                    setTransition(undefined);
+                    setPendingState(undefined);
+                    setVtContext({
+                        isTransitioning: false
+                    });
+                });
+            });
+            flushSyncSafe(()=>setTransition(t));
+            return;
+        }
+        // startTransition + startViewTransition
+        if (transition) {
+            // Interrupting an in-progress transition, cancel and let everything flush
+            // out, and then kick off a new transition from the interruption state
+            renderDfd && renderDfd.resolve();
+            transition.skipTransition();
+            setInterruption({
+                state: newState,
+                currentLocation: viewTransitionOpts.currentLocation,
+                nextLocation: viewTransitionOpts.nextLocation
+            });
+        } else {
+            // Completed navigation update with opted-in view transitions, let 'er rip
+            setPendingState(newState);
+            setVtContext({
+                isTransitioning: true,
+                flushSync: false,
+                currentLocation: viewTransitionOpts.currentLocation,
+                nextLocation: viewTransitionOpts.nextLocation
+            });
+        }
+    }, [
+        router.window,
+        transition,
+        renderDfd,
+        fetcherData,
+        optInStartTransition
+    ]);
+    // Need to use a layout effect here so we are subscribed early enough to
+    // pick up on any render-driven redirects/navigations (useEffect/<Navigate>)
+    _react.useLayoutEffect(()=>router.subscribe(setState), [
+        router,
+        setState
+    ]);
+    // When we start a view transition, create a Deferred we can use for the
+    // eventual "completed" render
+    _react.useEffect(()=>{
+        if (vtContext.isTransitioning && !vtContext.flushSync) setRenderDfd(new Deferred());
+    }, [
+        vtContext
+    ]);
+    // Once the deferred is created, kick off startViewTransition() to update the
+    // DOM and then wait on the Deferred to resolve (indicating the DOM update has
+    // happened)
+    _react.useEffect(()=>{
+        if (renderDfd && pendingState && router.window) {
+            let newState = pendingState;
+            let renderPromise = renderDfd.promise;
+            let transition = router.window.document.startViewTransition(async ()=>{
+                optInStartTransition(()=>setStateImpl(newState));
+                await renderPromise;
+            });
+            transition.finished.finally(()=>{
+                setRenderDfd(undefined);
+                setTransition(undefined);
+                setPendingState(undefined);
+                setVtContext({
+                    isTransitioning: false
+                });
+            });
+            setTransition(transition);
+        }
+    }, [
+        optInStartTransition,
+        pendingState,
+        renderDfd,
+        router.window
+    ]);
+    // When the new location finally renders and is committed to the DOM, this
+    // effect will run to resolve the transition
+    _react.useEffect(()=>{
+        if (renderDfd && pendingState && state.location.key === pendingState.location.key) renderDfd.resolve();
+    }, [
+        renderDfd,
+        transition,
+        state.location,
+        pendingState
+    ]);
+    // If we get interrupted with a new navigation during a transition, we skip
+    // the active transition, let it cleanup, then kick it off again here
+    _react.useEffect(()=>{
+        if (!vtContext.isTransitioning && interruption) {
+            setPendingState(interruption.state);
+            setVtContext({
+                isTransitioning: true,
+                flushSync: false,
+                currentLocation: interruption.currentLocation,
+                nextLocation: interruption.nextLocation
+            });
+            setInterruption(undefined);
+        }
+    }, [
+        vtContext.isTransitioning,
+        interruption
+    ]);
+    _react.useEffect(()=>{
+        (0, _router.UNSAFE_warning)(fallbackElement == null || !router.future.v7_partialHydration, "`<RouterProvider fallbackElement>` is deprecated when using `v7_partialHydration`, use a `HydrateFallback` component instead");
+    // Only log this once on initial mount
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
+    let navigator = _react.useMemo(()=>{
+        return {
+            createHref: router.createHref,
+            encodeLocation: router.encodeLocation,
+            go: (n)=>router.navigate(n),
+            push: (to, state, opts)=>router.navigate(to, {
+                    state,
+                    preventScrollReset: opts == null ? void 0 : opts.preventScrollReset
+                }),
+            replace: (to, state, opts)=>router.navigate(to, {
+                    replace: true,
+                    state,
+                    preventScrollReset: opts == null ? void 0 : opts.preventScrollReset
+                })
+        };
+    }, [
+        router
+    ]);
+    let basename = router.basename || "/";
+    let dataRouterContext = _react.useMemo(()=>({
+            router,
+            navigator,
+            static: false,
+            basename
+        }), [
+        router,
+        navigator,
+        basename
+    ]);
+    let routerFuture = _react.useMemo(()=>({
+            v7_relativeSplatPath: router.future.v7_relativeSplatPath
+        }), [
+        router.future.v7_relativeSplatPath
+    ]);
+    _react.useEffect(()=>(0, _reactRouter.UNSAFE_logV6DeprecationWarnings)(future, router.future), [
+        future,
+        router.future
+    ]);
+    // The fragment and {null} here are important!  We need them to keep React 18's
+    // useId happy when we are server-rendering since we may have a <script> here
+    // containing the hydrated server-side staticContext (from StaticRouterProvider).
+    // useId relies on the component tree structure to generate deterministic id's
+    // so we need to ensure it remains the same on the client even though
+    // we don't need the <script> tag
+    return /*#__PURE__*/ _react.createElement(_react.Fragment, null, /*#__PURE__*/ _react.createElement((0, _reactRouter.UNSAFE_DataRouterContext).Provider, {
+        value: dataRouterContext
+    }, /*#__PURE__*/ _react.createElement((0, _reactRouter.UNSAFE_DataRouterStateContext).Provider, {
+        value: state
+    }, /*#__PURE__*/ _react.createElement(FetchersContext.Provider, {
+        value: fetcherData.current
+    }, /*#__PURE__*/ _react.createElement(ViewTransitionContext.Provider, {
+        value: vtContext
+    }, /*#__PURE__*/ _react.createElement((0, _reactRouter.Router), {
+        basename: basename,
+        location: state.location,
+        navigationType: state.historyAction,
+        navigator: navigator,
+        future: routerFuture
+    }, state.initialized || router.future.v7_partialHydration ? /*#__PURE__*/ _react.createElement(MemoizedDataRoutes, {
+        routes: router.routes,
+        future: router.future,
+        state: state
+    }) : fallbackElement))))), null);
+}
+// Memoize to avoid re-renders when updating `ViewTransitionContext`
+const MemoizedDataRoutes = /*#__PURE__*/ _react.memo(DataRoutes);
+function DataRoutes(_ref3) {
+    let { routes, future, state } = _ref3;
+    return (0, _reactRouter.UNSAFE_useRoutesImpl)(routes, undefined, state, future);
+}
+/**
+ * A `<Router>` for use in web browsers. Provides the cleanest URLs.
+ */ function BrowserRouter(_ref4) {
+    let { basename, children, future, window: window1 } = _ref4;
+    let historyRef = _react.useRef();
+    if (historyRef.current == null) historyRef.current = (0, _router.createBrowserHistory)({
+        window: window1,
+        v5Compat: true
+    });
+    let history = historyRef.current;
+    let [state, setStateImpl] = _react.useState({
+        action: history.action,
+        location: history.location
+    });
+    let { v7_startTransition } = future || {};
+    let setState = _react.useCallback((newState)=>{
+        v7_startTransition && startTransitionImpl ? startTransitionImpl(()=>setStateImpl(newState)) : setStateImpl(newState);
+    }, [
+        setStateImpl,
+        v7_startTransition
+    ]);
+    _react.useLayoutEffect(()=>history.listen(setState), [
+        history,
+        setState
+    ]);
+    _react.useEffect(()=>(0, _reactRouter.UNSAFE_logV6DeprecationWarnings)(future), [
+        future
+    ]);
+    return /*#__PURE__*/ _react.createElement((0, _reactRouter.Router), {
+        basename: basename,
+        children: children,
+        location: state.location,
+        navigationType: state.action,
+        navigator: history,
+        future: future
+    });
+}
+/**
+ * A `<Router>` for use in web browsers. Stores the location in the hash
+ * portion of the URL so it is not sent to the server.
+ */ function HashRouter(_ref5) {
+    let { basename, children, future, window: window1 } = _ref5;
+    let historyRef = _react.useRef();
+    if (historyRef.current == null) historyRef.current = (0, _router.createHashHistory)({
+        window: window1,
+        v5Compat: true
+    });
+    let history = historyRef.current;
+    let [state, setStateImpl] = _react.useState({
+        action: history.action,
+        location: history.location
+    });
+    let { v7_startTransition } = future || {};
+    let setState = _react.useCallback((newState)=>{
+        v7_startTransition && startTransitionImpl ? startTransitionImpl(()=>setStateImpl(newState)) : setStateImpl(newState);
+    }, [
+        setStateImpl,
+        v7_startTransition
+    ]);
+    _react.useLayoutEffect(()=>history.listen(setState), [
+        history,
+        setState
+    ]);
+    _react.useEffect(()=>(0, _reactRouter.UNSAFE_logV6DeprecationWarnings)(future), [
+        future
+    ]);
+    return /*#__PURE__*/ _react.createElement((0, _reactRouter.Router), {
+        basename: basename,
+        children: children,
+        location: state.location,
+        navigationType: state.action,
+        navigator: history,
+        future: future
+    });
+}
+/**
+ * A `<Router>` that accepts a pre-instantiated history object. It's important
+ * to note that using your own history object is highly discouraged and may add
+ * two versions of the history library to your bundles unless you use the same
+ * version of the history library that React Router uses internally.
+ */ function HistoryRouter(_ref6) {
+    let { basename, children, future, history } = _ref6;
+    let [state, setStateImpl] = _react.useState({
+        action: history.action,
+        location: history.location
+    });
+    let { v7_startTransition } = future || {};
+    let setState = _react.useCallback((newState)=>{
+        v7_startTransition && startTransitionImpl ? startTransitionImpl(()=>setStateImpl(newState)) : setStateImpl(newState);
+    }, [
+        setStateImpl,
+        v7_startTransition
+    ]);
+    _react.useLayoutEffect(()=>history.listen(setState), [
+        history,
+        setState
+    ]);
+    _react.useEffect(()=>(0, _reactRouter.UNSAFE_logV6DeprecationWarnings)(future), [
+        future
+    ]);
+    return /*#__PURE__*/ _react.createElement((0, _reactRouter.Router), {
+        basename: basename,
+        children: children,
+        location: state.location,
+        navigationType: state.action,
+        navigator: history,
+        future: future
+    });
+}
+HistoryRouter.displayName = "unstable_HistoryRouter";
+const isBrowser = typeof window !== "undefined" && typeof window.document !== "undefined" && typeof window.document.createElement !== "undefined";
+const ABSOLUTE_URL_REGEX = /^(?:[a-z][a-z0-9+.-]*:|\/\/)/i;
+/**
+ * The public API for rendering a history-aware `<a>`.
+ */ const Link = /*#__PURE__*/ _react.forwardRef(function LinkWithRef(_ref7, ref) {
+    let { onClick, relative, reloadDocument, replace, state, target, to, preventScrollReset, viewTransition } = _ref7, rest = _objectWithoutPropertiesLoose(_ref7, _excluded);
+    let { basename } = _react.useContext((0, _reactRouter.UNSAFE_NavigationContext));
+    // Rendered into <a href> for absolute URLs
+    let absoluteHref;
+    let isExternal = false;
+    if (typeof to === "string" && ABSOLUTE_URL_REGEX.test(to)) {
+        // Render the absolute href server- and client-side
+        absoluteHref = to;
+        // Only check for external origins client-side
+        if (isBrowser) try {
+            let currentUrl = new URL(window.location.href);
+            let targetUrl = to.startsWith("//") ? new URL(currentUrl.protocol + to) : new URL(to);
+            let path = (0, _router.stripBasename)(targetUrl.pathname, basename);
+            if (targetUrl.origin === currentUrl.origin && path != null) // Strip the protocol/origin/basename for same-origin absolute URLs
+            to = path + targetUrl.search + targetUrl.hash;
+            else isExternal = true;
+        } catch (e) {
+            // We can't do external URL detection without a valid URL
+            (0, _router.UNSAFE_warning)(false, '<Link to="' + to + '"> contains an invalid URL which will probably break ' + "when clicked - please update to a valid URL path.");
+        }
+    }
+    // Rendered into <a href> for relative URLs
+    let href = (0, _reactRouter.useHref)(to, {
+        relative
+    });
+    let internalOnClick = useLinkClickHandler(to, {
+        replace,
+        state,
+        target,
+        preventScrollReset,
+        relative,
+        viewTransition
+    });
+    function handleClick(event) {
+        if (onClick) onClick(event);
+        if (!event.defaultPrevented) internalOnClick(event);
+    }
+    return(/*#__PURE__*/ // eslint-disable-next-line jsx-a11y/anchor-has-content
+    _react.createElement("a", _extends({}, rest, {
+        href: absoluteHref || href,
+        onClick: isExternal || reloadDocument ? onClick : handleClick,
+        ref: ref,
+        target: target
+    })));
+});
+Link.displayName = "Link";
+/**
+ * A `<Link>` wrapper that knows if it's "active" or not.
+ */ const NavLink = /*#__PURE__*/ _react.forwardRef(function NavLinkWithRef(_ref8, ref) {
+    let { "aria-current": ariaCurrentProp = "page", caseSensitive = false, className: classNameProp = "", end = false, style: styleProp, to, viewTransition, children } = _ref8, rest = _objectWithoutPropertiesLoose(_ref8, _excluded2);
+    let path = (0, _reactRouter.useResolvedPath)(to, {
+        relative: rest.relative
+    });
+    let location = (0, _reactRouter.useLocation)();
+    let routerState = _react.useContext((0, _reactRouter.UNSAFE_DataRouterStateContext));
+    let { navigator, basename } = _react.useContext((0, _reactRouter.UNSAFE_NavigationContext));
+    let isTransitioning = routerState != null && // Conditional usage is OK here because the usage of a data router is static
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    useViewTransitionState(path) && viewTransition === true;
+    let toPathname = navigator.encodeLocation ? navigator.encodeLocation(path).pathname : path.pathname;
+    let locationPathname = location.pathname;
+    let nextLocationPathname = routerState && routerState.navigation && routerState.navigation.location ? routerState.navigation.location.pathname : null;
+    if (!caseSensitive) {
+        locationPathname = locationPathname.toLowerCase();
+        nextLocationPathname = nextLocationPathname ? nextLocationPathname.toLowerCase() : null;
+        toPathname = toPathname.toLowerCase();
+    }
+    if (nextLocationPathname && basename) nextLocationPathname = (0, _router.stripBasename)(nextLocationPathname, basename) || nextLocationPathname;
+    // If the `to` has a trailing slash, look at that exact spot.  Otherwise,
+    // we're looking for a slash _after_ what's in `to`.  For example:
+    //
+    // <NavLink to="/users"> and <NavLink to="/users/">
+    // both want to look for a / at index 6 to match URL `/users/matt`
+    const endSlashPosition = toPathname !== "/" && toPathname.endsWith("/") ? toPathname.length - 1 : toPathname.length;
+    let isActive = locationPathname === toPathname || !end && locationPathname.startsWith(toPathname) && locationPathname.charAt(endSlashPosition) === "/";
+    let isPending = nextLocationPathname != null && (nextLocationPathname === toPathname || !end && nextLocationPathname.startsWith(toPathname) && nextLocationPathname.charAt(toPathname.length) === "/");
+    let renderProps = {
+        isActive,
+        isPending,
+        isTransitioning
+    };
+    let ariaCurrent = isActive ? ariaCurrentProp : undefined;
+    let className;
+    if (typeof classNameProp === "function") className = classNameProp(renderProps);
+    else // If the className prop is not a function, we use a default `active`
+    // class for <NavLink />s that are active. In v5 `active` was the default
+    // value for `activeClassName`, but we are removing that API and can still
+    // use the old default behavior for a cleaner upgrade path and keep the
+    // simple styling rules working as they currently do.
+    className = [
+        classNameProp,
+        isActive ? "active" : null,
+        isPending ? "pending" : null,
+        isTransitioning ? "transitioning" : null
+    ].filter(Boolean).join(" ");
+    let style = typeof styleProp === "function" ? styleProp(renderProps) : styleProp;
+    return /*#__PURE__*/ _react.createElement(Link, _extends({}, rest, {
+        "aria-current": ariaCurrent,
+        className: className,
+        ref: ref,
+        style: style,
+        to: to,
+        viewTransition: viewTransition
+    }), typeof children === "function" ? children(renderProps) : children);
+});
+NavLink.displayName = "NavLink";
+/**
+ * A `@remix-run/router`-aware `<form>`. It behaves like a normal form except
+ * that the interaction with the server is with `fetch` instead of new document
+ * requests, allowing components to add nicer UX to the page as the form is
+ * submitted and returns with data.
+ */ const Form = /*#__PURE__*/ _react.forwardRef((_ref9, forwardedRef)=>{
+    let { fetcherKey, navigate, reloadDocument, replace, state, method = defaultMethod, action, onSubmit, relative, preventScrollReset, viewTransition } = _ref9, props = _objectWithoutPropertiesLoose(_ref9, _excluded3);
+    let submit = useSubmit();
+    let formAction = useFormAction(action, {
+        relative
+    });
+    let formMethod = method.toLowerCase() === "get" ? "get" : "post";
+    let submitHandler = (event)=>{
+        onSubmit && onSubmit(event);
+        if (event.defaultPrevented) return;
+        event.preventDefault();
+        let submitter = event.nativeEvent.submitter;
+        let submitMethod = (submitter == null ? void 0 : submitter.getAttribute("formmethod")) || method;
+        submit(submitter || event.currentTarget, {
+            fetcherKey,
+            method: submitMethod,
+            navigate,
+            replace,
+            state,
+            relative,
+            preventScrollReset,
+            viewTransition
+        });
+    };
+    return /*#__PURE__*/ _react.createElement("form", _extends({
+        ref: forwardedRef,
+        method: formMethod,
+        action: formAction,
+        onSubmit: reloadDocument ? onSubmit : submitHandler
+    }, props));
+});
+Form.displayName = "Form";
+/**
+ * This component will emulate the browser's scroll restoration on location
+ * changes.
+ */ function ScrollRestoration(_ref10) {
+    let { getKey, storageKey } = _ref10;
+    useScrollRestoration({
+        getKey,
+        storageKey
+    });
+    return null;
+}
+ScrollRestoration.displayName = "ScrollRestoration";
+//#endregion
+////////////////////////////////////////////////////////////////////////////////
+//#region Hooks
+////////////////////////////////////////////////////////////////////////////////
+var DataRouterHook;
+(function(DataRouterHook) {
+    DataRouterHook["UseScrollRestoration"] = "useScrollRestoration";
+    DataRouterHook["UseSubmit"] = "useSubmit";
+    DataRouterHook["UseSubmitFetcher"] = "useSubmitFetcher";
+    DataRouterHook["UseFetcher"] = "useFetcher";
+    DataRouterHook["useViewTransitionState"] = "useViewTransitionState";
+})(DataRouterHook || (DataRouterHook = {}));
+var DataRouterStateHook;
+(function(DataRouterStateHook) {
+    DataRouterStateHook["UseFetcher"] = "useFetcher";
+    DataRouterStateHook["UseFetchers"] = "useFetchers";
+    DataRouterStateHook["UseScrollRestoration"] = "useScrollRestoration";
+})(DataRouterStateHook || (DataRouterStateHook = {}));
+// Internal hooks
+function getDataRouterConsoleError(hookName) {
+    return hookName + " must be used within a data router.  See https://reactrouter.com/v6/routers/picking-a-router.";
+}
+function useDataRouterContext(hookName) {
+    let ctx = _react.useContext((0, _reactRouter.UNSAFE_DataRouterContext));
+    !ctx && (0, _router.UNSAFE_invariant)(false, getDataRouterConsoleError(hookName));
+    return ctx;
+}
+function useDataRouterState(hookName) {
+    let state = _react.useContext((0, _reactRouter.UNSAFE_DataRouterStateContext));
+    !state && (0, _router.UNSAFE_invariant)(false, getDataRouterConsoleError(hookName));
+    return state;
+}
+// External hooks
+/**
+ * Handles the click behavior for router `<Link>` components. This is useful if
+ * you need to create custom `<Link>` components with the same click behavior we
+ * use in our exported `<Link>`.
+ */ function useLinkClickHandler(to, _temp) {
+    let { target, replace: replaceProp, state, preventScrollReset, relative, viewTransition } = _temp === void 0 ? {} : _temp;
+    let navigate = (0, _reactRouter.useNavigate)();
+    let location = (0, _reactRouter.useLocation)();
+    let path = (0, _reactRouter.useResolvedPath)(to, {
+        relative
+    });
+    return _react.useCallback((event)=>{
+        if (shouldProcessLinkClick(event, target)) {
+            event.preventDefault();
+            // If the URL hasn't changed, a regular <a> will do a replace instead of
+            // a push, so do the same here unless the replace prop is explicitly set
+            let replace = replaceProp !== undefined ? replaceProp : (0, _reactRouter.createPath)(location) === (0, _reactRouter.createPath)(path);
+            navigate(to, {
+                replace,
+                state,
+                preventScrollReset,
+                relative,
+                viewTransition
+            });
+        }
+    }, [
+        location,
+        navigate,
+        path,
+        replaceProp,
+        state,
+        target,
+        to,
+        preventScrollReset,
+        relative,
+        viewTransition
+    ]);
+}
+/**
+ * A convenient wrapper for reading and writing search parameters via the
+ * URLSearchParams interface.
+ */ function useSearchParams(defaultInit) {
+    (0, _router.UNSAFE_warning)(typeof URLSearchParams !== "undefined", "You cannot use the `useSearchParams` hook in a browser that does not support the URLSearchParams API. If you need to support Internet Explorer 11, we recommend you load a polyfill such as https://github.com/ungap/url-search-params.");
+    let defaultSearchParamsRef = _react.useRef(createSearchParams(defaultInit));
+    let hasSetSearchParamsRef = _react.useRef(false);
+    let location = (0, _reactRouter.useLocation)();
+    let searchParams = _react.useMemo(()=>// Only merge in the defaults if we haven't yet called setSearchParams.
+        // Once we call that we want those to take precedence, otherwise you can't
+        // remove a param with setSearchParams({}) if it has an initial value
+        getSearchParamsForLocation(location.search, hasSetSearchParamsRef.current ? null : defaultSearchParamsRef.current), [
+        location.search
+    ]);
+    let navigate = (0, _reactRouter.useNavigate)();
+    let setSearchParams = _react.useCallback((nextInit, navigateOptions)=>{
+        const newSearchParams = createSearchParams(typeof nextInit === "function" ? nextInit(searchParams) : nextInit);
+        hasSetSearchParamsRef.current = true;
+        navigate("?" + newSearchParams, navigateOptions);
+    }, [
+        navigate,
+        searchParams
+    ]);
+    return [
+        searchParams,
+        setSearchParams
+    ];
+}
+function validateClientSideSubmission() {
+    if (typeof document === "undefined") throw new Error("You are calling submit during the server render. Try calling submit within a `useEffect` or callback instead.");
+}
+let fetcherId = 0;
+let getUniqueFetcherId = ()=>"__" + String(++fetcherId) + "__";
+/**
+ * Returns a function that may be used to programmatically submit a form (or
+ * some arbitrary data) to the server.
+ */ function useSubmit() {
+    let { router } = useDataRouterContext(DataRouterHook.UseSubmit);
+    let { basename } = _react.useContext((0, _reactRouter.UNSAFE_NavigationContext));
+    let currentRouteId = (0, _reactRouter.UNSAFE_useRouteId)();
+    return _react.useCallback(function(target, options) {
+        if (options === void 0) options = {};
+        validateClientSideSubmission();
+        let { action, method, encType, formData, body } = getFormSubmissionInfo(target, basename);
+        if (options.navigate === false) {
+            let key = options.fetcherKey || getUniqueFetcherId();
+            router.fetch(key, currentRouteId, options.action || action, {
+                preventScrollReset: options.preventScrollReset,
+                formData,
+                body,
+                formMethod: options.method || method,
+                formEncType: options.encType || encType,
+                flushSync: options.flushSync
+            });
+        } else router.navigate(options.action || action, {
+            preventScrollReset: options.preventScrollReset,
+            formData,
+            body,
+            formMethod: options.method || method,
+            formEncType: options.encType || encType,
+            replace: options.replace,
+            state: options.state,
+            fromRouteId: currentRouteId,
+            flushSync: options.flushSync,
+            viewTransition: options.viewTransition
+        });
+    }, [
+        router,
+        basename,
+        currentRouteId
+    ]);
+}
+// v7: Eventually we should deprecate this entirely in favor of using the
+// router method directly?
+function useFormAction(action, _temp2) {
+    let { relative } = _temp2 === void 0 ? {} : _temp2;
+    let { basename } = _react.useContext((0, _reactRouter.UNSAFE_NavigationContext));
+    let routeContext = _react.useContext((0, _reactRouter.UNSAFE_RouteContext));
+    !routeContext && (0, _router.UNSAFE_invariant)(false, "useFormAction must be used inside a RouteContext");
+    let [match] = routeContext.matches.slice(-1);
+    // Shallow clone path so we can modify it below, otherwise we modify the
+    // object referenced by useMemo inside useResolvedPath
+    let path = _extends({}, (0, _reactRouter.useResolvedPath)(action ? action : ".", {
+        relative
+    }));
+    // If no action was specified, browsers will persist current search params
+    // when determining the path, so match that behavior
+    // https://github.com/remix-run/remix/issues/927
+    let location = (0, _reactRouter.useLocation)();
+    if (action == null) {
+        // Safe to write to this directly here since if action was undefined, we
+        // would have called useResolvedPath(".") which will never include a search
+        path.search = location.search;
+        // When grabbing search params from the URL, remove any included ?index param
+        // since it might not apply to our contextual route.  We add it back based
+        // on match.route.index below
+        let params = new URLSearchParams(path.search);
+        let indexValues = params.getAll("index");
+        let hasNakedIndexParam = indexValues.some((v)=>v === "");
+        if (hasNakedIndexParam) {
+            params.delete("index");
+            indexValues.filter((v)=>v).forEach((v)=>params.append("index", v));
+            let qs = params.toString();
+            path.search = qs ? "?" + qs : "";
+        }
+    }
+    if ((!action || action === ".") && match.route.index) path.search = path.search ? path.search.replace(/^\?/, "?index&") : "?index";
+    // If we're operating within a basename, prepend it to the pathname prior
+    // to creating the form action.  If this is a root navigation, then just use
+    // the raw basename which allows the basename to have full control over the
+    // presence of a trailing slash on root actions
+    if (basename !== "/") path.pathname = path.pathname === "/" ? basename : (0, _router.joinPaths)([
+        basename,
+        path.pathname
+    ]);
+    return (0, _reactRouter.createPath)(path);
+}
+// TODO: (v7) Change the useFetcher generic default from `any` to `unknown`
+/**
+ * Interacts with route loaders and actions without causing a navigation. Great
+ * for any interaction that stays on the same page.
+ */ function useFetcher(_temp3) {
+    var _route$matches;
+    let { key } = _temp3 === void 0 ? {} : _temp3;
+    let { router } = useDataRouterContext(DataRouterHook.UseFetcher);
+    let state = useDataRouterState(DataRouterStateHook.UseFetcher);
+    let fetcherData = _react.useContext(FetchersContext);
+    let route = _react.useContext((0, _reactRouter.UNSAFE_RouteContext));
+    let routeId = (_route$matches = route.matches[route.matches.length - 1]) == null ? void 0 : _route$matches.route.id;
+    !fetcherData && (0, _router.UNSAFE_invariant)(false, "useFetcher must be used inside a FetchersContext");
+    !route && (0, _router.UNSAFE_invariant)(false, "useFetcher must be used inside a RouteContext");
+    !(routeId != null) && (0, _router.UNSAFE_invariant)(false, 'useFetcher can only be used on routes that contain a unique "id"');
+    // Fetcher key handling
+    // OK to call conditionally to feature detect `useId`
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    let defaultKey = useIdImpl ? useIdImpl() : "";
+    let [fetcherKey, setFetcherKey] = _react.useState(key || defaultKey);
+    if (key && key !== fetcherKey) setFetcherKey(key);
+    else if (!fetcherKey) // We will only fall through here when `useId` is not available
+    setFetcherKey(getUniqueFetcherId());
+    // Registration/cleanup
+    _react.useEffect(()=>{
+        router.getFetcher(fetcherKey);
+        return ()=>{
+            // Tell the router we've unmounted - if v7_fetcherPersist is enabled this
+            // will not delete immediately but instead queue up a delete after the
+            // fetcher returns to an `idle` state
+            router.deleteFetcher(fetcherKey);
+        };
+    }, [
+        router,
+        fetcherKey
+    ]);
+    // Fetcher additions
+    let load = _react.useCallback((href, opts)=>{
+        !routeId && (0, _router.UNSAFE_invariant)(false, "No routeId available for fetcher.load()");
+        router.fetch(fetcherKey, routeId, href, opts);
+    }, [
+        fetcherKey,
+        routeId,
+        router
+    ]);
+    let submitImpl = useSubmit();
+    let submit = _react.useCallback((target, opts)=>{
+        submitImpl(target, _extends({}, opts, {
+            navigate: false,
+            fetcherKey
+        }));
+    }, [
+        fetcherKey,
+        submitImpl
+    ]);
+    let FetcherForm = _react.useMemo(()=>{
+        let FetcherForm = /*#__PURE__*/ _react.forwardRef((props, ref)=>{
+            return /*#__PURE__*/ _react.createElement(Form, _extends({}, props, {
+                navigate: false,
+                fetcherKey: fetcherKey,
+                ref: ref
+            }));
+        });
+        FetcherForm.displayName = "fetcher.Form";
+        return FetcherForm;
+    }, [
+        fetcherKey
+    ]);
+    // Exposed FetcherWithComponents
+    let fetcher = state.fetchers.get(fetcherKey) || (0, _router.IDLE_FETCHER);
+    let data = fetcherData.get(fetcherKey);
+    let fetcherWithComponents = _react.useMemo(()=>_extends({
+            Form: FetcherForm,
+            submit,
+            load
+        }, fetcher, {
+            data
+        }), [
+        FetcherForm,
+        submit,
+        load,
+        fetcher,
+        data
+    ]);
+    return fetcherWithComponents;
+}
+/**
+ * Provides all fetchers currently on the page. Useful for layouts and parent
+ * routes that need to provide pending/optimistic UI regarding the fetch.
+ */ function useFetchers() {
+    let state = useDataRouterState(DataRouterStateHook.UseFetchers);
+    return Array.from(state.fetchers.entries()).map((_ref11)=>{
+        let [key, fetcher] = _ref11;
+        return _extends({}, fetcher, {
+            key
+        });
+    });
+}
+const SCROLL_RESTORATION_STORAGE_KEY = "react-router-scroll-positions";
+let savedScrollPositions = {};
+/**
+ * When rendered inside a RouterProvider, will restore scroll positions on navigations
+ */ function useScrollRestoration(_temp4) {
+    let { getKey, storageKey } = _temp4 === void 0 ? {} : _temp4;
+    let { router } = useDataRouterContext(DataRouterHook.UseScrollRestoration);
+    let { restoreScrollPosition, preventScrollReset } = useDataRouterState(DataRouterStateHook.UseScrollRestoration);
+    let { basename } = _react.useContext((0, _reactRouter.UNSAFE_NavigationContext));
+    let location = (0, _reactRouter.useLocation)();
+    let matches = (0, _reactRouter.useMatches)();
+    let navigation = (0, _reactRouter.useNavigation)();
+    // Trigger manual scroll restoration while we're active
+    _react.useEffect(()=>{
+        window.history.scrollRestoration = "manual";
+        return ()=>{
+            window.history.scrollRestoration = "auto";
+        };
+    }, []);
+    // Save positions on pagehide
+    usePageHide(_react.useCallback(()=>{
+        if (navigation.state === "idle") {
+            let key = (getKey ? getKey(location, matches) : null) || location.key;
+            savedScrollPositions[key] = window.scrollY;
+        }
+        try {
+            sessionStorage.setItem(storageKey || SCROLL_RESTORATION_STORAGE_KEY, JSON.stringify(savedScrollPositions));
+        } catch (error) {
+            (0, _router.UNSAFE_warning)(false, "Failed to save scroll positions in sessionStorage, <ScrollRestoration /> will not work properly (" + error + ").");
+        }
+        window.history.scrollRestoration = "auto";
+    }, [
+        storageKey,
+        getKey,
+        navigation.state,
+        location,
+        matches
+    ]));
+    // Read in any saved scroll locations
+    if (typeof document !== "undefined") {
+        // eslint-disable-next-line react-hooks/rules-of-hooks
+        _react.useLayoutEffect(()=>{
+            try {
+                let sessionPositions = sessionStorage.getItem(storageKey || SCROLL_RESTORATION_STORAGE_KEY);
+                if (sessionPositions) savedScrollPositions = JSON.parse(sessionPositions);
+            } catch (e) {
+            // no-op, use default empty object
+            }
+        }, [
+            storageKey
+        ]);
+        // Enable scroll restoration in the router
+        // eslint-disable-next-line react-hooks/rules-of-hooks
+        _react.useLayoutEffect(()=>{
+            let getKeyWithoutBasename = getKey && basename !== "/" ? (location, matches)=>getKey(_extends({}, location, {
+                    pathname: (0, _router.stripBasename)(location.pathname, basename) || location.pathname
+                }), matches) : getKey;
+            let disableScrollRestoration = router == null ? void 0 : router.enableScrollRestoration(savedScrollPositions, ()=>window.scrollY, getKeyWithoutBasename);
+            return ()=>disableScrollRestoration && disableScrollRestoration();
+        }, [
+            router,
+            basename,
+            getKey
+        ]);
+        // Restore scrolling when state.restoreScrollPosition changes
+        // eslint-disable-next-line react-hooks/rules-of-hooks
+        _react.useLayoutEffect(()=>{
+            // Explicit false means don't do anything (used for submissions)
+            if (restoreScrollPosition === false) return;
+            // been here before, scroll to it
+            if (typeof restoreScrollPosition === "number") {
+                window.scrollTo(0, restoreScrollPosition);
+                return;
+            }
+            // try to scroll to the hash
+            if (location.hash) {
+                let el = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+                if (el) {
+                    el.scrollIntoView();
+                    return;
+                }
+            }
+            // Don't reset if this navigation opted out
+            if (preventScrollReset === true) return;
+            // otherwise go to the top on new locations
+            window.scrollTo(0, 0);
+        }, [
+            location,
+            restoreScrollPosition,
+            preventScrollReset
+        ]);
+    }
+}
+/**
+ * Setup a callback to be fired on the window's `beforeunload` event. This is
+ * useful for saving some data to `window.localStorage` just before the page
+ * refreshes.
+ *
+ * Note: The `callback` argument should be a function created with
+ * `React.useCallback()`.
+ */ function useBeforeUnload(callback, options) {
+    let { capture } = options || {};
+    _react.useEffect(()=>{
+        let opts = capture != null ? {
+            capture
+        } : undefined;
+        window.addEventListener("beforeunload", callback, opts);
+        return ()=>{
+            window.removeEventListener("beforeunload", callback, opts);
+        };
+    }, [
+        callback,
+        capture
+    ]);
+}
+/**
+ * Setup a callback to be fired on the window's `pagehide` event. This is
+ * useful for saving some data to `window.localStorage` just before the page
+ * refreshes.  This event is better supported than beforeunload across browsers.
+ *
+ * Note: The `callback` argument should be a function created with
+ * `React.useCallback()`.
+ */ function usePageHide(callback, options) {
+    let { capture } = options || {};
+    _react.useEffect(()=>{
+        let opts = capture != null ? {
+            capture
+        } : undefined;
+        window.addEventListener("pagehide", callback, opts);
+        return ()=>{
+            window.removeEventListener("pagehide", callback, opts);
+        };
+    }, [
+        callback,
+        capture
+    ]);
+}
+/**
+ * Wrapper around useBlocker to show a window.confirm prompt to users instead
+ * of building a custom UI with useBlocker.
+ *
+ * Warning: This has *a lot of rough edges* and behaves very differently (and
+ * very incorrectly in some cases) across browsers if user click addition
+ * back/forward navigations while the confirm is open.  Use at your own risk.
+ */ function usePrompt(_ref12) {
+    let { when, message } = _ref12;
+    let blocker = (0, _reactRouter.useBlocker)(when);
+    _react.useEffect(()=>{
+        if (blocker.state === "blocked") {
+            let proceed = window.confirm(message);
+            if (proceed) // This timeout is needed to avoid a weird "race" on POP navigations
+            // between the `window.history` revert navigation and the result of
+            // `window.confirm`
+            setTimeout(blocker.proceed, 0);
+            else blocker.reset();
+        }
+    }, [
+        blocker,
+        message
+    ]);
+    _react.useEffect(()=>{
+        if (blocker.state === "blocked" && !when) blocker.reset();
+    }, [
+        blocker,
+        when
+    ]);
+}
+/**
+ * Return a boolean indicating if there is an active view transition to the
+ * given href.  You can use this value to render CSS classes or viewTransitionName
+ * styles onto your elements
+ *
+ * @param href The destination href
+ * @param [opts.relative] Relative routing type ("route" | "path")
+ */ function useViewTransitionState(to, opts) {
+    if (opts === void 0) opts = {};
+    let vtContext = _react.useContext(ViewTransitionContext);
+    !(vtContext != null) && (0, _router.UNSAFE_invariant)(false, "`useViewTransitionState` must be used within `react-router-dom`'s `RouterProvider`.  Did you accidentally import `RouterProvider` from `react-router`?");
+    let { basename } = useDataRouterContext(DataRouterHook.useViewTransitionState);
+    let path = (0, _reactRouter.useResolvedPath)(to, {
+        relative: opts.relative
+    });
+    if (!vtContext.isTransitioning) return false;
+    let currentPath = (0, _router.stripBasename)(vtContext.currentLocation.pathname, basename) || vtContext.currentLocation.pathname;
+    let nextPath = (0, _router.stripBasename)(vtContext.nextLocation.pathname, basename) || vtContext.nextLocation.pathname;
+    // Transition is active if we're going to or coming from the indicated
+    // destination.  This ensures that other PUSH navigations that reverse
+    // an indicated transition apply.  I.e., on the list view you have:
+    //
+    //   <NavLink to="/details/1" viewTransition>
+    //
+    // If you click the breadcrumb back to the list view:
+    //
+    //   <NavLink to="/list" viewTransition>
+    //
+    // We should apply the transition because it's indicated as active going
+    // from /list -> /details/1 and therefore should be active on the reverse
+    // (even though this isn't strictly a POP reverse)
+    return (0, _router.matchPath)(path.pathname, nextPath) != null || (0, _router.matchPath)(path.pathname, currentPath) != null;
+}
+
+},{"react":"21dqq","react-dom":"j6uA9","react-router":"dbWyW","@remix-run/router":"5ncDG","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"dbWyW":[function(require,module,exports) {
+/**
+ * React Router v6.28.1
+ *
+ * Copyright (c) Remix Software Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE.md file in the root directory of this source tree.
+ *
+ * @license MIT
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "AbortedDeferredError", ()=>(0, _router.AbortedDeferredError));
+parcelHelpers.export(exports, "NavigationType", ()=>(0, _router.Action));
+parcelHelpers.export(exports, "createPath", ()=>(0, _router.createPath));
+parcelHelpers.export(exports, "defer", ()=>(0, _router.defer));
+parcelHelpers.export(exports, "generatePath", ()=>(0, _router.generatePath));
+parcelHelpers.export(exports, "isRouteErrorResponse", ()=>(0, _router.isRouteErrorResponse));
+parcelHelpers.export(exports, "json", ()=>(0, _router.json));
+parcelHelpers.export(exports, "matchPath", ()=>(0, _router.matchPath));
+parcelHelpers.export(exports, "matchRoutes", ()=>(0, _router.matchRoutes));
+parcelHelpers.export(exports, "parsePath", ()=>(0, _router.parsePath));
+parcelHelpers.export(exports, "redirect", ()=>(0, _router.redirect));
+parcelHelpers.export(exports, "redirectDocument", ()=>(0, _router.redirectDocument));
+parcelHelpers.export(exports, "replace", ()=>(0, _router.replace));
+parcelHelpers.export(exports, "resolvePath", ()=>(0, _router.resolvePath));
+parcelHelpers.export(exports, "Await", ()=>Await);
+parcelHelpers.export(exports, "MemoryRouter", ()=>MemoryRouter);
+parcelHelpers.export(exports, "Navigate", ()=>Navigate);
+parcelHelpers.export(exports, "Outlet", ()=>Outlet);
+parcelHelpers.export(exports, "Route", ()=>Route);
+parcelHelpers.export(exports, "Router", ()=>Router);
+parcelHelpers.export(exports, "RouterProvider", ()=>RouterProvider);
+parcelHelpers.export(exports, "Routes", ()=>Routes);
+parcelHelpers.export(exports, "UNSAFE_DataRouterContext", ()=>DataRouterContext);
+parcelHelpers.export(exports, "UNSAFE_DataRouterStateContext", ()=>DataRouterStateContext);
+parcelHelpers.export(exports, "UNSAFE_LocationContext", ()=>LocationContext);
+parcelHelpers.export(exports, "UNSAFE_NavigationContext", ()=>NavigationContext);
+parcelHelpers.export(exports, "UNSAFE_RouteContext", ()=>RouteContext);
+parcelHelpers.export(exports, "UNSAFE_logV6DeprecationWarnings", ()=>logV6DeprecationWarnings);
+parcelHelpers.export(exports, "UNSAFE_mapRouteProperties", ()=>mapRouteProperties);
+parcelHelpers.export(exports, "UNSAFE_useRouteId", ()=>useRouteId);
+parcelHelpers.export(exports, "UNSAFE_useRoutesImpl", ()=>useRoutesImpl);
+parcelHelpers.export(exports, "createMemoryRouter", ()=>createMemoryRouter);
+parcelHelpers.export(exports, "createRoutesFromChildren", ()=>createRoutesFromChildren);
+parcelHelpers.export(exports, "createRoutesFromElements", ()=>createRoutesFromChildren);
+parcelHelpers.export(exports, "renderMatches", ()=>renderMatches);
+parcelHelpers.export(exports, "useActionData", ()=>useActionData);
+parcelHelpers.export(exports, "useAsyncError", ()=>useAsyncError);
+parcelHelpers.export(exports, "useAsyncValue", ()=>useAsyncValue);
+parcelHelpers.export(exports, "useBlocker", ()=>useBlocker);
+parcelHelpers.export(exports, "useHref", ()=>useHref);
+parcelHelpers.export(exports, "useInRouterContext", ()=>useInRouterContext);
+parcelHelpers.export(exports, "useLoaderData", ()=>useLoaderData);
+parcelHelpers.export(exports, "useLocation", ()=>useLocation);
+parcelHelpers.export(exports, "useMatch", ()=>useMatch);
+parcelHelpers.export(exports, "useMatches", ()=>useMatches);
+parcelHelpers.export(exports, "useNavigate", ()=>useNavigate);
+parcelHelpers.export(exports, "useNavigation", ()=>useNavigation);
+parcelHelpers.export(exports, "useNavigationType", ()=>useNavigationType);
+parcelHelpers.export(exports, "useOutlet", ()=>useOutlet);
+parcelHelpers.export(exports, "useOutletContext", ()=>useOutletContext);
+parcelHelpers.export(exports, "useParams", ()=>useParams);
+parcelHelpers.export(exports, "useResolvedPath", ()=>useResolvedPath);
+parcelHelpers.export(exports, "useRevalidator", ()=>useRevalidator);
+parcelHelpers.export(exports, "useRouteError", ()=>useRouteError);
+parcelHelpers.export(exports, "useRouteLoaderData", ()=>useRouteLoaderData);
+parcelHelpers.export(exports, "useRoutes", ()=>useRoutes);
+var _react = require("react");
+var _router = require("@remix-run/router");
+function _extends() {
+    _extends = Object.assign ? Object.assign.bind() : function(target) {
+        for(var i = 1; i < arguments.length; i++){
+            var source = arguments[i];
+            for(var key in source)if (Object.prototype.hasOwnProperty.call(source, key)) target[key] = source[key];
+        }
+        return target;
+    };
+    return _extends.apply(this, arguments);
+}
+// Create react-specific types from the agnostic types in @remix-run/router to
+// export from react-router
+const DataRouterContext = /*#__PURE__*/ _react.createContext(null);
+DataRouterContext.displayName = "DataRouter";
+const DataRouterStateContext = /*#__PURE__*/ _react.createContext(null);
+DataRouterStateContext.displayName = "DataRouterState";
+const AwaitContext = /*#__PURE__*/ _react.createContext(null);
+AwaitContext.displayName = "Await";
+/**
+ * A Navigator is a "location changer"; it's how you get to different locations.
+ *
+ * Every history instance conforms to the Navigator interface, but the
+ * distinction is useful primarily when it comes to the low-level `<Router>` API
+ * where both the location and a navigator must be provided separately in order
+ * to avoid "tearing" that may occur in a suspense-enabled app if the action
+ * and/or location were to be read directly from the history instance.
+ */ const NavigationContext = /*#__PURE__*/ _react.createContext(null);
+NavigationContext.displayName = "Navigation";
+const LocationContext = /*#__PURE__*/ _react.createContext(null);
+LocationContext.displayName = "Location";
+const RouteContext = /*#__PURE__*/ _react.createContext({
+    outlet: null,
+    matches: [],
+    isDataRoute: false
+});
+RouteContext.displayName = "Route";
+const RouteErrorContext = /*#__PURE__*/ _react.createContext(null);
+RouteErrorContext.displayName = "RouteError";
+/**
+ * Returns the full href for the given "to" value. This is useful for building
+ * custom links that are also accessible and preserve right-click behavior.
+ *
+ * @see https://reactrouter.com/v6/hooks/use-href
+ */ function useHref(to, _temp) {
+    let { relative } = _temp === void 0 ? {} : _temp;
+    !useInRouterContext() && (0, _router.UNSAFE_invariant)(false, // router loaded. We can help them understand how to avoid that.
+    "useHref() may be used only in the context of a <Router> component.");
+    let { basename, navigator } = _react.useContext(NavigationContext);
+    let { hash, pathname, search } = useResolvedPath(to, {
+        relative
+    });
+    let joinedPathname = pathname;
+    // If we're operating within a basename, prepend it to the pathname prior
+    // to creating the href.  If this is a root navigation, then just use the raw
+    // basename which allows the basename to have full control over the presence
+    // of a trailing slash on root links
+    if (basename !== "/") joinedPathname = pathname === "/" ? basename : (0, _router.joinPaths)([
+        basename,
+        pathname
+    ]);
+    return navigator.createHref({
+        pathname: joinedPathname,
+        search,
+        hash
+    });
+}
+/**
+ * Returns true if this component is a descendant of a `<Router>`.
+ *
+ * @see https://reactrouter.com/v6/hooks/use-in-router-context
+ */ function useInRouterContext() {
+    return _react.useContext(LocationContext) != null;
+}
+/**
+ * Returns the current location object, which represents the current URL in web
+ * browsers.
+ *
+ * Note: If you're using this it may mean you're doing some of your own
+ * "routing" in your app, and we'd like to know what your use case is. We may
+ * be able to provide something higher-level to better suit your needs.
+ *
+ * @see https://reactrouter.com/v6/hooks/use-location
+ */ function useLocation() {
+    !useInRouterContext() && (0, _router.UNSAFE_invariant)(false, // router loaded. We can help them understand how to avoid that.
+    "useLocation() may be used only in the context of a <Router> component.");
+    return _react.useContext(LocationContext).location;
+}
+/**
+ * Returns the current navigation action which describes how the router came to
+ * the current location, either by a pop, push, or replace on the history stack.
+ *
+ * @see https://reactrouter.com/v6/hooks/use-navigation-type
+ */ function useNavigationType() {
+    return _react.useContext(LocationContext).navigationType;
+}
+/**
+ * Returns a PathMatch object if the given pattern matches the current URL.
+ * This is useful for components that need to know "active" state, e.g.
+ * `<NavLink>`.
+ *
+ * @see https://reactrouter.com/v6/hooks/use-match
+ */ function useMatch(pattern) {
+    !useInRouterContext() && (0, _router.UNSAFE_invariant)(false, // router loaded. We can help them understand how to avoid that.
+    "useMatch() may be used only in the context of a <Router> component.");
+    let { pathname } = useLocation();
+    return _react.useMemo(()=>(0, _router.matchPath)(pattern, (0, _router.UNSAFE_decodePath)(pathname)), [
+        pathname,
+        pattern
+    ]);
+}
+/**
+ * The interface for the navigate() function returned from useNavigate().
+ */ const navigateEffectWarning = "You should call navigate() in a React.useEffect(), not when your component is first rendered.";
+// Mute warnings for calls to useNavigate in SSR environments
+function useIsomorphicLayoutEffect(cb) {
+    let isStatic = _react.useContext(NavigationContext).static;
+    if (!isStatic) // We should be able to get rid of this once react 18.3 is released
+    // See: https://github.com/facebook/react/pull/26395
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    _react.useLayoutEffect(cb);
+}
+/**
+ * Returns an imperative method for changing the location. Used by `<Link>`s, but
+ * may also be used by other elements to change the location.
+ *
+ * @see https://reactrouter.com/v6/hooks/use-navigate
+ */ function useNavigate() {
+    let { isDataRoute } = _react.useContext(RouteContext);
+    // Conditional usage is OK here because the usage of a data router is static
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    return isDataRoute ? useNavigateStable() : useNavigateUnstable();
+}
+function useNavigateUnstable() {
+    !useInRouterContext() && (0, _router.UNSAFE_invariant)(false, // router loaded. We can help them understand how to avoid that.
+    "useNavigate() may be used only in the context of a <Router> component.");
+    let dataRouterContext = _react.useContext(DataRouterContext);
+    let { basename, future, navigator } = _react.useContext(NavigationContext);
+    let { matches } = _react.useContext(RouteContext);
+    let { pathname: locationPathname } = useLocation();
+    let routePathnamesJson = JSON.stringify((0, _router.UNSAFE_getResolveToMatches)(matches, future.v7_relativeSplatPath));
+    let activeRef = _react.useRef(false);
+    useIsomorphicLayoutEffect(()=>{
+        activeRef.current = true;
+    });
+    let navigate = _react.useCallback(function(to, options) {
+        if (options === void 0) options = {};
+        (0, _router.UNSAFE_warning)(activeRef.current, navigateEffectWarning);
+        // Short circuit here since if this happens on first render the navigate
+        // is useless because we haven't wired up our history listener yet
+        if (!activeRef.current) return;
+        if (typeof to === "number") {
+            navigator.go(to);
+            return;
+        }
+        let path = (0, _router.resolveTo)(to, JSON.parse(routePathnamesJson), locationPathname, options.relative === "path");
+        // If we're operating within a basename, prepend it to the pathname prior
+        // to handing off to history (but only if we're not in a data router,
+        // otherwise it'll prepend the basename inside of the router).
+        // If this is a root navigation, then we navigate to the raw basename
+        // which allows the basename to have full control over the presence of a
+        // trailing slash on root links
+        if (dataRouterContext == null && basename !== "/") path.pathname = path.pathname === "/" ? basename : (0, _router.joinPaths)([
+            basename,
+            path.pathname
+        ]);
+        (!!options.replace ? navigator.replace : navigator.push)(path, options.state, options);
+    }, [
+        basename,
+        navigator,
+        routePathnamesJson,
+        locationPathname,
+        dataRouterContext
+    ]);
+    return navigate;
+}
+const OutletContext = /*#__PURE__*/ _react.createContext(null);
+/**
+ * Returns the context (if provided) for the child route at this level of the route
+ * hierarchy.
+ * @see https://reactrouter.com/v6/hooks/use-outlet-context
+ */ function useOutletContext() {
+    return _react.useContext(OutletContext);
+}
+/**
+ * Returns the element for the child route at this level of the route
+ * hierarchy. Used internally by `<Outlet>` to render child routes.
+ *
+ * @see https://reactrouter.com/v6/hooks/use-outlet
+ */ function useOutlet(context) {
+    let outlet = _react.useContext(RouteContext).outlet;
+    if (outlet) return /*#__PURE__*/ _react.createElement(OutletContext.Provider, {
+        value: context
+    }, outlet);
+    return outlet;
+}
+/**
+ * Returns an object of key/value pairs of the dynamic params from the current
+ * URL that were matched by the route path.
+ *
+ * @see https://reactrouter.com/v6/hooks/use-params
+ */ function useParams() {
+    let { matches } = _react.useContext(RouteContext);
+    let routeMatch = matches[matches.length - 1];
+    return routeMatch ? routeMatch.params : {};
+}
+/**
+ * Resolves the pathname of the given `to` value against the current location.
+ *
+ * @see https://reactrouter.com/v6/hooks/use-resolved-path
+ */ function useResolvedPath(to, _temp2) {
+    let { relative } = _temp2 === void 0 ? {} : _temp2;
+    let { future } = _react.useContext(NavigationContext);
+    let { matches } = _react.useContext(RouteContext);
+    let { pathname: locationPathname } = useLocation();
+    let routePathnamesJson = JSON.stringify((0, _router.UNSAFE_getResolveToMatches)(matches, future.v7_relativeSplatPath));
+    return _react.useMemo(()=>(0, _router.resolveTo)(to, JSON.parse(routePathnamesJson), locationPathname, relative === "path"), [
+        to,
+        routePathnamesJson,
+        locationPathname,
+        relative
+    ]);
+}
+/**
+ * Returns the element of the route that matched the current location, prepared
+ * with the correct context to render the remainder of the route tree. Route
+ * elements in the tree must render an `<Outlet>` to render their child route's
+ * element.
+ *
+ * @see https://reactrouter.com/v6/hooks/use-routes
+ */ function useRoutes(routes, locationArg) {
+    return useRoutesImpl(routes, locationArg);
+}
+// Internal implementation with accept optional param for RouterProvider usage
+function useRoutesImpl(routes, locationArg, dataRouterState, future) {
+    !useInRouterContext() && (0, _router.UNSAFE_invariant)(false, // router loaded. We can help them understand how to avoid that.
+    "useRoutes() may be used only in the context of a <Router> component.");
+    let { navigator } = _react.useContext(NavigationContext);
+    let { matches: parentMatches } = _react.useContext(RouteContext);
+    let routeMatch = parentMatches[parentMatches.length - 1];
+    let parentParams = routeMatch ? routeMatch.params : {};
+    let parentPathname = routeMatch ? routeMatch.pathname : "/";
+    let parentPathnameBase = routeMatch ? routeMatch.pathnameBase : "/";
+    let parentRoute = routeMatch && routeMatch.route;
+    {
+        // You won't get a warning about 2 different <Routes> under a <Route>
+        // without a trailing *, but this is a best-effort warning anyway since we
+        // cannot even give the warning unless they land at the parent route.
+        //
+        // Example:
+        //
+        // <Routes>
+        //   {/* This route path MUST end with /* because otherwise
+        //       it will never match /blog/post/123 */}
+        //   <Route path="blog" element={<Blog />} />
+        //   <Route path="blog/feed" element={<BlogFeed />} />
+        // </Routes>
+        //
+        // function Blog() {
+        //   return (
+        //     <Routes>
+        //       <Route path="post/:id" element={<Post />} />
+        //     </Routes>
+        //   );
+        // }
+        let parentPath = parentRoute && parentRoute.path || "";
+        warningOnce(parentPathname, !parentRoute || parentPath.endsWith("*"), "You rendered descendant <Routes> (or called `useRoutes()`) at " + ('"' + parentPathname + '" (under <Route path="' + parentPath + '">) but the ') + 'parent route path has no trailing "*". This means if you navigate ' + "deeper, the parent won't match anymore and therefore the child " + "routes will never render.\n\n" + ('Please change the parent <Route path="' + parentPath + '"> to <Route ') + ('path="' + (parentPath === "/" ? "*" : parentPath + "/*") + '">.'));
+    }
+    let locationFromContext = useLocation();
+    let location;
+    if (locationArg) {
+        var _parsedLocationArg$pa;
+        let parsedLocationArg = typeof locationArg === "string" ? (0, _router.parsePath)(locationArg) : locationArg;
+        !(parentPathnameBase === "/" || ((_parsedLocationArg$pa = parsedLocationArg.pathname) == null ? void 0 : _parsedLocationArg$pa.startsWith(parentPathnameBase))) && (0, _router.UNSAFE_invariant)(false, "When overriding the location using `<Routes location>` or `useRoutes(routes, location)`, the location pathname must begin with the portion of the URL pathname that was " + ('matched by all parent routes. The current pathname base is "' + parentPathnameBase + '" ') + ('but pathname "' + parsedLocationArg.pathname + '" was given in the `location` prop.'));
+        location = parsedLocationArg;
+    } else location = locationFromContext;
+    let pathname = location.pathname || "/";
+    let remainingPathname = pathname;
+    if (parentPathnameBase !== "/") {
+        // Determine the remaining pathname by removing the # of URL segments the
+        // parentPathnameBase has, instead of removing based on character count.
+        // This is because we can't guarantee that incoming/outgoing encodings/
+        // decodings will match exactly.
+        // We decode paths before matching on a per-segment basis with
+        // decodeURIComponent(), but we re-encode pathnames via `new URL()` so they
+        // match what `window.location.pathname` would reflect.  Those don't 100%
+        // align when it comes to encoded URI characters such as % and &.
+        //
+        // So we may end up with:
+        //   pathname:           "/descendant/a%25b/match"
+        //   parentPathnameBase: "/descendant/a%b"
+        //
+        // And the direct substring removal approach won't work :/
+        let parentSegments = parentPathnameBase.replace(/^\//, "").split("/");
+        let segments = pathname.replace(/^\//, "").split("/");
+        remainingPathname = "/" + segments.slice(parentSegments.length).join("/");
+    }
+    let matches = (0, _router.matchRoutes)(routes, {
+        pathname: remainingPathname
+    });
+    (0, _router.UNSAFE_warning)(parentRoute || matches != null, 'No routes matched location "' + location.pathname + location.search + location.hash + '" ');
+    (0, _router.UNSAFE_warning)(matches == null || matches[matches.length - 1].route.element !== undefined || matches[matches.length - 1].route.Component !== undefined || matches[matches.length - 1].route.lazy !== undefined, 'Matched leaf route at location "' + location.pathname + location.search + location.hash + '" ' + "does not have an element or Component. This means it will render an <Outlet /> with a " + 'null value by default resulting in an "empty" page.');
+    let renderedMatches = _renderMatches(matches && matches.map((match)=>Object.assign({}, match, {
+            params: Object.assign({}, parentParams, match.params),
+            pathname: (0, _router.joinPaths)([
+                parentPathnameBase,
+                // Re-encode pathnames that were decoded inside matchRoutes
+                navigator.encodeLocation ? navigator.encodeLocation(match.pathname).pathname : match.pathname
+            ]),
+            pathnameBase: match.pathnameBase === "/" ? parentPathnameBase : (0, _router.joinPaths)([
+                parentPathnameBase,
+                // Re-encode pathnames that were decoded inside matchRoutes
+                navigator.encodeLocation ? navigator.encodeLocation(match.pathnameBase).pathname : match.pathnameBase
+            ])
+        })), parentMatches, dataRouterState, future);
+    // When a user passes in a `locationArg`, the associated routes need to
+    // be wrapped in a new `LocationContext.Provider` in order for `useLocation`
+    // to use the scoped location instead of the global location.
+    if (locationArg && renderedMatches) return /*#__PURE__*/ _react.createElement(LocationContext.Provider, {
+        value: {
+            location: _extends({
+                pathname: "/",
+                search: "",
+                hash: "",
+                state: null,
+                key: "default"
+            }, location),
+            navigationType: (0, _router.Action).Pop
+        }
+    }, renderedMatches);
+    return renderedMatches;
+}
+function DefaultErrorComponent() {
+    let error = useRouteError();
+    let message = (0, _router.isRouteErrorResponse)(error) ? error.status + " " + error.statusText : error instanceof Error ? error.message : JSON.stringify(error);
+    let stack = error instanceof Error ? error.stack : null;
+    let lightgrey = "rgba(200,200,200, 0.5)";
+    let preStyles = {
+        padding: "0.5rem",
+        backgroundColor: lightgrey
+    };
+    let codeStyles = {
+        padding: "2px 4px",
+        backgroundColor: lightgrey
+    };
+    let devInfo = null;
+    console.error("Error handled by React Router default ErrorBoundary:", error);
+    devInfo = /*#__PURE__*/ _react.createElement(_react.Fragment, null, /*#__PURE__*/ _react.createElement("p", null, "\uD83D\uDCBF Hey developer \uD83D\uDC4B"), /*#__PURE__*/ _react.createElement("p", null, "You can provide a way better UX than this when your app throws errors by providing your own ", /*#__PURE__*/ _react.createElement("code", {
+        style: codeStyles
+    }, "ErrorBoundary"), " or", " ", /*#__PURE__*/ _react.createElement("code", {
+        style: codeStyles
+    }, "errorElement"), " prop on your route."));
+    return /*#__PURE__*/ _react.createElement(_react.Fragment, null, /*#__PURE__*/ _react.createElement("h2", null, "Unexpected Application Error!"), /*#__PURE__*/ _react.createElement("h3", {
+        style: {
+            fontStyle: "italic"
+        }
+    }, message), stack ? /*#__PURE__*/ _react.createElement("pre", {
+        style: preStyles
+    }, stack) : null, devInfo);
+}
+const defaultErrorElement = /*#__PURE__*/ _react.createElement(DefaultErrorComponent, null);
+class RenderErrorBoundary extends _react.Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            location: props.location,
+            revalidation: props.revalidation,
+            error: props.error
+        };
+    }
+    static getDerivedStateFromError(error) {
+        return {
+            error: error
+        };
+    }
+    static getDerivedStateFromProps(props, state) {
+        // When we get into an error state, the user will likely click "back" to the
+        // previous page that didn't have an error. Because this wraps the entire
+        // application, that will have no effect--the error page continues to display.
+        // This gives us a mechanism to recover from the error when the location changes.
+        //
+        // Whether we're in an error state or not, we update the location in state
+        // so that when we are in an error state, it gets reset when a new location
+        // comes in and the user recovers from the error.
+        if (state.location !== props.location || state.revalidation !== "idle" && props.revalidation === "idle") return {
+            error: props.error,
+            location: props.location,
+            revalidation: props.revalidation
+        };
+        // If we're not changing locations, preserve the location but still surface
+        // any new errors that may come through. We retain the existing error, we do
+        // this because the error provided from the app state may be cleared without
+        // the location changing.
+        return {
+            error: props.error !== undefined ? props.error : state.error,
+            location: state.location,
+            revalidation: props.revalidation || state.revalidation
+        };
+    }
+    componentDidCatch(error, errorInfo) {
+        console.error("React Router caught the following error during render", error, errorInfo);
+    }
+    render() {
+        return this.state.error !== undefined ? /*#__PURE__*/ _react.createElement(RouteContext.Provider, {
+            value: this.props.routeContext
+        }, /*#__PURE__*/ _react.createElement(RouteErrorContext.Provider, {
+            value: this.state.error,
+            children: this.props.component
+        })) : this.props.children;
+    }
+}
+function RenderedRoute(_ref) {
+    let { routeContext, match, children } = _ref;
+    let dataRouterContext = _react.useContext(DataRouterContext);
+    // Track how deep we got in our render pass to emulate SSR componentDidCatch
+    // in a DataStaticRouter
+    if (dataRouterContext && dataRouterContext.static && dataRouterContext.staticContext && (match.route.errorElement || match.route.ErrorBoundary)) dataRouterContext.staticContext._deepestRenderedBoundaryId = match.route.id;
+    return /*#__PURE__*/ _react.createElement(RouteContext.Provider, {
+        value: routeContext
+    }, children);
+}
+function _renderMatches(matches, parentMatches, dataRouterState, future) {
+    var _dataRouterState;
+    if (parentMatches === void 0) parentMatches = [];
+    if (dataRouterState === void 0) dataRouterState = null;
+    if (future === void 0) future = null;
+    if (matches == null) {
+        var _future;
+        if (!dataRouterState) return null;
+        if (dataRouterState.errors) // Don't bail if we have data router errors so we can render them in the
+        // boundary.  Use the pre-matched (or shimmed) matches
+        matches = dataRouterState.matches;
+        else if ((_future = future) != null && _future.v7_partialHydration && parentMatches.length === 0 && !dataRouterState.initialized && dataRouterState.matches.length > 0) // Don't bail if we're initializing with partial hydration and we have
+        // router matches.  That means we're actively running `patchRoutesOnNavigation`
+        // so we should render down the partial matches to the appropriate
+        // `HydrateFallback`.  We only do this if `parentMatches` is empty so it
+        // only impacts the root matches for `RouterProvider` and no descendant
+        // `<Routes>`
+        matches = dataRouterState.matches;
+        else return null;
+    }
+    let renderedMatches = matches;
+    // If we have data errors, trim matches to the highest error boundary
+    let errors = (_dataRouterState = dataRouterState) == null ? void 0 : _dataRouterState.errors;
+    if (errors != null) {
+        let errorIndex = renderedMatches.findIndex((m)=>m.route.id && (errors == null ? void 0 : errors[m.route.id]) !== undefined);
+        !(errorIndex >= 0) && (0, _router.UNSAFE_invariant)(false, "Could not find a matching route for errors on route IDs: " + Object.keys(errors).join(","));
+        renderedMatches = renderedMatches.slice(0, Math.min(renderedMatches.length, errorIndex + 1));
+    }
+    // If we're in a partial hydration mode, detect if we need to render down to
+    // a given HydrateFallback while we load the rest of the hydration data
+    let renderFallback = false;
+    let fallbackIndex = -1;
+    if (dataRouterState && future && future.v7_partialHydration) for(let i = 0; i < renderedMatches.length; i++){
+        let match = renderedMatches[i];
+        // Track the deepest fallback up until the first route without data
+        if (match.route.HydrateFallback || match.route.hydrateFallbackElement) fallbackIndex = i;
+        if (match.route.id) {
+            let { loaderData, errors } = dataRouterState;
+            let needsToRunLoader = match.route.loader && loaderData[match.route.id] === undefined && (!errors || errors[match.route.id] === undefined);
+            if (match.route.lazy || needsToRunLoader) {
+                // We found the first route that's not ready to render (waiting on
+                // lazy, or has a loader that hasn't run yet).  Flag that we need to
+                // render a fallback and render up until the appropriate fallback
+                renderFallback = true;
+                if (fallbackIndex >= 0) renderedMatches = renderedMatches.slice(0, fallbackIndex + 1);
+                else renderedMatches = [
+                    renderedMatches[0]
+                ];
+                break;
+            }
+        }
+    }
+    return renderedMatches.reduceRight((outlet, match, index)=>{
+        // Only data routers handle errors/fallbacks
+        let error;
+        let shouldRenderHydrateFallback = false;
+        let errorElement = null;
+        let hydrateFallbackElement = null;
+        if (dataRouterState) {
+            error = errors && match.route.id ? errors[match.route.id] : undefined;
+            errorElement = match.route.errorElement || defaultErrorElement;
+            if (renderFallback) {
+                if (fallbackIndex < 0 && index === 0) {
+                    warningOnce("route-fallback", false, "No `HydrateFallback` element provided to render during initial hydration");
+                    shouldRenderHydrateFallback = true;
+                    hydrateFallbackElement = null;
+                } else if (fallbackIndex === index) {
+                    shouldRenderHydrateFallback = true;
+                    hydrateFallbackElement = match.route.hydrateFallbackElement || null;
+                }
+            }
+        }
+        let matches = parentMatches.concat(renderedMatches.slice(0, index + 1));
+        let getChildren = ()=>{
+            let children;
+            if (error) children = errorElement;
+            else if (shouldRenderHydrateFallback) children = hydrateFallbackElement;
+            else if (match.route.Component) // Note: This is a de-optimized path since React won't re-use the
+            // ReactElement since it's identity changes with each new
+            // React.createElement call.  We keep this so folks can use
+            // `<Route Component={...}>` in `<Routes>` but generally `Component`
+            // usage is only advised in `RouterProvider` when we can convert it to
+            // `element` ahead of time.
+            children = /*#__PURE__*/ _react.createElement(match.route.Component, null);
+            else if (match.route.element) children = match.route.element;
+            else children = outlet;
+            return /*#__PURE__*/ _react.createElement(RenderedRoute, {
+                match: match,
+                routeContext: {
+                    outlet,
+                    matches,
+                    isDataRoute: dataRouterState != null
+                },
+                children: children
+            });
+        };
+        // Only wrap in an error boundary within data router usages when we have an
+        // ErrorBoundary/errorElement on this route.  Otherwise let it bubble up to
+        // an ancestor ErrorBoundary/errorElement
+        return dataRouterState && (match.route.ErrorBoundary || match.route.errorElement || index === 0) ? /*#__PURE__*/ _react.createElement(RenderErrorBoundary, {
+            location: dataRouterState.location,
+            revalidation: dataRouterState.revalidation,
+            component: errorElement,
+            error: error,
+            children: getChildren(),
+            routeContext: {
+                outlet: null,
+                matches,
+                isDataRoute: true
+            }
+        }) : getChildren();
+    }, null);
+}
+var DataRouterHook = /*#__PURE__*/ function(DataRouterHook) {
+    DataRouterHook["UseBlocker"] = "useBlocker";
+    DataRouterHook["UseRevalidator"] = "useRevalidator";
+    DataRouterHook["UseNavigateStable"] = "useNavigate";
+    return DataRouterHook;
+}(DataRouterHook || {});
+var DataRouterStateHook = /*#__PURE__*/ function(DataRouterStateHook) {
+    DataRouterStateHook["UseBlocker"] = "useBlocker";
+    DataRouterStateHook["UseLoaderData"] = "useLoaderData";
+    DataRouterStateHook["UseActionData"] = "useActionData";
+    DataRouterStateHook["UseRouteError"] = "useRouteError";
+    DataRouterStateHook["UseNavigation"] = "useNavigation";
+    DataRouterStateHook["UseRouteLoaderData"] = "useRouteLoaderData";
+    DataRouterStateHook["UseMatches"] = "useMatches";
+    DataRouterStateHook["UseRevalidator"] = "useRevalidator";
+    DataRouterStateHook["UseNavigateStable"] = "useNavigate";
+    DataRouterStateHook["UseRouteId"] = "useRouteId";
+    return DataRouterStateHook;
+}(DataRouterStateHook || {});
+function getDataRouterConsoleError(hookName) {
+    return hookName + " must be used within a data router.  See https://reactrouter.com/v6/routers/picking-a-router.";
+}
+function useDataRouterContext(hookName) {
+    let ctx = _react.useContext(DataRouterContext);
+    !ctx && (0, _router.UNSAFE_invariant)(false, getDataRouterConsoleError(hookName));
+    return ctx;
+}
+function useDataRouterState(hookName) {
+    let state = _react.useContext(DataRouterStateContext);
+    !state && (0, _router.UNSAFE_invariant)(false, getDataRouterConsoleError(hookName));
+    return state;
+}
+function useRouteContext(hookName) {
+    let route = _react.useContext(RouteContext);
+    !route && (0, _router.UNSAFE_invariant)(false, getDataRouterConsoleError(hookName));
+    return route;
+}
+// Internal version with hookName-aware debugging
+function useCurrentRouteId(hookName) {
+    let route = useRouteContext(hookName);
+    let thisRoute = route.matches[route.matches.length - 1];
+    !thisRoute.route.id && (0, _router.UNSAFE_invariant)(false, hookName + ' can only be used on routes that contain a unique "id"');
+    return thisRoute.route.id;
+}
+/**
+ * Returns the ID for the nearest contextual route
+ */ function useRouteId() {
+    return useCurrentRouteId(DataRouterStateHook.UseRouteId);
+}
+/**
+ * Returns the current navigation, defaulting to an "idle" navigation when
+ * no navigation is in progress
+ */ function useNavigation() {
+    let state = useDataRouterState(DataRouterStateHook.UseNavigation);
+    return state.navigation;
+}
+/**
+ * Returns a revalidate function for manually triggering revalidation, as well
+ * as the current state of any manual revalidations
+ */ function useRevalidator() {
+    let dataRouterContext = useDataRouterContext(DataRouterHook.UseRevalidator);
+    let state = useDataRouterState(DataRouterStateHook.UseRevalidator);
+    return _react.useMemo(()=>({
+            revalidate: dataRouterContext.router.revalidate,
+            state: state.revalidation
+        }), [
+        dataRouterContext.router.revalidate,
+        state.revalidation
+    ]);
+}
+/**
+ * Returns the active route matches, useful for accessing loaderData for
+ * parent/child routes or the route "handle" property
+ */ function useMatches() {
+    let { matches, loaderData } = useDataRouterState(DataRouterStateHook.UseMatches);
+    return _react.useMemo(()=>matches.map((m)=>(0, _router.UNSAFE_convertRouteMatchToUiMatch)(m, loaderData)), [
+        matches,
+        loaderData
+    ]);
+}
+/**
+ * Returns the loader data for the nearest ancestor Route loader
+ */ function useLoaderData() {
+    let state = useDataRouterState(DataRouterStateHook.UseLoaderData);
+    let routeId = useCurrentRouteId(DataRouterStateHook.UseLoaderData);
+    if (state.errors && state.errors[routeId] != null) {
+        console.error("You cannot `useLoaderData` in an errorElement (routeId: " + routeId + ")");
+        return undefined;
+    }
+    return state.loaderData[routeId];
+}
+/**
+ * Returns the loaderData for the given routeId
+ */ function useRouteLoaderData(routeId) {
+    let state = useDataRouterState(DataRouterStateHook.UseRouteLoaderData);
+    return state.loaderData[routeId];
+}
+/**
+ * Returns the action data for the nearest ancestor Route action
+ */ function useActionData() {
+    let state = useDataRouterState(DataRouterStateHook.UseActionData);
+    let routeId = useCurrentRouteId(DataRouterStateHook.UseLoaderData);
+    return state.actionData ? state.actionData[routeId] : undefined;
+}
+/**
+ * Returns the nearest ancestor Route error, which could be a loader/action
+ * error or a render error.  This is intended to be called from your
+ * ErrorBoundary/errorElement to display a proper error message.
+ */ function useRouteError() {
+    var _state$errors;
+    let error = _react.useContext(RouteErrorContext);
+    let state = useDataRouterState(DataRouterStateHook.UseRouteError);
+    let routeId = useCurrentRouteId(DataRouterStateHook.UseRouteError);
+    // If this was a render error, we put it in a RouteError context inside
+    // of RenderErrorBoundary
+    if (error !== undefined) return error;
+    // Otherwise look for errors from our data router state
+    return (_state$errors = state.errors) == null ? void 0 : _state$errors[routeId];
+}
+/**
+ * Returns the happy-path data from the nearest ancestor `<Await />` value
+ */ function useAsyncValue() {
+    let value = _react.useContext(AwaitContext);
+    return value == null ? void 0 : value._data;
+}
+/**
+ * Returns the error from the nearest ancestor `<Await />` value
+ */ function useAsyncError() {
+    let value = _react.useContext(AwaitContext);
+    return value == null ? void 0 : value._error;
+}
+let blockerId = 0;
+/**
+ * Allow the application to block navigations within the SPA and present the
+ * user a confirmation dialog to confirm the navigation.  Mostly used to avoid
+ * using half-filled form data.  This does not handle hard-reloads or
+ * cross-origin navigations.
+ */ function useBlocker(shouldBlock) {
+    let { router, basename } = useDataRouterContext(DataRouterHook.UseBlocker);
+    let state = useDataRouterState(DataRouterStateHook.UseBlocker);
+    let [blockerKey, setBlockerKey] = _react.useState("");
+    let blockerFunction = _react.useCallback((arg)=>{
+        if (typeof shouldBlock !== "function") return !!shouldBlock;
+        if (basename === "/") return shouldBlock(arg);
+        // If they provided us a function and we've got an active basename, strip
+        // it from the locations we expose to the user to match the behavior of
+        // useLocation
+        let { currentLocation, nextLocation, historyAction } = arg;
+        return shouldBlock({
+            currentLocation: _extends({}, currentLocation, {
+                pathname: (0, _router.stripBasename)(currentLocation.pathname, basename) || currentLocation.pathname
+            }),
+            nextLocation: _extends({}, nextLocation, {
+                pathname: (0, _router.stripBasename)(nextLocation.pathname, basename) || nextLocation.pathname
+            }),
+            historyAction
+        });
+    }, [
+        basename,
+        shouldBlock
+    ]);
+    // This effect is in charge of blocker key assignment and deletion (which is
+    // tightly coupled to the key)
+    _react.useEffect(()=>{
+        let key = String(++blockerId);
+        setBlockerKey(key);
+        return ()=>router.deleteBlocker(key);
+    }, [
+        router
+    ]);
+    // This effect handles assigning the blockerFunction.  This is to handle
+    // unstable blocker function identities, and happens only after the prior
+    // effect so we don't get an orphaned blockerFunction in the router with a
+    // key of "".  Until then we just have the IDLE_BLOCKER.
+    _react.useEffect(()=>{
+        if (blockerKey !== "") router.getBlocker(blockerKey, blockerFunction);
+    }, [
+        router,
+        blockerKey,
+        blockerFunction
+    ]);
+    // Prefer the blocker from `state` not `router.state` since DataRouterContext
+    // is memoized so this ensures we update on blocker state updates
+    return blockerKey && state.blockers.has(blockerKey) ? state.blockers.get(blockerKey) : (0, _router.IDLE_BLOCKER);
+}
+/**
+ * Stable version of useNavigate that is used when we are in the context of
+ * a RouterProvider.
+ */ function useNavigateStable() {
+    let { router } = useDataRouterContext(DataRouterHook.UseNavigateStable);
+    let id = useCurrentRouteId(DataRouterStateHook.UseNavigateStable);
+    let activeRef = _react.useRef(false);
+    useIsomorphicLayoutEffect(()=>{
+        activeRef.current = true;
+    });
+    let navigate = _react.useCallback(function(to, options) {
+        if (options === void 0) options = {};
+        (0, _router.UNSAFE_warning)(activeRef.current, navigateEffectWarning);
+        // Short circuit here since if this happens on first render the navigate
+        // is useless because we haven't wired up our router subscriber yet
+        if (!activeRef.current) return;
+        if (typeof to === "number") router.navigate(to);
+        else router.navigate(to, _extends({
+            fromRouteId: id
+        }, options));
+    }, [
+        router,
+        id
+    ]);
+    return navigate;
+}
+const alreadyWarned$1 = {};
+function warningOnce(key, cond, message) {
+    if (!cond && !alreadyWarned$1[key]) {
+        alreadyWarned$1[key] = true;
+        (0, _router.UNSAFE_warning)(false, message);
+    }
+}
+const alreadyWarned = {};
+function warnOnce(key, message) {
+    if (!alreadyWarned[message]) {
+        alreadyWarned[message] = true;
+        console.warn(message);
+    }
+}
+const logDeprecation = (flag, msg, link)=>warnOnce(flag, "\u26A0\uFE0F React Router Future Flag Warning: " + msg + ". " + ("You can use the `" + flag + "` future flag to opt-in early. ") + ("For more information, see " + link + "."));
+function logV6DeprecationWarnings(renderFuture, routerFuture) {
+    if ((renderFuture == null ? void 0 : renderFuture.v7_startTransition) === undefined) logDeprecation("v7_startTransition", "React Router will begin wrapping state updates in `React.startTransition` in v7", "https://reactrouter.com/v6/upgrading/future#v7_starttransition");
+    if ((renderFuture == null ? void 0 : renderFuture.v7_relativeSplatPath) === undefined && (!routerFuture || !routerFuture.v7_relativeSplatPath)) logDeprecation("v7_relativeSplatPath", "Relative route resolution within Splat routes is changing in v7", "https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath");
+    if (routerFuture) {
+        if (routerFuture.v7_fetcherPersist === undefined) logDeprecation("v7_fetcherPersist", "The persistence behavior of fetchers is changing in v7", "https://reactrouter.com/v6/upgrading/future#v7_fetcherpersist");
+        if (routerFuture.v7_normalizeFormMethod === undefined) logDeprecation("v7_normalizeFormMethod", "Casing of `formMethod` fields is being normalized to uppercase in v7", "https://reactrouter.com/v6/upgrading/future#v7_normalizeformmethod");
+        if (routerFuture.v7_partialHydration === undefined) logDeprecation("v7_partialHydration", "`RouterProvider` hydration behavior is changing in v7", "https://reactrouter.com/v6/upgrading/future#v7_partialhydration");
+        if (routerFuture.v7_skipActionErrorRevalidation === undefined) logDeprecation("v7_skipActionErrorRevalidation", "The revalidation behavior after 4xx/5xx `action` responses is changing in v7", "https://reactrouter.com/v6/upgrading/future#v7_skipactionerrorrevalidation");
+    }
+}
+/**
+  Webpack + React 17 fails to compile on any of the following because webpack
+  complains that `startTransition` doesn't exist in `React`:
+  * import { startTransition } from "react"
+  * import * as React from from "react";
+    "startTransition" in React ? React.startTransition(() => setState()) : setState()
+  * import * as React from from "react";
+    "startTransition" in React ? React["startTransition"](() => setState()) : setState()
+
+  Moving it to a constant such as the following solves the Webpack/React 17 issue:
+  * import * as React from from "react";
+    const START_TRANSITION = "startTransition";
+    START_TRANSITION in React ? React[START_TRANSITION](() => setState()) : setState()
+
+  However, that introduces webpack/terser minification issues in production builds
+  in React 18 where minification/obfuscation ends up removing the call of
+  React.startTransition entirely from the first half of the ternary.  Grabbing
+  this exported reference once up front resolves that issue.
+
+  See https://github.com/remix-run/react-router/issues/10579
+*/ const START_TRANSITION = "startTransition";
+const startTransitionImpl = _react[START_TRANSITION];
+/**
+ * Given a Remix Router instance, render the appropriate UI
+ */ function RouterProvider(_ref) {
+    let { fallbackElement, router, future } = _ref;
+    let [state, setStateImpl] = _react.useState(router.state);
+    let { v7_startTransition } = future || {};
+    let setState = _react.useCallback((newState)=>{
+        if (v7_startTransition && startTransitionImpl) startTransitionImpl(()=>setStateImpl(newState));
+        else setStateImpl(newState);
+    }, [
+        setStateImpl,
+        v7_startTransition
+    ]);
+    // Need to use a layout effect here so we are subscribed early enough to
+    // pick up on any render-driven redirects/navigations (useEffect/<Navigate>)
+    _react.useLayoutEffect(()=>router.subscribe(setState), [
+        router,
+        setState
+    ]);
+    _react.useEffect(()=>{
+        (0, _router.UNSAFE_warning)(fallbackElement == null || !router.future.v7_partialHydration, "`<RouterProvider fallbackElement>` is deprecated when using `v7_partialHydration`, use a `HydrateFallback` component instead");
+    // Only log this once on initial mount
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
+    let navigator = _react.useMemo(()=>{
+        return {
+            createHref: router.createHref,
+            encodeLocation: router.encodeLocation,
+            go: (n)=>router.navigate(n),
+            push: (to, state, opts)=>router.navigate(to, {
+                    state,
+                    preventScrollReset: opts == null ? void 0 : opts.preventScrollReset
+                }),
+            replace: (to, state, opts)=>router.navigate(to, {
+                    replace: true,
+                    state,
+                    preventScrollReset: opts == null ? void 0 : opts.preventScrollReset
+                })
+        };
+    }, [
+        router
+    ]);
+    let basename = router.basename || "/";
+    let dataRouterContext = _react.useMemo(()=>({
+            router,
+            navigator,
+            static: false,
+            basename
+        }), [
+        router,
+        navigator,
+        basename
+    ]);
+    _react.useEffect(()=>logV6DeprecationWarnings(future, router.future), [
+        router,
+        future
+    ]);
+    // The fragment and {null} here are important!  We need them to keep React 18's
+    // useId happy when we are server-rendering since we may have a <script> here
+    // containing the hydrated server-side staticContext (from StaticRouterProvider).
+    // useId relies on the component tree structure to generate deterministic id's
+    // so we need to ensure it remains the same on the client even though
+    // we don't need the <script> tag
+    return /*#__PURE__*/ _react.createElement(_react.Fragment, null, /*#__PURE__*/ _react.createElement(DataRouterContext.Provider, {
+        value: dataRouterContext
+    }, /*#__PURE__*/ _react.createElement(DataRouterStateContext.Provider, {
+        value: state
+    }, /*#__PURE__*/ _react.createElement(Router, {
+        basename: basename,
+        location: state.location,
+        navigationType: state.historyAction,
+        navigator: navigator,
+        future: {
+            v7_relativeSplatPath: router.future.v7_relativeSplatPath
+        }
+    }, state.initialized || router.future.v7_partialHydration ? /*#__PURE__*/ _react.createElement(DataRoutes, {
+        routes: router.routes,
+        future: router.future,
+        state: state
+    }) : fallbackElement))), null);
+}
+function DataRoutes(_ref2) {
+    let { routes, future, state } = _ref2;
+    return useRoutesImpl(routes, undefined, state, future);
+}
+/**
+ * A `<Router>` that stores all entries in memory.
+ *
+ * @see https://reactrouter.com/v6/router-components/memory-router
+ */ function MemoryRouter(_ref3) {
+    let { basename, children, initialEntries, initialIndex, future } = _ref3;
+    let historyRef = _react.useRef();
+    if (historyRef.current == null) historyRef.current = (0, _router.createMemoryHistory)({
+        initialEntries,
+        initialIndex,
+        v5Compat: true
+    });
+    let history = historyRef.current;
+    let [state, setStateImpl] = _react.useState({
+        action: history.action,
+        location: history.location
+    });
+    let { v7_startTransition } = future || {};
+    let setState = _react.useCallback((newState)=>{
+        v7_startTransition && startTransitionImpl ? startTransitionImpl(()=>setStateImpl(newState)) : setStateImpl(newState);
+    }, [
+        setStateImpl,
+        v7_startTransition
+    ]);
+    _react.useLayoutEffect(()=>history.listen(setState), [
+        history,
+        setState
+    ]);
+    _react.useEffect(()=>logV6DeprecationWarnings(future), [
+        future
+    ]);
+    return /*#__PURE__*/ _react.createElement(Router, {
+        basename: basename,
+        children: children,
+        location: state.location,
+        navigationType: state.action,
+        navigator: history,
+        future: future
+    });
+}
+/**
+ * Changes the current location.
+ *
+ * Note: This API is mostly useful in React.Component subclasses that are not
+ * able to use hooks. In functional components, we recommend you use the
+ * `useNavigate` hook instead.
+ *
+ * @see https://reactrouter.com/v6/components/navigate
+ */ function Navigate(_ref4) {
+    let { to, replace, state, relative } = _ref4;
+    !useInRouterContext() && (0, _router.UNSAFE_invariant)(false, // the router loaded. We can help them understand how to avoid that.
+    "<Navigate> may be used only in the context of a <Router> component.");
+    let { future, static: isStatic } = _react.useContext(NavigationContext);
+    (0, _router.UNSAFE_warning)(!isStatic, "<Navigate> must not be used on the initial render in a <StaticRouter>. This is a no-op, but you should modify your code so the <Navigate> is only ever rendered in response to some user interaction or state change.");
+    let { matches } = _react.useContext(RouteContext);
+    let { pathname: locationPathname } = useLocation();
+    let navigate = useNavigate();
+    // Resolve the path outside of the effect so that when effects run twice in
+    // StrictMode they navigate to the same place
+    let path = (0, _router.resolveTo)(to, (0, _router.UNSAFE_getResolveToMatches)(matches, future.v7_relativeSplatPath), locationPathname, relative === "path");
+    let jsonPath = JSON.stringify(path);
+    _react.useEffect(()=>navigate(JSON.parse(jsonPath), {
+            replace,
+            state,
+            relative
+        }), [
+        navigate,
+        jsonPath,
+        relative,
+        replace,
+        state
+    ]);
+    return null;
+}
+/**
+ * Renders the child route's element, if there is one.
+ *
+ * @see https://reactrouter.com/v6/components/outlet
+ */ function Outlet(props) {
+    return useOutlet(props.context);
+}
+/**
+ * Declares an element that should be rendered at a certain URL path.
+ *
+ * @see https://reactrouter.com/v6/components/route
+ */ function Route(_props) {
+    (0, _router.UNSAFE_invariant)(false, "A <Route> is only ever to be used as the child of <Routes> element, never rendered directly. Please wrap your <Route> in a <Routes>.");
+}
+/**
+ * Provides location context for the rest of the app.
+ *
+ * Note: You usually won't render a `<Router>` directly. Instead, you'll render a
+ * router that is more specific to your environment such as a `<BrowserRouter>`
+ * in web browsers or a `<StaticRouter>` for server rendering.
+ *
+ * @see https://reactrouter.com/v6/router-components/router
+ */ function Router(_ref5) {
+    let { basename: basenameProp = "/", children = null, location: locationProp, navigationType = (0, _router.Action).Pop, navigator, static: staticProp = false, future } = _ref5;
+    !!useInRouterContext() && (0, _router.UNSAFE_invariant)(false, "You cannot render a <Router> inside another <Router>. You should never have more than one in your app.");
+    // Preserve trailing slashes on basename, so we can let the user control
+    // the enforcement of trailing slashes throughout the app
+    let basename = basenameProp.replace(/^\/*/, "/");
+    let navigationContext = _react.useMemo(()=>({
+            basename,
+            navigator,
+            static: staticProp,
+            future: _extends({
+                v7_relativeSplatPath: false
+            }, future)
+        }), [
+        basename,
+        future,
+        navigator,
+        staticProp
+    ]);
+    if (typeof locationProp === "string") locationProp = (0, _router.parsePath)(locationProp);
+    let { pathname = "/", search = "", hash = "", state = null, key = "default" } = locationProp;
+    let locationContext = _react.useMemo(()=>{
+        let trailingPathname = (0, _router.stripBasename)(pathname, basename);
+        if (trailingPathname == null) return null;
+        return {
+            location: {
+                pathname: trailingPathname,
+                search,
+                hash,
+                state,
+                key
+            },
+            navigationType
+        };
+    }, [
+        basename,
+        pathname,
+        search,
+        hash,
+        state,
+        key,
+        navigationType
+    ]);
+    (0, _router.UNSAFE_warning)(locationContext != null, '<Router basename="' + basename + '"> is not able to match the URL ' + ('"' + pathname + search + hash + '" because it does not start with the ') + "basename, so the <Router> won't render anything.");
+    if (locationContext == null) return null;
+    return /*#__PURE__*/ _react.createElement(NavigationContext.Provider, {
+        value: navigationContext
+    }, /*#__PURE__*/ _react.createElement(LocationContext.Provider, {
+        children: children,
+        value: locationContext
+    }));
+}
+/**
+ * A container for a nested tree of `<Route>` elements that renders the branch
+ * that best matches the current location.
+ *
+ * @see https://reactrouter.com/v6/components/routes
+ */ function Routes(_ref6) {
+    let { children, location } = _ref6;
+    return useRoutes(createRoutesFromChildren(children), location);
+}
+/**
+ * Component to use for rendering lazily loaded data from returning defer()
+ * in a loader function
+ */ function Await(_ref7) {
+    let { children, errorElement, resolve } = _ref7;
+    return /*#__PURE__*/ _react.createElement(AwaitErrorBoundary, {
+        resolve: resolve,
+        errorElement: errorElement
+    }, /*#__PURE__*/ _react.createElement(ResolveAwait, null, children));
+}
+var AwaitRenderStatus = /*#__PURE__*/ function(AwaitRenderStatus) {
+    AwaitRenderStatus[AwaitRenderStatus["pending"] = 0] = "pending";
+    AwaitRenderStatus[AwaitRenderStatus["success"] = 1] = "success";
+    AwaitRenderStatus[AwaitRenderStatus["error"] = 2] = "error";
+    return AwaitRenderStatus;
+}(AwaitRenderStatus || {});
+const neverSettledPromise = new Promise(()=>{});
+class AwaitErrorBoundary extends _react.Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            error: null
+        };
+    }
+    static getDerivedStateFromError(error) {
+        return {
+            error
+        };
+    }
+    componentDidCatch(error, errorInfo) {
+        console.error("<Await> caught the following error during render", error, errorInfo);
+    }
+    render() {
+        let { children, errorElement, resolve } = this.props;
+        let promise = null;
+        let status = AwaitRenderStatus.pending;
+        if (!(resolve instanceof Promise)) {
+            // Didn't get a promise - provide as a resolved promise
+            status = AwaitRenderStatus.success;
+            promise = Promise.resolve();
+            Object.defineProperty(promise, "_tracked", {
+                get: ()=>true
+            });
+            Object.defineProperty(promise, "_data", {
+                get: ()=>resolve
+            });
+        } else if (this.state.error) {
+            // Caught a render error, provide it as a rejected promise
+            status = AwaitRenderStatus.error;
+            let renderError = this.state.error;
+            promise = Promise.reject().catch(()=>{}); // Avoid unhandled rejection warnings
+            Object.defineProperty(promise, "_tracked", {
+                get: ()=>true
+            });
+            Object.defineProperty(promise, "_error", {
+                get: ()=>renderError
+            });
+        } else if (resolve._tracked) {
+            // Already tracked promise - check contents
+            promise = resolve;
+            status = "_error" in promise ? AwaitRenderStatus.error : "_data" in promise ? AwaitRenderStatus.success : AwaitRenderStatus.pending;
+        } else {
+            // Raw (untracked) promise - track it
+            status = AwaitRenderStatus.pending;
+            Object.defineProperty(resolve, "_tracked", {
+                get: ()=>true
+            });
+            promise = resolve.then((data)=>Object.defineProperty(resolve, "_data", {
+                    get: ()=>data
+                }), (error)=>Object.defineProperty(resolve, "_error", {
+                    get: ()=>error
+                }));
+        }
+        if (status === AwaitRenderStatus.error && promise._error instanceof (0, _router.AbortedDeferredError)) // Freeze the UI by throwing a never resolved promise
+        throw neverSettledPromise;
+        if (status === AwaitRenderStatus.error && !errorElement) // No errorElement, throw to the nearest route-level error boundary
+        throw promise._error;
+        if (status === AwaitRenderStatus.error) // Render via our errorElement
+        return /*#__PURE__*/ _react.createElement(AwaitContext.Provider, {
+            value: promise,
+            children: errorElement
+        });
+        if (status === AwaitRenderStatus.success) // Render children with resolved value
+        return /*#__PURE__*/ _react.createElement(AwaitContext.Provider, {
+            value: promise,
+            children: children
+        });
+        // Throw to the suspense boundary
+        throw promise;
+    }
+}
+/**
+ * @private
+ * Indirection to leverage useAsyncValue for a render-prop API on `<Await>`
+ */ function ResolveAwait(_ref8) {
+    let { children } = _ref8;
+    let data = useAsyncValue();
+    let toRender = typeof children === "function" ? children(data) : children;
+    return /*#__PURE__*/ _react.createElement(_react.Fragment, null, toRender);
+}
+///////////////////////////////////////////////////////////////////////////////
+// UTILS
+///////////////////////////////////////////////////////////////////////////////
+/**
+ * Creates a route config from a React "children" object, which is usually
+ * either a `<Route>` element or an array of them. Used internally by
+ * `<Routes>` to create a route config from its children.
+ *
+ * @see https://reactrouter.com/v6/utils/create-routes-from-children
+ */ function createRoutesFromChildren(children, parentPath) {
+    if (parentPath === void 0) parentPath = [];
+    let routes = [];
+    _react.Children.forEach(children, (element, index)=>{
+        if (!/*#__PURE__*/ _react.isValidElement(element)) // Ignore non-elements. This allows people to more easily inline
+        // conditionals in their route config.
+        return;
+        let treePath = [
+            ...parentPath,
+            index
+        ];
+        if (element.type === _react.Fragment) {
+            // Transparently support React.Fragment and its children.
+            routes.push.apply(routes, createRoutesFromChildren(element.props.children, treePath));
+            return;
+        }
+        !(element.type === Route) && (0, _router.UNSAFE_invariant)(false, "[" + (typeof element.type === "string" ? element.type : element.type.name) + "] is not a <Route> component. All component children of <Routes> must be a <Route> or <React.Fragment>");
+        !(!element.props.index || !element.props.children) && (0, _router.UNSAFE_invariant)(false, "An index route cannot have child routes.");
+        let route = {
+            id: element.props.id || treePath.join("-"),
+            caseSensitive: element.props.caseSensitive,
+            element: element.props.element,
+            Component: element.props.Component,
+            index: element.props.index,
+            path: element.props.path,
+            loader: element.props.loader,
+            action: element.props.action,
+            errorElement: element.props.errorElement,
+            ErrorBoundary: element.props.ErrorBoundary,
+            hasErrorBoundary: element.props.ErrorBoundary != null || element.props.errorElement != null,
+            shouldRevalidate: element.props.shouldRevalidate,
+            handle: element.props.handle,
+            lazy: element.props.lazy
+        };
+        if (element.props.children) route.children = createRoutesFromChildren(element.props.children, treePath);
+        routes.push(route);
+    });
+    return routes;
+}
+/**
+ * Renders the result of `matchRoutes()` into a React element.
+ */ function renderMatches(matches) {
+    return _renderMatches(matches);
+}
+function mapRouteProperties(route) {
+    let updates = {
+        // Note: this check also occurs in createRoutesFromChildren so update
+        // there if you change this -- please and thank you!
+        hasErrorBoundary: route.ErrorBoundary != null || route.errorElement != null
+    };
+    if (route.Component) {
+        if (route.element) (0, _router.UNSAFE_warning)(false, "You should not include both `Component` and `element` on your route - `Component` will be used.");
+        Object.assign(updates, {
+            element: /*#__PURE__*/ _react.createElement(route.Component),
+            Component: undefined
+        });
+    }
+    if (route.HydrateFallback) {
+        if (route.hydrateFallbackElement) (0, _router.UNSAFE_warning)(false, "You should not include both `HydrateFallback` and `hydrateFallbackElement` on your route - `HydrateFallback` will be used.");
+        Object.assign(updates, {
+            hydrateFallbackElement: /*#__PURE__*/ _react.createElement(route.HydrateFallback),
+            HydrateFallback: undefined
+        });
+    }
+    if (route.ErrorBoundary) {
+        if (route.errorElement) (0, _router.UNSAFE_warning)(false, "You should not include both `ErrorBoundary` and `errorElement` on your route - `ErrorBoundary` will be used.");
+        Object.assign(updates, {
+            errorElement: /*#__PURE__*/ _react.createElement(route.ErrorBoundary),
+            ErrorBoundary: undefined
+        });
+    }
+    return updates;
+}
+function createMemoryRouter(routes, opts) {
+    return (0, _router.createRouter)({
+        basename: opts == null ? void 0 : opts.basename,
+        future: _extends({}, opts == null ? void 0 : opts.future, {
+            v7_prependBasename: true
+        }),
+        history: (0, _router.createMemoryHistory)({
+            initialEntries: opts == null ? void 0 : opts.initialEntries,
+            initialIndex: opts == null ? void 0 : opts.initialIndex
+        }),
+        hydrationData: opts == null ? void 0 : opts.hydrationData,
+        routes,
+        mapRouteProperties,
+        dataStrategy: opts == null ? void 0 : opts.dataStrategy,
+        patchRoutesOnNavigation: opts == null ? void 0 : opts.patchRoutesOnNavigation
+    }).initialize();
+}
+
+},{"react":"21dqq","@remix-run/router":"5ncDG","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"5ncDG":[function(require,module,exports) {
+/**
+ * @remix-run/router v1.21.0
+ *
+ * Copyright (c) Remix Software Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE.md file in the root directory of this source tree.
+ *
+ * @license MIT
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+//#endregion
+parcelHelpers.export(exports, "AbortedDeferredError", ()=>AbortedDeferredError);
+parcelHelpers.export(exports, "Action", ()=>Action);
+parcelHelpers.export(exports, "IDLE_BLOCKER", ()=>IDLE_BLOCKER);
+parcelHelpers.export(exports, "IDLE_FETCHER", ()=>IDLE_FETCHER);
+parcelHelpers.export(exports, "IDLE_NAVIGATION", ()=>IDLE_NAVIGATION);
+parcelHelpers.export(exports, "UNSAFE_DEFERRED_SYMBOL", ()=>UNSAFE_DEFERRED_SYMBOL);
+parcelHelpers.export(exports, "UNSAFE_DeferredData", ()=>DeferredData);
+parcelHelpers.export(exports, "UNSAFE_ErrorResponseImpl", ()=>ErrorResponseImpl);
+parcelHelpers.export(exports, "UNSAFE_convertRouteMatchToUiMatch", ()=>convertRouteMatchToUiMatch);
+parcelHelpers.export(exports, "UNSAFE_convertRoutesToDataRoutes", ()=>convertRoutesToDataRoutes);
+parcelHelpers.export(exports, "UNSAFE_decodePath", ()=>decodePath);
+parcelHelpers.export(exports, "UNSAFE_getResolveToMatches", ()=>getResolveToMatches);
+parcelHelpers.export(exports, "UNSAFE_invariant", ()=>invariant);
+parcelHelpers.export(exports, "UNSAFE_warning", ()=>warning);
+parcelHelpers.export(exports, "createBrowserHistory", ()=>createBrowserHistory);
+parcelHelpers.export(exports, "createHashHistory", ()=>createHashHistory);
+parcelHelpers.export(exports, "createMemoryHistory", ()=>createMemoryHistory);
+parcelHelpers.export(exports, "createPath", ()=>createPath);
+parcelHelpers.export(exports, "createRouter", ()=>createRouter);
+parcelHelpers.export(exports, "createStaticHandler", ()=>createStaticHandler);
+parcelHelpers.export(exports, "data", ()=>data);
+parcelHelpers.export(exports, "defer", ()=>defer);
+parcelHelpers.export(exports, "generatePath", ()=>generatePath);
+parcelHelpers.export(exports, "getStaticContextFromError", ()=>getStaticContextFromError);
+parcelHelpers.export(exports, "getToPathname", ()=>getToPathname);
+parcelHelpers.export(exports, "isDataWithResponseInit", ()=>isDataWithResponseInit);
+parcelHelpers.export(exports, "isDeferredData", ()=>isDeferredData);
+parcelHelpers.export(exports, "isRouteErrorResponse", ()=>isRouteErrorResponse);
+parcelHelpers.export(exports, "joinPaths", ()=>joinPaths);
+parcelHelpers.export(exports, "json", ()=>json);
+parcelHelpers.export(exports, "matchPath", ()=>matchPath);
+parcelHelpers.export(exports, "matchRoutes", ()=>matchRoutes);
+parcelHelpers.export(exports, "normalizePathname", ()=>normalizePathname);
+parcelHelpers.export(exports, "parsePath", ()=>parsePath);
+parcelHelpers.export(exports, "redirect", ()=>redirect);
+parcelHelpers.export(exports, "redirectDocument", ()=>redirectDocument);
+parcelHelpers.export(exports, "replace", ()=>replace);
+parcelHelpers.export(exports, "resolvePath", ()=>resolvePath);
+parcelHelpers.export(exports, "resolveTo", ()=>resolveTo);
+parcelHelpers.export(exports, "stripBasename", ()=>stripBasename);
+function _extends() {
+    _extends = Object.assign ? Object.assign.bind() : function(target) {
+        for(var i = 1; i < arguments.length; i++){
+            var source = arguments[i];
+            for(var key in source)if (Object.prototype.hasOwnProperty.call(source, key)) target[key] = source[key];
+        }
+        return target;
+    };
+    return _extends.apply(this, arguments);
+}
+////////////////////////////////////////////////////////////////////////////////
+//#region Types and Constants
+////////////////////////////////////////////////////////////////////////////////
+/**
+ * Actions represent the type of change to a location value.
+ */ var Action;
+(function(Action) {
+    /**
+   * A POP indicates a change to an arbitrary index in the history stack, such
+   * as a back or forward navigation. It does not describe the direction of the
+   * navigation, only that the current index changed.
+   *
+   * Note: This is the default action for newly created history objects.
+   */ Action["Pop"] = "POP";
+    /**
+   * A PUSH indicates a new entry being added to the history stack, such as when
+   * a link is clicked and a new page loads. When this happens, all subsequent
+   * entries in the stack are lost.
+   */ Action["Push"] = "PUSH";
+    /**
+   * A REPLACE indicates the entry at the current index in the history stack
+   * being replaced by a new one.
+   */ Action["Replace"] = "REPLACE";
+})(Action || (Action = {}));
+const PopStateEventType = "popstate";
+/**
+ * Memory history stores the current location in memory. It is designed for use
+ * in stateful non-browser environments like tests and React Native.
+ */ function createMemoryHistory(options) {
+    if (options === void 0) options = {};
+    let { initialEntries = [
+        "/"
+    ], initialIndex, v5Compat = false } = options;
+    let entries; // Declare so we can access from createMemoryLocation
+    entries = initialEntries.map((entry, index)=>createMemoryLocation(entry, typeof entry === "string" ? null : entry.state, index === 0 ? "default" : undefined));
+    let index = clampIndex(initialIndex == null ? entries.length - 1 : initialIndex);
+    let action = Action.Pop;
+    let listener = null;
+    function clampIndex(n) {
+        return Math.min(Math.max(n, 0), entries.length - 1);
+    }
+    function getCurrentLocation() {
+        return entries[index];
+    }
+    function createMemoryLocation(to, state, key) {
+        if (state === void 0) state = null;
+        let location = createLocation(entries ? getCurrentLocation().pathname : "/", to, state, key);
+        warning(location.pathname.charAt(0) === "/", "relative pathnames are not supported in memory history: " + JSON.stringify(to));
+        return location;
+    }
+    function createHref(to) {
+        return typeof to === "string" ? to : createPath(to);
+    }
+    let history = {
+        get index () {
+            return index;
+        },
+        get action () {
+            return action;
+        },
+        get location () {
+            return getCurrentLocation();
+        },
+        createHref,
+        createURL (to) {
+            return new URL(createHref(to), "http://localhost");
+        },
+        encodeLocation (to) {
+            let path = typeof to === "string" ? parsePath(to) : to;
+            return {
+                pathname: path.pathname || "",
+                search: path.search || "",
+                hash: path.hash || ""
+            };
+        },
+        push (to, state) {
+            action = Action.Push;
+            let nextLocation = createMemoryLocation(to, state);
+            index += 1;
+            entries.splice(index, entries.length, nextLocation);
+            if (v5Compat && listener) listener({
+                action,
+                location: nextLocation,
+                delta: 1
+            });
+        },
+        replace (to, state) {
+            action = Action.Replace;
+            let nextLocation = createMemoryLocation(to, state);
+            entries[index] = nextLocation;
+            if (v5Compat && listener) listener({
+                action,
+                location: nextLocation,
+                delta: 0
+            });
+        },
+        go (delta) {
+            action = Action.Pop;
+            let nextIndex = clampIndex(index + delta);
+            let nextLocation = entries[nextIndex];
+            index = nextIndex;
+            if (listener) listener({
+                action,
+                location: nextLocation,
+                delta
+            });
+        },
+        listen (fn) {
+            listener = fn;
+            return ()=>{
+                listener = null;
+            };
+        }
+    };
+    return history;
+}
+/**
+ * Browser history stores the location in regular URLs. This is the standard for
+ * most web apps, but it requires some configuration on the server to ensure you
+ * serve the same app at multiple URLs.
+ *
+ * @see https://github.com/remix-run/history/tree/main/docs/api-reference.md#createbrowserhistory
+ */ function createBrowserHistory(options) {
+    if (options === void 0) options = {};
+    function createBrowserLocation(window1, globalHistory) {
+        let { pathname, search, hash } = window1.location;
+        return createLocation("", {
+            pathname,
+            search,
+            hash
+        }, // state defaults to `null` because `window.history.state` does
+        globalHistory.state && globalHistory.state.usr || null, globalHistory.state && globalHistory.state.key || "default");
+    }
+    function createBrowserHref(window1, to) {
+        return typeof to === "string" ? to : createPath(to);
+    }
+    return getUrlBasedHistory(createBrowserLocation, createBrowserHref, null, options);
+}
+/**
+ * Hash history stores the location in window.location.hash. This makes it ideal
+ * for situations where you don't want to send the location to the server for
+ * some reason, either because you do cannot configure it or the URL space is
+ * reserved for something else.
+ *
+ * @see https://github.com/remix-run/history/tree/main/docs/api-reference.md#createhashhistory
+ */ function createHashHistory(options) {
+    if (options === void 0) options = {};
+    function createHashLocation(window1, globalHistory) {
+        let { pathname = "/", search = "", hash = "" } = parsePath(window1.location.hash.substr(1));
+        // Hash URL should always have a leading / just like window.location.pathname
+        // does, so if an app ends up at a route like /#something then we add a
+        // leading slash so all of our path-matching behaves the same as if it would
+        // in a browser router.  This is particularly important when there exists a
+        // root splat route (<Route path="*">) since that matches internally against
+        // "/*" and we'd expect /#something to 404 in a hash router app.
+        if (!pathname.startsWith("/") && !pathname.startsWith(".")) pathname = "/" + pathname;
+        return createLocation("", {
+            pathname,
+            search,
+            hash
+        }, // state defaults to `null` because `window.history.state` does
+        globalHistory.state && globalHistory.state.usr || null, globalHistory.state && globalHistory.state.key || "default");
+    }
+    function createHashHref(window1, to) {
+        let base = window1.document.querySelector("base");
+        let href = "";
+        if (base && base.getAttribute("href")) {
+            let url = window1.location.href;
+            let hashIndex = url.indexOf("#");
+            href = hashIndex === -1 ? url : url.slice(0, hashIndex);
+        }
+        return href + "#" + (typeof to === "string" ? to : createPath(to));
+    }
+    function validateHashLocation(location, to) {
+        warning(location.pathname.charAt(0) === "/", "relative pathnames are not supported in hash history.push(" + JSON.stringify(to) + ")");
+    }
+    return getUrlBasedHistory(createHashLocation, createHashHref, validateHashLocation, options);
+}
+function invariant(value, message) {
+    if (value === false || value === null || typeof value === "undefined") throw new Error(message);
+}
+function warning(cond, message) {
+    if (!cond) {
+        // eslint-disable-next-line no-console
+        if (typeof console !== "undefined") console.warn(message);
+        try {
+            // Welcome to debugging history!
+            //
+            // This error is thrown as a convenience, so you can more easily
+            // find the source for a warning that appears in the console by
+            // enabling "pause on exceptions" in your JavaScript debugger.
+            throw new Error(message);
+        // eslint-disable-next-line no-empty
+        } catch (e) {}
+    }
+}
+function createKey() {
+    return Math.random().toString(36).substr(2, 8);
+}
+/**
+ * For browser-based histories, we combine the state and key into an object
+ */ function getHistoryState(location, index) {
+    return {
+        usr: location.state,
+        key: location.key,
+        idx: index
+    };
+}
+/**
+ * Creates a Location object with a unique key from the given Path
+ */ function createLocation(current, to, state, key) {
+    if (state === void 0) state = null;
+    let location = _extends({
+        pathname: typeof current === "string" ? current : current.pathname,
+        search: "",
+        hash: ""
+    }, typeof to === "string" ? parsePath(to) : to, {
+        state,
+        // TODO: This could be cleaned up.  push/replace should probably just take
+        // full Locations now and avoid the need to run through this flow at all
+        // But that's a pretty big refactor to the current test suite so going to
+        // keep as is for the time being and just let any incoming keys take precedence
+        key: to && to.key || key || createKey()
+    });
+    return location;
+}
+/**
+ * Creates a string URL path from the given pathname, search, and hash components.
+ */ function createPath(_ref) {
+    let { pathname = "/", search = "", hash = "" } = _ref;
+    if (search && search !== "?") pathname += search.charAt(0) === "?" ? search : "?" + search;
+    if (hash && hash !== "#") pathname += hash.charAt(0) === "#" ? hash : "#" + hash;
+    return pathname;
+}
+/**
+ * Parses a string URL path into its separate pathname, search, and hash components.
+ */ function parsePath(path) {
+    let parsedPath = {};
+    if (path) {
+        let hashIndex = path.indexOf("#");
+        if (hashIndex >= 0) {
+            parsedPath.hash = path.substr(hashIndex);
+            path = path.substr(0, hashIndex);
+        }
+        let searchIndex = path.indexOf("?");
+        if (searchIndex >= 0) {
+            parsedPath.search = path.substr(searchIndex);
+            path = path.substr(0, searchIndex);
+        }
+        if (path) parsedPath.pathname = path;
+    }
+    return parsedPath;
+}
+function getUrlBasedHistory(getLocation, createHref, validateLocation, options) {
+    if (options === void 0) options = {};
+    let { window: window1 = document.defaultView, v5Compat = false } = options;
+    let globalHistory = window1.history;
+    let action = Action.Pop;
+    let listener = null;
+    let index = getIndex();
+    // Index should only be null when we initialize. If not, it's because the
+    // user called history.pushState or history.replaceState directly, in which
+    // case we should log a warning as it will result in bugs.
+    if (index == null) {
+        index = 0;
+        globalHistory.replaceState(_extends({}, globalHistory.state, {
+            idx: index
+        }), "");
+    }
+    function getIndex() {
+        let state = globalHistory.state || {
+            idx: null
+        };
+        return state.idx;
+    }
+    function handlePop() {
+        action = Action.Pop;
+        let nextIndex = getIndex();
+        let delta = nextIndex == null ? null : nextIndex - index;
+        index = nextIndex;
+        if (listener) listener({
+            action,
+            location: history.location,
+            delta
+        });
+    }
+    function push(to, state) {
+        action = Action.Push;
+        let location = createLocation(history.location, to, state);
+        if (validateLocation) validateLocation(location, to);
+        index = getIndex() + 1;
+        let historyState = getHistoryState(location, index);
+        let url = history.createHref(location);
+        // try...catch because iOS limits us to 100 pushState calls :/
+        try {
+            globalHistory.pushState(historyState, "", url);
+        } catch (error) {
+            // If the exception is because `state` can't be serialized, let that throw
+            // outwards just like a replace call would so the dev knows the cause
+            // https://html.spec.whatwg.org/multipage/nav-history-apis.html#shared-history-push/replace-state-steps
+            // https://html.spec.whatwg.org/multipage/structured-data.html#structuredserializeinternal
+            if (error instanceof DOMException && error.name === "DataCloneError") throw error;
+            // They are going to lose state here, but there is no real
+            // way to warn them about it since the page will refresh...
+            window1.location.assign(url);
+        }
+        if (v5Compat && listener) listener({
+            action,
+            location: history.location,
+            delta: 1
+        });
+    }
+    function replace(to, state) {
+        action = Action.Replace;
+        let location = createLocation(history.location, to, state);
+        if (validateLocation) validateLocation(location, to);
+        index = getIndex();
+        let historyState = getHistoryState(location, index);
+        let url = history.createHref(location);
+        globalHistory.replaceState(historyState, "", url);
+        if (v5Compat && listener) listener({
+            action,
+            location: history.location,
+            delta: 0
+        });
+    }
+    function createURL(to) {
+        // window.location.origin is "null" (the literal string value) in Firefox
+        // under certain conditions, notably when serving from a local HTML file
+        // See https://bugzilla.mozilla.org/show_bug.cgi?id=878297
+        let base = window1.location.origin !== "null" ? window1.location.origin : window1.location.href;
+        let href = typeof to === "string" ? to : createPath(to);
+        // Treating this as a full URL will strip any trailing spaces so we need to
+        // pre-encode them since they might be part of a matching splat param from
+        // an ancestor route
+        href = href.replace(/ $/, "%20");
+        invariant(base, "No window.location.(origin|href) available to create URL for href: " + href);
+        return new URL(href, base);
+    }
+    let history = {
+        get action () {
+            return action;
+        },
+        get location () {
+            return getLocation(window1, globalHistory);
+        },
+        listen (fn) {
+            if (listener) throw new Error("A history only accepts one active listener");
+            window1.addEventListener(PopStateEventType, handlePop);
+            listener = fn;
+            return ()=>{
+                window1.removeEventListener(PopStateEventType, handlePop);
+                listener = null;
+            };
+        },
+        createHref (to) {
+            return createHref(window1, to);
+        },
+        createURL,
+        encodeLocation (to) {
+            // Encode a Location the same way window.location would
+            let url = createURL(to);
+            return {
+                pathname: url.pathname,
+                search: url.search,
+                hash: url.hash
+            };
+        },
+        push,
+        replace,
+        go (n) {
+            return globalHistory.go(n);
+        }
+    };
+    return history;
+}
+//#endregion
+var ResultType;
+(function(ResultType) {
+    ResultType["data"] = "data";
+    ResultType["deferred"] = "deferred";
+    ResultType["redirect"] = "redirect";
+    ResultType["error"] = "error";
+})(ResultType || (ResultType = {}));
+const immutableRouteKeys = new Set([
+    "lazy",
+    "caseSensitive",
+    "path",
+    "id",
+    "index",
+    "children"
+]);
+function isIndexRoute(route) {
+    return route.index === true;
+}
+// Walk the route tree generating unique IDs where necessary, so we are working
+// solely with AgnosticDataRouteObject's within the Router
+function convertRoutesToDataRoutes(routes, mapRouteProperties, parentPath, manifest) {
+    if (parentPath === void 0) parentPath = [];
+    if (manifest === void 0) manifest = {};
+    return routes.map((route, index)=>{
+        let treePath = [
+            ...parentPath,
+            String(index)
+        ];
+        let id = typeof route.id === "string" ? route.id : treePath.join("-");
+        invariant(route.index !== true || !route.children, "Cannot specify children on an index route");
+        invariant(!manifest[id], 'Found a route id collision on id "' + id + '".  Route ' + "id's must be globally unique within Data Router usages");
+        if (isIndexRoute(route)) {
+            let indexRoute = _extends({}, route, mapRouteProperties(route), {
+                id
+            });
+            manifest[id] = indexRoute;
+            return indexRoute;
+        } else {
+            let pathOrLayoutRoute = _extends({}, route, mapRouteProperties(route), {
+                id,
+                children: undefined
+            });
+            manifest[id] = pathOrLayoutRoute;
+            if (route.children) pathOrLayoutRoute.children = convertRoutesToDataRoutes(route.children, mapRouteProperties, treePath, manifest);
+            return pathOrLayoutRoute;
+        }
+    });
+}
+/**
+ * Matches the given routes to a location and returns the match data.
+ *
+ * @see https://reactrouter.com/v6/utils/match-routes
+ */ function matchRoutes(routes, locationArg, basename) {
+    if (basename === void 0) basename = "/";
+    return matchRoutesImpl(routes, locationArg, basename, false);
+}
+function matchRoutesImpl(routes, locationArg, basename, allowPartial) {
+    let location = typeof locationArg === "string" ? parsePath(locationArg) : locationArg;
+    let pathname = stripBasename(location.pathname || "/", basename);
+    if (pathname == null) return null;
+    let branches = flattenRoutes(routes);
+    rankRouteBranches(branches);
+    let matches = null;
+    for(let i = 0; matches == null && i < branches.length; ++i){
+        // Incoming pathnames are generally encoded from either window.location
+        // or from router.navigate, but we want to match against the unencoded
+        // paths in the route definitions.  Memory router locations won't be
+        // encoded here but there also shouldn't be anything to decode so this
+        // should be a safe operation.  This avoids needing matchRoutes to be
+        // history-aware.
+        let decoded = decodePath(pathname);
+        matches = matchRouteBranch(branches[i], decoded, allowPartial);
+    }
+    return matches;
+}
+function convertRouteMatchToUiMatch(match, loaderData) {
+    let { route, pathname, params } = match;
+    return {
+        id: route.id,
+        pathname,
+        params,
+        data: loaderData[route.id],
+        handle: route.handle
+    };
+}
+function flattenRoutes(routes, branches, parentsMeta, parentPath) {
+    if (branches === void 0) branches = [];
+    if (parentsMeta === void 0) parentsMeta = [];
+    if (parentPath === void 0) parentPath = "";
+    let flattenRoute = (route, index, relativePath)=>{
+        let meta = {
+            relativePath: relativePath === undefined ? route.path || "" : relativePath,
+            caseSensitive: route.caseSensitive === true,
+            childrenIndex: index,
+            route
+        };
+        if (meta.relativePath.startsWith("/")) {
+            invariant(meta.relativePath.startsWith(parentPath), 'Absolute route path "' + meta.relativePath + '" nested under path ' + ('"' + parentPath + '" is not valid. An absolute child route path ') + "must start with the combined path of all its parent routes.");
+            meta.relativePath = meta.relativePath.slice(parentPath.length);
+        }
+        let path = joinPaths([
+            parentPath,
+            meta.relativePath
+        ]);
+        let routesMeta = parentsMeta.concat(meta);
+        // Add the children before adding this route to the array, so we traverse the
+        // route tree depth-first and child routes appear before their parents in
+        // the "flattened" version.
+        if (route.children && route.children.length > 0) {
+            invariant(// Our types know better, but runtime JS may not!
+            // @ts-expect-error
+            route.index !== true, "Index routes must not have child routes. Please remove " + ('all child routes from route path "' + path + '".'));
+            flattenRoutes(route.children, branches, routesMeta, path);
+        }
+        // Routes without a path shouldn't ever match by themselves unless they are
+        // index routes, so don't add them to the list of possible branches.
+        if (route.path == null && !route.index) return;
+        branches.push({
+            path,
+            score: computeScore(path, route.index),
+            routesMeta
+        });
+    };
+    routes.forEach((route, index)=>{
+        var _route$path;
+        // coarse-grain check for optional params
+        if (route.path === "" || !((_route$path = route.path) != null && _route$path.includes("?"))) flattenRoute(route, index);
+        else for (let exploded of explodeOptionalSegments(route.path))flattenRoute(route, index, exploded);
+    });
+    return branches;
+}
+/**
+ * Computes all combinations of optional path segments for a given path,
+ * excluding combinations that are ambiguous and of lower priority.
+ *
+ * For example, `/one/:two?/three/:four?/:five?` explodes to:
+ * - `/one/three`
+ * - `/one/:two/three`
+ * - `/one/three/:four`
+ * - `/one/three/:five`
+ * - `/one/:two/three/:four`
+ * - `/one/:two/three/:five`
+ * - `/one/three/:four/:five`
+ * - `/one/:two/three/:four/:five`
+ */ function explodeOptionalSegments(path) {
+    let segments = path.split("/");
+    if (segments.length === 0) return [];
+    let [first, ...rest] = segments;
+    // Optional path segments are denoted by a trailing `?`
+    let isOptional = first.endsWith("?");
+    // Compute the corresponding required segment: `foo?` -> `foo`
+    let required = first.replace(/\?$/, "");
+    if (rest.length === 0) // Intepret empty string as omitting an optional segment
+    // `["one", "", "three"]` corresponds to omitting `:two` from `/one/:two?/three` -> `/one/three`
+    return isOptional ? [
+        required,
+        ""
+    ] : [
+        required
+    ];
+    let restExploded = explodeOptionalSegments(rest.join("/"));
+    let result = [];
+    // All child paths with the prefix.  Do this for all children before the
+    // optional version for all children, so we get consistent ordering where the
+    // parent optional aspect is preferred as required.  Otherwise, we can get
+    // child sections interspersed where deeper optional segments are higher than
+    // parent optional segments, where for example, /:two would explode _earlier_
+    // then /:one.  By always including the parent as required _for all children_
+    // first, we avoid this issue
+    result.push(...restExploded.map((subpath)=>subpath === "" ? required : [
+            required,
+            subpath
+        ].join("/")));
+    // Then, if this is an optional value, add all child versions without
+    if (isOptional) result.push(...restExploded);
+    // for absolute paths, ensure `/` instead of empty segment
+    return result.map((exploded)=>path.startsWith("/") && exploded === "" ? "/" : exploded);
+}
+function rankRouteBranches(branches) {
+    branches.sort((a, b)=>a.score !== b.score ? b.score - a.score // Higher score first
+         : compareIndexes(a.routesMeta.map((meta)=>meta.childrenIndex), b.routesMeta.map((meta)=>meta.childrenIndex)));
+}
+const paramRe = /^:[\w-]+$/;
+const dynamicSegmentValue = 3;
+const indexRouteValue = 2;
+const emptySegmentValue = 1;
+const staticSegmentValue = 10;
+const splatPenalty = -2;
+const isSplat = (s)=>s === "*";
+function computeScore(path, index) {
+    let segments = path.split("/");
+    let initialScore = segments.length;
+    if (segments.some(isSplat)) initialScore += splatPenalty;
+    if (index) initialScore += indexRouteValue;
+    return segments.filter((s)=>!isSplat(s)).reduce((score, segment)=>score + (paramRe.test(segment) ? dynamicSegmentValue : segment === "" ? emptySegmentValue : staticSegmentValue), initialScore);
+}
+function compareIndexes(a, b) {
+    let siblings = a.length === b.length && a.slice(0, -1).every((n, i)=>n === b[i]);
+    return siblings ? // If two routes are siblings, we should try to match the earlier sibling
+    // first. This allows people to have fine-grained control over the matching
+    // behavior by simply putting routes with identical paths in the order they
+    // want them tried.
+    a[a.length - 1] - b[b.length - 1] : // Otherwise, it doesn't really make sense to rank non-siblings by index,
+    // so they sort equally.
+    0;
+}
+function matchRouteBranch(branch, pathname, allowPartial) {
+    if (allowPartial === void 0) allowPartial = false;
+    let { routesMeta } = branch;
+    let matchedParams = {};
+    let matchedPathname = "/";
+    let matches = [];
+    for(let i = 0; i < routesMeta.length; ++i){
+        let meta = routesMeta[i];
+        let end = i === routesMeta.length - 1;
+        let remainingPathname = matchedPathname === "/" ? pathname : pathname.slice(matchedPathname.length) || "/";
+        let match = matchPath({
+            path: meta.relativePath,
+            caseSensitive: meta.caseSensitive,
+            end
+        }, remainingPathname);
+        let route = meta.route;
+        if (!match && end && allowPartial && !routesMeta[routesMeta.length - 1].route.index) match = matchPath({
+            path: meta.relativePath,
+            caseSensitive: meta.caseSensitive,
+            end: false
+        }, remainingPathname);
+        if (!match) return null;
+        Object.assign(matchedParams, match.params);
+        matches.push({
+            // TODO: Can this as be avoided?
+            params: matchedParams,
+            pathname: joinPaths([
+                matchedPathname,
+                match.pathname
+            ]),
+            pathnameBase: normalizePathname(joinPaths([
+                matchedPathname,
+                match.pathnameBase
+            ])),
+            route
+        });
+        if (match.pathnameBase !== "/") matchedPathname = joinPaths([
+            matchedPathname,
+            match.pathnameBase
+        ]);
+    }
+    return matches;
+}
+/**
+ * Returns a path with params interpolated.
+ *
+ * @see https://reactrouter.com/v6/utils/generate-path
+ */ function generatePath(originalPath, params) {
+    if (params === void 0) params = {};
+    let path = originalPath;
+    if (path.endsWith("*") && path !== "*" && !path.endsWith("/*")) {
+        warning(false, 'Route path "' + path + '" will be treated as if it were ' + ('"' + path.replace(/\*$/, "/*") + '" because the `*` character must ') + "always follow a `/` in the pattern. To get rid of this warning, " + ('please change the route path to "' + path.replace(/\*$/, "/*") + '".'));
+        path = path.replace(/\*$/, "/*");
+    }
+    // ensure `/` is added at the beginning if the path is absolute
+    const prefix = path.startsWith("/") ? "/" : "";
+    const stringify = (p)=>p == null ? "" : typeof p === "string" ? p : String(p);
+    const segments = path.split(/\/+/).map((segment, index, array)=>{
+        const isLastSegment = index === array.length - 1;
+        // only apply the splat if it's the last segment
+        if (isLastSegment && segment === "*") {
+            const star = "*";
+            // Apply the splat
+            return stringify(params[star]);
+        }
+        const keyMatch = segment.match(/^:([\w-]+)(\??)$/);
+        if (keyMatch) {
+            const [, key, optional] = keyMatch;
+            let param = params[key];
+            invariant(optional === "?" || param != null, 'Missing ":' + key + '" param');
+            return stringify(param);
+        }
+        // Remove any optional markers from optional static segments
+        return segment.replace(/\?$/g, "");
+    })// Remove empty segments
+    .filter((segment)=>!!segment);
+    return prefix + segments.join("/");
+}
+/**
+ * Performs pattern matching on a URL pathname and returns information about
+ * the match.
+ *
+ * @see https://reactrouter.com/v6/utils/match-path
+ */ function matchPath(pattern, pathname) {
+    if (typeof pattern === "string") pattern = {
+        path: pattern,
+        caseSensitive: false,
+        end: true
+    };
+    let [matcher, compiledParams] = compilePath(pattern.path, pattern.caseSensitive, pattern.end);
+    let match = pathname.match(matcher);
+    if (!match) return null;
+    let matchedPathname = match[0];
+    let pathnameBase = matchedPathname.replace(/(.)\/+$/, "$1");
+    let captureGroups = match.slice(1);
+    let params = compiledParams.reduce((memo, _ref, index)=>{
+        let { paramName, isOptional } = _ref;
+        // We need to compute the pathnameBase here using the raw splat value
+        // instead of using params["*"] later because it will be decoded then
+        if (paramName === "*") {
+            let splatValue = captureGroups[index] || "";
+            pathnameBase = matchedPathname.slice(0, matchedPathname.length - splatValue.length).replace(/(.)\/+$/, "$1");
+        }
+        const value = captureGroups[index];
+        if (isOptional && !value) memo[paramName] = undefined;
+        else memo[paramName] = (value || "").replace(/%2F/g, "/");
+        return memo;
+    }, {});
+    return {
+        params,
+        pathname: matchedPathname,
+        pathnameBase,
+        pattern
+    };
+}
+function compilePath(path, caseSensitive, end) {
+    if (caseSensitive === void 0) caseSensitive = false;
+    if (end === void 0) end = true;
+    warning(path === "*" || !path.endsWith("*") || path.endsWith("/*"), 'Route path "' + path + '" will be treated as if it were ' + ('"' + path.replace(/\*$/, "/*") + '" because the `*` character must ') + "always follow a `/` in the pattern. To get rid of this warning, " + ('please change the route path to "' + path.replace(/\*$/, "/*") + '".'));
+    let params = [];
+    let regexpSource = "^" + path.replace(/\/*\*?$/, "") // Ignore trailing / and /*, we'll handle it below
+    .replace(/^\/*/, "/") // Make sure it has a leading /
+    .replace(/[\\.*+^${}|()[\]]/g, "\\$&") // Escape special regex chars
+    .replace(/\/:([\w-]+)(\?)?/g, (_, paramName, isOptional)=>{
+        params.push({
+            paramName,
+            isOptional: isOptional != null
+        });
+        return isOptional ? "/?([^\\/]+)?" : "/([^\\/]+)";
+    });
+    if (path.endsWith("*")) {
+        params.push({
+            paramName: "*"
+        });
+        regexpSource += path === "*" || path === "/*" ? "(.*)$" // Already matched the initial /, just match the rest
+         : "(?:\\/(.+)|\\/*)$"; // Don't include the / in params["*"]
+    } else if (end) // When matching to the end, ignore trailing slashes
+    regexpSource += "\\/*$";
+    else if (path !== "" && path !== "/") // If our path is non-empty and contains anything beyond an initial slash,
+    // then we have _some_ form of path in our regex, so we should expect to
+    // match only if we find the end of this path segment.  Look for an optional
+    // non-captured trailing slash (to match a portion of the URL) or the end
+    // of the path (if we've matched to the end).  We used to do this with a
+    // word boundary but that gives false positives on routes like
+    // /user-preferences since `-` counts as a word boundary.
+    regexpSource += "(?:(?=\\/|$))";
+    let matcher = new RegExp(regexpSource, caseSensitive ? undefined : "i");
+    return [
+        matcher,
+        params
+    ];
+}
+function decodePath(value) {
+    try {
+        return value.split("/").map((v)=>decodeURIComponent(v).replace(/\//g, "%2F")).join("/");
+    } catch (error) {
+        warning(false, 'The URL path "' + value + '" could not be decoded because it is is a ' + "malformed URL segment. This is probably due to a bad percent " + ("encoding (" + error + ")."));
+        return value;
+    }
+}
+/**
+ * @private
+ */ function stripBasename(pathname, basename) {
+    if (basename === "/") return pathname;
+    if (!pathname.toLowerCase().startsWith(basename.toLowerCase())) return null;
+    // We want to leave trailing slash behavior in the user's control, so if they
+    // specify a basename with a trailing slash, we should support it
+    let startIndex = basename.endsWith("/") ? basename.length - 1 : basename.length;
+    let nextChar = pathname.charAt(startIndex);
+    if (nextChar && nextChar !== "/") // pathname does not start with basename/
+    return null;
+    return pathname.slice(startIndex) || "/";
+}
+/**
+ * Returns a resolved path object relative to the given pathname.
+ *
+ * @see https://reactrouter.com/v6/utils/resolve-path
+ */ function resolvePath(to, fromPathname) {
+    if (fromPathname === void 0) fromPathname = "/";
+    let { pathname: toPathname, search = "", hash = "" } = typeof to === "string" ? parsePath(to) : to;
+    let pathname = toPathname ? toPathname.startsWith("/") ? toPathname : resolvePathname(toPathname, fromPathname) : fromPathname;
+    return {
+        pathname,
+        search: normalizeSearch(search),
+        hash: normalizeHash(hash)
+    };
+}
+function resolvePathname(relativePath, fromPathname) {
+    let segments = fromPathname.replace(/\/+$/, "").split("/");
+    let relativeSegments = relativePath.split("/");
+    relativeSegments.forEach((segment)=>{
+        if (segment === "..") // Keep the root "" segment so the pathname starts at /
+        {
+            if (segments.length > 1) segments.pop();
+        } else if (segment !== ".") segments.push(segment);
+    });
+    return segments.length > 1 ? segments.join("/") : "/";
+}
+function getInvalidPathError(char, field, dest, path) {
+    return "Cannot include a '" + char + "' character in a manually specified " + ("`to." + field + "` field [" + JSON.stringify(path) + "].  Please separate it out to the ") + ("`to." + dest + "` field. Alternatively you may provide the full path as ") + 'a string in <Link to="..."> and the router will parse it for you.';
+}
+/**
+ * @private
+ *
+ * When processing relative navigation we want to ignore ancestor routes that
+ * do not contribute to the path, such that index/pathless layout routes don't
+ * interfere.
+ *
+ * For example, when moving a route element into an index route and/or a
+ * pathless layout route, relative link behavior contained within should stay
+ * the same.  Both of the following examples should link back to the root:
+ *
+ *   <Route path="/">
+ *     <Route path="accounts" element={<Link to=".."}>
+ *   </Route>
+ *
+ *   <Route path="/">
+ *     <Route path="accounts">
+ *       <Route element={<AccountsLayout />}>       // <-- Does not contribute
+ *         <Route index element={<Link to=".."} />  // <-- Does not contribute
+ *       </Route
+ *     </Route>
+ *   </Route>
+ */ function getPathContributingMatches(matches) {
+    return matches.filter((match, index)=>index === 0 || match.route.path && match.route.path.length > 0);
+}
+// Return the array of pathnames for the current route matches - used to
+// generate the routePathnames input for resolveTo()
+function getResolveToMatches(matches, v7_relativeSplatPath) {
+    let pathMatches = getPathContributingMatches(matches);
+    // When v7_relativeSplatPath is enabled, use the full pathname for the leaf
+    // match so we include splat values for "." links.  See:
+    // https://github.com/remix-run/react-router/issues/11052#issuecomment-1836589329
+    if (v7_relativeSplatPath) return pathMatches.map((match, idx)=>idx === pathMatches.length - 1 ? match.pathname : match.pathnameBase);
+    return pathMatches.map((match)=>match.pathnameBase);
+}
+/**
+ * @private
+ */ function resolveTo(toArg, routePathnames, locationPathname, isPathRelative) {
+    if (isPathRelative === void 0) isPathRelative = false;
+    let to;
+    if (typeof toArg === "string") to = parsePath(toArg);
+    else {
+        to = _extends({}, toArg);
+        invariant(!to.pathname || !to.pathname.includes("?"), getInvalidPathError("?", "pathname", "search", to));
+        invariant(!to.pathname || !to.pathname.includes("#"), getInvalidPathError("#", "pathname", "hash", to));
+        invariant(!to.search || !to.search.includes("#"), getInvalidPathError("#", "search", "hash", to));
+    }
+    let isEmptyPath = toArg === "" || to.pathname === "";
+    let toPathname = isEmptyPath ? "/" : to.pathname;
+    let from;
+    // Routing is relative to the current pathname if explicitly requested.
+    //
+    // If a pathname is explicitly provided in `to`, it should be relative to the
+    // route context. This is explained in `Note on `<Link to>` values` in our
+    // migration guide from v5 as a means of disambiguation between `to` values
+    // that begin with `/` and those that do not. However, this is problematic for
+    // `to` values that do not provide a pathname. `to` can simply be a search or
+    // hash string, in which case we should assume that the navigation is relative
+    // to the current location's pathname and *not* the route pathname.
+    if (toPathname == null) from = locationPathname;
+    else {
+        let routePathnameIndex = routePathnames.length - 1;
+        // With relative="route" (the default), each leading .. segment means
+        // "go up one route" instead of "go up one URL segment".  This is a key
+        // difference from how <a href> works and a major reason we call this a
+        // "to" value instead of a "href".
+        if (!isPathRelative && toPathname.startsWith("..")) {
+            let toSegments = toPathname.split("/");
+            while(toSegments[0] === ".."){
+                toSegments.shift();
+                routePathnameIndex -= 1;
+            }
+            to.pathname = toSegments.join("/");
+        }
+        from = routePathnameIndex >= 0 ? routePathnames[routePathnameIndex] : "/";
+    }
+    let path = resolvePath(to, from);
+    // Ensure the pathname has a trailing slash if the original "to" had one
+    let hasExplicitTrailingSlash = toPathname && toPathname !== "/" && toPathname.endsWith("/");
+    // Or if this was a link to the current path which has a trailing slash
+    let hasCurrentTrailingSlash = (isEmptyPath || toPathname === ".") && locationPathname.endsWith("/");
+    if (!path.pathname.endsWith("/") && (hasExplicitTrailingSlash || hasCurrentTrailingSlash)) path.pathname += "/";
+    return path;
+}
+/**
+ * @private
+ */ function getToPathname(to) {
+    // Empty strings should be treated the same as / paths
+    return to === "" || to.pathname === "" ? "/" : typeof to === "string" ? parsePath(to).pathname : to.pathname;
+}
+/**
+ * @private
+ */ const joinPaths = (paths)=>paths.join("/").replace(/\/\/+/g, "/");
+/**
+ * @private
+ */ const normalizePathname = (pathname)=>pathname.replace(/\/+$/, "").replace(/^\/*/, "/");
+/**
+ * @private
+ */ const normalizeSearch = (search)=>!search || search === "?" ? "" : search.startsWith("?") ? search : "?" + search;
+/**
+ * @private
+ */ const normalizeHash = (hash)=>!hash || hash === "#" ? "" : hash.startsWith("#") ? hash : "#" + hash;
+/**
+ * This is a shortcut for creating `application/json` responses. Converts `data`
+ * to JSON and sets the `Content-Type` header.
+ *
+ * @deprecated The `json` method is deprecated in favor of returning raw objects.
+ * This method will be removed in v7.
+ */ const json = function json(data, init) {
+    if (init === void 0) init = {};
+    let responseInit = typeof init === "number" ? {
+        status: init
+    } : init;
+    let headers = new Headers(responseInit.headers);
+    if (!headers.has("Content-Type")) headers.set("Content-Type", "application/json; charset=utf-8");
+    return new Response(JSON.stringify(data), _extends({}, responseInit, {
+        headers
+    }));
+};
+class DataWithResponseInit {
+    constructor(data, init){
+        this.type = "DataWithResponseInit";
+        this.data = data;
+        this.init = init || null;
+    }
+}
+/**
+ * Create "responses" that contain `status`/`headers` without forcing
+ * serialization into an actual `Response` - used by Remix single fetch
+ */ function data(data, init) {
+    return new DataWithResponseInit(data, typeof init === "number" ? {
+        status: init
+    } : init);
+}
+class AbortedDeferredError extends Error {
+}
+class DeferredData {
+    constructor(data, responseInit){
+        this.pendingKeysSet = new Set();
+        this.subscribers = new Set();
+        this.deferredKeys = [];
+        invariant(data && typeof data === "object" && !Array.isArray(data), "defer() only accepts plain objects");
+        // Set up an AbortController + Promise we can race against to exit early
+        // cancellation
+        let reject;
+        this.abortPromise = new Promise((_, r)=>reject = r);
+        this.controller = new AbortController();
+        let onAbort = ()=>reject(new AbortedDeferredError("Deferred data aborted"));
+        this.unlistenAbortSignal = ()=>this.controller.signal.removeEventListener("abort", onAbort);
+        this.controller.signal.addEventListener("abort", onAbort);
+        this.data = Object.entries(data).reduce((acc, _ref2)=>{
+            let [key, value] = _ref2;
+            return Object.assign(acc, {
+                [key]: this.trackPromise(key, value)
+            });
+        }, {});
+        if (this.done) // All incoming values were resolved
+        this.unlistenAbortSignal();
+        this.init = responseInit;
+    }
+    trackPromise(key, value) {
+        if (!(value instanceof Promise)) return value;
+        this.deferredKeys.push(key);
+        this.pendingKeysSet.add(key);
+        // We store a little wrapper promise that will be extended with
+        // _data/_error props upon resolve/reject
+        let promise = Promise.race([
+            value,
+            this.abortPromise
+        ]).then((data)=>this.onSettle(promise, key, undefined, data), (error)=>this.onSettle(promise, key, error));
+        // Register rejection listeners to avoid uncaught promise rejections on
+        // errors or aborted deferred values
+        promise.catch(()=>{});
+        Object.defineProperty(promise, "_tracked", {
+            get: ()=>true
+        });
+        return promise;
+    }
+    onSettle(promise, key, error, data) {
+        if (this.controller.signal.aborted && error instanceof AbortedDeferredError) {
+            this.unlistenAbortSignal();
+            Object.defineProperty(promise, "_error", {
+                get: ()=>error
+            });
+            return Promise.reject(error);
+        }
+        this.pendingKeysSet.delete(key);
+        if (this.done) // Nothing left to abort!
+        this.unlistenAbortSignal();
+        // If the promise was resolved/rejected with undefined, we'll throw an error as you
+        // should always resolve with a value or null
+        if (error === undefined && data === undefined) {
+            let undefinedError = new Error('Deferred data for key "' + key + '" resolved/rejected with `undefined`, ' + "you must resolve/reject with a value or `null`.");
+            Object.defineProperty(promise, "_error", {
+                get: ()=>undefinedError
+            });
+            this.emit(false, key);
+            return Promise.reject(undefinedError);
+        }
+        if (data === undefined) {
+            Object.defineProperty(promise, "_error", {
+                get: ()=>error
+            });
+            this.emit(false, key);
+            return Promise.reject(error);
+        }
+        Object.defineProperty(promise, "_data", {
+            get: ()=>data
+        });
+        this.emit(false, key);
+        return data;
+    }
+    emit(aborted, settledKey) {
+        this.subscribers.forEach((subscriber)=>subscriber(aborted, settledKey));
+    }
+    subscribe(fn) {
+        this.subscribers.add(fn);
+        return ()=>this.subscribers.delete(fn);
+    }
+    cancel() {
+        this.controller.abort();
+        this.pendingKeysSet.forEach((v, k)=>this.pendingKeysSet.delete(k));
+        this.emit(true);
+    }
+    async resolveData(signal) {
+        let aborted = false;
+        if (!this.done) {
+            let onAbort = ()=>this.cancel();
+            signal.addEventListener("abort", onAbort);
+            aborted = await new Promise((resolve)=>{
+                this.subscribe((aborted)=>{
+                    signal.removeEventListener("abort", onAbort);
+                    if (aborted || this.done) resolve(aborted);
+                });
+            });
+        }
+        return aborted;
+    }
+    get done() {
+        return this.pendingKeysSet.size === 0;
+    }
+    get unwrappedData() {
+        invariant(this.data !== null && this.done, "Can only unwrap data on initialized and settled deferreds");
+        return Object.entries(this.data).reduce((acc, _ref3)=>{
+            let [key, value] = _ref3;
+            return Object.assign(acc, {
+                [key]: unwrapTrackedPromise(value)
+            });
+        }, {});
+    }
+    get pendingKeys() {
+        return Array.from(this.pendingKeysSet);
+    }
+}
+function isTrackedPromise(value) {
+    return value instanceof Promise && value._tracked === true;
+}
+function unwrapTrackedPromise(value) {
+    if (!isTrackedPromise(value)) return value;
+    if (value._error) throw value._error;
+    return value._data;
+}
+/**
+ * @deprecated The `defer` method is deprecated in favor of returning raw
+ * objects. This method will be removed in v7.
+ */ const defer = function defer(data, init) {
+    if (init === void 0) init = {};
+    let responseInit = typeof init === "number" ? {
+        status: init
+    } : init;
+    return new DeferredData(data, responseInit);
+};
+/**
+ * A redirect response. Sets the status code and the `Location` header.
+ * Defaults to "302 Found".
+ */ const redirect = function redirect(url, init) {
+    if (init === void 0) init = 302;
+    let responseInit = init;
+    if (typeof responseInit === "number") responseInit = {
+        status: responseInit
+    };
+    else if (typeof responseInit.status === "undefined") responseInit.status = 302;
+    let headers = new Headers(responseInit.headers);
+    headers.set("Location", url);
+    return new Response(null, _extends({}, responseInit, {
+        headers
+    }));
+};
+/**
+ * A redirect response that will force a document reload to the new location.
+ * Sets the status code and the `Location` header.
+ * Defaults to "302 Found".
+ */ const redirectDocument = (url, init)=>{
+    let response = redirect(url, init);
+    response.headers.set("X-Remix-Reload-Document", "true");
+    return response;
+};
+/**
+ * A redirect response that will perform a `history.replaceState` instead of a
+ * `history.pushState` for client-side navigation redirects.
+ * Sets the status code and the `Location` header.
+ * Defaults to "302 Found".
+ */ const replace = (url, init)=>{
+    let response = redirect(url, init);
+    response.headers.set("X-Remix-Replace", "true");
+    return response;
+};
+/**
+ * @private
+ * Utility class we use to hold auto-unwrapped 4xx/5xx Response bodies
+ *
+ * We don't export the class for public use since it's an implementation
+ * detail, but we export the interface above so folks can build their own
+ * abstractions around instances via isRouteErrorResponse()
+ */ class ErrorResponseImpl {
+    constructor(status, statusText, data, internal){
+        if (internal === void 0) internal = false;
+        this.status = status;
+        this.statusText = statusText || "";
+        this.internal = internal;
+        if (data instanceof Error) {
+            this.data = data.toString();
+            this.error = data;
+        } else this.data = data;
+    }
+}
+/**
+ * Check if the given error is an ErrorResponse generated from a 4xx/5xx
+ * Response thrown from an action/loader
+ */ function isRouteErrorResponse(error) {
+    return error != null && typeof error.status === "number" && typeof error.statusText === "string" && typeof error.internal === "boolean" && "data" in error;
+}
+const validMutationMethodsArr = [
+    "post",
+    "put",
+    "patch",
+    "delete"
+];
+const validMutationMethods = new Set(validMutationMethodsArr);
+const validRequestMethodsArr = [
+    "get",
+    ...validMutationMethodsArr
+];
+const validRequestMethods = new Set(validRequestMethodsArr);
+const redirectStatusCodes = new Set([
+    301,
+    302,
+    303,
+    307,
+    308
+]);
+const redirectPreserveMethodStatusCodes = new Set([
+    307,
+    308
+]);
+const IDLE_NAVIGATION = {
+    state: "idle",
+    location: undefined,
+    formMethod: undefined,
+    formAction: undefined,
+    formEncType: undefined,
+    formData: undefined,
+    json: undefined,
+    text: undefined
+};
+const IDLE_FETCHER = {
+    state: "idle",
+    data: undefined,
+    formMethod: undefined,
+    formAction: undefined,
+    formEncType: undefined,
+    formData: undefined,
+    json: undefined,
+    text: undefined
+};
+const IDLE_BLOCKER = {
+    state: "unblocked",
+    proceed: undefined,
+    reset: undefined,
+    location: undefined
+};
+const ABSOLUTE_URL_REGEX = /^(?:[a-z][a-z0-9+.-]*:|\/\/)/i;
+const defaultMapRouteProperties = (route)=>({
+        hasErrorBoundary: Boolean(route.hasErrorBoundary)
+    });
+const TRANSITIONS_STORAGE_KEY = "remix-router-transitions";
+//#endregion
+////////////////////////////////////////////////////////////////////////////////
+//#region createRouter
+////////////////////////////////////////////////////////////////////////////////
+/**
+ * Create a router and listen to history POP navigations
+ */ function createRouter(init) {
+    const routerWindow = init.window ? init.window : typeof window !== "undefined" ? window : undefined;
+    const isBrowser = typeof routerWindow !== "undefined" && typeof routerWindow.document !== "undefined" && typeof routerWindow.document.createElement !== "undefined";
+    const isServer = !isBrowser;
+    invariant(init.routes.length > 0, "You must provide a non-empty routes array to createRouter");
+    let mapRouteProperties;
+    if (init.mapRouteProperties) mapRouteProperties = init.mapRouteProperties;
+    else if (init.detectErrorBoundary) {
+        // If they are still using the deprecated version, wrap it with the new API
+        let detectErrorBoundary = init.detectErrorBoundary;
+        mapRouteProperties = (route)=>({
+                hasErrorBoundary: detectErrorBoundary(route)
+            });
+    } else mapRouteProperties = defaultMapRouteProperties;
+    // Routes keyed by ID
+    let manifest = {};
+    // Routes in tree format for matching
+    let dataRoutes = convertRoutesToDataRoutes(init.routes, mapRouteProperties, undefined, manifest);
+    let inFlightDataRoutes;
+    let basename = init.basename || "/";
+    let dataStrategyImpl = init.dataStrategy || defaultDataStrategy;
+    let patchRoutesOnNavigationImpl = init.patchRoutesOnNavigation;
+    // Config driven behavior flags
+    let future = _extends({
+        v7_fetcherPersist: false,
+        v7_normalizeFormMethod: false,
+        v7_partialHydration: false,
+        v7_prependBasename: false,
+        v7_relativeSplatPath: false,
+        v7_skipActionErrorRevalidation: false
+    }, init.future);
+    // Cleanup function for history
+    let unlistenHistory = null;
+    // Externally-provided functions to call on all state changes
+    let subscribers = new Set();
+    // Externally-provided object to hold scroll restoration locations during routing
+    let savedScrollPositions = null;
+    // Externally-provided function to get scroll restoration keys
+    let getScrollRestorationKey = null;
+    // Externally-provided function to get current scroll position
+    let getScrollPosition = null;
+    // One-time flag to control the initial hydration scroll restoration.  Because
+    // we don't get the saved positions from <ScrollRestoration /> until _after_
+    // the initial render, we need to manually trigger a separate updateState to
+    // send along the restoreScrollPosition
+    // Set to true if we have `hydrationData` since we assume we were SSR'd and that
+    // SSR did the initial scroll restoration.
+    let initialScrollRestored = init.hydrationData != null;
+    let initialMatches = matchRoutes(dataRoutes, init.history.location, basename);
+    let initialErrors = null;
+    if (initialMatches == null && !patchRoutesOnNavigationImpl) {
+        // If we do not match a user-provided-route, fall back to the root
+        // to allow the error boundary to take over
+        let error = getInternalRouterError(404, {
+            pathname: init.history.location.pathname
+        });
+        let { matches, route } = getShortCircuitMatches(dataRoutes);
+        initialMatches = matches;
+        initialErrors = {
+            [route.id]: error
+        };
+    }
+    // In SPA apps, if the user provided a patchRoutesOnNavigation implementation and
+    // our initial match is a splat route, clear them out so we run through lazy
+    // discovery on hydration in case there's a more accurate lazy route match.
+    // In SSR apps (with `hydrationData`), we expect that the server will send
+    // up the proper matched routes so we don't want to run lazy discovery on
+    // initial hydration and want to hydrate into the splat route.
+    if (initialMatches && !init.hydrationData) {
+        let fogOfWar = checkFogOfWar(initialMatches, dataRoutes, init.history.location.pathname);
+        if (fogOfWar.active) initialMatches = null;
+    }
+    let initialized;
+    if (!initialMatches) {
+        initialized = false;
+        initialMatches = [];
+        // If partial hydration and fog of war is enabled, we will be running
+        // `patchRoutesOnNavigation` during hydration so include any partial matches as
+        // the initial matches so we can properly render `HydrateFallback`'s
+        if (future.v7_partialHydration) {
+            let fogOfWar = checkFogOfWar(null, dataRoutes, init.history.location.pathname);
+            if (fogOfWar.active && fogOfWar.matches) initialMatches = fogOfWar.matches;
+        }
+    } else if (initialMatches.some((m)=>m.route.lazy)) // All initialMatches need to be loaded before we're ready.  If we have lazy
+    // functions around still then we'll need to run them in initialize()
+    initialized = false;
+    else if (!initialMatches.some((m)=>m.route.loader)) // If we've got no loaders to run, then we're good to go
+    initialized = true;
+    else if (future.v7_partialHydration) {
+        // If partial hydration is enabled, we're initialized so long as we were
+        // provided with hydrationData for every route with a loader, and no loaders
+        // were marked for explicit hydration
+        let loaderData = init.hydrationData ? init.hydrationData.loaderData : null;
+        let errors = init.hydrationData ? init.hydrationData.errors : null;
+        // If errors exist, don't consider routes below the boundary
+        if (errors) {
+            let idx = initialMatches.findIndex((m)=>errors[m.route.id] !== undefined);
+            initialized = initialMatches.slice(0, idx + 1).every((m)=>!shouldLoadRouteOnHydration(m.route, loaderData, errors));
+        } else initialized = initialMatches.every((m)=>!shouldLoadRouteOnHydration(m.route, loaderData, errors));
+    } else // Without partial hydration - we're initialized if we were provided any
+    // hydrationData - which is expected to be complete
+    initialized = init.hydrationData != null;
+    let router;
+    let state = {
+        historyAction: init.history.action,
+        location: init.history.location,
+        matches: initialMatches,
+        initialized,
+        navigation: IDLE_NAVIGATION,
+        // Don't restore on initial updateState() if we were SSR'd
+        restoreScrollPosition: init.hydrationData != null ? false : null,
+        preventScrollReset: false,
+        revalidation: "idle",
+        loaderData: init.hydrationData && init.hydrationData.loaderData || {},
+        actionData: init.hydrationData && init.hydrationData.actionData || null,
+        errors: init.hydrationData && init.hydrationData.errors || initialErrors,
+        fetchers: new Map(),
+        blockers: new Map()
+    };
+    // -- Stateful internal variables to manage navigations --
+    // Current navigation in progress (to be committed in completeNavigation)
+    let pendingAction = Action.Pop;
+    // Should the current navigation prevent the scroll reset if scroll cannot
+    // be restored?
+    let pendingPreventScrollReset = false;
+    // AbortController for the active navigation
+    let pendingNavigationController;
+    // Should the current navigation enable document.startViewTransition?
+    let pendingViewTransitionEnabled = false;
+    // Store applied view transitions so we can apply them on POP
+    let appliedViewTransitions = new Map();
+    // Cleanup function for persisting applied transitions to sessionStorage
+    let removePageHideEventListener = null;
+    // We use this to avoid touching history in completeNavigation if a
+    // revalidation is entirely uninterrupted
+    let isUninterruptedRevalidation = false;
+    // Use this internal flag to force revalidation of all loaders:
+    //  - submissions (completed or interrupted)
+    //  - useRevalidator()
+    //  - X-Remix-Revalidate (from redirect)
+    let isRevalidationRequired = false;
+    // Use this internal array to capture routes that require revalidation due
+    // to a cancelled deferred on action submission
+    let cancelledDeferredRoutes = [];
+    // Use this internal array to capture fetcher loads that were cancelled by an
+    // action navigation and require revalidation
+    let cancelledFetcherLoads = new Set();
+    // AbortControllers for any in-flight fetchers
+    let fetchControllers = new Map();
+    // Track loads based on the order in which they started
+    let incrementingLoadId = 0;
+    // Track the outstanding pending navigation data load to be compared against
+    // the globally incrementing load when a fetcher load lands after a completed
+    // navigation
+    let pendingNavigationLoadId = -1;
+    // Fetchers that triggered data reloads as a result of their actions
+    let fetchReloadIds = new Map();
+    // Fetchers that triggered redirect navigations
+    let fetchRedirectIds = new Set();
+    // Most recent href/match for fetcher.load calls for fetchers
+    let fetchLoadMatches = new Map();
+    // Ref-count mounted fetchers so we know when it's ok to clean them up
+    let activeFetchers = new Map();
+    // Fetchers that have requested a delete when using v7_fetcherPersist,
+    // they'll be officially removed after they return to idle
+    let deletedFetchers = new Set();
+    // Store DeferredData instances for active route matches.  When a
+    // route loader returns defer() we stick one in here.  Then, when a nested
+    // promise resolves we update loaderData.  If a new navigation starts we
+    // cancel active deferreds for eliminated routes.
+    let activeDeferreds = new Map();
+    // Store blocker functions in a separate Map outside of router state since
+    // we don't need to update UI state if they change
+    let blockerFunctions = new Map();
+    // Flag to ignore the next history update, so we can revert the URL change on
+    // a POP navigation that was blocked by the user without touching router state
+    let unblockBlockerHistoryUpdate = undefined;
+    // Initialize the router, all side effects should be kicked off from here.
+    // Implemented as a Fluent API for ease of:
+    //   let router = createRouter(init).initialize();
+    function initialize() {
+        // If history informs us of a POP navigation, start the navigation but do not update
+        // state.  We'll update our own state once the navigation completes
+        unlistenHistory = init.history.listen((_ref)=>{
+            let { action: historyAction, location, delta } = _ref;
+            // Ignore this event if it was just us resetting the URL from a
+            // blocked POP navigation
+            if (unblockBlockerHistoryUpdate) {
+                unblockBlockerHistoryUpdate();
+                unblockBlockerHistoryUpdate = undefined;
+                return;
+            }
+            warning(blockerFunctions.size === 0 || delta != null, "You are trying to use a blocker on a POP navigation to a location that was not created by @remix-run/router. This will fail silently in production. This can happen if you are navigating outside the router via `window.history.pushState`/`window.location.hash` instead of using router navigation APIs.  This can also happen if you are using createHashRouter and the user manually changes the URL.");
+            let blockerKey = shouldBlockNavigation({
+                currentLocation: state.location,
+                nextLocation: location,
+                historyAction
+            });
+            if (blockerKey && delta != null) {
+                // Restore the URL to match the current UI, but don't update router state
+                let nextHistoryUpdatePromise = new Promise((resolve)=>{
+                    unblockBlockerHistoryUpdate = resolve;
+                });
+                init.history.go(delta * -1);
+                // Put the blocker into a blocked state
+                updateBlocker(blockerKey, {
+                    state: "blocked",
+                    location,
+                    proceed () {
+                        updateBlocker(blockerKey, {
+                            state: "proceeding",
+                            proceed: undefined,
+                            reset: undefined,
+                            location
+                        });
+                        // Re-do the same POP navigation we just blocked, after the url
+                        // restoration is also complete.  See:
+                        // https://github.com/remix-run/react-router/issues/11613
+                        nextHistoryUpdatePromise.then(()=>init.history.go(delta));
+                    },
+                    reset () {
+                        let blockers = new Map(state.blockers);
+                        blockers.set(blockerKey, IDLE_BLOCKER);
+                        updateState({
+                            blockers
+                        });
+                    }
+                });
+                return;
+            }
+            return startNavigation(historyAction, location);
+        });
+        if (isBrowser) {
+            // FIXME: This feels gross.  How can we cleanup the lines between
+            // scrollRestoration/appliedTransitions persistance?
+            restoreAppliedTransitions(routerWindow, appliedViewTransitions);
+            let _saveAppliedTransitions = ()=>persistAppliedTransitions(routerWindow, appliedViewTransitions);
+            routerWindow.addEventListener("pagehide", _saveAppliedTransitions);
+            removePageHideEventListener = ()=>routerWindow.removeEventListener("pagehide", _saveAppliedTransitions);
+        }
+        // Kick off initial data load if needed.  Use Pop to avoid modifying history
+        // Note we don't do any handling of lazy here.  For SPA's it'll get handled
+        // in the normal navigation flow.  For SSR it's expected that lazy modules are
+        // resolved prior to router creation since we can't go into a fallbackElement
+        // UI for SSR'd apps
+        if (!state.initialized) startNavigation(Action.Pop, state.location, {
+            initialHydration: true
+        });
+        return router;
+    }
+    // Clean up a router and it's side effects
+    function dispose() {
+        if (unlistenHistory) unlistenHistory();
+        if (removePageHideEventListener) removePageHideEventListener();
+        subscribers.clear();
+        pendingNavigationController && pendingNavigationController.abort();
+        state.fetchers.forEach((_, key)=>deleteFetcher(key));
+        state.blockers.forEach((_, key)=>deleteBlocker(key));
+    }
+    // Subscribe to state updates for the router
+    function subscribe(fn) {
+        subscribers.add(fn);
+        return ()=>subscribers.delete(fn);
+    }
+    // Update our state and notify the calling context of the change
+    function updateState(newState, opts) {
+        if (opts === void 0) opts = {};
+        state = _extends({}, state, newState);
+        // Prep fetcher cleanup so we can tell the UI which fetcher data entries
+        // can be removed
+        let completedFetchers = [];
+        let deletedFetchersKeys = [];
+        if (future.v7_fetcherPersist) state.fetchers.forEach((fetcher, key)=>{
+            if (fetcher.state === "idle") {
+                if (deletedFetchers.has(key)) // Unmounted from the UI and can be totally removed
+                deletedFetchersKeys.push(key);
+                else // Returned to idle but still mounted in the UI, so semi-remains for
+                // revalidations and such
+                completedFetchers.push(key);
+            }
+        });
+        // Iterate over a local copy so that if flushSync is used and we end up
+        // removing and adding a new subscriber due to the useCallback dependencies,
+        // we don't get ourselves into a loop calling the new subscriber immediately
+        [
+            ...subscribers
+        ].forEach((subscriber)=>subscriber(state, {
+                deletedFetchers: deletedFetchersKeys,
+                viewTransitionOpts: opts.viewTransitionOpts,
+                flushSync: opts.flushSync === true
+            }));
+        // Remove idle fetchers from state since we only care about in-flight fetchers.
+        if (future.v7_fetcherPersist) {
+            completedFetchers.forEach((key)=>state.fetchers.delete(key));
+            deletedFetchersKeys.forEach((key)=>deleteFetcher(key));
+        }
+    }
+    // Complete a navigation returning the state.navigation back to the IDLE_NAVIGATION
+    // and setting state.[historyAction/location/matches] to the new route.
+    // - Location is a required param
+    // - Navigation will always be set to IDLE_NAVIGATION
+    // - Can pass any other state in newState
+    function completeNavigation(location, newState, _temp) {
+        var _location$state, _location$state2;
+        let { flushSync } = _temp === void 0 ? {} : _temp;
+        // Deduce if we're in a loading/actionReload state:
+        // - We have committed actionData in the store
+        // - The current navigation was a mutation submission
+        // - We're past the submitting state and into the loading state
+        // - The location being loaded is not the result of a redirect
+        let isActionReload = state.actionData != null && state.navigation.formMethod != null && isMutationMethod(state.navigation.formMethod) && state.navigation.state === "loading" && ((_location$state = location.state) == null ? void 0 : _location$state._isRedirect) !== true;
+        let actionData;
+        if (newState.actionData) {
+            if (Object.keys(newState.actionData).length > 0) actionData = newState.actionData;
+            else // Empty actionData -> clear prior actionData due to an action error
+            actionData = null;
+        } else if (isActionReload) // Keep the current data if we're wrapping up the action reload
+        actionData = state.actionData;
+        else // Clear actionData on any other completed navigations
+        actionData = null;
+        // Always preserve any existing loaderData from re-used routes
+        let loaderData = newState.loaderData ? mergeLoaderData(state.loaderData, newState.loaderData, newState.matches || [], newState.errors) : state.loaderData;
+        // On a successful navigation we can assume we got through all blockers
+        // so we can start fresh
+        let blockers = state.blockers;
+        if (blockers.size > 0) {
+            blockers = new Map(blockers);
+            blockers.forEach((_, k)=>blockers.set(k, IDLE_BLOCKER));
+        }
+        // Always respect the user flag.  Otherwise don't reset on mutation
+        // submission navigations unless they redirect
+        let preventScrollReset = pendingPreventScrollReset === true || state.navigation.formMethod != null && isMutationMethod(state.navigation.formMethod) && ((_location$state2 = location.state) == null ? void 0 : _location$state2._isRedirect) !== true;
+        // Commit any in-flight routes at the end of the HMR revalidation "navigation"
+        if (inFlightDataRoutes) {
+            dataRoutes = inFlightDataRoutes;
+            inFlightDataRoutes = undefined;
+        }
+        if (isUninterruptedRevalidation) ;
+        else if (pendingAction === Action.Pop) ;
+        else if (pendingAction === Action.Push) init.history.push(location, location.state);
+        else if (pendingAction === Action.Replace) init.history.replace(location, location.state);
+        let viewTransitionOpts;
+        // On POP, enable transitions if they were enabled on the original navigation
+        if (pendingAction === Action.Pop) {
+            // Forward takes precedence so they behave like the original navigation
+            let priorPaths = appliedViewTransitions.get(state.location.pathname);
+            if (priorPaths && priorPaths.has(location.pathname)) viewTransitionOpts = {
+                currentLocation: state.location,
+                nextLocation: location
+            };
+            else if (appliedViewTransitions.has(location.pathname)) // If we don't have a previous forward nav, assume we're popping back to
+            // the new location and enable if that location previously enabled
+            viewTransitionOpts = {
+                currentLocation: location,
+                nextLocation: state.location
+            };
+        } else if (pendingViewTransitionEnabled) {
+            // Store the applied transition on PUSH/REPLACE
+            let toPaths = appliedViewTransitions.get(state.location.pathname);
+            if (toPaths) toPaths.add(location.pathname);
+            else {
+                toPaths = new Set([
+                    location.pathname
+                ]);
+                appliedViewTransitions.set(state.location.pathname, toPaths);
+            }
+            viewTransitionOpts = {
+                currentLocation: state.location,
+                nextLocation: location
+            };
+        }
+        updateState(_extends({}, newState, {
+            actionData,
+            loaderData,
+            historyAction: pendingAction,
+            location,
+            initialized: true,
+            navigation: IDLE_NAVIGATION,
+            revalidation: "idle",
+            restoreScrollPosition: getSavedScrollPosition(location, newState.matches || state.matches),
+            preventScrollReset,
+            blockers
+        }), {
+            viewTransitionOpts,
+            flushSync: flushSync === true
+        });
+        // Reset stateful navigation vars
+        pendingAction = Action.Pop;
+        pendingPreventScrollReset = false;
+        pendingViewTransitionEnabled = false;
+        isUninterruptedRevalidation = false;
+        isRevalidationRequired = false;
+        cancelledDeferredRoutes = [];
+    }
+    // Trigger a navigation event, which can either be a numerical POP or a PUSH
+    // replace with an optional submission
+    async function navigate(to, opts) {
+        if (typeof to === "number") {
+            init.history.go(to);
+            return;
+        }
+        let normalizedPath = normalizeTo(state.location, state.matches, basename, future.v7_prependBasename, to, future.v7_relativeSplatPath, opts == null ? void 0 : opts.fromRouteId, opts == null ? void 0 : opts.relative);
+        let { path, submission, error } = normalizeNavigateOptions(future.v7_normalizeFormMethod, false, normalizedPath, opts);
+        let currentLocation = state.location;
+        let nextLocation = createLocation(state.location, path, opts && opts.state);
+        // When using navigate as a PUSH/REPLACE we aren't reading an already-encoded
+        // URL from window.location, so we need to encode it here so the behavior
+        // remains the same as POP and non-data-router usages.  new URL() does all
+        // the same encoding we'd get from a history.pushState/window.location read
+        // without having to touch history
+        nextLocation = _extends({}, nextLocation, init.history.encodeLocation(nextLocation));
+        let userReplace = opts && opts.replace != null ? opts.replace : undefined;
+        let historyAction = Action.Push;
+        if (userReplace === true) historyAction = Action.Replace;
+        else if (userReplace === false) ;
+        else if (submission != null && isMutationMethod(submission.formMethod) && submission.formAction === state.location.pathname + state.location.search) // By default on submissions to the current location we REPLACE so that
+        // users don't have to double-click the back button to get to the prior
+        // location.  If the user redirects to a different location from the
+        // action/loader this will be ignored and the redirect will be a PUSH
+        historyAction = Action.Replace;
+        let preventScrollReset = opts && "preventScrollReset" in opts ? opts.preventScrollReset === true : undefined;
+        let flushSync = (opts && opts.flushSync) === true;
+        let blockerKey = shouldBlockNavigation({
+            currentLocation,
+            nextLocation,
+            historyAction
+        });
+        if (blockerKey) {
+            // Put the blocker into a blocked state
+            updateBlocker(blockerKey, {
+                state: "blocked",
+                location: nextLocation,
+                proceed () {
+                    updateBlocker(blockerKey, {
+                        state: "proceeding",
+                        proceed: undefined,
+                        reset: undefined,
+                        location: nextLocation
+                    });
+                    // Send the same navigation through
+                    navigate(to, opts);
+                },
+                reset () {
+                    let blockers = new Map(state.blockers);
+                    blockers.set(blockerKey, IDLE_BLOCKER);
+                    updateState({
+                        blockers
+                    });
+                }
+            });
+            return;
+        }
+        return await startNavigation(historyAction, nextLocation, {
+            submission,
+            // Send through the formData serialization error if we have one so we can
+            // render at the right error boundary after we match routes
+            pendingError: error,
+            preventScrollReset,
+            replace: opts && opts.replace,
+            enableViewTransition: opts && opts.viewTransition,
+            flushSync
+        });
+    }
+    // Revalidate all current loaders.  If a navigation is in progress or if this
+    // is interrupted by a navigation, allow this to "succeed" by calling all
+    // loaders during the next loader round
+    function revalidate() {
+        interruptActiveLoads();
+        updateState({
+            revalidation: "loading"
+        });
+        // If we're currently submitting an action, we don't need to start a new
+        // navigation, we'll just let the follow up loader execution call all loaders
+        if (state.navigation.state === "submitting") return;
+        // If we're currently in an idle state, start a new navigation for the current
+        // action/location and mark it as uninterrupted, which will skip the history
+        // update in completeNavigation
+        if (state.navigation.state === "idle") {
+            startNavigation(state.historyAction, state.location, {
+                startUninterruptedRevalidation: true
+            });
+            return;
+        }
+        // Otherwise, if we're currently in a loading state, just start a new
+        // navigation to the navigation.location but do not trigger an uninterrupted
+        // revalidation so that history correctly updates once the navigation completes
+        startNavigation(pendingAction || state.historyAction, state.navigation.location, {
+            overrideNavigation: state.navigation,
+            // Proxy through any rending view transition
+            enableViewTransition: pendingViewTransitionEnabled === true
+        });
+    }
+    // Start a navigation to the given action/location.  Can optionally provide a
+    // overrideNavigation which will override the normalLoad in the case of a redirect
+    // navigation
+    async function startNavigation(historyAction, location, opts) {
+        // Abort any in-progress navigations and start a new one. Unset any ongoing
+        // uninterrupted revalidations unless told otherwise, since we want this
+        // new navigation to update history normally
+        pendingNavigationController && pendingNavigationController.abort();
+        pendingNavigationController = null;
+        pendingAction = historyAction;
+        isUninterruptedRevalidation = (opts && opts.startUninterruptedRevalidation) === true;
+        // Save the current scroll position every time we start a new navigation,
+        // and track whether we should reset scroll on completion
+        saveScrollPosition(state.location, state.matches);
+        pendingPreventScrollReset = (opts && opts.preventScrollReset) === true;
+        pendingViewTransitionEnabled = (opts && opts.enableViewTransition) === true;
+        let routesToUse = inFlightDataRoutes || dataRoutes;
+        let loadingNavigation = opts && opts.overrideNavigation;
+        let matches = matchRoutes(routesToUse, location, basename);
+        let flushSync = (opts && opts.flushSync) === true;
+        let fogOfWar = checkFogOfWar(matches, routesToUse, location.pathname);
+        if (fogOfWar.active && fogOfWar.matches) matches = fogOfWar.matches;
+        // Short circuit with a 404 on the root error boundary if we match nothing
+        if (!matches) {
+            let { error, notFoundMatches, route } = handleNavigational404(location.pathname);
+            completeNavigation(location, {
+                matches: notFoundMatches,
+                loaderData: {},
+                errors: {
+                    [route.id]: error
+                }
+            }, {
+                flushSync
+            });
+            return;
+        }
+        // Short circuit if it's only a hash change and not a revalidation or
+        // mutation submission.
+        //
+        // Ignore on initial page loads because since the initial hydration will always
+        // be "same hash".  For example, on /page#hash and submit a <Form method="post">
+        // which will default to a navigation to /page
+        if (state.initialized && !isRevalidationRequired && isHashChangeOnly(state.location, location) && !(opts && opts.submission && isMutationMethod(opts.submission.formMethod))) {
+            completeNavigation(location, {
+                matches
+            }, {
+                flushSync
+            });
+            return;
+        }
+        // Create a controller/Request for this navigation
+        pendingNavigationController = new AbortController();
+        let request = createClientSideRequest(init.history, location, pendingNavigationController.signal, opts && opts.submission);
+        let pendingActionResult;
+        if (opts && opts.pendingError) // If we have a pendingError, it means the user attempted a GET submission
+        // with binary FormData so assign here and skip to handleLoaders.  That
+        // way we handle calling loaders above the boundary etc.  It's not really
+        // different from an actionError in that sense.
+        pendingActionResult = [
+            findNearestBoundary(matches).route.id,
+            {
+                type: ResultType.error,
+                error: opts.pendingError
+            }
+        ];
+        else if (opts && opts.submission && isMutationMethod(opts.submission.formMethod)) {
+            // Call action if we received an action submission
+            let actionResult = await handleAction(request, location, opts.submission, matches, fogOfWar.active, {
+                replace: opts.replace,
+                flushSync
+            });
+            if (actionResult.shortCircuited) return;
+            // If we received a 404 from handleAction, it's because we couldn't lazily
+            // discover the destination route so we don't want to call loaders
+            if (actionResult.pendingActionResult) {
+                let [routeId, result] = actionResult.pendingActionResult;
+                if (isErrorResult(result) && isRouteErrorResponse(result.error) && result.error.status === 404) {
+                    pendingNavigationController = null;
+                    completeNavigation(location, {
+                        matches: actionResult.matches,
+                        loaderData: {},
+                        errors: {
+                            [routeId]: result.error
+                        }
+                    });
+                    return;
+                }
+            }
+            matches = actionResult.matches || matches;
+            pendingActionResult = actionResult.pendingActionResult;
+            loadingNavigation = getLoadingNavigation(location, opts.submission);
+            flushSync = false;
+            // No need to do fog of war matching again on loader execution
+            fogOfWar.active = false;
+            // Create a GET request for the loaders
+            request = createClientSideRequest(init.history, request.url, request.signal);
+        }
+        // Call loaders
+        let { shortCircuited, matches: updatedMatches, loaderData, errors } = await handleLoaders(request, location, matches, fogOfWar.active, loadingNavigation, opts && opts.submission, opts && opts.fetcherSubmission, opts && opts.replace, opts && opts.initialHydration === true, flushSync, pendingActionResult);
+        if (shortCircuited) return;
+        // Clean up now that the action/loaders have completed.  Don't clean up if
+        // we short circuited because pendingNavigationController will have already
+        // been assigned to a new controller for the next navigation
+        pendingNavigationController = null;
+        completeNavigation(location, _extends({
+            matches: updatedMatches || matches
+        }, getActionDataForCommit(pendingActionResult), {
+            loaderData,
+            errors
+        }));
+    }
+    // Call the action matched by the leaf route for this navigation and handle
+    // redirects/errors
+    async function handleAction(request, location, submission, matches, isFogOfWar, opts) {
+        if (opts === void 0) opts = {};
+        interruptActiveLoads();
+        // Put us in a submitting state
+        let navigation = getSubmittingNavigation(location, submission);
+        updateState({
+            navigation
+        }, {
+            flushSync: opts.flushSync === true
+        });
+        if (isFogOfWar) {
+            let discoverResult = await discoverRoutes(matches, location.pathname, request.signal);
+            if (discoverResult.type === "aborted") return {
+                shortCircuited: true
+            };
+            else if (discoverResult.type === "error") {
+                let boundaryId = findNearestBoundary(discoverResult.partialMatches).route.id;
+                return {
+                    matches: discoverResult.partialMatches,
+                    pendingActionResult: [
+                        boundaryId,
+                        {
+                            type: ResultType.error,
+                            error: discoverResult.error
+                        }
+                    ]
+                };
+            } else if (!discoverResult.matches) {
+                let { notFoundMatches, error, route } = handleNavigational404(location.pathname);
+                return {
+                    matches: notFoundMatches,
+                    pendingActionResult: [
+                        route.id,
+                        {
+                            type: ResultType.error,
+                            error
+                        }
+                    ]
+                };
+            } else matches = discoverResult.matches;
+        }
+        // Call our action and get the result
+        let result;
+        let actionMatch = getTargetMatch(matches, location);
+        if (!actionMatch.route.action && !actionMatch.route.lazy) result = {
+            type: ResultType.error,
+            error: getInternalRouterError(405, {
+                method: request.method,
+                pathname: location.pathname,
+                routeId: actionMatch.route.id
+            })
+        };
+        else {
+            let results = await callDataStrategy("action", state, request, [
+                actionMatch
+            ], matches, null);
+            result = results[actionMatch.route.id];
+            if (request.signal.aborted) return {
+                shortCircuited: true
+            };
+        }
+        if (isRedirectResult(result)) {
+            let replace;
+            if (opts && opts.replace != null) replace = opts.replace;
+            else {
+                // If the user didn't explicity indicate replace behavior, replace if
+                // we redirected to the exact same location we're currently at to avoid
+                // double back-buttons
+                let location = normalizeRedirectLocation(result.response.headers.get("Location"), new URL(request.url), basename);
+                replace = location === state.location.pathname + state.location.search;
+            }
+            await startRedirectNavigation(request, result, true, {
+                submission,
+                replace
+            });
+            return {
+                shortCircuited: true
+            };
+        }
+        if (isDeferredResult(result)) throw getInternalRouterError(400, {
+            type: "defer-action"
+        });
+        if (isErrorResult(result)) {
+            // Store off the pending error - we use it to determine which loaders
+            // to call and will commit it when we complete the navigation
+            let boundaryMatch = findNearestBoundary(matches, actionMatch.route.id);
+            // By default, all submissions to the current location are REPLACE
+            // navigations, but if the action threw an error that'll be rendered in
+            // an errorElement, we fall back to PUSH so that the user can use the
+            // back button to get back to the pre-submission form location to try
+            // again
+            if ((opts && opts.replace) !== true) pendingAction = Action.Push;
+            return {
+                matches,
+                pendingActionResult: [
+                    boundaryMatch.route.id,
+                    result
+                ]
+            };
+        }
+        return {
+            matches,
+            pendingActionResult: [
+                actionMatch.route.id,
+                result
+            ]
+        };
+    }
+    // Call all applicable loaders for the given matches, handling redirects,
+    // errors, etc.
+    async function handleLoaders(request, location, matches, isFogOfWar, overrideNavigation, submission, fetcherSubmission, replace, initialHydration, flushSync, pendingActionResult) {
+        // Figure out the right navigation we want to use for data loading
+        let loadingNavigation = overrideNavigation || getLoadingNavigation(location, submission);
+        // If this was a redirect from an action we don't have a "submission" but
+        // we have it on the loading navigation so use that if available
+        let activeSubmission = submission || fetcherSubmission || getSubmissionFromNavigation(loadingNavigation);
+        // If this is an uninterrupted revalidation, we remain in our current idle
+        // state.  If not, we need to switch to our loading state and load data,
+        // preserving any new action data or existing action data (in the case of
+        // a revalidation interrupting an actionReload)
+        // If we have partialHydration enabled, then don't update the state for the
+        // initial data load since it's not a "navigation"
+        let shouldUpdateNavigationState = !isUninterruptedRevalidation && (!future.v7_partialHydration || !initialHydration);
+        // When fog of war is enabled, we enter our `loading` state earlier so we
+        // can discover new routes during the `loading` state.  We skip this if
+        // we've already run actions since we would have done our matching already.
+        // If the children() function threw then, we want to proceed with the
+        // partial matches it discovered.
+        if (isFogOfWar) {
+            if (shouldUpdateNavigationState) {
+                let actionData = getUpdatedActionData(pendingActionResult);
+                updateState(_extends({
+                    navigation: loadingNavigation
+                }, actionData !== undefined ? {
+                    actionData
+                } : {}), {
+                    flushSync
+                });
+            }
+            let discoverResult = await discoverRoutes(matches, location.pathname, request.signal);
+            if (discoverResult.type === "aborted") return {
+                shortCircuited: true
+            };
+            else if (discoverResult.type === "error") {
+                let boundaryId = findNearestBoundary(discoverResult.partialMatches).route.id;
+                return {
+                    matches: discoverResult.partialMatches,
+                    loaderData: {},
+                    errors: {
+                        [boundaryId]: discoverResult.error
+                    }
+                };
+            } else if (!discoverResult.matches) {
+                let { error, notFoundMatches, route } = handleNavigational404(location.pathname);
+                return {
+                    matches: notFoundMatches,
+                    loaderData: {},
+                    errors: {
+                        [route.id]: error
+                    }
+                };
+            } else matches = discoverResult.matches;
+        }
+        let routesToUse = inFlightDataRoutes || dataRoutes;
+        let [matchesToLoad, revalidatingFetchers] = getMatchesToLoad(init.history, state, matches, activeSubmission, location, future.v7_partialHydration && initialHydration === true, future.v7_skipActionErrorRevalidation, isRevalidationRequired, cancelledDeferredRoutes, cancelledFetcherLoads, deletedFetchers, fetchLoadMatches, fetchRedirectIds, routesToUse, basename, pendingActionResult);
+        // Cancel pending deferreds for no-longer-matched routes or routes we're
+        // about to reload.  Note that if this is an action reload we would have
+        // already cancelled all pending deferreds so this would be a no-op
+        cancelActiveDeferreds((routeId)=>!(matches && matches.some((m)=>m.route.id === routeId)) || matchesToLoad && matchesToLoad.some((m)=>m.route.id === routeId));
+        pendingNavigationLoadId = ++incrementingLoadId;
+        // Short circuit if we have no loaders to run
+        if (matchesToLoad.length === 0 && revalidatingFetchers.length === 0) {
+            let updatedFetchers = markFetchRedirectsDone();
+            completeNavigation(location, _extends({
+                matches,
+                loaderData: {},
+                // Commit pending error if we're short circuiting
+                errors: pendingActionResult && isErrorResult(pendingActionResult[1]) ? {
+                    [pendingActionResult[0]]: pendingActionResult[1].error
+                } : null
+            }, getActionDataForCommit(pendingActionResult), updatedFetchers ? {
+                fetchers: new Map(state.fetchers)
+            } : {}), {
+                flushSync
+            });
+            return {
+                shortCircuited: true
+            };
+        }
+        if (shouldUpdateNavigationState) {
+            let updates = {};
+            if (!isFogOfWar) {
+                // Only update navigation/actionNData if we didn't already do it above
+                updates.navigation = loadingNavigation;
+                let actionData = getUpdatedActionData(pendingActionResult);
+                if (actionData !== undefined) updates.actionData = actionData;
+            }
+            if (revalidatingFetchers.length > 0) updates.fetchers = getUpdatedRevalidatingFetchers(revalidatingFetchers);
+            updateState(updates, {
+                flushSync
+            });
+        }
+        revalidatingFetchers.forEach((rf)=>{
+            abortFetcher(rf.key);
+            if (rf.controller) // Fetchers use an independent AbortController so that aborting a fetcher
+            // (via deleteFetcher) does not abort the triggering navigation that
+            // triggered the revalidation
+            fetchControllers.set(rf.key, rf.controller);
+        });
+        // Proxy navigation abort through to revalidation fetchers
+        let abortPendingFetchRevalidations = ()=>revalidatingFetchers.forEach((f)=>abortFetcher(f.key));
+        if (pendingNavigationController) pendingNavigationController.signal.addEventListener("abort", abortPendingFetchRevalidations);
+        let { loaderResults, fetcherResults } = await callLoadersAndMaybeResolveData(state, matches, matchesToLoad, revalidatingFetchers, request);
+        if (request.signal.aborted) return {
+            shortCircuited: true
+        };
+        // Clean up _after_ loaders have completed.  Don't clean up if we short
+        // circuited because fetchControllers would have been aborted and
+        // reassigned to new controllers for the next navigation
+        if (pendingNavigationController) pendingNavigationController.signal.removeEventListener("abort", abortPendingFetchRevalidations);
+        revalidatingFetchers.forEach((rf)=>fetchControllers.delete(rf.key));
+        // If any loaders returned a redirect Response, start a new REPLACE navigation
+        let redirect = findRedirect(loaderResults);
+        if (redirect) {
+            await startRedirectNavigation(request, redirect.result, true, {
+                replace
+            });
+            return {
+                shortCircuited: true
+            };
+        }
+        redirect = findRedirect(fetcherResults);
+        if (redirect) {
+            // If this redirect came from a fetcher make sure we mark it in
+            // fetchRedirectIds so it doesn't get revalidated on the next set of
+            // loader executions
+            fetchRedirectIds.add(redirect.key);
+            await startRedirectNavigation(request, redirect.result, true, {
+                replace
+            });
+            return {
+                shortCircuited: true
+            };
+        }
+        // Process and commit output from loaders
+        let { loaderData, errors } = processLoaderData(state, matches, loaderResults, pendingActionResult, revalidatingFetchers, fetcherResults, activeDeferreds);
+        // Wire up subscribers to update loaderData as promises settle
+        activeDeferreds.forEach((deferredData, routeId)=>{
+            deferredData.subscribe((aborted)=>{
+                // Note: No need to updateState here since the TrackedPromise on
+                // loaderData is stable across resolve/reject
+                // Remove this instance if we were aborted or if promises have settled
+                if (aborted || deferredData.done) activeDeferreds.delete(routeId);
+            });
+        });
+        // Preserve SSR errors during partial hydration
+        if (future.v7_partialHydration && initialHydration && state.errors) errors = _extends({}, state.errors, errors);
+        let updatedFetchers = markFetchRedirectsDone();
+        let didAbortFetchLoads = abortStaleFetchLoads(pendingNavigationLoadId);
+        let shouldUpdateFetchers = updatedFetchers || didAbortFetchLoads || revalidatingFetchers.length > 0;
+        return _extends({
+            matches,
+            loaderData,
+            errors
+        }, shouldUpdateFetchers ? {
+            fetchers: new Map(state.fetchers)
+        } : {});
+    }
+    function getUpdatedActionData(pendingActionResult) {
+        if (pendingActionResult && !isErrorResult(pendingActionResult[1])) // This is cast to `any` currently because `RouteData`uses any and it
+        // would be a breaking change to use any.
+        // TODO: v7 - change `RouteData` to use `unknown` instead of `any`
+        return {
+            [pendingActionResult[0]]: pendingActionResult[1].data
+        };
+        else if (state.actionData) {
+            if (Object.keys(state.actionData).length === 0) return null;
+            else return state.actionData;
+        }
+    }
+    function getUpdatedRevalidatingFetchers(revalidatingFetchers) {
+        revalidatingFetchers.forEach((rf)=>{
+            let fetcher = state.fetchers.get(rf.key);
+            let revalidatingFetcher = getLoadingFetcher(undefined, fetcher ? fetcher.data : undefined);
+            state.fetchers.set(rf.key, revalidatingFetcher);
+        });
+        return new Map(state.fetchers);
+    }
+    // Trigger a fetcher load/submit for the given fetcher key
+    function fetch(key, routeId, href, opts) {
+        if (isServer) throw new Error("router.fetch() was called during the server render, but it shouldn't be. You are likely calling a useFetcher() method in the body of your component. Try moving it to a useEffect or a callback.");
+        abortFetcher(key);
+        let flushSync = (opts && opts.flushSync) === true;
+        let routesToUse = inFlightDataRoutes || dataRoutes;
+        let normalizedPath = normalizeTo(state.location, state.matches, basename, future.v7_prependBasename, href, future.v7_relativeSplatPath, routeId, opts == null ? void 0 : opts.relative);
+        let matches = matchRoutes(routesToUse, normalizedPath, basename);
+        let fogOfWar = checkFogOfWar(matches, routesToUse, normalizedPath);
+        if (fogOfWar.active && fogOfWar.matches) matches = fogOfWar.matches;
+        if (!matches) {
+            setFetcherError(key, routeId, getInternalRouterError(404, {
+                pathname: normalizedPath
+            }), {
+                flushSync
+            });
+            return;
+        }
+        let { path, submission, error } = normalizeNavigateOptions(future.v7_normalizeFormMethod, true, normalizedPath, opts);
+        if (error) {
+            setFetcherError(key, routeId, error, {
+                flushSync
+            });
+            return;
+        }
+        let match = getTargetMatch(matches, path);
+        let preventScrollReset = (opts && opts.preventScrollReset) === true;
+        if (submission && isMutationMethod(submission.formMethod)) {
+            handleFetcherAction(key, routeId, path, match, matches, fogOfWar.active, flushSync, preventScrollReset, submission);
+            return;
+        }
+        // Store off the match so we can call it's shouldRevalidate on subsequent
+        // revalidations
+        fetchLoadMatches.set(key, {
+            routeId,
+            path
+        });
+        handleFetcherLoader(key, routeId, path, match, matches, fogOfWar.active, flushSync, preventScrollReset, submission);
+    }
+    // Call the action for the matched fetcher.submit(), and then handle redirects,
+    // errors, and revalidation
+    async function handleFetcherAction(key, routeId, path, match, requestMatches, isFogOfWar, flushSync, preventScrollReset, submission) {
+        interruptActiveLoads();
+        fetchLoadMatches.delete(key);
+        function detectAndHandle405Error(m) {
+            if (!m.route.action && !m.route.lazy) {
+                let error = getInternalRouterError(405, {
+                    method: submission.formMethod,
+                    pathname: path,
+                    routeId: routeId
+                });
+                setFetcherError(key, routeId, error, {
+                    flushSync
+                });
+                return true;
+            }
+            return false;
+        }
+        if (!isFogOfWar && detectAndHandle405Error(match)) return;
+        // Put this fetcher into it's submitting state
+        let existingFetcher = state.fetchers.get(key);
+        updateFetcherState(key, getSubmittingFetcher(submission, existingFetcher), {
+            flushSync
+        });
+        let abortController = new AbortController();
+        let fetchRequest = createClientSideRequest(init.history, path, abortController.signal, submission);
+        if (isFogOfWar) {
+            let discoverResult = await discoverRoutes(requestMatches, path, fetchRequest.signal);
+            if (discoverResult.type === "aborted") return;
+            else if (discoverResult.type === "error") {
+                setFetcherError(key, routeId, discoverResult.error, {
+                    flushSync
+                });
+                return;
+            } else if (!discoverResult.matches) {
+                setFetcherError(key, routeId, getInternalRouterError(404, {
+                    pathname: path
+                }), {
+                    flushSync
+                });
+                return;
+            } else {
+                requestMatches = discoverResult.matches;
+                match = getTargetMatch(requestMatches, path);
+                if (detectAndHandle405Error(match)) return;
+            }
+        }
+        // Call the action for the fetcher
+        fetchControllers.set(key, abortController);
+        let originatingLoadId = incrementingLoadId;
+        let actionResults = await callDataStrategy("action", state, fetchRequest, [
+            match
+        ], requestMatches, key);
+        let actionResult = actionResults[match.route.id];
+        if (fetchRequest.signal.aborted) {
+            // We can delete this so long as we weren't aborted by our own fetcher
+            // re-submit which would have put _new_ controller is in fetchControllers
+            if (fetchControllers.get(key) === abortController) fetchControllers.delete(key);
+            return;
+        }
+        // When using v7_fetcherPersist, we don't want errors bubbling up to the UI
+        // or redirects processed for unmounted fetchers so we just revert them to
+        // idle
+        if (future.v7_fetcherPersist && deletedFetchers.has(key)) {
+            if (isRedirectResult(actionResult) || isErrorResult(actionResult)) {
+                updateFetcherState(key, getDoneFetcher(undefined));
+                return;
+            }
+        } else {
+            if (isRedirectResult(actionResult)) {
+                fetchControllers.delete(key);
+                if (pendingNavigationLoadId > originatingLoadId) {
+                    // A new navigation was kicked off after our action started, so that
+                    // should take precedence over this redirect navigation.  We already
+                    // set isRevalidationRequired so all loaders for the new route should
+                    // fire unless opted out via shouldRevalidate
+                    updateFetcherState(key, getDoneFetcher(undefined));
+                    return;
+                } else {
+                    fetchRedirectIds.add(key);
+                    updateFetcherState(key, getLoadingFetcher(submission));
+                    return startRedirectNavigation(fetchRequest, actionResult, false, {
+                        fetcherSubmission: submission,
+                        preventScrollReset
+                    });
+                }
+            }
+            // Process any non-redirect errors thrown
+            if (isErrorResult(actionResult)) {
+                setFetcherError(key, routeId, actionResult.error);
+                return;
+            }
+        }
+        if (isDeferredResult(actionResult)) throw getInternalRouterError(400, {
+            type: "defer-action"
+        });
+        // Start the data load for current matches, or the next location if we're
+        // in the middle of a navigation
+        let nextLocation = state.navigation.location || state.location;
+        let revalidationRequest = createClientSideRequest(init.history, nextLocation, abortController.signal);
+        let routesToUse = inFlightDataRoutes || dataRoutes;
+        let matches = state.navigation.state !== "idle" ? matchRoutes(routesToUse, state.navigation.location, basename) : state.matches;
+        invariant(matches, "Didn't find any matches after fetcher action");
+        let loadId = ++incrementingLoadId;
+        fetchReloadIds.set(key, loadId);
+        let loadFetcher = getLoadingFetcher(submission, actionResult.data);
+        state.fetchers.set(key, loadFetcher);
+        let [matchesToLoad, revalidatingFetchers] = getMatchesToLoad(init.history, state, matches, submission, nextLocation, false, future.v7_skipActionErrorRevalidation, isRevalidationRequired, cancelledDeferredRoutes, cancelledFetcherLoads, deletedFetchers, fetchLoadMatches, fetchRedirectIds, routesToUse, basename, [
+            match.route.id,
+            actionResult
+        ]);
+        // Put all revalidating fetchers into the loading state, except for the
+        // current fetcher which we want to keep in it's current loading state which
+        // contains it's action submission info + action data
+        revalidatingFetchers.filter((rf)=>rf.key !== key).forEach((rf)=>{
+            let staleKey = rf.key;
+            let existingFetcher = state.fetchers.get(staleKey);
+            let revalidatingFetcher = getLoadingFetcher(undefined, existingFetcher ? existingFetcher.data : undefined);
+            state.fetchers.set(staleKey, revalidatingFetcher);
+            abortFetcher(staleKey);
+            if (rf.controller) fetchControllers.set(staleKey, rf.controller);
+        });
+        updateState({
+            fetchers: new Map(state.fetchers)
+        });
+        let abortPendingFetchRevalidations = ()=>revalidatingFetchers.forEach((rf)=>abortFetcher(rf.key));
+        abortController.signal.addEventListener("abort", abortPendingFetchRevalidations);
+        let { loaderResults, fetcherResults } = await callLoadersAndMaybeResolveData(state, matches, matchesToLoad, revalidatingFetchers, revalidationRequest);
+        if (abortController.signal.aborted) return;
+        abortController.signal.removeEventListener("abort", abortPendingFetchRevalidations);
+        fetchReloadIds.delete(key);
+        fetchControllers.delete(key);
+        revalidatingFetchers.forEach((r)=>fetchControllers.delete(r.key));
+        let redirect = findRedirect(loaderResults);
+        if (redirect) return startRedirectNavigation(revalidationRequest, redirect.result, false, {
+            preventScrollReset
+        });
+        redirect = findRedirect(fetcherResults);
+        if (redirect) {
+            // If this redirect came from a fetcher make sure we mark it in
+            // fetchRedirectIds so it doesn't get revalidated on the next set of
+            // loader executions
+            fetchRedirectIds.add(redirect.key);
+            return startRedirectNavigation(revalidationRequest, redirect.result, false, {
+                preventScrollReset
+            });
+        }
+        // Process and commit output from loaders
+        let { loaderData, errors } = processLoaderData(state, matches, loaderResults, undefined, revalidatingFetchers, fetcherResults, activeDeferreds);
+        // Since we let revalidations complete even if the submitting fetcher was
+        // deleted, only put it back to idle if it hasn't been deleted
+        if (state.fetchers.has(key)) {
+            let doneFetcher = getDoneFetcher(actionResult.data);
+            state.fetchers.set(key, doneFetcher);
+        }
+        abortStaleFetchLoads(loadId);
+        // If we are currently in a navigation loading state and this fetcher is
+        // more recent than the navigation, we want the newer data so abort the
+        // navigation and complete it with the fetcher data
+        if (state.navigation.state === "loading" && loadId > pendingNavigationLoadId) {
+            invariant(pendingAction, "Expected pending action");
+            pendingNavigationController && pendingNavigationController.abort();
+            completeNavigation(state.navigation.location, {
+                matches,
+                loaderData,
+                errors,
+                fetchers: new Map(state.fetchers)
+            });
+        } else {
+            // otherwise just update with the fetcher data, preserving any existing
+            // loaderData for loaders that did not need to reload.  We have to
+            // manually merge here since we aren't going through completeNavigation
+            updateState({
+                errors,
+                loaderData: mergeLoaderData(state.loaderData, loaderData, matches, errors),
+                fetchers: new Map(state.fetchers)
+            });
+            isRevalidationRequired = false;
+        }
+    }
+    // Call the matched loader for fetcher.load(), handling redirects, errors, etc.
+    async function handleFetcherLoader(key, routeId, path, match, matches, isFogOfWar, flushSync, preventScrollReset, submission) {
+        let existingFetcher = state.fetchers.get(key);
+        updateFetcherState(key, getLoadingFetcher(submission, existingFetcher ? existingFetcher.data : undefined), {
+            flushSync
+        });
+        let abortController = new AbortController();
+        let fetchRequest = createClientSideRequest(init.history, path, abortController.signal);
+        if (isFogOfWar) {
+            let discoverResult = await discoverRoutes(matches, path, fetchRequest.signal);
+            if (discoverResult.type === "aborted") return;
+            else if (discoverResult.type === "error") {
+                setFetcherError(key, routeId, discoverResult.error, {
+                    flushSync
+                });
+                return;
+            } else if (!discoverResult.matches) {
+                setFetcherError(key, routeId, getInternalRouterError(404, {
+                    pathname: path
+                }), {
+                    flushSync
+                });
+                return;
+            } else {
+                matches = discoverResult.matches;
+                match = getTargetMatch(matches, path);
+            }
+        }
+        // Call the loader for this fetcher route match
+        fetchControllers.set(key, abortController);
+        let originatingLoadId = incrementingLoadId;
+        let results = await callDataStrategy("loader", state, fetchRequest, [
+            match
+        ], matches, key);
+        let result = results[match.route.id];
+        // Deferred isn't supported for fetcher loads, await everything and treat it
+        // as a normal load.  resolveDeferredData will return undefined if this
+        // fetcher gets aborted, so we just leave result untouched and short circuit
+        // below if that happens
+        if (isDeferredResult(result)) result = await resolveDeferredData(result, fetchRequest.signal, true) || result;
+        // We can delete this so long as we weren't aborted by our our own fetcher
+        // re-load which would have put _new_ controller is in fetchControllers
+        if (fetchControllers.get(key) === abortController) fetchControllers.delete(key);
+        if (fetchRequest.signal.aborted) return;
+        // We don't want errors bubbling up or redirects followed for unmounted
+        // fetchers, so short circuit here if it was removed from the UI
+        if (deletedFetchers.has(key)) {
+            updateFetcherState(key, getDoneFetcher(undefined));
+            return;
+        }
+        // If the loader threw a redirect Response, start a new REPLACE navigation
+        if (isRedirectResult(result)) {
+            if (pendingNavigationLoadId > originatingLoadId) {
+                // A new navigation was kicked off after our loader started, so that
+                // should take precedence over this redirect navigation
+                updateFetcherState(key, getDoneFetcher(undefined));
+                return;
+            } else {
+                fetchRedirectIds.add(key);
+                await startRedirectNavigation(fetchRequest, result, false, {
+                    preventScrollReset
+                });
+                return;
+            }
+        }
+        // Process any non-redirect errors thrown
+        if (isErrorResult(result)) {
+            setFetcherError(key, routeId, result.error);
+            return;
+        }
+        invariant(!isDeferredResult(result), "Unhandled fetcher deferred data");
+        // Put the fetcher back into an idle state
+        updateFetcherState(key, getDoneFetcher(result.data));
+    }
+    /**
+   * Utility function to handle redirects returned from an action or loader.
+   * Normally, a redirect "replaces" the navigation that triggered it.  So, for
+   * example:
+   *
+   *  - user is on /a
+   *  - user clicks a link to /b
+   *  - loader for /b redirects to /c
+   *
+   * In a non-JS app the browser would track the in-flight navigation to /b and
+   * then replace it with /c when it encountered the redirect response.  In
+   * the end it would only ever update the URL bar with /c.
+   *
+   * In client-side routing using pushState/replaceState, we aim to emulate
+   * this behavior and we also do not update history until the end of the
+   * navigation (including processed redirects).  This means that we never
+   * actually touch history until we've processed redirects, so we just use
+   * the history action from the original navigation (PUSH or REPLACE).
+   */ async function startRedirectNavigation(request, redirect, isNavigation, _temp2) {
+        let { submission, fetcherSubmission, preventScrollReset, replace } = _temp2 === void 0 ? {} : _temp2;
+        if (redirect.response.headers.has("X-Remix-Revalidate")) isRevalidationRequired = true;
+        let location = redirect.response.headers.get("Location");
+        invariant(location, "Expected a Location header on the redirect Response");
+        location = normalizeRedirectLocation(location, new URL(request.url), basename);
+        let redirectLocation = createLocation(state.location, location, {
+            _isRedirect: true
+        });
+        if (isBrowser) {
+            let isDocumentReload = false;
+            if (redirect.response.headers.has("X-Remix-Reload-Document")) // Hard reload if the response contained X-Remix-Reload-Document
+            isDocumentReload = true;
+            else if (ABSOLUTE_URL_REGEX.test(location)) {
+                const url = init.history.createURL(location);
+                isDocumentReload = // Hard reload if it's an absolute URL to a new origin
+                url.origin !== routerWindow.location.origin || // Hard reload if it's an absolute URL that does not match our basename
+                stripBasename(url.pathname, basename) == null;
+            }
+            if (isDocumentReload) {
+                if (replace) routerWindow.location.replace(location);
+                else routerWindow.location.assign(location);
+                return;
+            }
+        }
+        // There's no need to abort on redirects, since we don't detect the
+        // redirect until the action/loaders have settled
+        pendingNavigationController = null;
+        let redirectHistoryAction = replace === true || redirect.response.headers.has("X-Remix-Replace") ? Action.Replace : Action.Push;
+        // Use the incoming submission if provided, fallback on the active one in
+        // state.navigation
+        let { formMethod, formAction, formEncType } = state.navigation;
+        if (!submission && !fetcherSubmission && formMethod && formAction && formEncType) submission = getSubmissionFromNavigation(state.navigation);
+        // If this was a 307/308 submission we want to preserve the HTTP method and
+        // re-submit the GET/POST/PUT/PATCH/DELETE as a submission navigation to the
+        // redirected location
+        let activeSubmission = submission || fetcherSubmission;
+        if (redirectPreserveMethodStatusCodes.has(redirect.response.status) && activeSubmission && isMutationMethod(activeSubmission.formMethod)) await startNavigation(redirectHistoryAction, redirectLocation, {
+            submission: _extends({}, activeSubmission, {
+                formAction: location
+            }),
+            // Preserve these flags across redirects
+            preventScrollReset: preventScrollReset || pendingPreventScrollReset,
+            enableViewTransition: isNavigation ? pendingViewTransitionEnabled : undefined
+        });
+        else {
+            // If we have a navigation submission, we will preserve it through the
+            // redirect navigation
+            let overrideNavigation = getLoadingNavigation(redirectLocation, submission);
+            await startNavigation(redirectHistoryAction, redirectLocation, {
+                overrideNavigation,
+                // Send fetcher submissions through for shouldRevalidate
+                fetcherSubmission,
+                // Preserve these flags across redirects
+                preventScrollReset: preventScrollReset || pendingPreventScrollReset,
+                enableViewTransition: isNavigation ? pendingViewTransitionEnabled : undefined
+            });
+        }
+    }
+    // Utility wrapper for calling dataStrategy client-side without having to
+    // pass around the manifest, mapRouteProperties, etc.
+    async function callDataStrategy(type, state, request, matchesToLoad, matches, fetcherKey) {
+        let results;
+        let dataResults = {};
+        try {
+            results = await callDataStrategyImpl(dataStrategyImpl, type, state, request, matchesToLoad, matches, fetcherKey, manifest, mapRouteProperties);
+        } catch (e) {
+            // If the outer dataStrategy method throws, just return the error for all
+            // matches - and it'll naturally bubble to the root
+            matchesToLoad.forEach((m)=>{
+                dataResults[m.route.id] = {
+                    type: ResultType.error,
+                    error: e
+                };
+            });
+            return dataResults;
+        }
+        for (let [routeId, result] of Object.entries(results))if (isRedirectDataStrategyResultResult(result)) {
+            let response = result.result;
+            dataResults[routeId] = {
+                type: ResultType.redirect,
+                response: normalizeRelativeRoutingRedirectResponse(response, request, routeId, matches, basename, future.v7_relativeSplatPath)
+            };
+        } else dataResults[routeId] = await convertDataStrategyResultToDataResult(result);
+        return dataResults;
+    }
+    async function callLoadersAndMaybeResolveData(state, matches, matchesToLoad, fetchersToLoad, request) {
+        let currentMatches = state.matches;
+        // Kick off loaders and fetchers in parallel
+        let loaderResultsPromise = callDataStrategy("loader", state, request, matchesToLoad, matches, null);
+        let fetcherResultsPromise = Promise.all(fetchersToLoad.map(async (f)=>{
+            if (f.matches && f.match && f.controller) {
+                let results = await callDataStrategy("loader", state, createClientSideRequest(init.history, f.path, f.controller.signal), [
+                    f.match
+                ], f.matches, f.key);
+                let result = results[f.match.route.id];
+                // Fetcher results are keyed by fetcher key from here on out, not routeId
+                return {
+                    [f.key]: result
+                };
+            } else return Promise.resolve({
+                [f.key]: {
+                    type: ResultType.error,
+                    error: getInternalRouterError(404, {
+                        pathname: f.path
+                    })
+                }
+            });
+        }));
+        let loaderResults = await loaderResultsPromise;
+        let fetcherResults = (await fetcherResultsPromise).reduce((acc, r)=>Object.assign(acc, r), {});
+        await Promise.all([
+            resolveNavigationDeferredResults(matches, loaderResults, request.signal, currentMatches, state.loaderData),
+            resolveFetcherDeferredResults(matches, fetcherResults, fetchersToLoad)
+        ]);
+        return {
+            loaderResults,
+            fetcherResults
+        };
+    }
+    function interruptActiveLoads() {
+        // Every interruption triggers a revalidation
+        isRevalidationRequired = true;
+        // Cancel pending route-level deferreds and mark cancelled routes for
+        // revalidation
+        cancelledDeferredRoutes.push(...cancelActiveDeferreds());
+        // Abort in-flight fetcher loads
+        fetchLoadMatches.forEach((_, key)=>{
+            if (fetchControllers.has(key)) cancelledFetcherLoads.add(key);
+            abortFetcher(key);
+        });
+    }
+    function updateFetcherState(key, fetcher, opts) {
+        if (opts === void 0) opts = {};
+        state.fetchers.set(key, fetcher);
+        updateState({
+            fetchers: new Map(state.fetchers)
+        }, {
+            flushSync: (opts && opts.flushSync) === true
+        });
+    }
+    function setFetcherError(key, routeId, error, opts) {
+        if (opts === void 0) opts = {};
+        let boundaryMatch = findNearestBoundary(state.matches, routeId);
+        deleteFetcher(key);
+        updateState({
+            errors: {
+                [boundaryMatch.route.id]: error
+            },
+            fetchers: new Map(state.fetchers)
+        }, {
+            flushSync: (opts && opts.flushSync) === true
+        });
+    }
+    function getFetcher(key) {
+        if (future.v7_fetcherPersist) {
+            activeFetchers.set(key, (activeFetchers.get(key) || 0) + 1);
+            // If this fetcher was previously marked for deletion, unmark it since we
+            // have a new instance
+            if (deletedFetchers.has(key)) deletedFetchers.delete(key);
+        }
+        return state.fetchers.get(key) || IDLE_FETCHER;
+    }
+    function deleteFetcher(key) {
+        let fetcher = state.fetchers.get(key);
+        // Don't abort the controller if this is a deletion of a fetcher.submit()
+        // in it's loading phase since - we don't want to abort the corresponding
+        // revalidation and want them to complete and land
+        if (fetchControllers.has(key) && !(fetcher && fetcher.state === "loading" && fetchReloadIds.has(key))) abortFetcher(key);
+        fetchLoadMatches.delete(key);
+        fetchReloadIds.delete(key);
+        fetchRedirectIds.delete(key);
+        deletedFetchers.delete(key);
+        cancelledFetcherLoads.delete(key);
+        state.fetchers.delete(key);
+    }
+    function deleteFetcherAndUpdateState(key) {
+        if (future.v7_fetcherPersist) {
+            let count = (activeFetchers.get(key) || 0) - 1;
+            if (count <= 0) {
+                activeFetchers.delete(key);
+                deletedFetchers.add(key);
+            } else activeFetchers.set(key, count);
+        } else deleteFetcher(key);
+        updateState({
+            fetchers: new Map(state.fetchers)
+        });
+    }
+    function abortFetcher(key) {
+        let controller = fetchControllers.get(key);
+        if (controller) {
+            controller.abort();
+            fetchControllers.delete(key);
+        }
+    }
+    function markFetchersDone(keys) {
+        for (let key of keys){
+            let fetcher = getFetcher(key);
+            let doneFetcher = getDoneFetcher(fetcher.data);
+            state.fetchers.set(key, doneFetcher);
+        }
+    }
+    function markFetchRedirectsDone() {
+        let doneKeys = [];
+        let updatedFetchers = false;
+        for (let key of fetchRedirectIds){
+            let fetcher = state.fetchers.get(key);
+            invariant(fetcher, "Expected fetcher: " + key);
+            if (fetcher.state === "loading") {
+                fetchRedirectIds.delete(key);
+                doneKeys.push(key);
+                updatedFetchers = true;
+            }
+        }
+        markFetchersDone(doneKeys);
+        return updatedFetchers;
+    }
+    function abortStaleFetchLoads(landedId) {
+        let yeetedKeys = [];
+        for (let [key, id] of fetchReloadIds)if (id < landedId) {
+            let fetcher = state.fetchers.get(key);
+            invariant(fetcher, "Expected fetcher: " + key);
+            if (fetcher.state === "loading") {
+                abortFetcher(key);
+                fetchReloadIds.delete(key);
+                yeetedKeys.push(key);
+            }
+        }
+        markFetchersDone(yeetedKeys);
+        return yeetedKeys.length > 0;
+    }
+    function getBlocker(key, fn) {
+        let blocker = state.blockers.get(key) || IDLE_BLOCKER;
+        if (blockerFunctions.get(key) !== fn) blockerFunctions.set(key, fn);
+        return blocker;
+    }
+    function deleteBlocker(key) {
+        state.blockers.delete(key);
+        blockerFunctions.delete(key);
+    }
+    // Utility function to update blockers, ensuring valid state transitions
+    function updateBlocker(key, newBlocker) {
+        let blocker = state.blockers.get(key) || IDLE_BLOCKER;
+        // Poor mans state machine :)
+        // https://mermaid.live/edit#pako:eNqVkc9OwzAMxl8l8nnjAYrEtDIOHEBIgwvKJTReGy3_lDpIqO27k6awMG0XcrLlnz87nwdonESogKXXBuE79rq75XZO3-yHds0RJVuv70YrPlUrCEe2HfrORS3rubqZfuhtpg5C9wk5tZ4VKcRUq88q9Z8RS0-48cE1iHJkL0ugbHuFLus9L6spZy8nX9MP2CNdomVaposqu3fGayT8T8-jJQwhepo_UtpgBQaDEUom04dZhAN1aJBDlUKJBxE1ceB2Smj0Mln-IBW5AFU2dwUiktt_2Qaq2dBfaKdEup85UV7Yd-dKjlnkabl2Pvr0DTkTreM
+        invariant(blocker.state === "unblocked" && newBlocker.state === "blocked" || blocker.state === "blocked" && newBlocker.state === "blocked" || blocker.state === "blocked" && newBlocker.state === "proceeding" || blocker.state === "blocked" && newBlocker.state === "unblocked" || blocker.state === "proceeding" && newBlocker.state === "unblocked", "Invalid blocker state transition: " + blocker.state + " -> " + newBlocker.state);
+        let blockers = new Map(state.blockers);
+        blockers.set(key, newBlocker);
+        updateState({
+            blockers
+        });
+    }
+    function shouldBlockNavigation(_ref2) {
+        let { currentLocation, nextLocation, historyAction } = _ref2;
+        if (blockerFunctions.size === 0) return;
+        // We ony support a single active blocker at the moment since we don't have
+        // any compelling use cases for multi-blocker yet
+        if (blockerFunctions.size > 1) warning(false, "A router only supports one blocker at a time");
+        let entries = Array.from(blockerFunctions.entries());
+        let [blockerKey, blockerFunction] = entries[entries.length - 1];
+        let blocker = state.blockers.get(blockerKey);
+        if (blocker && blocker.state === "proceeding") // If the blocker is currently proceeding, we don't need to re-check
+        // it and can let this navigation continue
+        return;
+        // At this point, we know we're unblocked/blocked so we need to check the
+        // user-provided blocker function
+        if (blockerFunction({
+            currentLocation,
+            nextLocation,
+            historyAction
+        })) return blockerKey;
+    }
+    function handleNavigational404(pathname) {
+        let error = getInternalRouterError(404, {
+            pathname
+        });
+        let routesToUse = inFlightDataRoutes || dataRoutes;
+        let { matches, route } = getShortCircuitMatches(routesToUse);
+        // Cancel all pending deferred on 404s since we don't keep any routes
+        cancelActiveDeferreds();
+        return {
+            notFoundMatches: matches,
+            route,
+            error
+        };
+    }
+    function cancelActiveDeferreds(predicate) {
+        let cancelledRouteIds = [];
+        activeDeferreds.forEach((dfd, routeId)=>{
+            if (!predicate || predicate(routeId)) {
+                // Cancel the deferred - but do not remove from activeDeferreds here -
+                // we rely on the subscribers to do that so our tests can assert proper
+                // cleanup via _internalActiveDeferreds
+                dfd.cancel();
+                cancelledRouteIds.push(routeId);
+                activeDeferreds.delete(routeId);
+            }
+        });
+        return cancelledRouteIds;
+    }
+    // Opt in to capturing and reporting scroll positions during navigations,
+    // used by the <ScrollRestoration> component
+    function enableScrollRestoration(positions, getPosition, getKey) {
+        savedScrollPositions = positions;
+        getScrollPosition = getPosition;
+        getScrollRestorationKey = getKey || null;
+        // Perform initial hydration scroll restoration, since we miss the boat on
+        // the initial updateState() because we've not yet rendered <ScrollRestoration/>
+        // and therefore have no savedScrollPositions available
+        if (!initialScrollRestored && state.navigation === IDLE_NAVIGATION) {
+            initialScrollRestored = true;
+            let y = getSavedScrollPosition(state.location, state.matches);
+            if (y != null) updateState({
+                restoreScrollPosition: y
+            });
+        }
+        return ()=>{
+            savedScrollPositions = null;
+            getScrollPosition = null;
+            getScrollRestorationKey = null;
+        };
+    }
+    function getScrollKey(location, matches) {
+        if (getScrollRestorationKey) {
+            let key = getScrollRestorationKey(location, matches.map((m)=>convertRouteMatchToUiMatch(m, state.loaderData)));
+            return key || location.key;
+        }
+        return location.key;
+    }
+    function saveScrollPosition(location, matches) {
+        if (savedScrollPositions && getScrollPosition) {
+            let key = getScrollKey(location, matches);
+            savedScrollPositions[key] = getScrollPosition();
+        }
+    }
+    function getSavedScrollPosition(location, matches) {
+        if (savedScrollPositions) {
+            let key = getScrollKey(location, matches);
+            let y = savedScrollPositions[key];
+            if (typeof y === "number") return y;
+        }
+        return null;
+    }
+    function checkFogOfWar(matches, routesToUse, pathname) {
+        if (patchRoutesOnNavigationImpl) {
+            if (!matches) {
+                let fogMatches = matchRoutesImpl(routesToUse, pathname, basename, true);
+                return {
+                    active: true,
+                    matches: fogMatches || []
+                };
+            } else if (Object.keys(matches[0].params).length > 0) {
+                // If we matched a dynamic param or a splat, it might only be because
+                // we haven't yet discovered other routes that would match with a
+                // higher score.  Call patchRoutesOnNavigation just to be sure
+                let partialMatches = matchRoutesImpl(routesToUse, pathname, basename, true);
+                return {
+                    active: true,
+                    matches: partialMatches
+                };
+            }
+        }
+        return {
+            active: false,
+            matches: null
+        };
+    }
+    async function discoverRoutes(matches, pathname, signal) {
+        if (!patchRoutesOnNavigationImpl) return {
+            type: "success",
+            matches
+        };
+        let partialMatches = matches;
+        while(true){
+            let isNonHMR = inFlightDataRoutes == null;
+            let routesToUse = inFlightDataRoutes || dataRoutes;
+            let localManifest = manifest;
+            try {
+                await patchRoutesOnNavigationImpl({
+                    path: pathname,
+                    matches: partialMatches,
+                    patch: (routeId, children)=>{
+                        if (signal.aborted) return;
+                        patchRoutesImpl(routeId, children, routesToUse, localManifest, mapRouteProperties);
+                    }
+                });
+            } catch (e) {
+                return {
+                    type: "error",
+                    error: e,
+                    partialMatches
+                };
+            } finally{
+                // If we are not in the middle of an HMR revalidation and we changed the
+                // routes, provide a new identity so when we `updateState` at the end of
+                // this navigation/fetch `router.routes` will be a new identity and
+                // trigger a re-run of memoized `router.routes` dependencies.
+                // HMR will already update the identity and reflow when it lands
+                // `inFlightDataRoutes` in `completeNavigation`
+                if (isNonHMR && !signal.aborted) dataRoutes = [
+                    ...dataRoutes
+                ];
+            }
+            if (signal.aborted) return {
+                type: "aborted"
+            };
+            let newMatches = matchRoutes(routesToUse, pathname, basename);
+            if (newMatches) return {
+                type: "success",
+                matches: newMatches
+            };
+            let newPartialMatches = matchRoutesImpl(routesToUse, pathname, basename, true);
+            // Avoid loops if the second pass results in the same partial matches
+            if (!newPartialMatches || partialMatches.length === newPartialMatches.length && partialMatches.every((m, i)=>m.route.id === newPartialMatches[i].route.id)) return {
+                type: "success",
+                matches: null
+            };
+            partialMatches = newPartialMatches;
+        }
+    }
+    function _internalSetRoutes(newRoutes) {
+        manifest = {};
+        inFlightDataRoutes = convertRoutesToDataRoutes(newRoutes, mapRouteProperties, undefined, manifest);
+    }
+    function patchRoutes(routeId, children) {
+        let isNonHMR = inFlightDataRoutes == null;
+        let routesToUse = inFlightDataRoutes || dataRoutes;
+        patchRoutesImpl(routeId, children, routesToUse, manifest, mapRouteProperties);
+        // If we are not in the middle of an HMR revalidation and we changed the
+        // routes, provide a new identity and trigger a reflow via `updateState`
+        // to re-run memoized `router.routes` dependencies.
+        // HMR will already update the identity and reflow when it lands
+        // `inFlightDataRoutes` in `completeNavigation`
+        if (isNonHMR) {
+            dataRoutes = [
+                ...dataRoutes
+            ];
+            updateState({});
+        }
+    }
+    router = {
+        get basename () {
+            return basename;
+        },
+        get future () {
+            return future;
+        },
+        get state () {
+            return state;
+        },
+        get routes () {
+            return dataRoutes;
+        },
+        get window () {
+            return routerWindow;
+        },
+        initialize,
+        subscribe,
+        enableScrollRestoration,
+        navigate,
+        fetch,
+        revalidate,
+        // Passthrough to history-aware createHref used by useHref so we get proper
+        // hash-aware URLs in DOM paths
+        createHref: (to)=>init.history.createHref(to),
+        encodeLocation: (to)=>init.history.encodeLocation(to),
+        getFetcher,
+        deleteFetcher: deleteFetcherAndUpdateState,
+        dispose,
+        getBlocker,
+        deleteBlocker,
+        patchRoutes,
+        _internalFetchControllers: fetchControllers,
+        _internalActiveDeferreds: activeDeferreds,
+        // TODO: Remove setRoutes, it's temporary to avoid dealing with
+        // updating the tree while validating the update algorithm.
+        _internalSetRoutes
+    };
+    return router;
+}
+//#endregion
+////////////////////////////////////////////////////////////////////////////////
+//#region createStaticHandler
+////////////////////////////////////////////////////////////////////////////////
+const UNSAFE_DEFERRED_SYMBOL = Symbol("deferred");
+function createStaticHandler(routes, opts) {
+    invariant(routes.length > 0, "You must provide a non-empty routes array to createStaticHandler");
+    let manifest = {};
+    let basename = (opts ? opts.basename : null) || "/";
+    let mapRouteProperties;
+    if (opts != null && opts.mapRouteProperties) mapRouteProperties = opts.mapRouteProperties;
+    else if (opts != null && opts.detectErrorBoundary) {
+        // If they are still using the deprecated version, wrap it with the new API
+        let detectErrorBoundary = opts.detectErrorBoundary;
+        mapRouteProperties = (route)=>({
+                hasErrorBoundary: detectErrorBoundary(route)
+            });
+    } else mapRouteProperties = defaultMapRouteProperties;
+    // Config driven behavior flags
+    let future = _extends({
+        v7_relativeSplatPath: false,
+        v7_throwAbortReason: false
+    }, opts ? opts.future : null);
+    let dataRoutes = convertRoutesToDataRoutes(routes, mapRouteProperties, undefined, manifest);
+    /**
+   * The query() method is intended for document requests, in which we want to
+   * call an optional action and potentially multiple loaders for all nested
+   * routes.  It returns a StaticHandlerContext object, which is very similar
+   * to the router state (location, loaderData, actionData, errors, etc.) and
+   * also adds SSR-specific information such as the statusCode and headers
+   * from action/loaders Responses.
+   *
+   * It _should_ never throw and should report all errors through the
+   * returned context.errors object, properly associating errors to their error
+   * boundary.  Additionally, it tracks _deepestRenderedBoundaryId which can be
+   * used to emulate React error boundaries during SSr by performing a second
+   * pass only down to the boundaryId.
+   *
+   * The one exception where we do not return a StaticHandlerContext is when a
+   * redirect response is returned or thrown from any action/loader.  We
+   * propagate that out and return the raw Response so the HTTP server can
+   * return it directly.
+   *
+   * - `opts.requestContext` is an optional server context that will be passed
+   *   to actions/loaders in the `context` parameter
+   * - `opts.skipLoaderErrorBubbling` is an optional parameter that will prevent
+   *   the bubbling of errors which allows single-fetch-type implementations
+   *   where the client will handle the bubbling and we may need to return data
+   *   for the handling route
+   */ async function query(request, _temp3) {
+        let { requestContext, skipLoaderErrorBubbling, dataStrategy } = _temp3 === void 0 ? {} : _temp3;
+        let url = new URL(request.url);
+        let method = request.method;
+        let location = createLocation("", createPath(url), null, "default");
+        let matches = matchRoutes(dataRoutes, location, basename);
+        // SSR supports HEAD requests while SPA doesn't
+        if (!isValidMethod(method) && method !== "HEAD") {
+            let error = getInternalRouterError(405, {
+                method
+            });
+            let { matches: methodNotAllowedMatches, route } = getShortCircuitMatches(dataRoutes);
+            return {
+                basename,
+                location,
+                matches: methodNotAllowedMatches,
+                loaderData: {},
+                actionData: null,
+                errors: {
+                    [route.id]: error
+                },
+                statusCode: error.status,
+                loaderHeaders: {},
+                actionHeaders: {},
+                activeDeferreds: null
+            };
+        } else if (!matches) {
+            let error = getInternalRouterError(404, {
+                pathname: location.pathname
+            });
+            let { matches: notFoundMatches, route } = getShortCircuitMatches(dataRoutes);
+            return {
+                basename,
+                location,
+                matches: notFoundMatches,
+                loaderData: {},
+                actionData: null,
+                errors: {
+                    [route.id]: error
+                },
+                statusCode: error.status,
+                loaderHeaders: {},
+                actionHeaders: {},
+                activeDeferreds: null
+            };
+        }
+        let result = await queryImpl(request, location, matches, requestContext, dataStrategy || null, skipLoaderErrorBubbling === true, null);
+        if (isResponse(result)) return result;
+        // When returning StaticHandlerContext, we patch back in the location here
+        // since we need it for React Context.  But this helps keep our submit and
+        // loadRouteData operating on a Request instead of a Location
+        return _extends({
+            location,
+            basename
+        }, result);
+    }
+    /**
+   * The queryRoute() method is intended for targeted route requests, either
+   * for fetch ?_data requests or resource route requests.  In this case, we
+   * are only ever calling a single action or loader, and we are returning the
+   * returned value directly.  In most cases, this will be a Response returned
+   * from the action/loader, but it may be a primitive or other value as well -
+   * and in such cases the calling context should handle that accordingly.
+   *
+   * We do respect the throw/return differentiation, so if an action/loader
+   * throws, then this method will throw the value.  This is important so we
+   * can do proper boundary identification in Remix where a thrown Response
+   * must go to the Catch Boundary but a returned Response is happy-path.
+   *
+   * One thing to note is that any Router-initiated Errors that make sense
+   * to associate with a status code will be thrown as an ErrorResponse
+   * instance which include the raw Error, such that the calling context can
+   * serialize the error as they see fit while including the proper response
+   * code.  Examples here are 404 and 405 errors that occur prior to reaching
+   * any user-defined loaders.
+   *
+   * - `opts.routeId` allows you to specify the specific route handler to call.
+   *   If not provided the handler will determine the proper route by matching
+   *   against `request.url`
+   * - `opts.requestContext` is an optional server context that will be passed
+   *    to actions/loaders in the `context` parameter
+   */ async function queryRoute(request, _temp4) {
+        let { routeId, requestContext, dataStrategy } = _temp4 === void 0 ? {} : _temp4;
+        let url = new URL(request.url);
+        let method = request.method;
+        let location = createLocation("", createPath(url), null, "default");
+        let matches = matchRoutes(dataRoutes, location, basename);
+        // SSR supports HEAD requests while SPA doesn't
+        if (!isValidMethod(method) && method !== "HEAD" && method !== "OPTIONS") throw getInternalRouterError(405, {
+            method
+        });
+        else if (!matches) throw getInternalRouterError(404, {
+            pathname: location.pathname
+        });
+        let match = routeId ? matches.find((m)=>m.route.id === routeId) : getTargetMatch(matches, location);
+        if (routeId && !match) throw getInternalRouterError(403, {
+            pathname: location.pathname,
+            routeId
+        });
+        else if (!match) // This should never hit I don't think?
+        throw getInternalRouterError(404, {
+            pathname: location.pathname
+        });
+        let result = await queryImpl(request, location, matches, requestContext, dataStrategy || null, false, match);
+        if (isResponse(result)) return result;
+        let error = result.errors ? Object.values(result.errors)[0] : undefined;
+        if (error !== undefined) // If we got back result.errors, that means the loader/action threw
+        // _something_ that wasn't a Response, but it's not guaranteed/required
+        // to be an `instanceof Error` either, so we have to use throw here to
+        // preserve the "error" state outside of queryImpl.
+        throw error;
+        // Pick off the right state value to return
+        if (result.actionData) return Object.values(result.actionData)[0];
+        if (result.loaderData) {
+            var _result$activeDeferre;
+            let data = Object.values(result.loaderData)[0];
+            if ((_result$activeDeferre = result.activeDeferreds) != null && _result$activeDeferre[match.route.id]) data[UNSAFE_DEFERRED_SYMBOL] = result.activeDeferreds[match.route.id];
+            return data;
+        }
+        return undefined;
+    }
+    async function queryImpl(request, location, matches, requestContext, dataStrategy, skipLoaderErrorBubbling, routeMatch) {
+        invariant(request.signal, "query()/queryRoute() requests must contain an AbortController signal");
+        try {
+            if (isMutationMethod(request.method.toLowerCase())) {
+                let result = await submit(request, matches, routeMatch || getTargetMatch(matches, location), requestContext, dataStrategy, skipLoaderErrorBubbling, routeMatch != null);
+                return result;
+            }
+            let result = await loadRouteData(request, matches, requestContext, dataStrategy, skipLoaderErrorBubbling, routeMatch);
+            return isResponse(result) ? result : _extends({}, result, {
+                actionData: null,
+                actionHeaders: {}
+            });
+        } catch (e) {
+            // If the user threw/returned a Response in callLoaderOrAction for a
+            // `queryRoute` call, we throw the `DataStrategyResult` to bail out early
+            // and then return or throw the raw Response here accordingly
+            if (isDataStrategyResult(e) && isResponse(e.result)) {
+                if (e.type === ResultType.error) throw e.result;
+                return e.result;
+            }
+            // Redirects are always returned since they don't propagate to catch
+            // boundaries
+            if (isRedirectResponse(e)) return e;
+            throw e;
+        }
+    }
+    async function submit(request, matches, actionMatch, requestContext, dataStrategy, skipLoaderErrorBubbling, isRouteRequest) {
+        let result;
+        if (!actionMatch.route.action && !actionMatch.route.lazy) {
+            let error = getInternalRouterError(405, {
+                method: request.method,
+                pathname: new URL(request.url).pathname,
+                routeId: actionMatch.route.id
+            });
+            if (isRouteRequest) throw error;
+            result = {
+                type: ResultType.error,
+                error
+            };
+        } else {
+            let results = await callDataStrategy("action", request, [
+                actionMatch
+            ], matches, isRouteRequest, requestContext, dataStrategy);
+            result = results[actionMatch.route.id];
+            if (request.signal.aborted) throwStaticHandlerAbortedError(request, isRouteRequest, future);
+        }
+        if (isRedirectResult(result)) // Uhhhh - this should never happen, we should always throw these from
+        // callLoaderOrAction, but the type narrowing here keeps TS happy and we
+        // can get back on the "throw all redirect responses" train here should
+        // this ever happen :/
+        throw new Response(null, {
+            status: result.response.status,
+            headers: {
+                Location: result.response.headers.get("Location")
+            }
+        });
+        if (isDeferredResult(result)) {
+            let error = getInternalRouterError(400, {
+                type: "defer-action"
+            });
+            if (isRouteRequest) throw error;
+            result = {
+                type: ResultType.error,
+                error
+            };
+        }
+        if (isRouteRequest) {
+            // Note: This should only be non-Response values if we get here, since
+            // isRouteRequest should throw any Response received in callLoaderOrAction
+            if (isErrorResult(result)) throw result.error;
+            return {
+                matches: [
+                    actionMatch
+                ],
+                loaderData: {},
+                actionData: {
+                    [actionMatch.route.id]: result.data
+                },
+                errors: null,
+                // Note: statusCode + headers are unused here since queryRoute will
+                // return the raw Response or value
+                statusCode: 200,
+                loaderHeaders: {},
+                actionHeaders: {},
+                activeDeferreds: null
+            };
+        }
+        // Create a GET request for the loaders
+        let loaderRequest = new Request(request.url, {
+            headers: request.headers,
+            redirect: request.redirect,
+            signal: request.signal
+        });
+        if (isErrorResult(result)) {
+            // Store off the pending error - we use it to determine which loaders
+            // to call and will commit it when we complete the navigation
+            let boundaryMatch = skipLoaderErrorBubbling ? actionMatch : findNearestBoundary(matches, actionMatch.route.id);
+            let context = await loadRouteData(loaderRequest, matches, requestContext, dataStrategy, skipLoaderErrorBubbling, null, [
+                boundaryMatch.route.id,
+                result
+            ]);
+            // action status codes take precedence over loader status codes
+            return _extends({}, context, {
+                statusCode: isRouteErrorResponse(result.error) ? result.error.status : result.statusCode != null ? result.statusCode : 500,
+                actionData: null,
+                actionHeaders: _extends({}, result.headers ? {
+                    [actionMatch.route.id]: result.headers
+                } : {})
+            });
+        }
+        let context = await loadRouteData(loaderRequest, matches, requestContext, dataStrategy, skipLoaderErrorBubbling, null);
+        return _extends({}, context, {
+            actionData: {
+                [actionMatch.route.id]: result.data
+            }
+        }, result.statusCode ? {
+            statusCode: result.statusCode
+        } : {}, {
+            actionHeaders: result.headers ? {
+                [actionMatch.route.id]: result.headers
+            } : {}
+        });
+    }
+    async function loadRouteData(request, matches, requestContext, dataStrategy, skipLoaderErrorBubbling, routeMatch, pendingActionResult) {
+        let isRouteRequest = routeMatch != null;
+        // Short circuit if we have no loaders to run (queryRoute())
+        if (isRouteRequest && !(routeMatch != null && routeMatch.route.loader) && !(routeMatch != null && routeMatch.route.lazy)) throw getInternalRouterError(400, {
+            method: request.method,
+            pathname: new URL(request.url).pathname,
+            routeId: routeMatch == null ? void 0 : routeMatch.route.id
+        });
+        let requestMatches = routeMatch ? [
+            routeMatch
+        ] : pendingActionResult && isErrorResult(pendingActionResult[1]) ? getLoaderMatchesUntilBoundary(matches, pendingActionResult[0]) : matches;
+        let matchesToLoad = requestMatches.filter((m)=>m.route.loader || m.route.lazy);
+        // Short circuit if we have no loaders to run (query())
+        if (matchesToLoad.length === 0) return {
+            matches,
+            // Add a null for all matched routes for proper revalidation on the client
+            loaderData: matches.reduce((acc, m)=>Object.assign(acc, {
+                    [m.route.id]: null
+                }), {}),
+            errors: pendingActionResult && isErrorResult(pendingActionResult[1]) ? {
+                [pendingActionResult[0]]: pendingActionResult[1].error
+            } : null,
+            statusCode: 200,
+            loaderHeaders: {},
+            activeDeferreds: null
+        };
+        let results = await callDataStrategy("loader", request, matchesToLoad, matches, isRouteRequest, requestContext, dataStrategy);
+        if (request.signal.aborted) throwStaticHandlerAbortedError(request, isRouteRequest, future);
+        // Process and commit output from loaders
+        let activeDeferreds = new Map();
+        let context = processRouteLoaderData(matches, results, pendingActionResult, activeDeferreds, skipLoaderErrorBubbling);
+        // Add a null for any non-loader matches for proper revalidation on the client
+        let executedLoaders = new Set(matchesToLoad.map((match)=>match.route.id));
+        matches.forEach((match)=>{
+            if (!executedLoaders.has(match.route.id)) context.loaderData[match.route.id] = null;
+        });
+        return _extends({}, context, {
+            matches,
+            activeDeferreds: activeDeferreds.size > 0 ? Object.fromEntries(activeDeferreds.entries()) : null
+        });
+    }
+    // Utility wrapper for calling dataStrategy server-side without having to
+    // pass around the manifest, mapRouteProperties, etc.
+    async function callDataStrategy(type, request, matchesToLoad, matches, isRouteRequest, requestContext, dataStrategy) {
+        let results = await callDataStrategyImpl(dataStrategy || defaultDataStrategy, type, null, request, matchesToLoad, matches, null, manifest, mapRouteProperties, requestContext);
+        let dataResults = {};
+        await Promise.all(matches.map(async (match)=>{
+            if (!(match.route.id in results)) return;
+            let result = results[match.route.id];
+            if (isRedirectDataStrategyResultResult(result)) {
+                let response = result.result;
+                // Throw redirects and let the server handle them with an HTTP redirect
+                throw normalizeRelativeRoutingRedirectResponse(response, request, match.route.id, matches, basename, future.v7_relativeSplatPath);
+            }
+            if (isResponse(result.result) && isRouteRequest) // For SSR single-route requests, we want to hand Responses back
+            // directly without unwrapping
+            throw result;
+            dataResults[match.route.id] = await convertDataStrategyResultToDataResult(result);
+        }));
+        return dataResults;
+    }
+    return {
+        dataRoutes,
+        query,
+        queryRoute
+    };
+}
+//#endregion
+////////////////////////////////////////////////////////////////////////////////
+//#region Helpers
+////////////////////////////////////////////////////////////////////////////////
+/**
+ * Given an existing StaticHandlerContext and an error thrown at render time,
+ * provide an updated StaticHandlerContext suitable for a second SSR render
+ */ function getStaticContextFromError(routes, context, error) {
+    let newContext = _extends({}, context, {
+        statusCode: isRouteErrorResponse(error) ? error.status : 500,
+        errors: {
+            [context._deepestRenderedBoundaryId || routes[0].id]: error
+        }
+    });
+    return newContext;
+}
+function throwStaticHandlerAbortedError(request, isRouteRequest, future) {
+    if (future.v7_throwAbortReason && request.signal.reason !== undefined) throw request.signal.reason;
+    let method = isRouteRequest ? "queryRoute" : "query";
+    throw new Error(method + "() call aborted: " + request.method + " " + request.url);
+}
+function isSubmissionNavigation(opts) {
+    return opts != null && ("formData" in opts && opts.formData != null || "body" in opts && opts.body !== undefined);
+}
+function normalizeTo(location, matches, basename, prependBasename, to, v7_relativeSplatPath, fromRouteId, relative) {
+    let contextualMatches;
+    let activeRouteMatch;
+    if (fromRouteId) {
+        // Grab matches up to the calling route so our route-relative logic is
+        // relative to the correct source route
+        contextualMatches = [];
+        for (let match of matches){
+            contextualMatches.push(match);
+            if (match.route.id === fromRouteId) {
+                activeRouteMatch = match;
+                break;
+            }
+        }
+    } else {
+        contextualMatches = matches;
+        activeRouteMatch = matches[matches.length - 1];
+    }
+    // Resolve the relative path
+    let path = resolveTo(to ? to : ".", getResolveToMatches(contextualMatches, v7_relativeSplatPath), stripBasename(location.pathname, basename) || location.pathname, relative === "path");
+    // When `to` is not specified we inherit search/hash from the current
+    // location, unlike when to="." and we just inherit the path.
+    // See https://github.com/remix-run/remix/issues/927
+    if (to == null) {
+        path.search = location.search;
+        path.hash = location.hash;
+    }
+    // Account for `?index` params when routing to the current location
+    if ((to == null || to === "" || to === ".") && activeRouteMatch) {
+        let nakedIndex = hasNakedIndexQuery(path.search);
+        if (activeRouteMatch.route.index && !nakedIndex) // Add one when we're targeting an index route
+        path.search = path.search ? path.search.replace(/^\?/, "?index&") : "?index";
+        else if (!activeRouteMatch.route.index && nakedIndex) {
+            // Remove existing ones when we're not
+            let params = new URLSearchParams(path.search);
+            let indexValues = params.getAll("index");
+            params.delete("index");
+            indexValues.filter((v)=>v).forEach((v)=>params.append("index", v));
+            let qs = params.toString();
+            path.search = qs ? "?" + qs : "";
+        }
+    }
+    // If we're operating within a basename, prepend it to the pathname.  If
+    // this is a root navigation, then just use the raw basename which allows
+    // the basename to have full control over the presence of a trailing slash
+    // on root actions
+    if (prependBasename && basename !== "/") path.pathname = path.pathname === "/" ? basename : joinPaths([
+        basename,
+        path.pathname
+    ]);
+    return createPath(path);
+}
+// Normalize navigation options by converting formMethod=GET formData objects to
+// URLSearchParams so they behave identically to links with query params
+function normalizeNavigateOptions(normalizeFormMethod, isFetcher, path, opts) {
+    // Return location verbatim on non-submission navigations
+    if (!opts || !isSubmissionNavigation(opts)) return {
+        path
+    };
+    if (opts.formMethod && !isValidMethod(opts.formMethod)) return {
+        path,
+        error: getInternalRouterError(405, {
+            method: opts.formMethod
+        })
+    };
+    let getInvalidBodyError = ()=>({
+            path,
+            error: getInternalRouterError(400, {
+                type: "invalid-body"
+            })
+        });
+    // Create a Submission on non-GET navigations
+    let rawFormMethod = opts.formMethod || "get";
+    let formMethod = normalizeFormMethod ? rawFormMethod.toUpperCase() : rawFormMethod.toLowerCase();
+    let formAction = stripHashFromPath(path);
+    if (opts.body !== undefined) {
+        if (opts.formEncType === "text/plain") {
+            // text only support POST/PUT/PATCH/DELETE submissions
+            if (!isMutationMethod(formMethod)) return getInvalidBodyError();
+            let text = typeof opts.body === "string" ? opts.body : opts.body instanceof FormData || opts.body instanceof URLSearchParams ? // https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#plain-text-form-data
+            Array.from(opts.body.entries()).reduce((acc, _ref3)=>{
+                let [name, value] = _ref3;
+                return "" + acc + name + "=" + value + "\n";
+            }, "") : String(opts.body);
+            return {
+                path,
+                submission: {
+                    formMethod,
+                    formAction,
+                    formEncType: opts.formEncType,
+                    formData: undefined,
+                    json: undefined,
+                    text
+                }
+            };
+        } else if (opts.formEncType === "application/json") {
+            // json only supports POST/PUT/PATCH/DELETE submissions
+            if (!isMutationMethod(formMethod)) return getInvalidBodyError();
+            try {
+                let json = typeof opts.body === "string" ? JSON.parse(opts.body) : opts.body;
+                return {
+                    path,
+                    submission: {
+                        formMethod,
+                        formAction,
+                        formEncType: opts.formEncType,
+                        formData: undefined,
+                        json,
+                        text: undefined
+                    }
+                };
+            } catch (e) {
+                return getInvalidBodyError();
+            }
+        }
+    }
+    invariant(typeof FormData === "function", "FormData is not available in this environment");
+    let searchParams;
+    let formData;
+    if (opts.formData) {
+        searchParams = convertFormDataToSearchParams(opts.formData);
+        formData = opts.formData;
+    } else if (opts.body instanceof FormData) {
+        searchParams = convertFormDataToSearchParams(opts.body);
+        formData = opts.body;
+    } else if (opts.body instanceof URLSearchParams) {
+        searchParams = opts.body;
+        formData = convertSearchParamsToFormData(searchParams);
+    } else if (opts.body == null) {
+        searchParams = new URLSearchParams();
+        formData = new FormData();
+    } else try {
+        searchParams = new URLSearchParams(opts.body);
+        formData = convertSearchParamsToFormData(searchParams);
+    } catch (e) {
+        return getInvalidBodyError();
+    }
+    let submission = {
+        formMethod,
+        formAction,
+        formEncType: opts && opts.formEncType || "application/x-www-form-urlencoded",
+        formData,
+        json: undefined,
+        text: undefined
+    };
+    if (isMutationMethod(submission.formMethod)) return {
+        path,
+        submission
+    };
+    // Flatten submission onto URLSearchParams for GET submissions
+    let parsedPath = parsePath(path);
+    // On GET navigation submissions we can drop the ?index param from the
+    // resulting location since all loaders will run.  But fetcher GET submissions
+    // only run a single loader so we need to preserve any incoming ?index params
+    if (isFetcher && parsedPath.search && hasNakedIndexQuery(parsedPath.search)) searchParams.append("index", "");
+    parsedPath.search = "?" + searchParams;
+    return {
+        path: createPath(parsedPath),
+        submission
+    };
+}
+// Filter out all routes at/below any caught error as they aren't going to
+// render so we don't need to load them
+function getLoaderMatchesUntilBoundary(matches, boundaryId, includeBoundary) {
+    if (includeBoundary === void 0) includeBoundary = false;
+    let index = matches.findIndex((m)=>m.route.id === boundaryId);
+    if (index >= 0) return matches.slice(0, includeBoundary ? index + 1 : index);
+    return matches;
+}
+function getMatchesToLoad(history, state, matches, submission, location, initialHydration, skipActionErrorRevalidation, isRevalidationRequired, cancelledDeferredRoutes, cancelledFetcherLoads, deletedFetchers, fetchLoadMatches, fetchRedirectIds, routesToUse, basename, pendingActionResult) {
+    let actionResult = pendingActionResult ? isErrorResult(pendingActionResult[1]) ? pendingActionResult[1].error : pendingActionResult[1].data : undefined;
+    let currentUrl = history.createURL(state.location);
+    let nextUrl = history.createURL(location);
+    // Pick navigation matches that are net-new or qualify for revalidation
+    let boundaryMatches = matches;
+    if (initialHydration && state.errors) // On initial hydration, only consider matches up to _and including_ the boundary.
+    // This is inclusive to handle cases where a server loader ran successfully,
+    // a child server loader bubbled up to this route, but this route has
+    // `clientLoader.hydrate` so we want to still run the `clientLoader` so that
+    // we have a complete version of `loaderData`
+    boundaryMatches = getLoaderMatchesUntilBoundary(matches, Object.keys(state.errors)[0], true);
+    else if (pendingActionResult && isErrorResult(pendingActionResult[1])) // If an action threw an error, we call loaders up to, but not including the
+    // boundary
+    boundaryMatches = getLoaderMatchesUntilBoundary(matches, pendingActionResult[0]);
+    // Don't revalidate loaders by default after action 4xx/5xx responses
+    // when the flag is enabled.  They can still opt-into revalidation via
+    // `shouldRevalidate` via `actionResult`
+    let actionStatus = pendingActionResult ? pendingActionResult[1].statusCode : undefined;
+    let shouldSkipRevalidation = skipActionErrorRevalidation && actionStatus && actionStatus >= 400;
+    let navigationMatches = boundaryMatches.filter((match, index)=>{
+        let { route } = match;
+        if (route.lazy) // We haven't loaded this route yet so we don't know if it's got a loader!
+        return true;
+        if (route.loader == null) return false;
+        if (initialHydration) return shouldLoadRouteOnHydration(route, state.loaderData, state.errors);
+        // Always call the loader on new route instances and pending defer cancellations
+        if (isNewLoader(state.loaderData, state.matches[index], match) || cancelledDeferredRoutes.some((id)=>id === match.route.id)) return true;
+        // This is the default implementation for when we revalidate.  If the route
+        // provides it's own implementation, then we give them full control but
+        // provide this value so they can leverage it if needed after they check
+        // their own specific use cases
+        let currentRouteMatch = state.matches[index];
+        let nextRouteMatch = match;
+        return shouldRevalidateLoader(match, _extends({
+            currentUrl,
+            currentParams: currentRouteMatch.params,
+            nextUrl,
+            nextParams: nextRouteMatch.params
+        }, submission, {
+            actionResult,
+            actionStatus,
+            defaultShouldRevalidate: shouldSkipRevalidation ? false : // Forced revalidation due to submission, useRevalidator, or X-Remix-Revalidate
+            isRevalidationRequired || currentUrl.pathname + currentUrl.search === nextUrl.pathname + nextUrl.search || // Search params affect all loaders
+            currentUrl.search !== nextUrl.search || isNewRouteInstance(currentRouteMatch, nextRouteMatch)
+        }));
+    });
+    // Pick fetcher.loads that need to be revalidated
+    let revalidatingFetchers = [];
+    fetchLoadMatches.forEach((f, key)=>{
+        // Don't revalidate:
+        //  - on initial hydration (shouldn't be any fetchers then anyway)
+        //  - if fetcher won't be present in the subsequent render
+        //    - no longer matches the URL (v7_fetcherPersist=false)
+        //    - was unmounted but persisted due to v7_fetcherPersist=true
+        if (initialHydration || !matches.some((m)=>m.route.id === f.routeId) || deletedFetchers.has(key)) return;
+        let fetcherMatches = matchRoutes(routesToUse, f.path, basename);
+        // If the fetcher path no longer matches, push it in with null matches so
+        // we can trigger a 404 in callLoadersAndMaybeResolveData.  Note this is
+        // currently only a use-case for Remix HMR where the route tree can change
+        // at runtime and remove a route previously loaded via a fetcher
+        if (!fetcherMatches) {
+            revalidatingFetchers.push({
+                key,
+                routeId: f.routeId,
+                path: f.path,
+                matches: null,
+                match: null,
+                controller: null
+            });
+            return;
+        }
+        // Revalidating fetchers are decoupled from the route matches since they
+        // load from a static href.  They revalidate based on explicit revalidation
+        // (submission, useRevalidator, or X-Remix-Revalidate)
+        let fetcher = state.fetchers.get(key);
+        let fetcherMatch = getTargetMatch(fetcherMatches, f.path);
+        let shouldRevalidate = false;
+        if (fetchRedirectIds.has(key)) // Never trigger a revalidation of an actively redirecting fetcher
+        shouldRevalidate = false;
+        else if (cancelledFetcherLoads.has(key)) {
+            // Always mark for revalidation if the fetcher was cancelled
+            cancelledFetcherLoads.delete(key);
+            shouldRevalidate = true;
+        } else if (fetcher && fetcher.state !== "idle" && fetcher.data === undefined) // If the fetcher hasn't ever completed loading yet, then this isn't a
+        // revalidation, it would just be a brand new load if an explicit
+        // revalidation is required
+        shouldRevalidate = isRevalidationRequired;
+        else // Otherwise fall back on any user-defined shouldRevalidate, defaulting
+        // to explicit revalidations only
+        shouldRevalidate = shouldRevalidateLoader(fetcherMatch, _extends({
+            currentUrl,
+            currentParams: state.matches[state.matches.length - 1].params,
+            nextUrl,
+            nextParams: matches[matches.length - 1].params
+        }, submission, {
+            actionResult,
+            actionStatus,
+            defaultShouldRevalidate: shouldSkipRevalidation ? false : isRevalidationRequired
+        }));
+        if (shouldRevalidate) revalidatingFetchers.push({
+            key,
+            routeId: f.routeId,
+            path: f.path,
+            matches: fetcherMatches,
+            match: fetcherMatch,
+            controller: new AbortController()
+        });
+    });
+    return [
+        navigationMatches,
+        revalidatingFetchers
+    ];
+}
+function shouldLoadRouteOnHydration(route, loaderData, errors) {
+    // We dunno if we have a loader - gotta find out!
+    if (route.lazy) return true;
+    // No loader, nothing to initialize
+    if (!route.loader) return false;
+    let hasData = loaderData != null && loaderData[route.id] !== undefined;
+    let hasError = errors != null && errors[route.id] !== undefined;
+    // Don't run if we error'd during SSR
+    if (!hasData && hasError) return false;
+    // Explicitly opting-in to running on hydration
+    if (typeof route.loader === "function" && route.loader.hydrate === true) return true;
+    // Otherwise, run if we're not yet initialized with anything
+    return !hasData && !hasError;
+}
+function isNewLoader(currentLoaderData, currentMatch, match) {
+    let isNew = // [a] -> [a, b]
+    !currentMatch || // [a, b] -> [a, c]
+    match.route.id !== currentMatch.route.id;
+    // Handle the case that we don't have data for a re-used route, potentially
+    // from a prior error or from a cancelled pending deferred
+    let isMissingData = currentLoaderData[match.route.id] === undefined;
+    // Always load if this is a net-new route or we don't yet have data
+    return isNew || isMissingData;
+}
+function isNewRouteInstance(currentMatch, match) {
+    let currentPath = currentMatch.route.path;
+    return(// param change for this match, /users/123 -> /users/456
+    currentMatch.pathname !== match.pathname || // splat param changed, which is not present in match.path
+    // e.g. /files/images/avatar.jpg -> files/finances.xls
+    currentPath != null && currentPath.endsWith("*") && currentMatch.params["*"] !== match.params["*"]);
+}
+function shouldRevalidateLoader(loaderMatch, arg) {
+    if (loaderMatch.route.shouldRevalidate) {
+        let routeChoice = loaderMatch.route.shouldRevalidate(arg);
+        if (typeof routeChoice === "boolean") return routeChoice;
+    }
+    return arg.defaultShouldRevalidate;
+}
+function patchRoutesImpl(routeId, children, routesToUse, manifest, mapRouteProperties) {
+    var _childrenToPatch;
+    let childrenToPatch;
+    if (routeId) {
+        let route = manifest[routeId];
+        invariant(route, "No route found to patch children into: routeId = " + routeId);
+        if (!route.children) route.children = [];
+        childrenToPatch = route.children;
+    } else childrenToPatch = routesToUse;
+    // Don't patch in routes we already know about so that `patch` is idempotent
+    // to simplify user-land code. This is useful because we re-call the
+    // `patchRoutesOnNavigation` function for matched routes with params.
+    let uniqueChildren = children.filter((newRoute)=>!childrenToPatch.some((existingRoute)=>isSameRoute(newRoute, existingRoute)));
+    let newRoutes = convertRoutesToDataRoutes(uniqueChildren, mapRouteProperties, [
+        routeId || "_",
+        "patch",
+        String(((_childrenToPatch = childrenToPatch) == null ? void 0 : _childrenToPatch.length) || "0")
+    ], manifest);
+    childrenToPatch.push(...newRoutes);
+}
+function isSameRoute(newRoute, existingRoute) {
+    // Most optimal check is by id
+    if ("id" in newRoute && "id" in existingRoute && newRoute.id === existingRoute.id) return true;
+    // Second is by pathing differences
+    if (!(newRoute.index === existingRoute.index && newRoute.path === existingRoute.path && newRoute.caseSensitive === existingRoute.caseSensitive)) return false;
+    // Pathless layout routes are trickier since we need to check children.
+    // If they have no children then they're the same as far as we can tell
+    if ((!newRoute.children || newRoute.children.length === 0) && (!existingRoute.children || existingRoute.children.length === 0)) return true;
+    // Otherwise, we look to see if every child in the new route is already
+    // represented in the existing route's children
+    return newRoute.children.every((aChild, i)=>{
+        var _existingRoute$childr;
+        return (_existingRoute$childr = existingRoute.children) == null ? void 0 : _existingRoute$childr.some((bChild)=>isSameRoute(aChild, bChild));
+    });
+}
+/**
+ * Execute route.lazy() methods to lazily load route modules (loader, action,
+ * shouldRevalidate) and update the routeManifest in place which shares objects
+ * with dataRoutes so those get updated as well.
+ */ async function loadLazyRouteModule(route, mapRouteProperties, manifest) {
+    if (!route.lazy) return;
+    let lazyRoute = await route.lazy();
+    // If the lazy route function was executed and removed by another parallel
+    // call then we can return - first lazy() to finish wins because the return
+    // value of lazy is expected to be static
+    if (!route.lazy) return;
+    let routeToUpdate = manifest[route.id];
+    invariant(routeToUpdate, "No route found in manifest");
+    // Update the route in place.  This should be safe because there's no way
+    // we could yet be sitting on this route as we can't get there without
+    // resolving lazy() first.
+    //
+    // This is different than the HMR "update" use-case where we may actively be
+    // on the route being updated.  The main concern boils down to "does this
+    // mutation affect any ongoing navigations or any current state.matches
+    // values?".  If not, it should be safe to update in place.
+    let routeUpdates = {};
+    for(let lazyRouteProperty in lazyRoute){
+        let staticRouteValue = routeToUpdate[lazyRouteProperty];
+        let isPropertyStaticallyDefined = staticRouteValue !== undefined && // This property isn't static since it should always be updated based
+        // on the route updates
+        lazyRouteProperty !== "hasErrorBoundary";
+        warning(!isPropertyStaticallyDefined, 'Route "' + routeToUpdate.id + '" has a static property "' + lazyRouteProperty + '" ' + "defined but its lazy function is also returning a value for this property. " + ('The lazy route property "' + lazyRouteProperty + '" will be ignored.'));
+        if (!isPropertyStaticallyDefined && !immutableRouteKeys.has(lazyRouteProperty)) routeUpdates[lazyRouteProperty] = lazyRoute[lazyRouteProperty];
+    }
+    // Mutate the route with the provided updates.  Do this first so we pass
+    // the updated version to mapRouteProperties
+    Object.assign(routeToUpdate, routeUpdates);
+    // Mutate the `hasErrorBoundary` property on the route based on the route
+    // updates and remove the `lazy` function so we don't resolve the lazy
+    // route again.
+    Object.assign(routeToUpdate, _extends({}, mapRouteProperties(routeToUpdate), {
+        lazy: undefined
+    }));
+}
+// Default implementation of `dataStrategy` which fetches all loaders in parallel
+async function defaultDataStrategy(_ref4) {
+    let { matches } = _ref4;
+    let matchesToLoad = matches.filter((m)=>m.shouldLoad);
+    let results = await Promise.all(matchesToLoad.map((m)=>m.resolve()));
+    return results.reduce((acc, result, i)=>Object.assign(acc, {
+            [matchesToLoad[i].route.id]: result
+        }), {});
+}
+async function callDataStrategyImpl(dataStrategyImpl, type, state, request, matchesToLoad, matches, fetcherKey, manifest, mapRouteProperties, requestContext) {
+    let loadRouteDefinitionsPromises = matches.map((m)=>m.route.lazy ? loadLazyRouteModule(m.route, mapRouteProperties, manifest) : undefined);
+    let dsMatches = matches.map((match, i)=>{
+        let loadRoutePromise = loadRouteDefinitionsPromises[i];
+        let shouldLoad = matchesToLoad.some((m)=>m.route.id === match.route.id);
+        // `resolve` encapsulates route.lazy(), executing the loader/action,
+        // and mapping return values/thrown errors to a `DataStrategyResult`.  Users
+        // can pass a callback to take fine-grained control over the execution
+        // of the loader/action
+        let resolve = async (handlerOverride)=>{
+            if (handlerOverride && request.method === "GET" && (match.route.lazy || match.route.loader)) shouldLoad = true;
+            return shouldLoad ? callLoaderOrAction(type, request, match, loadRoutePromise, handlerOverride, requestContext) : Promise.resolve({
+                type: ResultType.data,
+                result: undefined
+            });
+        };
+        return _extends({}, match, {
+            shouldLoad,
+            resolve
+        });
+    });
+    // Send all matches here to allow for a middleware-type implementation.
+    // handler will be a no-op for unneeded routes and we filter those results
+    // back out below.
+    let results = await dataStrategyImpl({
+        matches: dsMatches,
+        request,
+        params: matches[0].params,
+        fetcherKey,
+        context: requestContext
+    });
+    // Wait for all routes to load here but 'swallow the error since we want
+    // it to bubble up from the `await loadRoutePromise` in `callLoaderOrAction` -
+    // called from `match.resolve()`
+    try {
+        await Promise.all(loadRouteDefinitionsPromises);
+    } catch (e) {
+    // No-op
+    }
+    return results;
+}
+// Default logic for calling a loader/action is the user has no specified a dataStrategy
+async function callLoaderOrAction(type, request, match, loadRoutePromise, handlerOverride, staticContext) {
+    let result;
+    let onReject;
+    let runHandler = (handler)=>{
+        // Setup a promise we can race against so that abort signals short circuit
+        let reject;
+        // This will never resolve so safe to type it as Promise<DataStrategyResult> to
+        // satisfy the function return value
+        let abortPromise = new Promise((_, r)=>reject = r);
+        onReject = ()=>reject();
+        request.signal.addEventListener("abort", onReject);
+        let actualHandler = (ctx)=>{
+            if (typeof handler !== "function") return Promise.reject(new Error("You cannot call the handler for a route which defines a boolean " + ('"' + type + '" [routeId: ' + match.route.id + "]")));
+            return handler({
+                request,
+                params: match.params,
+                context: staticContext
+            }, ...ctx !== undefined ? [
+                ctx
+            ] : []);
+        };
+        let handlerPromise = (async ()=>{
+            try {
+                let val = await (handlerOverride ? handlerOverride((ctx)=>actualHandler(ctx)) : actualHandler());
+                return {
+                    type: "data",
+                    result: val
+                };
+            } catch (e) {
+                return {
+                    type: "error",
+                    result: e
+                };
+            }
+        })();
+        return Promise.race([
+            handlerPromise,
+            abortPromise
+        ]);
+    };
+    try {
+        let handler = match.route[type];
+        // If we have a route.lazy promise, await that first
+        if (loadRoutePromise) {
+            if (handler) {
+                // Run statically defined handler in parallel with lazy()
+                let handlerError;
+                let [value] = await Promise.all([
+                    // If the handler throws, don't let it immediately bubble out,
+                    // since we need to let the lazy() execution finish so we know if this
+                    // route has a boundary that can handle the error
+                    runHandler(handler).catch((e)=>{
+                        handlerError = e;
+                    }),
+                    loadRoutePromise
+                ]);
+                if (handlerError !== undefined) throw handlerError;
+                result = value;
+            } else {
+                // Load lazy route module, then run any returned handler
+                await loadRoutePromise;
+                handler = match.route[type];
+                if (handler) // Handler still runs even if we got interrupted to maintain consistency
+                // with un-abortable behavior of handler execution on non-lazy or
+                // previously-lazy-loaded routes
+                result = await runHandler(handler);
+                else if (type === "action") {
+                    let url = new URL(request.url);
+                    let pathname = url.pathname + url.search;
+                    throw getInternalRouterError(405, {
+                        method: request.method,
+                        pathname,
+                        routeId: match.route.id
+                    });
+                } else // lazy() route has no loader to run.  Short circuit here so we don't
+                // hit the invariant below that errors on returning undefined.
+                return {
+                    type: ResultType.data,
+                    result: undefined
+                };
+            }
+        } else if (!handler) {
+            let url = new URL(request.url);
+            let pathname = url.pathname + url.search;
+            throw getInternalRouterError(404, {
+                pathname
+            });
+        } else result = await runHandler(handler);
+        invariant(result.result !== undefined, "You defined " + (type === "action" ? "an action" : "a loader") + " for route " + ('"' + match.route.id + "\" but didn't return anything from your `" + type + "` ") + "function. Please return a value or `null`.");
+    } catch (e) {
+        // We should already be catching and converting normal handler executions to
+        // DataStrategyResults and returning them, so anything that throws here is an
+        // unexpected error we still need to wrap
+        return {
+            type: ResultType.error,
+            result: e
+        };
+    } finally{
+        if (onReject) request.signal.removeEventListener("abort", onReject);
+    }
+    return result;
+}
+async function convertDataStrategyResultToDataResult(dataStrategyResult) {
+    let { result, type } = dataStrategyResult;
+    if (isResponse(result)) {
+        let data;
+        try {
+            let contentType = result.headers.get("Content-Type");
+            // Check between word boundaries instead of startsWith() due to the last
+            // paragraph of https://httpwg.org/specs/rfc9110.html#field.content-type
+            if (contentType && /\bapplication\/json\b/.test(contentType)) {
+                if (result.body == null) data = null;
+                else data = await result.json();
+            } else data = await result.text();
+        } catch (e) {
+            return {
+                type: ResultType.error,
+                error: e
+            };
+        }
+        if (type === ResultType.error) return {
+            type: ResultType.error,
+            error: new ErrorResponseImpl(result.status, result.statusText, data),
+            statusCode: result.status,
+            headers: result.headers
+        };
+        return {
+            type: ResultType.data,
+            data,
+            statusCode: result.status,
+            headers: result.headers
+        };
+    }
+    if (type === ResultType.error) {
+        if (isDataWithResponseInit(result)) {
+            var _result$init2;
+            if (result.data instanceof Error) {
+                var _result$init;
+                return {
+                    type: ResultType.error,
+                    error: result.data,
+                    statusCode: (_result$init = result.init) == null ? void 0 : _result$init.status
+                };
+            }
+            // Convert thrown data() to ErrorResponse instances
+            result = new ErrorResponseImpl(((_result$init2 = result.init) == null ? void 0 : _result$init2.status) || 500, undefined, result.data);
+        }
+        return {
+            type: ResultType.error,
+            error: result,
+            statusCode: isRouteErrorResponse(result) ? result.status : undefined
+        };
+    }
+    if (isDeferredData(result)) {
+        var _result$init3, _result$init4;
+        return {
+            type: ResultType.deferred,
+            deferredData: result,
+            statusCode: (_result$init3 = result.init) == null ? void 0 : _result$init3.status,
+            headers: ((_result$init4 = result.init) == null ? void 0 : _result$init4.headers) && new Headers(result.init.headers)
+        };
+    }
+    if (isDataWithResponseInit(result)) {
+        var _result$init5, _result$init6;
+        return {
+            type: ResultType.data,
+            data: result.data,
+            statusCode: (_result$init5 = result.init) == null ? void 0 : _result$init5.status,
+            headers: (_result$init6 = result.init) != null && _result$init6.headers ? new Headers(result.init.headers) : undefined
+        };
+    }
+    return {
+        type: ResultType.data,
+        data: result
+    };
+}
+// Support relative routing in internal redirects
+function normalizeRelativeRoutingRedirectResponse(response, request, routeId, matches, basename, v7_relativeSplatPath) {
+    let location = response.headers.get("Location");
+    invariant(location, "Redirects returned/thrown from loaders/actions must have a Location header");
+    if (!ABSOLUTE_URL_REGEX.test(location)) {
+        let trimmedMatches = matches.slice(0, matches.findIndex((m)=>m.route.id === routeId) + 1);
+        location = normalizeTo(new URL(request.url), trimmedMatches, basename, true, location, v7_relativeSplatPath);
+        response.headers.set("Location", location);
+    }
+    return response;
+}
+function normalizeRedirectLocation(location, currentUrl, basename) {
+    if (ABSOLUTE_URL_REGEX.test(location)) {
+        // Strip off the protocol+origin for same-origin + same-basename absolute redirects
+        let normalizedLocation = location;
+        let url = normalizedLocation.startsWith("//") ? new URL(currentUrl.protocol + normalizedLocation) : new URL(normalizedLocation);
+        let isSameBasename = stripBasename(url.pathname, basename) != null;
+        if (url.origin === currentUrl.origin && isSameBasename) return url.pathname + url.search + url.hash;
+    }
+    return location;
+}
+// Utility method for creating the Request instances for loaders/actions during
+// client-side navigations and fetches.  During SSR we will always have a
+// Request instance from the static handler (query/queryRoute)
+function createClientSideRequest(history, location, signal, submission) {
+    let url = history.createURL(stripHashFromPath(location)).toString();
+    let init = {
+        signal
+    };
+    if (submission && isMutationMethod(submission.formMethod)) {
+        let { formMethod, formEncType } = submission;
+        // Didn't think we needed this but it turns out unlike other methods, patch
+        // won't be properly normalized to uppercase and results in a 405 error.
+        // See: https://fetch.spec.whatwg.org/#concept-method
+        init.method = formMethod.toUpperCase();
+        if (formEncType === "application/json") {
+            init.headers = new Headers({
+                "Content-Type": formEncType
+            });
+            init.body = JSON.stringify(submission.json);
+        } else if (formEncType === "text/plain") // Content-Type is inferred (https://fetch.spec.whatwg.org/#dom-request)
+        init.body = submission.text;
+        else if (formEncType === "application/x-www-form-urlencoded" && submission.formData) // Content-Type is inferred (https://fetch.spec.whatwg.org/#dom-request)
+        init.body = convertFormDataToSearchParams(submission.formData);
+        else // Content-Type is inferred (https://fetch.spec.whatwg.org/#dom-request)
+        init.body = submission.formData;
+    }
+    return new Request(url, init);
+}
+function convertFormDataToSearchParams(formData) {
+    let searchParams = new URLSearchParams();
+    for (let [key, value] of formData.entries())// https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#converting-an-entry-list-to-a-list-of-name-value-pairs
+    searchParams.append(key, typeof value === "string" ? value : value.name);
+    return searchParams;
+}
+function convertSearchParamsToFormData(searchParams) {
+    let formData = new FormData();
+    for (let [key, value] of searchParams.entries())formData.append(key, value);
+    return formData;
+}
+function processRouteLoaderData(matches, results, pendingActionResult, activeDeferreds, skipLoaderErrorBubbling) {
+    // Fill in loaderData/errors from our loaders
+    let loaderData = {};
+    let errors = null;
+    let statusCode;
+    let foundError = false;
+    let loaderHeaders = {};
+    let pendingError = pendingActionResult && isErrorResult(pendingActionResult[1]) ? pendingActionResult[1].error : undefined;
+    // Process loader results into state.loaderData/state.errors
+    matches.forEach((match)=>{
+        if (!(match.route.id in results)) return;
+        let id = match.route.id;
+        let result = results[id];
+        invariant(!isRedirectResult(result), "Cannot handle redirect results in processLoaderData");
+        if (isErrorResult(result)) {
+            let error = result.error;
+            // If we have a pending action error, we report it at the highest-route
+            // that throws a loader error, and then clear it out to indicate that
+            // it was consumed
+            if (pendingError !== undefined) {
+                error = pendingError;
+                pendingError = undefined;
+            }
+            errors = errors || {};
+            if (skipLoaderErrorBubbling) errors[id] = error;
+            else {
+                // Look upwards from the matched route for the closest ancestor error
+                // boundary, defaulting to the root match.  Prefer higher error values
+                // if lower errors bubble to the same boundary
+                let boundaryMatch = findNearestBoundary(matches, id);
+                if (errors[boundaryMatch.route.id] == null) errors[boundaryMatch.route.id] = error;
+            }
+            // Clear our any prior loaderData for the throwing route
+            loaderData[id] = undefined;
+            // Once we find our first (highest) error, we set the status code and
+            // prevent deeper status codes from overriding
+            if (!foundError) {
+                foundError = true;
+                statusCode = isRouteErrorResponse(result.error) ? result.error.status : 500;
+            }
+            if (result.headers) loaderHeaders[id] = result.headers;
+        } else if (isDeferredResult(result)) {
+            activeDeferreds.set(id, result.deferredData);
+            loaderData[id] = result.deferredData.data;
+            // Error status codes always override success status codes, but if all
+            // loaders are successful we take the deepest status code.
+            if (result.statusCode != null && result.statusCode !== 200 && !foundError) statusCode = result.statusCode;
+            if (result.headers) loaderHeaders[id] = result.headers;
+        } else {
+            loaderData[id] = result.data;
+            // Error status codes always override success status codes, but if all
+            // loaders are successful we take the deepest status code.
+            if (result.statusCode && result.statusCode !== 200 && !foundError) statusCode = result.statusCode;
+            if (result.headers) loaderHeaders[id] = result.headers;
+        }
+    });
+    // If we didn't consume the pending action error (i.e., all loaders
+    // resolved), then consume it here.  Also clear out any loaderData for the
+    // throwing route
+    if (pendingError !== undefined && pendingActionResult) {
+        errors = {
+            [pendingActionResult[0]]: pendingError
+        };
+        loaderData[pendingActionResult[0]] = undefined;
+    }
+    return {
+        loaderData,
+        errors,
+        statusCode: statusCode || 200,
+        loaderHeaders
+    };
+}
+function processLoaderData(state, matches, results, pendingActionResult, revalidatingFetchers, fetcherResults, activeDeferreds) {
+    let { loaderData, errors } = processRouteLoaderData(matches, results, pendingActionResult, activeDeferreds, false // This method is only called client side so we always want to bubble
+    );
+    // Process results from our revalidating fetchers
+    revalidatingFetchers.forEach((rf)=>{
+        let { key, match, controller } = rf;
+        let result = fetcherResults[key];
+        invariant(result, "Did not find corresponding fetcher result");
+        // Process fetcher non-redirect errors
+        if (controller && controller.signal.aborted) // Nothing to do for aborted fetchers
+        return;
+        else if (isErrorResult(result)) {
+            let boundaryMatch = findNearestBoundary(state.matches, match == null ? void 0 : match.route.id);
+            if (!(errors && errors[boundaryMatch.route.id])) errors = _extends({}, errors, {
+                [boundaryMatch.route.id]: result.error
+            });
+            state.fetchers.delete(key);
+        } else if (isRedirectResult(result)) // Should never get here, redirects should get processed above, but we
+        // keep this to type narrow to a success result in the else
+        invariant(false, "Unhandled fetcher revalidation redirect");
+        else if (isDeferredResult(result)) // Should never get here, deferred data should be awaited for fetchers
+        // in resolveDeferredResults
+        invariant(false, "Unhandled fetcher deferred data");
+        else {
+            let doneFetcher = getDoneFetcher(result.data);
+            state.fetchers.set(key, doneFetcher);
+        }
+    });
+    return {
+        loaderData,
+        errors
+    };
+}
+function mergeLoaderData(loaderData, newLoaderData, matches, errors) {
+    let mergedLoaderData = _extends({}, newLoaderData);
+    for (let match of matches){
+        let id = match.route.id;
+        if (newLoaderData.hasOwnProperty(id)) {
+            if (newLoaderData[id] !== undefined) mergedLoaderData[id] = newLoaderData[id];
+        } else if (loaderData[id] !== undefined && match.route.loader) // Preserve existing keys not included in newLoaderData and where a loader
+        // wasn't removed by HMR
+        mergedLoaderData[id] = loaderData[id];
+        if (errors && errors.hasOwnProperty(id)) break;
+    }
+    return mergedLoaderData;
+}
+function getActionDataForCommit(pendingActionResult) {
+    if (!pendingActionResult) return {};
+    return isErrorResult(pendingActionResult[1]) ? {
+        // Clear out prior actionData on errors
+        actionData: {}
+    } : {
+        actionData: {
+            [pendingActionResult[0]]: pendingActionResult[1].data
+        }
+    };
+}
+// Find the nearest error boundary, looking upwards from the leaf route (or the
+// route specified by routeId) for the closest ancestor error boundary,
+// defaulting to the root match
+function findNearestBoundary(matches, routeId) {
+    let eligibleMatches = routeId ? matches.slice(0, matches.findIndex((m)=>m.route.id === routeId) + 1) : [
+        ...matches
+    ];
+    return eligibleMatches.reverse().find((m)=>m.route.hasErrorBoundary === true) || matches[0];
+}
+function getShortCircuitMatches(routes) {
+    // Prefer a root layout route if present, otherwise shim in a route object
+    let route = routes.length === 1 ? routes[0] : routes.find((r)=>r.index || !r.path || r.path === "/") || {
+        id: "__shim-error-route__"
+    };
+    return {
+        matches: [
+            {
+                params: {},
+                pathname: "",
+                pathnameBase: "",
+                route
+            }
+        ],
+        route
+    };
+}
+function getInternalRouterError(status, _temp5) {
+    let { pathname, routeId, method, type, message } = _temp5 === void 0 ? {} : _temp5;
+    let statusText = "Unknown Server Error";
+    let errorMessage = "Unknown @remix-run/router error";
+    if (status === 400) {
+        statusText = "Bad Request";
+        if (method && pathname && routeId) errorMessage = "You made a " + method + ' request to "' + pathname + '" but ' + ('did not provide a `loader` for route "' + routeId + '", ') + "so there is no way to handle the request.";
+        else if (type === "defer-action") errorMessage = "defer() is not supported in actions";
+        else if (type === "invalid-body") errorMessage = "Unable to encode submission body";
+    } else if (status === 403) {
+        statusText = "Forbidden";
+        errorMessage = 'Route "' + routeId + '" does not match URL "' + pathname + '"';
+    } else if (status === 404) {
+        statusText = "Not Found";
+        errorMessage = 'No route matches URL "' + pathname + '"';
+    } else if (status === 405) {
+        statusText = "Method Not Allowed";
+        if (method && pathname && routeId) errorMessage = "You made a " + method.toUpperCase() + ' request to "' + pathname + '" but ' + ('did not provide an `action` for route "' + routeId + '", ') + "so there is no way to handle the request.";
+        else if (method) errorMessage = 'Invalid request method "' + method.toUpperCase() + '"';
+    }
+    return new ErrorResponseImpl(status || 500, statusText, new Error(errorMessage), true);
+}
+// Find any returned redirect errors, starting from the lowest match
+function findRedirect(results) {
+    let entries = Object.entries(results);
+    for(let i = entries.length - 1; i >= 0; i--){
+        let [key, result] = entries[i];
+        if (isRedirectResult(result)) return {
+            key,
+            result
+        };
+    }
+}
+function stripHashFromPath(path) {
+    let parsedPath = typeof path === "string" ? parsePath(path) : path;
+    return createPath(_extends({}, parsedPath, {
+        hash: ""
+    }));
+}
+function isHashChangeOnly(a, b) {
+    if (a.pathname !== b.pathname || a.search !== b.search) return false;
+    if (a.hash === "") // /page -> /page#hash
+    return b.hash !== "";
+    else if (a.hash === b.hash) // /page#hash -> /page#hash
+    return true;
+    else if (b.hash !== "") // /page#hash -> /page#other
+    return true;
+    // If the hash is removed the browser will re-perform a request to the server
+    // /page#hash -> /page
+    return false;
+}
+function isDataStrategyResult(result) {
+    return result != null && typeof result === "object" && "type" in result && "result" in result && (result.type === ResultType.data || result.type === ResultType.error);
+}
+function isRedirectDataStrategyResultResult(result) {
+    return isResponse(result.result) && redirectStatusCodes.has(result.result.status);
+}
+function isDeferredResult(result) {
+    return result.type === ResultType.deferred;
+}
+function isErrorResult(result) {
+    return result.type === ResultType.error;
+}
+function isRedirectResult(result) {
+    return (result && result.type) === ResultType.redirect;
+}
+function isDataWithResponseInit(value) {
+    return typeof value === "object" && value != null && "type" in value && "data" in value && "init" in value && value.type === "DataWithResponseInit";
+}
+function isDeferredData(value) {
+    let deferred = value;
+    return deferred && typeof deferred === "object" && typeof deferred.data === "object" && typeof deferred.subscribe === "function" && typeof deferred.cancel === "function" && typeof deferred.resolveData === "function";
+}
+function isResponse(value) {
+    return value != null && typeof value.status === "number" && typeof value.statusText === "string" && typeof value.headers === "object" && typeof value.body !== "undefined";
+}
+function isRedirectResponse(result) {
+    if (!isResponse(result)) return false;
+    let status = result.status;
+    let location = result.headers.get("Location");
+    return status >= 300 && status <= 399 && location != null;
+}
+function isValidMethod(method) {
+    return validRequestMethods.has(method.toLowerCase());
+}
+function isMutationMethod(method) {
+    return validMutationMethods.has(method.toLowerCase());
+}
+async function resolveNavigationDeferredResults(matches, results, signal, currentMatches, currentLoaderData) {
+    let entries = Object.entries(results);
+    for(let index = 0; index < entries.length; index++){
+        let [routeId, result] = entries[index];
+        let match = matches.find((m)=>(m == null ? void 0 : m.route.id) === routeId);
+        // If we don't have a match, then we can have a deferred result to do
+        // anything with.  This is for revalidating fetchers where the route was
+        // removed during HMR
+        if (!match) continue;
+        let currentMatch = currentMatches.find((m)=>m.route.id === match.route.id);
+        let isRevalidatingLoader = currentMatch != null && !isNewRouteInstance(currentMatch, match) && (currentLoaderData && currentLoaderData[match.route.id]) !== undefined;
+        if (isDeferredResult(result) && isRevalidatingLoader) // Note: we do not have to touch activeDeferreds here since we race them
+        // against the signal in resolveDeferredData and they'll get aborted
+        // there if needed
+        await resolveDeferredData(result, signal, false).then((result)=>{
+            if (result) results[routeId] = result;
+        });
+    }
+}
+async function resolveFetcherDeferredResults(matches, results, revalidatingFetchers) {
+    for(let index = 0; index < revalidatingFetchers.length; index++){
+        let { key, routeId, controller } = revalidatingFetchers[index];
+        let result = results[key];
+        let match = matches.find((m)=>(m == null ? void 0 : m.route.id) === routeId);
+        // If we don't have a match, then we can have a deferred result to do
+        // anything with.  This is for revalidating fetchers where the route was
+        // removed during HMR
+        if (!match) continue;
+        if (isDeferredResult(result)) {
+            // Note: we do not have to touch activeDeferreds here since we race them
+            // against the signal in resolveDeferredData and they'll get aborted
+            // there if needed
+            invariant(controller, "Expected an AbortController for revalidating fetcher deferred result");
+            await resolveDeferredData(result, controller.signal, true).then((result)=>{
+                if (result) results[key] = result;
+            });
+        }
+    }
+}
+async function resolveDeferredData(result, signal, unwrap) {
+    if (unwrap === void 0) unwrap = false;
+    let aborted = await result.deferredData.resolveData(signal);
+    if (aborted) return;
+    if (unwrap) try {
+        return {
+            type: ResultType.data,
+            data: result.deferredData.unwrappedData
+        };
+    } catch (e) {
+        // Handle any TrackedPromise._error values encountered while unwrapping
+        return {
+            type: ResultType.error,
+            error: e
+        };
+    }
+    return {
+        type: ResultType.data,
+        data: result.deferredData.data
+    };
+}
+function hasNakedIndexQuery(search) {
+    return new URLSearchParams(search).getAll("index").some((v)=>v === "");
+}
+function getTargetMatch(matches, location) {
+    let search = typeof location === "string" ? parsePath(location).search : location.search;
+    if (matches[matches.length - 1].route.index && hasNakedIndexQuery(search || "")) // Return the leaf index route when index is present
+    return matches[matches.length - 1];
+    // Otherwise grab the deepest "path contributing" match (ignoring index and
+    // pathless layout routes)
+    let pathMatches = getPathContributingMatches(matches);
+    return pathMatches[pathMatches.length - 1];
+}
+function getSubmissionFromNavigation(navigation) {
+    let { formMethod, formAction, formEncType, text, formData, json } = navigation;
+    if (!formMethod || !formAction || !formEncType) return;
+    if (text != null) return {
+        formMethod,
+        formAction,
+        formEncType,
+        formData: undefined,
+        json: undefined,
+        text
+    };
+    else if (formData != null) return {
+        formMethod,
+        formAction,
+        formEncType,
+        formData,
+        json: undefined,
+        text: undefined
+    };
+    else if (json !== undefined) return {
+        formMethod,
+        formAction,
+        formEncType,
+        formData: undefined,
+        json,
+        text: undefined
+    };
+}
+function getLoadingNavigation(location, submission) {
+    if (submission) {
+        let navigation = {
+            state: "loading",
+            location,
+            formMethod: submission.formMethod,
+            formAction: submission.formAction,
+            formEncType: submission.formEncType,
+            formData: submission.formData,
+            json: submission.json,
+            text: submission.text
+        };
+        return navigation;
+    } else {
+        let navigation = {
+            state: "loading",
+            location,
+            formMethod: undefined,
+            formAction: undefined,
+            formEncType: undefined,
+            formData: undefined,
+            json: undefined,
+            text: undefined
+        };
+        return navigation;
+    }
+}
+function getSubmittingNavigation(location, submission) {
+    let navigation = {
+        state: "submitting",
+        location,
+        formMethod: submission.formMethod,
+        formAction: submission.formAction,
+        formEncType: submission.formEncType,
+        formData: submission.formData,
+        json: submission.json,
+        text: submission.text
+    };
+    return navigation;
+}
+function getLoadingFetcher(submission, data) {
+    if (submission) {
+        let fetcher = {
+            state: "loading",
+            formMethod: submission.formMethod,
+            formAction: submission.formAction,
+            formEncType: submission.formEncType,
+            formData: submission.formData,
+            json: submission.json,
+            text: submission.text,
+            data
+        };
+        return fetcher;
+    } else {
+        let fetcher = {
+            state: "loading",
+            formMethod: undefined,
+            formAction: undefined,
+            formEncType: undefined,
+            formData: undefined,
+            json: undefined,
+            text: undefined,
+            data
+        };
+        return fetcher;
+    }
+}
+function getSubmittingFetcher(submission, existingFetcher) {
+    let fetcher = {
+        state: "submitting",
+        formMethod: submission.formMethod,
+        formAction: submission.formAction,
+        formEncType: submission.formEncType,
+        formData: submission.formData,
+        json: submission.json,
+        text: submission.text,
+        data: existingFetcher ? existingFetcher.data : undefined
+    };
+    return fetcher;
+}
+function getDoneFetcher(data) {
+    let fetcher = {
+        state: "idle",
+        formMethod: undefined,
+        formAction: undefined,
+        formEncType: undefined,
+        formData: undefined,
+        json: undefined,
+        text: undefined,
+        data
+    };
+    return fetcher;
+}
+function restoreAppliedTransitions(_window, transitions) {
+    try {
+        let sessionPositions = _window.sessionStorage.getItem(TRANSITIONS_STORAGE_KEY);
+        if (sessionPositions) {
+            let json = JSON.parse(sessionPositions);
+            for (let [k, v] of Object.entries(json || {}))if (v && Array.isArray(v)) transitions.set(k, new Set(v || []));
+        }
+    } catch (e) {
+    // no-op, use default empty object
+    }
+}
+function persistAppliedTransitions(_window, transitions) {
+    if (transitions.size > 0) {
+        let json = {};
+        for (let [k, v] of transitions)json[k] = [
+            ...v
+        ];
+        try {
+            _window.sessionStorage.setItem(TRANSITIONS_STORAGE_KEY, JSON.stringify(json));
+        } catch (error) {
+            warning(false, "Failed to save applied view transitions in sessionStorage (" + error + ").");
+        }
+    }
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -30679,11 +34882,483 @@ function registerExportsForReactRefresh(module1) {
     }
 }
 
-},{"7422ead32dcc1e6b":"786KC"}],"3DzfS":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$b0c2 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"7422ead32dcc1e6b":"786KC"}],"8yaV8":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$0606 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$b0c2.prelude(module);
+$parcel$ReactRefreshHelpers$0606.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _intro = require("./Intro");
+var _introDefault = parcelHelpers.interopDefault(_intro);
+var _skills = require("./Skills");
+var _skillsDefault = parcelHelpers.interopDefault(_skills);
+var _projects = require("./Projects");
+var _projectsDefault = parcelHelpers.interopDefault(_projects);
+var _profile = require("./Profile");
+var _profileDefault = parcelHelpers.interopDefault(_profile);
+var _work = require("./Work");
+var _workDefault = parcelHelpers.interopDefault(_work);
+var _footer = require("./Footer");
+var _footerDefault = parcelHelpers.interopDefault(_footer);
+var _reactRouterDom = require("react-router-dom");
+function Body() {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "px-10",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _introDefault.default), {}, void 0, false, {
+                fileName: "src/components/Body.js",
+                lineNumber: 14,
+                columnNumber: 5
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _skillsDefault.default), {}, void 0, false, {
+                fileName: "src/components/Body.js",
+                lineNumber: 15,
+                columnNumber: 5
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _projectsDefault.default), {}, void 0, false, {
+                fileName: "src/components/Body.js",
+                lineNumber: 16,
+                columnNumber: 5
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profileDefault.default), {}, void 0, false, {
+                fileName: "src/components/Body.js",
+                lineNumber: 17,
+                columnNumber: 5
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/Body.js",
+        lineNumber: 12,
+        columnNumber: 5
+    }, this);
+}
+_c = Body;
+exports.default = Body;
+var _c;
+$RefreshReg$(_c, "Body");
+
+  $parcel$ReactRefreshHelpers$0606.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Intro":"jrs5z","./Skills":"OHDzu","./Projects":"16pwG","./Profile":"h0rtF","./Work":"cJuRA","./Footer":"8pPOA","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"jrs5z":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$cd3a = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$cd3a.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _logoPng = require("../../assets/logo.png");
+var _logoPngDefault = parcelHelpers.interopDefault(_logoPng);
+var _profilePng = require("../../assets/profile.png");
+var _profilePngDefault = parcelHelpers.interopDefault(_profilePng);
+var _data = require("../utils/data");
+const Intro = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "flex  justify-between m-5 bg-gray-200",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "m-5 p-4 bg-orange-50 w-1/2",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                        className: "font-bold text-4xl",
+                        children: "Welcome"
+                    }, void 0, false, {
+                        fileName: "src/components/Intro.js",
+                        lineNumber: 12,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        className: "my-4",
+                        children: [
+                            "Hi, I\u2019m Adarsh Singh, a final-year B.Tech student specializing in ",
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("b", {
+                                children: "Information Technology"
+                            }, void 0, false, {
+                                fileName: "src/components/Intro.js",
+                                lineNumber: 14,
+                                columnNumber: 81
+                            }, undefined),
+                            " at",
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("b", {
+                                children: " Madan Mohan Malviya University of Technology"
+                            }, void 0, false, {
+                                fileName: "src/components/Intro.js",
+                                lineNumber: 15,
+                                columnNumber: 15
+                            }, undefined),
+                            ". My passion lies in building efficient, scalable applications and solving complex technical problems. Over the years, I have developed a strong foundation in data structures and algorithms, as well as practical experience in web development, particularly using the ",
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("b", {
+                                children: "MERN"
+                            }, void 0, false, {
+                                fileName: "src/components/Intro.js",
+                                lineNumber: 17,
+                                columnNumber: 90
+                            }, undefined),
+                            " stack (MongoDB, Express.js, React, Node.js)."
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/Intro.js",
+                        lineNumber: 13,
+                        columnNumber: 10
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "container",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "flex",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "mr-2",
+                                    children: [
+                                        " ",
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                            href: (0, _data.LinkedIn_URL),
+                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
+                                                className: "fa-brands fa-linkedin"
+                                            }, void 0, false, {
+                                                fileName: "src/components/Intro.js",
+                                                lineNumber: 21,
+                                                columnNumber: 63
+                                            }, undefined)
+                                        }, void 0, false, {
+                                            fileName: "src/components/Intro.js",
+                                            lineNumber: 21,
+                                            columnNumber: 40
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/Intro.js",
+                                    lineNumber: 21,
+                                    columnNumber: 17
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "mr-2 ",
+                                    children: [
+                                        " ",
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                            href: (0, _data.Fb_URL),
+                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
+                                                className: "fa-brands fa-facebook"
+                                            }, void 0, false, {
+                                                fileName: "src/components/Intro.js",
+                                                lineNumber: 22,
+                                                columnNumber: 58
+                                            }, undefined)
+                                        }, void 0, false, {
+                                            fileName: "src/components/Intro.js",
+                                            lineNumber: 22,
+                                            columnNumber: 41
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/Intro.js",
+                                    lineNumber: 22,
+                                    columnNumber: 17
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "mr-2",
+                                    children: [
+                                        " ",
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                            href: (0, _data.twitter_URL),
+                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
+                                                className: "fa-brands fa-twitter"
+                                            }, void 0, false, {
+                                                fileName: "src/components/Intro.js",
+                                                lineNumber: 23,
+                                                columnNumber: 62
+                                            }, undefined)
+                                        }, void 0, false, {
+                                            fileName: "src/components/Intro.js",
+                                            lineNumber: 23,
+                                            columnNumber: 40
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/Intro.js",
+                                    lineNumber: 23,
+                                    columnNumber: 17
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "mr-2 ",
+                                    children: [
+                                        " ",
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                            href: (0, _data.GitHub_URL),
+                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
+                                                className: "fa-brands fa-github"
+                                            }, void 0, false, {
+                                                fileName: "src/components/Intro.js",
+                                                lineNumber: 24,
+                                                columnNumber: 62
+                                            }, undefined)
+                                        }, void 0, false, {
+                                            fileName: "src/components/Intro.js",
+                                            lineNumber: 24,
+                                            columnNumber: 41
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/Intro.js",
+                                    lineNumber: 24,
+                                    columnNumber: 17
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "mr-2",
+                                    children: [
+                                        " ",
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                            href: (0, _data.gmail),
+                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
+                                                className: "fa-solid fa-at"
+                                            }, void 0, false, {
+                                                fileName: "src/components/Intro.js",
+                                                lineNumber: 25,
+                                                columnNumber: 56
+                                            }, undefined)
+                                        }, void 0, false, {
+                                            fileName: "src/components/Intro.js",
+                                            lineNumber: 25,
+                                            columnNumber: 40
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/Intro.js",
+                                    lineNumber: 25,
+                                    columnNumber: 17
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "mr-2",
+                                    children: [
+                                        " ",
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                            href: (0, _data.Insta_URL),
+                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
+                                                className: "fa-brands fa-instagram"
+                                            }, void 0, false, {
+                                                fileName: "src/components/Intro.js",
+                                                lineNumber: 26,
+                                                columnNumber: 60
+                                            }, undefined)
+                                        }, void 0, false, {
+                                            fileName: "src/components/Intro.js",
+                                            lineNumber: 26,
+                                            columnNumber: 40
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/Intro.js",
+                                    lineNumber: 26,
+                                    columnNumber: 17
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "mr-2",
+                                    children: [
+                                        " ",
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                            href: (0, _data.whatsapp),
+                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
+                                                className: "fa-brands fa-whatsapp"
+                                            }, void 0, false, {
+                                                fileName: "src/components/Intro.js",
+                                                lineNumber: 27,
+                                                columnNumber: 59
+                                            }, undefined)
+                                        }, void 0, false, {
+                                            fileName: "src/components/Intro.js",
+                                            lineNumber: 27,
+                                            columnNumber: 40
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/Intro.js",
+                                    lineNumber: 27,
+                                    columnNumber: 17
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Intro.js",
+                            lineNumber: 20,
+                            columnNumber: 14
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/components/Intro.js",
+                        lineNumber: 19,
+                        columnNumber: 10
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/Intro.js",
+                lineNumber: 11,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: " flex justify-center items-center  p-4 w-1/2 h-3/4 ",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    src: (0, _profilePngDefault.default),
+                    className: "h-3/4 "
+                }, void 0, false, {
+                    fileName: "src/components/Intro.js",
+                    lineNumber: 33,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/Intro.js",
+                lineNumber: 32,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/Intro.js",
+        lineNumber: 9,
+        columnNumber: 1
+    }, undefined);
+};
+_c = Intro;
+exports.default = Intro;
+var _c;
+$RefreshReg$(_c, "Intro");
+
+  $parcel$ReactRefreshHelpers$cd3a.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../assets/logo.png":"kRPTR","../../assets/profile.png":"8JrqM","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../utils/data":"j8lWA"}],"8JrqM":[function(require,module,exports) {
+module.exports = require("31e99bc0b96e072b").getBundleURL("lly8x") + "profile.f6dbac75.png" + "?" + Date.now();
+
+},{"31e99bc0b96e072b":"lgJ39"}],"j8lWA":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Todo", ()=>Todo);
+parcelHelpers.export(exports, "SimonGame", ()=>SimonGame);
+parcelHelpers.export(exports, "GFG_URL", ()=>GFG_URL);
+parcelHelpers.export(exports, "gmail", ()=>gmail);
+parcelHelpers.export(exports, "LinkedIn_URL", ()=>LinkedIn_URL);
+parcelHelpers.export(exports, "Insta_URL", ()=>Insta_URL);
+parcelHelpers.export(exports, "Fb_URL", ()=>Fb_URL);
+parcelHelpers.export(exports, "GitHub_URL", ()=>GitHub_URL);
+parcelHelpers.export(exports, "twitter_URL", ()=>twitter_URL);
+parcelHelpers.export(exports, "Phone_No", ()=>Phone_No);
+parcelHelpers.export(exports, "whatsapp", ()=>whatsapp);
+const Todo = {
+    "projectDetails": {
+        "title": "Todo App",
+        "description": "A simple todo application that allows users to add, update, delete, and mark tasks as complete.",
+        "GitHubLink": "https://github.com/yourusername/todo-app",
+        "LiveLink": "https://yourappname.netlify.app",
+        "ImgLink": "https://w7.pngwing.com/pngs/670/265/png-transparent-checkmark-done-exam-list-pencil-todo-xomo-basics-icon-thumbnail.png"
+    },
+    "FrontendTech": [
+        "React",
+        "React Router",
+        "Axios/Fetch",
+        "Tailwind CSS or Bootstrap",
+        "Material-UI",
+        "Redux"
+    ],
+    "BackendTech": [
+        "Node.js",
+        "Express.js",
+        "JWT (JSON Web Tokens)",
+        "bcrypt.js",
+        "Helmet.js",
+        "Cors"
+    ],
+    "DatabaseTech": [
+        "MongoDB",
+        "Mongoose"
+    ],
+    "ToolsAndUtilities": [
+        "Postman",
+        "Git",
+        "GitHub",
+        "VS Code",
+        "npm or yarn"
+    ],
+    "DeploymentTech": [
+        "Netlify",
+        "Heroku",
+        "MongoDB Atlas",
+        "Docker",
+        "AWS or Azure"
+    ],
+    "DevelopmentAndBuildTools": [
+        "ESLint and Prettier",
+        "Webpack or Vite",
+        "Babel"
+    ],
+    "OptionalEnhancements": [
+        "GraphQL",
+        "Socket.IO",
+        "Formik and Yup",
+        "Tailwind Typography"
+    ]
+};
+const SimonGame = {
+    "projectDetails": {
+        "title": "Simon Game",
+        "description": "A memory game where users must repeat an increasingly complex sequence of colors and sounds.",
+        "GitHubLink": "https://github.com/yourusername/simon-game",
+        "LiveLink": "https://yourappname.netlify.app",
+        "ImgLink": "https://upload.wikimedia.org/wikipedia/commons/4/43/Simon_game.jpg"
+    },
+    "FrontendTech": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React",
+        "React Router",
+        "CSS Grid/Flexbox",
+        "Web Audio API"
+    ],
+    "ToolsAndUtilities": [
+        "Git",
+        "GitHub",
+        "VS Code",
+        "npm or yarn"
+    ],
+    "DeploymentTech": [
+        "Netlify",
+        "Vercel"
+    ],
+    "DevelopmentAndBuildTools": [
+        "ESLint and Prettier",
+        "Webpack",
+        "Babel"
+    ],
+    "OptionalEnhancements": [
+        "WebSockets (for multiplayer functionality)",
+        "Progressive Web App (PWA)"
+    ]
+};
+const GFG_URL = "https://www.geeksforgeeks.org/gfg-assets/_next/data/bx4bdtubK4AkVRWqWBAem/user/adarshsingh1234.json";
+const gmail = "adarsh273013@gmail.com";
+const LinkedIn_URL = "https://www.linkedin.com/in/adarsh-singh-9350bb1b1/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app";
+const Insta_URL = "https://www.linkedin.com/in/adarsh-singh-9350bb1b1/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app";
+const Fb_URL = "";
+const GitHub_URL = "https://github.com/adarshsingh888";
+const twitter_URL = "";
+const Phone_No = "6394432767";
+const whatsapp = "https://wa.me/+916394432767";
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"OHDzu":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$14cb = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$14cb.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -30692,7 +35367,7 @@ parcelHelpers.export(exports, "Skill_List", ()=>Skill_List);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-var _images = require("../assets/skills/images");
+var _images = require("../../assets/skills/images");
 const skills = [
     {
         imageSrc: (0, _images.chip),
@@ -30757,52 +35432,49 @@ const skills = [
 ];
 const Skill_List = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "container-fluid text-center",
+        className: "",
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "row row-cols-2 row-cols-lg-5 g-2 g-lg-3 justify-content-center",
+            className: "flex flex-wrap m-5 p-4 justify-start bg-green-100 ",
             children: skills.map((skill, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "card",
-                    style: {
-                        width: "10rem"
-                    },
+                    className: "bg-yellow-500 flex m-4 p-4 justify-center items-center rounded-md",
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                             src: skill.imageSrc,
-                            className: "card-img-top rounded float-start",
+                            className: "w-5 h-5 mx-1",
                             alt: skill.title
                         }, void 0, false, {
-                            fileName: "components/Skills.js",
+                            fileName: "src/components/Skills.js",
                             lineNumber: 45,
                             columnNumber: 14
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                             className: "card-body",
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
-                                className: "card-title",
+                                className: "mx-1",
                                 children: skill.title
                             }, void 0, false, {
-                                fileName: "components/Skills.js",
+                                fileName: "src/components/Skills.js",
                                 lineNumber: 47,
                                 columnNumber: 18
                             }, undefined)
                         }, void 0, false, {
-                            fileName: "components/Skills.js",
+                            fileName: "src/components/Skills.js",
                             lineNumber: 46,
                             columnNumber: 14
                         }, undefined)
                     ]
                 }, index, true, {
-                    fileName: "components/Skills.js",
+                    fileName: "src/components/Skills.js",
                     lineNumber: 44,
                     columnNumber: 14
                 }, undefined))
         }, void 0, false, {
-            fileName: "components/Skills.js",
+            fileName: "src/components/Skills.js",
             lineNumber: 42,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
-        fileName: "components/Skills.js",
+        fileName: "src/components/Skills.js",
         lineNumber: 41,
         columnNumber: 5
     }, undefined);
@@ -30810,24 +35482,35 @@ const Skill_List = ()=>{
 _c = Skill_List;
 const Skills = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "container",
+        className: "m-5 p-4 bg-orange-50 ",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "heading",
-                children: "Skills"
+                className: "font-bold  p-4 text-2xl bg-amber-200",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    children: "Skills"
+                }, void 0, false, {
+                    fileName: "src/components/Skills.js",
+                    lineNumber: 59,
+                    columnNumber: 61
+                }, undefined)
             }, void 0, false, {
-                fileName: "components/Skills.js",
+                fileName: "src/components/Skills.js",
                 lineNumber: 59,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Skill_List, {}, void 0, false, {
-                fileName: "components/Skills.js",
+                fileName: "src/components/Skills.js",
                 lineNumber: 60,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {}, void 0, false, {
+                fileName: "src/components/Skills.js",
+                lineNumber: 61,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
-        fileName: "components/Skills.js",
+        fileName: "src/components/Skills.js",
         lineNumber: 58,
         columnNumber: 5
     }, undefined);
@@ -30838,12 +35521,12 @@ var _c, _c1;
 $RefreshReg$(_c, "Skill_List");
 $RefreshReg$(_c1, "Skills");
 
-  $parcel$ReactRefreshHelpers$b0c2.postlude(module);
+  $parcel$ReactRefreshHelpers$14cb.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../assets/skills/images":"9XUTz","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9XUTz":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../assets/skills/images":"9XUTz","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9XUTz":[function(require,module,exports) {
 // assets/skills/index.js
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
@@ -30938,11 +35621,11 @@ module.exports = require("e4cd6bee20ad5af9").getBundleURL("lly8x") + "mongodb.02
 },{"e4cd6bee20ad5af9":"lgJ39"}],"hNBqb":[function(require,module,exports) {
 module.exports = require("28630033a27dc670").getBundleURL("lly8x") + "express.3a342114.png" + "?" + Date.now();
 
-},{"28630033a27dc670":"lgJ39"}],"hLP5s":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$3b5f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"28630033a27dc670":"lgJ39"}],"16pwG":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$ec2f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$3b5f.prelude(module);
+$parcel$ReactRefreshHelpers$ec2f.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -30952,70 +35635,78 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _cardsJs = require("./Cards.js");
 var _cardsJsDefault = parcelHelpers.interopDefault(_cardsJs);
-var _simonPng = require("../assets/Project/Simon.png");
+var _simonPng = require("../../assets/Project/Simon.png");
 var _simonPngDefault = parcelHelpers.interopDefault(_simonPng);
-var _todoPng = require("../assets/Project/todo.png");
+var _todoPng = require("../../assets/Project/todo.png");
 var _todoPngDefault = parcelHelpers.interopDefault(_todoPng);
+var _reactRouterDom = require("react-router-dom");
 const Projects = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "container-fluid text-center",
+        className: "m-5 p-4 bg-orange-50",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "heading",
-                children: "Projects "
-            }, void 0, false, {
-                fileName: "components/Projects.js",
-                lineNumber: 8,
+                className: "font-bold  p-4 text-2xl bg-amber-200",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                        to: "/projectpage",
+                        children: "Projects"
+                    }, void 0, false, {
+                        fileName: "src/components/Projects.js",
+                        lineNumber: 9,
+                        columnNumber: 64
+                    }, undefined),
+                    " "
+                ]
+            }, void 0, true, {
+                fileName: "src/components/Projects.js",
+                lineNumber: 9,
                 columnNumber: 10
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "row row-cols-2 row-cols-lg-5 g-2 g-lg-3 justify-content-center",
+                className: "flex flex-wrap m-5 p-4 justify-start bg-green-100",
                 children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                        href: "#",
-                        className: " text-center row justify-content-center",
-                        children: [
-                            " ",
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cardsJsDefault.default), {
-                                imageSrc: (0, _simonPngDefault.default),
-                                title: "Simon Game Play"
-                            }, void 0, false, {
-                                fileName: "components/Projects.js",
-                                lineNumber: 10,
-                                columnNumber: 76
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "components/Projects.js",
-                        lineNumber: 10,
-                        columnNumber: 11
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                        to: "/projectpage#simon",
+                        className: " bg-yellow-500 flex m-4 p-4 justify-center items-center rounded-md",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cardsJsDefault.default), {
+                            imageSrc: (0, _simonPngDefault.default),
+                            title: "Simon Game Play"
+                        }, void 0, false, {
+                            fileName: "src/components/Projects.js",
+                            lineNumber: 12,
+                            columnNumber: 16
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/components/Projects.js",
+                        lineNumber: 11,
+                        columnNumber: 10
                     }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                        href: "#",
-                        className: " text-center row justify-content-center",
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                        to: "/projectpage#todo",
+                        className: " bg-yellow-500 flex m-4 p-4 justify-center items-center rounded-md",
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cardsJsDefault.default), {
                             imageSrc: (0, _todoPngDefault.default),
                             title: "TODO List"
                         }, void 0, false, {
-                            fileName: "components/Projects.js",
-                            lineNumber: 11,
-                            columnNumber: 75
+                            fileName: "src/components/Projects.js",
+                            lineNumber: 15,
+                            columnNumber: 14
                         }, undefined)
                     }, void 0, false, {
-                        fileName: "components/Projects.js",
-                        lineNumber: 11,
-                        columnNumber: 11
+                        fileName: "src/components/Projects.js",
+                        lineNumber: 14,
+                        columnNumber: 10
                     }, undefined)
                 ]
             }, void 0, true, {
-                fileName: "components/Projects.js",
-                lineNumber: 9,
+                fileName: "src/components/Projects.js",
+                lineNumber: 10,
                 columnNumber: 10
             }, undefined)
         ]
     }, void 0, true, {
-        fileName: "components/Projects.js",
-        lineNumber: 7,
+        fileName: "src/components/Projects.js",
+        lineNumber: 8,
         columnNumber: 5
     }, undefined);
 };
@@ -31024,16 +35715,16 @@ exports.default = Projects;
 var _c;
 $RefreshReg$(_c, "Projects");
 
-  $parcel$ReactRefreshHelpers$3b5f.postlude(module);
+  $parcel$ReactRefreshHelpers$ec2f.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Cards.js":"1ZgNj","../assets/Project/Simon.png":"e2XCM","../assets/Project/todo.png":"1rJ2S","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"1ZgNj":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$7114 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Cards.js":"9rJEe","../../assets/Project/Simon.png":"e2XCM","../../assets/Project/todo.png":"1rJ2S","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9rJEe":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$1709 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$7114.prelude(module);
+$parcel$ReactRefreshHelpers$1709.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -31053,7 +35744,7 @@ const Cards = ({ imageSrc, title })=>{
                 className: "card-img-top rounded float-start",
                 alt: "fdd"
             }, void 0, false, {
-                fileName: "components/Cards.js",
+                fileName: "src/components/Cards.js",
                 lineNumber: 7,
                 columnNumber: 14
             }, undefined),
@@ -31063,18 +35754,18 @@ const Cards = ({ imageSrc, title })=>{
                     className: "card-title",
                     children: title
                 }, void 0, false, {
-                    fileName: "components/Cards.js",
+                    fileName: "src/components/Cards.js",
                     lineNumber: 9,
                     columnNumber: 18
                 }, undefined)
             }, void 0, false, {
-                fileName: "components/Cards.js",
+                fileName: "src/components/Cards.js",
                 lineNumber: 8,
                 columnNumber: 14
             }, undefined)
         ]
     }, void 0, true, {
-        fileName: "components/Cards.js",
+        fileName: "src/components/Cards.js",
         lineNumber: 6,
         columnNumber: 10
     }, undefined);
@@ -31084,7 +35775,7 @@ exports.default = Cards;
 var _c;
 $RefreshReg$(_c, "Cards");
 
-  $parcel$ReactRefreshHelpers$7114.postlude(module);
+  $parcel$ReactRefreshHelpers$1709.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
@@ -31095,11 +35786,11 @@ module.exports = require("eff1367310465c83").getBundleURL("lly8x") + "Simon.65cc
 },{"eff1367310465c83":"lgJ39"}],"1rJ2S":[function(require,module,exports) {
 module.exports = require("f6a39b7afae070a5").getBundleURL("lly8x") + "todo.0d12f168.png" + "?" + Date.now();
 
-},{"f6a39b7afae070a5":"lgJ39"}],"dI4A5":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$5d74 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"f6a39b7afae070a5":"lgJ39"}],"h0rtF":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$b52a = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$5d74.prelude(module);
+$parcel$ReactRefreshHelpers$b52a.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -31109,87 +35800,87 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _cards = require("./Cards");
 var _cardsDefault = parcelHelpers.interopDefault(_cards);
-var _gfgPng = require("../assets/Profiles/gfg.png");
+var _gfgPng = require("../../assets/Profiles/gfg.png");
 var _gfgPngDefault = parcelHelpers.interopDefault(_gfgPng);
-var _hackerRankPng = require("../assets/Profiles/HackerRank.png");
+var _hackerRankPng = require("../../assets/Profiles/HackerRank.png");
 var _hackerRankPngDefault = parcelHelpers.interopDefault(_hackerRankPng);
-var _leetcodePng = require("../assets/Profiles/Leetcode.png");
+var _leetcodePng = require("../../assets/Profiles/Leetcode.png");
 var _leetcodePngDefault = parcelHelpers.interopDefault(_leetcodePng);
 const Profile = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "container-fluid text-center",
+        className: "m-5 p-4 bg-orange-50",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "heading",
+                className: "font-bold  p-4 text-2xl bg-amber-200",
                 children: "Profiles"
             }, void 0, false, {
-                fileName: "components/Profile.js",
+                fileName: "src/components/Profile.js",
                 lineNumber: 10,
                 columnNumber: 11
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "row row-cols-2 row-cols-lg-5 g-2 g-lg-3 justify-content-center container-fluid",
+                className: "flex flex-wrap m-5 p-4 justify-start bg-green-100",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                         href: "https://www.geeksforgeeks.org/user/adarshsingh1234/",
-                        className: " text-center row justify-content-center",
+                        className: "  bg-yellow-500 flex m-4 p-4 justify-center items-center rounded-md ",
                         children: [
                             " ",
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cardsDefault.default), {
                                 imageSrc: (0, _gfgPngDefault.default),
                                 title: "Geeks for Geeks"
                             }, void 0, false, {
-                                fileName: "components/Profile.js",
+                                fileName: "src/components/Profile.js",
                                 lineNumber: 14,
-                                columnNumber: 126
+                                columnNumber: 155
                             }, undefined)
                         ]
                     }, void 0, true, {
-                        fileName: "components/Profile.js",
+                        fileName: "src/components/Profile.js",
                         lineNumber: 14,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                         href: "https://www.hackerrank.com/profile/adarsh273013",
-                        className: " text-center row justify-content-center",
+                        className: "  bg-yellow-500 flex m-4 p-4 justify-center items-center rounded-md ",
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cardsDefault.default), {
                             imageSrc: (0, _hackerRankPngDefault.default),
                             title: "HackerRank"
                         }, void 0, false, {
-                            fileName: "components/Profile.js",
+                            fileName: "src/components/Profile.js",
                             lineNumber: 15,
-                            columnNumber: 121
+                            columnNumber: 150
                         }, undefined)
                     }, void 0, false, {
-                        fileName: "components/Profile.js",
+                        fileName: "src/components/Profile.js",
                         lineNumber: 15,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                         href: "https://leetcode.com/u/adarsh639443/",
-                        className: " text-center row justify-content-center",
+                        className: "  bg-yellow-500 flex m-4 p-4 justify-center items-center rounded-md ",
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cardsDefault.default), {
                             imageSrc: (0, _leetcodePngDefault.default),
                             title: "LeetCode"
                         }, void 0, false, {
-                            fileName: "components/Profile.js",
+                            fileName: "src/components/Profile.js",
                             lineNumber: 16,
-                            columnNumber: 110
+                            columnNumber: 139
                         }, undefined)
                     }, void 0, false, {
-                        fileName: "components/Profile.js",
+                        fileName: "src/components/Profile.js",
                         lineNumber: 16,
                         columnNumber: 11
                     }, undefined)
                 ]
             }, void 0, true, {
-                fileName: "components/Profile.js",
+                fileName: "src/components/Profile.js",
                 lineNumber: 13,
                 columnNumber: 11
             }, undefined)
         ]
     }, void 0, true, {
-        fileName: "components/Profile.js",
+        fileName: "src/components/Profile.js",
         lineNumber: 9,
         columnNumber: 5
     }, undefined);
@@ -31199,12 +35890,12 @@ exports.default = Profile;
 var _c;
 $RefreshReg$(_c, "Profile");
 
-  $parcel$ReactRefreshHelpers$5d74.postlude(module);
+  $parcel$ReactRefreshHelpers$b52a.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../assets/Profiles/gfg.png":"8lgP9","../assets/Profiles/HackerRank.png":"1TxVN","../assets/Profiles/Leetcode.png":"61QA5","./Cards":"1ZgNj"}],"8lgP9":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Cards":"9rJEe","../../assets/Profiles/gfg.png":"8lgP9","../../assets/Profiles/HackerRank.png":"1TxVN","../../assets/Profiles/Leetcode.png":"61QA5","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8lgP9":[function(require,module,exports) {
 module.exports = require("c26ae4d3a890aa4b").getBundleURL("lly8x") + "gfg.4f055657.png" + "?" + Date.now();
 
 },{"c26ae4d3a890aa4b":"lgJ39"}],"1TxVN":[function(require,module,exports) {
@@ -31213,305 +35904,11 @@ module.exports = require("13512f3de6f9fc4e").getBundleURL("lly8x") + "HackerRank
 },{"13512f3de6f9fc4e":"lgJ39"}],"61QA5":[function(require,module,exports) {
 module.exports = require("39ed7fe60bec2d8b").getBundleURL("lly8x") + "Leetcode.36c3a25f.png" + "?" + Date.now();
 
-},{"39ed7fe60bec2d8b":"lgJ39"}],"67C8t":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$660b = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"39ed7fe60bec2d8b":"lgJ39"}],"cJuRA":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$aec1 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$660b.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _profilePng = require("../assets/profile.png");
-var _profilePngDefault = parcelHelpers.interopDefault(_profilePng);
-const Intro = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "container",
-        id: "about",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "row",
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "col-sm-6 mb-3 mb-sm-0 welcome",
-                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "card",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "card-body welcome",
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                                    className: "card-title",
-                                    children: "Welcome"
-                                }, void 0, false, {
-                                    fileName: "components/Intro.js",
-                                    lineNumber: 14,
-                                    columnNumber: 9
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                    className: "card-text",
-                                    children: [
-                                        "Hi, I\u2019m Adarsh Singh, a final-year B.Tech student specializing in ",
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("b", {
-                                            children: "Information Technology"
-                                        }, void 0, false, {
-                                            fileName: "components/Intro.js",
-                                            lineNumber: 15,
-                                            columnNumber: 100
-                                        }, undefined),
-                                        " at",
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("b", {
-                                            children: " Madan Mohan Malviya University of Technology"
-                                        }, void 0, false, {
-                                            fileName: "components/Intro.js",
-                                            lineNumber: 16,
-                                            columnNumber: 10
-                                        }, undefined),
-                                        ". My passion lies in building efficient, scalable applications and solving complex technical problems. Over the years, I have developed a strong foundation in data structures and algorithms, as well as practical experience in web development, particularly using the ",
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("b", {
-                                            children: "MERN"
-                                        }, void 0, false, {
-                                            fileName: "components/Intro.js",
-                                            lineNumber: 18,
-                                            columnNumber: 87
-                                        }, undefined),
-                                        " stack (MongoDB, Express.js, React, Node.js)."
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "components/Intro.js",
-                                    lineNumber: 15,
-                                    columnNumber: 9
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "container",
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "row",
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "icon",
-                                                children: [
-                                                    " ",
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                                                            class: "fa-brands fa-linkedin"
-                                                        }, void 0, false, {
-                                                            fileName: "components/Intro.js",
-                                                            lineNumber: 21,
-                                                            columnNumber: 43
-                                                        }, undefined)
-                                                    }, void 0, false, {
-                                                        fileName: "components/Intro.js",
-                                                        lineNumber: 21,
-                                                        columnNumber: 40
-                                                    }, undefined)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "components/Intro.js",
-                                                lineNumber: 21,
-                                                columnNumber: 17
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "icon ",
-                                                children: [
-                                                    " ",
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                                                            class: "fa-brands fa-facebook"
-                                                        }, void 0, false, {
-                                                            fileName: "components/Intro.js",
-                                                            lineNumber: 22,
-                                                            columnNumber: 44
-                                                        }, undefined)
-                                                    }, void 0, false, {
-                                                        fileName: "components/Intro.js",
-                                                        lineNumber: 22,
-                                                        columnNumber: 41
-                                                    }, undefined)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "components/Intro.js",
-                                                lineNumber: 22,
-                                                columnNumber: 17
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "icon",
-                                                children: [
-                                                    " ",
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                                                            class: "fa-brands fa-twitter"
-                                                        }, void 0, false, {
-                                                            fileName: "components/Intro.js",
-                                                            lineNumber: 23,
-                                                            columnNumber: 43
-                                                        }, undefined)
-                                                    }, void 0, false, {
-                                                        fileName: "components/Intro.js",
-                                                        lineNumber: 23,
-                                                        columnNumber: 40
-                                                    }, undefined)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "components/Intro.js",
-                                                lineNumber: 23,
-                                                columnNumber: 17
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "icon ",
-                                                children: [
-                                                    " ",
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                                                            class: "fa-brands fa-github"
-                                                        }, void 0, false, {
-                                                            fileName: "components/Intro.js",
-                                                            lineNumber: 24,
-                                                            columnNumber: 44
-                                                        }, undefined)
-                                                    }, void 0, false, {
-                                                        fileName: "components/Intro.js",
-                                                        lineNumber: 24,
-                                                        columnNumber: 41
-                                                    }, undefined)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "components/Intro.js",
-                                                lineNumber: 24,
-                                                columnNumber: 17
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "icon",
-                                                children: [
-                                                    " ",
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                                                            class: "fa-solid fa-at"
-                                                        }, void 0, false, {
-                                                            fileName: "components/Intro.js",
-                                                            lineNumber: 25,
-                                                            columnNumber: 43
-                                                        }, undefined)
-                                                    }, void 0, false, {
-                                                        fileName: "components/Intro.js",
-                                                        lineNumber: 25,
-                                                        columnNumber: 40
-                                                    }, undefined)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "components/Intro.js",
-                                                lineNumber: 25,
-                                                columnNumber: 17
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "icon",
-                                                children: [
-                                                    " ",
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                                                            class: "fa-brands fa-instagram"
-                                                        }, void 0, false, {
-                                                            fileName: "components/Intro.js",
-                                                            lineNumber: 26,
-                                                            columnNumber: 43
-                                                        }, undefined)
-                                                    }, void 0, false, {
-                                                        fileName: "components/Intro.js",
-                                                        lineNumber: 26,
-                                                        columnNumber: 40
-                                                    }, undefined)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "components/Intro.js",
-                                                lineNumber: 26,
-                                                columnNumber: 17
-                                            }, undefined)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "components/Intro.js",
-                                        lineNumber: 20,
-                                        columnNumber: 14
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "components/Intro.js",
-                                    lineNumber: 19,
-                                    columnNumber: 10
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "components/Intro.js",
-                            lineNumber: 13,
-                            columnNumber: 7
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "components/Intro.js",
-                        lineNumber: 12,
-                        columnNumber: 5
-                    }, undefined)
-                }, void 0, false, {
-                    fileName: "components/Intro.js",
-                    lineNumber: 11,
-                    columnNumber: 3
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "col-sm-6",
-                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "card",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "card-body profile-img ",
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                src: (0, _profilePngDefault.default),
-                                className: " text-center row justify-content-center img-fluid"
-                            }, void 0, false, {
-                                fileName: "components/Intro.js",
-                                lineNumber: 36,
-                                columnNumber: 9
-                            }, undefined)
-                        }, void 0, false, {
-                            fileName: "components/Intro.js",
-                            lineNumber: 35,
-                            columnNumber: 7
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "components/Intro.js",
-                        lineNumber: 34,
-                        columnNumber: 5
-                    }, undefined)
-                }, void 0, false, {
-                    fileName: "components/Intro.js",
-                    lineNumber: 33,
-                    columnNumber: 3
-                }, undefined)
-            ]
-        }, void 0, true, {
-            fileName: "components/Intro.js",
-            lineNumber: 10,
-            columnNumber: 1
-        }, undefined)
-    }, void 0, false, {
-        fileName: "components/Intro.js",
-        lineNumber: 9,
-        columnNumber: 1
-    }, undefined);
-};
-_c = Intro;
-exports.default = Intro;
-var _c;
-$RefreshReg$(_c, "Intro");
-
-  $parcel$ReactRefreshHelpers$660b.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../assets/profile.png":"8JrqM","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8JrqM":[function(require,module,exports) {
-module.exports = require("31e99bc0b96e072b").getBundleURL("lly8x") + "profile.f6dbac75.png" + "?" + Date.now();
-
-},{"31e99bc0b96e072b":"lgJ39"}],"dqyiE":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$d104 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$d104.prelude(module);
+$parcel$ReactRefreshHelpers$aec1.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -31521,18 +35918,15 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 const Exp = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "card",
-        style: {
-            width: "18rem"
-        },
+        className: "flex flex-wrap m-5 p-4 justify-start bg-green-100",
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "card-body col",
+            className: "bg-yellow-500 flex-col m-4 p-4 justify-center items-center rounded-md",
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
-                    className: "card-title",
+                    className: "font-bold text-lg",
                     children: "Card title"
                 }, void 0, false, {
-                    fileName: "components/Work.js",
+                    fileName: "src/components/Work.js",
                     lineNumber: 11,
                     columnNumber: 14
                 }, undefined),
@@ -31540,7 +35934,7 @@ const Exp = ()=>{
                     className: "card-subtitle mb-2 text-body-secondary",
                     children: "Card subtitle"
                 }, void 0, false, {
-                    fileName: "components/Work.js",
+                    fileName: "src/components/Work.js",
                     lineNumber: 12,
                     columnNumber: 14
                 }, undefined),
@@ -31548,7 +35942,7 @@ const Exp = ()=>{
                     className: "card-text",
                     children: "Some quick example text to build on the card title and make up the bulk of the card's content."
                 }, void 0, false, {
-                    fileName: "components/Work.js",
+                    fileName: "src/components/Work.js",
                     lineNumber: 13,
                     columnNumber: 14
                 }, undefined),
@@ -31557,7 +35951,7 @@ const Exp = ()=>{
                     className: "card-link",
                     children: "Card link"
                 }, void 0, false, {
-                    fileName: "components/Work.js",
+                    fileName: "src/components/Work.js",
                     lineNumber: 16,
                     columnNumber: 14
                 }, undefined),
@@ -31566,18 +35960,18 @@ const Exp = ()=>{
                     className: "card-link",
                     children: "Another link"
                 }, void 0, false, {
-                    fileName: "components/Work.js",
+                    fileName: "src/components/Work.js",
                     lineNumber: 17,
                     columnNumber: 14
                 }, undefined)
             ]
         }, void 0, true, {
-            fileName: "components/Work.js",
+            fileName: "src/components/Work.js",
             lineNumber: 10,
             columnNumber: 12
         }, undefined)
     }, void 0, false, {
-        fileName: "components/Work.js",
+        fileName: "src/components/Work.js",
         lineNumber: 8,
         columnNumber: 10
     }, undefined);
@@ -31585,38 +35979,29 @@ const Exp = ()=>{
 _c = Exp;
 const Work = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "container",
+        className: "m-5 p-4 bg-orange-50",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "heading",
+                className: " font-bold  p-4 text-2xl bg-amber-200 ",
                 children: "Experience / Work"
             }, void 0, false, {
-                fileName: "components/Work.js",
+                fileName: "src/components/Work.js",
                 lineNumber: 28,
                 columnNumber: 10
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "container text-center row justify-content-center",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Exp, {}, void 0, false, {
-                        fileName: "components/Work.js",
-                        lineNumber: 30,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Exp, {}, void 0, false, {
-                        fileName: "components/Work.js",
-                        lineNumber: 31,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "components/Work.js",
-                lineNumber: 29,
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Exp, {}, void 0, false, {
+                fileName: "src/components/Work.js",
+                lineNumber: 30,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Exp, {}, void 0, false, {
+                fileName: "src/components/Work.js",
+                lineNumber: 31,
                 columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
-        fileName: "components/Work.js",
+        fileName: "src/components/Work.js",
         lineNumber: 27,
         columnNumber: 5
     }, undefined);
@@ -31627,16 +36012,16 @@ var _c, _c1;
 $RefreshReg$(_c, "Exp");
 $RefreshReg$(_c1, "Work");
 
-  $parcel$ReactRefreshHelpers$d104.postlude(module);
+  $parcel$ReactRefreshHelpers$aec1.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gIRCJ":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$c55a = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8pPOA":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$bc7c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$c55a.prelude(module);
+$parcel$ReactRefreshHelpers$bc7c.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -31646,244 +36031,237 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 const Footer = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "footer",
+        className: "bg-gray-500 flex-col items-center p-5",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "container-fluid nav justify-content-center ",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "row footer-icon",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "icon",
-                            children: [
-                                " ",
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                                        class: "fa-brands fa-linkedin"
-                                    }, void 0, false, {
-                                        fileName: "components/Footer.js",
-                                        lineNumber: 8,
-                                        columnNumber: 43
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "components/Footer.js",
-                                    lineNumber: 8,
-                                    columnNumber: 40
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "components/Footer.js",
-                            lineNumber: 8,
-                            columnNumber: 17
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "icon ",
-                            children: [
-                                " ",
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                                        class: "fa-brands fa-facebook"
-                                    }, void 0, false, {
-                                        fileName: "components/Footer.js",
-                                        lineNumber: 9,
-                                        columnNumber: 44
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "components/Footer.js",
-                                    lineNumber: 9,
-                                    columnNumber: 41
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "components/Footer.js",
-                            lineNumber: 9,
-                            columnNumber: 17
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "icon",
-                            children: [
-                                " ",
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                                        class: "fa-brands fa-twitter"
-                                    }, void 0, false, {
-                                        fileName: "components/Footer.js",
-                                        lineNumber: 10,
-                                        columnNumber: 43
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "components/Footer.js",
-                                    lineNumber: 10,
-                                    columnNumber: 40
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "components/Footer.js",
-                            lineNumber: 10,
-                            columnNumber: 17
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "icon ",
-                            children: [
-                                " ",
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                                        class: "fa-brands fa-github"
-                                    }, void 0, false, {
-                                        fileName: "components/Footer.js",
-                                        lineNumber: 11,
-                                        columnNumber: 44
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "components/Footer.js",
-                                    lineNumber: 11,
-                                    columnNumber: 41
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "components/Footer.js",
-                            lineNumber: 11,
-                            columnNumber: 17
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "icon",
-                            children: [
-                                " ",
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                                        class: "fa-brands fa-instagram"
-                                    }, void 0, false, {
-                                        fileName: "components/Footer.js",
-                                        lineNumber: 12,
-                                        columnNumber: 43
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "components/Footer.js",
-                                    lineNumber: 12,
-                                    columnNumber: 40
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "components/Footer.js",
-                            lineNumber: 12,
-                            columnNumber: 17
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "components/Footer.js",
-                    lineNumber: 7,
-                    columnNumber: 9
-                }, undefined)
-            }, void 0, false, {
-                fileName: "components/Footer.js",
-                lineNumber: 6,
-                columnNumber: 5
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: " contact",
+                className: "flex justify-center px-4 mx-4 ",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "info",
+                        className: "mx-2",
+                        children: [
+                            " ",
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
+                                    className: "fa-brands fa-linkedin"
+                                }, void 0, false, {
+                                    fileName: "src/components/Footer.js",
+                                    lineNumber: 8,
+                                    columnNumber: 43
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/components/Footer.js",
+                                lineNumber: 8,
+                                columnNumber: 40
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/Footer.js",
+                        lineNumber: 8,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "mx-2 ",
+                        children: [
+                            " ",
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
+                                    className: "fa-brands fa-facebook"
+                                }, void 0, false, {
+                                    fileName: "src/components/Footer.js",
+                                    lineNumber: 9,
+                                    columnNumber: 44
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/components/Footer.js",
+                                lineNumber: 9,
+                                columnNumber: 41
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/Footer.js",
+                        lineNumber: 9,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "mx-2",
+                        children: [
+                            " ",
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
+                                    className: "fa-brands fa-twitter"
+                                }, void 0, false, {
+                                    fileName: "src/components/Footer.js",
+                                    lineNumber: 10,
+                                    columnNumber: 43
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/components/Footer.js",
+                                lineNumber: 10,
+                                columnNumber: 40
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/Footer.js",
+                        lineNumber: 10,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "mx-2 ",
+                        children: [
+                            " ",
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
+                                    className: "fa-brands fa-github"
+                                }, void 0, false, {
+                                    fileName: "src/components/Footer.js",
+                                    lineNumber: 11,
+                                    columnNumber: 44
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/components/Footer.js",
+                                lineNumber: 11,
+                                columnNumber: 41
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/Footer.js",
+                        lineNumber: 11,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "mx-2",
+                        children: [
+                            " ",
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
+                                    className: "fa-brands fa-instagram"
+                                }, void 0, false, {
+                                    fileName: "src/components/Footer.js",
+                                    lineNumber: 12,
+                                    columnNumber: 43
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/components/Footer.js",
+                                lineNumber: 12,
+                                columnNumber: 40
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/Footer.js",
+                        lineNumber: 12,
+                        columnNumber: 17
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/Footer.js",
+                lineNumber: 7,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: " flex justify-center px-4 mx-4 my-4",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "mx-2",
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                                class: "fa-solid fa-phone "
+                                className: "fa-solid fa-phone "
                             }, void 0, false, {
-                                fileName: "components/Footer.js",
+                                fileName: "src/components/Footer.js",
                                 lineNumber: 16,
                                 columnNumber: 39
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("b", {
                                 children: " : "
                             }, void 0, false, {
-                                fileName: "components/Footer.js",
+                                fileName: "src/components/Footer.js",
                                 lineNumber: 16,
-                                columnNumber: 73
+                                columnNumber: 77
                             }, undefined),
                             "+91 6394432767"
                         ]
                     }, void 0, true, {
-                        fileName: "components/Footer.js",
+                        fileName: "src/components/Footer.js",
                         lineNumber: 16,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "info",
+                        className: "mx-2",
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                                class: "fa-solid fa-envelope "
+                                className: "fa-solid fa-envelope "
                             }, void 0, false, {
-                                fileName: "components/Footer.js",
+                                fileName: "src/components/Footer.js",
                                 lineNumber: 17,
                                 columnNumber: 39
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("b", {
                                 children: " : "
                             }, void 0, false, {
-                                fileName: "components/Footer.js",
+                                fileName: "src/components/Footer.js",
                                 lineNumber: 17,
-                                columnNumber: 76
+                                columnNumber: 80
                             }, undefined),
                             "adarsh@273013gmail.com"
                         ]
                     }, void 0, true, {
-                        fileName: "components/Footer.js",
+                        fileName: "src/components/Footer.js",
                         lineNumber: 17,
                         columnNumber: 17
                     }, undefined)
                 ]
             }, void 0, true, {
-                fileName: "components/Footer.js",
+                fileName: "src/components/Footer.js",
                 lineNumber: 15,
                 columnNumber: 14
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "copyright text-center",
+                className: "flex justify-center px-4 mx-4",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                        className: "col",
+                        className: "mx-2",
                         children: [
                             "Copyright ",
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                                class: "fa-regular fa-copyright",
+                                className: "fa-regular fa-copyright",
                                 children: " "
                             }, void 0, false, {
-                                fileName: "components/Footer.js",
+                                fileName: "src/components/Footer.js",
                                 lineNumber: 20,
-                                columnNumber: 49
+                                columnNumber: 50
                             }, undefined),
                             "2024 "
                         ]
                     }, void 0, true, {
-                        fileName: "components/Footer.js",
+                        fileName: "src/components/Footer.js",
                         lineNumber: 20,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                        className: "col",
+                        className: "mx-2",
                         children: [
                             " Designed by: ",
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("b", {
                                 children: "Adarsh Singh"
                             }, void 0, false, {
-                                fileName: "components/Footer.js",
+                                fileName: "src/components/Footer.js",
                                 lineNumber: 21,
-                                columnNumber: 53
+                                columnNumber: 54
                             }, undefined)
                         ]
                     }, void 0, true, {
-                        fileName: "components/Footer.js",
+                        fileName: "src/components/Footer.js",
                         lineNumber: 21,
                         columnNumber: 17
                     }, undefined)
                 ]
             }, void 0, true, {
-                fileName: "components/Footer.js",
+                fileName: "src/components/Footer.js",
                 lineNumber: 19,
                 columnNumber: 14
             }, undefined)
         ]
     }, void 0, true, {
-        fileName: "components/Footer.js",
+        fileName: "src/components/Footer.js",
         lineNumber: 5,
         columnNumber: 5
     }, undefined);
@@ -31893,7 +36271,1158 @@ exports.default = Footer;
 var _c;
 $RefreshReg$(_c, "Footer");
 
-  $parcel$ReactRefreshHelpers$c55a.postlude(module);
+  $parcel$ReactRefreshHelpers$bc7c.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9R1Eu":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$5b98 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$5b98.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+const About = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+        id: "about",
+        className: "bg-gray-100 py-10 px-6",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "max-w-4xl mx-auto text-center",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                    className: "text-3xl font-bold text-gray-800 mb-6",
+                    children: "About Me"
+                }, void 0, false, {
+                    fileName: "src/components/About.js",
+                    lineNumber: 8,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    className: "text-lg text-gray-600 mb-4",
+                    children: [
+                        "Hi, I'm ",
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                            className: "font-bold text-blue-500",
+                            children: "Adarsh Singh"
+                        }, void 0, false, {
+                            fileName: "src/components/About.js",
+                            lineNumber: 12,
+                            columnNumber: 19
+                        }, undefined),
+                        ", a passionate full-stack web developer and an NCC cadet. I specialize in building secure and scalable applications using the MERN stack and strive to create user-friendly digital experiences."
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/About.js",
+                    lineNumber: 11,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "text-left my-6",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                            className: "text-xl font-bold text-gray-700 mb-2",
+                            children: "Skills & Expertise"
+                        }, void 0, false, {
+                            fileName: "src/components/About.js",
+                            lineNumber: 18,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                            className: "list-disc pl-6 text-gray-600",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                    children: "Frontend: React.js, HTML, CSS, JavaScript, Bootstrap, Tailwind CSS"
+                                }, void 0, false, {
+                                    fileName: "src/components/About.js",
+                                    lineNumber: 20,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                    children: "Backend: Node.js, Express.js"
+                                }, void 0, false, {
+                                    fileName: "src/components/About.js",
+                                    lineNumber: 21,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                    children: "Database: MongoDB, Mongoose"
+                                }, void 0, false, {
+                                    fileName: "src/components/About.js",
+                                    lineNumber: 22,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                    children: "Tools: Git, VS Code, Postman"
+                                }, void 0, false, {
+                                    fileName: "src/components/About.js",
+                                    lineNumber: 23,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/About.js",
+                            lineNumber: 19,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/About.js",
+                    lineNumber: 17,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "text-left my-6",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                            className: "text-xl font-bold text-gray-700 mb-2",
+                            children: "Education"
+                        }, void 0, false, {
+                            fileName: "src/components/About.js",
+                            lineNumber: 29,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                            className: "list-disc pl-6 text-gray-600",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                    children: "B.Tech in Information Technology \u2013 Final Year (2025)"
+                                }, void 0, false, {
+                                    fileName: "src/components/About.js",
+                                    lineNumber: 31,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                    children: "Diploma in Mechanical Engineering \u2013 Passed in 2022"
+                                }, void 0, false, {
+                                    fileName: "src/components/About.js",
+                                    lineNumber: 32,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                    children: "Intermediate \u2013 Passed in (2019)"
+                                }, void 0, false, {
+                                    fileName: "src/components/About.js",
+                                    lineNumber: 33,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/About.js",
+                            lineNumber: 30,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/About.js",
+                    lineNumber: 28,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "text-left my-6",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                            className: "text-xl font-bold text-gray-700 mb-2",
+                            children: "Experience & Achievements"
+                        }, void 0, false, {
+                            fileName: "src/components/About.js",
+                            lineNumber: 39,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                            className: "list-disc pl-6 text-gray-600",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                    children: "Developed a Spotify front-end clone using Node.js, HTML, CSS, and JavaScript"
+                                }, void 0, false, {
+                                    fileName: "src/components/About.js",
+                                    lineNumber: 41,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                    children: "Active NCC cadet with strong leadership and teamwork skills"
+                                }, void 0, false, {
+                                    fileName: "src/components/About.js",
+                                    lineNumber: 42,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                    children: "Worked on building secure RESTful APIs for scalable applications"
+                                }, void 0, false, {
+                                    fileName: "src/components/About.js",
+                                    lineNumber: 43,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/About.js",
+                            lineNumber: 40,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/About.js",
+                    lineNumber: 38,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "text-left my-6",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                            className: "text-xl font-bold text-gray-700 mb-2",
+                            children: "Hobbies & Interests"
+                        }, void 0, false, {
+                            fileName: "src/components/About.js",
+                            lineNumber: 49,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            className: "text-gray-600",
+                            children: "Outside of development, I enjoy learning about emerging technologies, staying updated with industry trends, and exploring innovative solutions that can make a real-world impact."
+                        }, void 0, false, {
+                            fileName: "src/components/About.js",
+                            lineNumber: 50,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/About.js",
+                    lineNumber: 48,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    className: "text-lg text-gray-600 mt-4",
+                    children: [
+                        "I\u2019m always excited to connect with like-minded professionals and take on new challenges.",
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                            className: "font-bold text-blue-500",
+                            children: " Let\u2019s build something amazing together!"
+                        }, void 0, false, {
+                            fileName: "src/components/About.js",
+                            lineNumber: 59,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/About.js",
+                    lineNumber: 57,
+                    columnNumber: 9
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/components/About.js",
+            lineNumber: 6,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/components/About.js",
+        lineNumber: 5,
+        columnNumber: 5
+    }, undefined);
+};
+_c = About;
+exports.default = About;
+var _c;
+$RefreshReg$(_c, "About");
+
+  $parcel$ReactRefreshHelpers$5b98.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"cgAOG":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$ee46 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$ee46.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _emailjsCom = require("emailjs-com");
+var _emailjsComDefault = parcelHelpers.interopDefault(_emailjsCom);
+var _data = require("../utils/data");
+var _s = $RefreshSig$();
+const Contact = ()=>{
+    _s();
+    const [formData, setFormData] = (0, _react.useState)({
+        name: "",
+        email: "",
+        message: ""
+    });
+    const [loading, setLoading] = (0, _react.useState)(false);
+    const [error, setError] = (0, _react.useState)("");
+    const handleChange = (e)=>{
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value
+        });
+    };
+    const handleSubmit = (e)=>{
+        e.preventDefault();
+        setLoading(true);
+        setError("");
+        // Log formData to check if it's correct
+        console.log("Form Data:", formData);
+        (0, _emailjsComDefault.default).send("service_7fehnhr", "template_jgtxx1e", formData, "a4wurX80jdpsFsY5U" // Your EmailJS user ID
+        ).then((response)=>{
+            console.log("Success:", response);
+            alert("Message sent successfully!");
+            setLoading(false);
+        }, (error)=>{
+            console.error("Failed to send message:", error);
+            setLoading(false);
+            setError("Failed to send message. Please try again later.");
+        });
+    };
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+        id: "contact",
+        className: "bg-gray-100 py-10 px-6 my-14",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "max-w-4xl mx-auto text-center",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                    className: "text-3xl font-bold text-gray-800 mb-6",
+                    children: "Contact Me"
+                }, void 0, false, {
+                    fileName: "src/components/Contact.js",
+                    lineNumber: 50,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
+                    className: "space-y-4",
+                    onSubmit: handleSubmit,
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                    className: "block text-gray-700 font-bold mb-2",
+                                    htmlFor: "name",
+                                    children: "Name"
+                                }, void 0, false, {
+                                    fileName: "src/components/Contact.js",
+                                    lineNumber: 54,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                    type: "text",
+                                    id: "name",
+                                    name: "name",
+                                    value: formData.name,
+                                    onChange: handleChange,
+                                    className: "w-full border border-gray-300 rounded px-3 py-2 text-gray-700",
+                                    placeholder: "Your Name",
+                                    required: true
+                                }, void 0, false, {
+                                    fileName: "src/components/Contact.js",
+                                    lineNumber: 55,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Contact.js",
+                            lineNumber: 53,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                    className: "block text-gray-700 font-bold mb-2",
+                                    htmlFor: "email",
+                                    children: "Email"
+                                }, void 0, false, {
+                                    fileName: "src/components/Contact.js",
+                                    lineNumber: 67,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                    type: "email",
+                                    id: "email",
+                                    name: "email",
+                                    value: formData.email,
+                                    onChange: handleChange,
+                                    className: "w-full border border-gray-300 rounded px-3 py-2 text-gray-700",
+                                    placeholder: "Your Email",
+                                    required: true
+                                }, void 0, false, {
+                                    fileName: "src/components/Contact.js",
+                                    lineNumber: 68,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Contact.js",
+                            lineNumber: 66,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                    className: "block text-gray-700 font-bold mb-2",
+                                    htmlFor: "message",
+                                    children: "Message"
+                                }, void 0, false, {
+                                    fileName: "src/components/Contact.js",
+                                    lineNumber: 80,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("textarea", {
+                                    id: "message",
+                                    name: "message",
+                                    rows: "4",
+                                    value: formData.message,
+                                    onChange: handleChange,
+                                    className: "w-full border border-gray-300 rounded px-3 py-2 text-gray-700",
+                                    placeholder: "Your Message",
+                                    required: true
+                                }, void 0, false, {
+                                    fileName: "src/components/Contact.js",
+                                    lineNumber: 81,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Contact.js",
+                            lineNumber: 79,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                            type: "submit",
+                            className: "bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600",
+                            disabled: loading,
+                            children: loading ? "Sending..." : "Send Message"
+                        }, void 0, false, {
+                            fileName: "src/components/Contact.js",
+                            lineNumber: 92,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/Contact.js",
+                    lineNumber: 52,
+                    columnNumber: 9
+                }, undefined),
+                error && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "mt-4 text-red-500",
+                    children: error
+                }, void 0, false, {
+                    fileName: "src/components/Contact.js",
+                    lineNumber: 103,
+                    columnNumber: 11
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "mt-10 ",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                            className: "text-2xl font-bold text-gray-800 mb-4",
+                            children: "Other Ways to Connect"
+                        }, void 0, false, {
+                            fileName: "src/components/Contact.js",
+                            lineNumber: 108,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "flex justify-center space-x-4",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                    href: (0, _data.Fb_URL),
+                                    target: "_blank",
+                                    rel: "noopener noreferrer",
+                                    className: "text-blue-500 hover:underline",
+                                    children: "Facebook"
+                                }, void 0, false, {
+                                    fileName: "src/components/Contact.js",
+                                    lineNumber: 110,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                    href: (0, _data.Insta_URL),
+                                    target: "_blank",
+                                    rel: "noopener noreferrer",
+                                    className: "text-pink-500 hover:underline",
+                                    children: "Instagram"
+                                }, void 0, false, {
+                                    fileName: "src/components/Contact.js",
+                                    lineNumber: 111,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                    href: (0, _data.GitHub_URL),
+                                    target: "_blank",
+                                    rel: "noopener noreferrer",
+                                    className: "text-gray-700 hover:underline",
+                                    children: "GitHub"
+                                }, void 0, false, {
+                                    fileName: "src/components/Contact.js",
+                                    lineNumber: 112,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                    href: `mailto:${(0, _data.gmail)}`,
+                                    className: "text-red-500 hover:underline",
+                                    children: "Gmail"
+                                }, void 0, false, {
+                                    fileName: "src/components/Contact.js",
+                                    lineNumber: 113,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                    href: `https://wa.me/${(0, _data.whatsapp)}`,
+                                    target: "_blank",
+                                    rel: "noopener noreferrer",
+                                    className: "text-green-500 hover:underline",
+                                    children: "WhatsApp"
+                                }, void 0, false, {
+                                    fileName: "src/components/Contact.js",
+                                    lineNumber: 114,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                    href: (0, _data.twitter_URL),
+                                    target: "_blank",
+                                    rel: "noopener noreferrer",
+                                    className: "text-blue-400 hover:underline",
+                                    children: "Twitter"
+                                }, void 0, false, {
+                                    fileName: "src/components/Contact.js",
+                                    lineNumber: 115,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                    href: (0, _data.LinkedIn_URL),
+                                    target: "_blank",
+                                    rel: "noopener noreferrer",
+                                    className: "text-blue-600 hover:underline",
+                                    children: "LinkedIn"
+                                }, void 0, false, {
+                                    fileName: "src/components/Contact.js",
+                                    lineNumber: 116,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Contact.js",
+                            lineNumber: 109,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/Contact.js",
+                    lineNumber: 107,
+                    columnNumber: 9
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/components/Contact.js",
+            lineNumber: 49,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/components/Contact.js",
+        lineNumber: 48,
+        columnNumber: 5
+    }, undefined);
+};
+_s(Contact, "FIhlY5MxBkKWpiaQpr2j+Sp8jFw=");
+_c = Contact;
+exports.default = Contact;
+var _c;
+$RefreshReg$(_c, "Contact");
+
+  $parcel$ReactRefreshHelpers$ee46.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../utils/data":"j8lWA","emailjs-com":"18oDj"}],"18oDj":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "init", ()=>(0, _init.init));
+parcelHelpers.export(exports, "send", ()=>(0, _send.send));
+parcelHelpers.export(exports, "sendForm", ()=>(0, _sendForm.sendForm));
+var _init = require("./methods/init/init");
+var _send = require("./methods/send/send");
+var _sendForm = require("./methods/sendForm/sendForm");
+exports.default = {
+    init: (0, _init.init),
+    send: (0, _send.send),
+    sendForm: (0, _sendForm.sendForm)
+};
+
+},{"./methods/init/init":"67aa8","./methods/send/send":"8d53v","./methods/sendForm/sendForm":"5YW33","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"67aa8":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "init", ()=>init);
+var _store = require("../../store/store");
+const init = (userID, origin = "https://api.emailjs.com")=>{
+    (0, _store.store)._userID = userID;
+    (0, _store.store)._origin = origin;
+};
+
+},{"../../store/store":"bpIqO","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"bpIqO":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "store", ()=>store);
+const store = {
+    _origin: "https://api.emailjs.com"
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8d53v":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "send", ()=>send);
+var _store = require("../../store/store");
+var _validateParams = require("../../utils/validateParams");
+var _sendPost = require("../../api/sendPost");
+const send = (serviceID, templateID, templatePrams, userID)=>{
+    const uID = userID || (0, _store.store)._userID;
+    (0, _validateParams.validateParams)(uID, serviceID, templateID);
+    const params = {
+        lib_version: "3.2.0",
+        user_id: uID,
+        service_id: serviceID,
+        template_id: templateID,
+        template_params: templatePrams
+    };
+    return (0, _sendPost.sendPost)("/api/v1.0/email/send", JSON.stringify(params), {
+        "Content-type": "application/json"
+    });
+};
+
+},{"../../store/store":"bpIqO","../../utils/validateParams":"l47ah","../../api/sendPost":"etqkd","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"l47ah":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "validateParams", ()=>validateParams);
+const validateParams = (userID, serviceID, templateID)=>{
+    if (!userID) throw "The user ID is required. Visit https://dashboard.emailjs.com/admin/integration";
+    if (!serviceID) throw "The service ID is required. Visit https://dashboard.emailjs.com/admin";
+    if (!templateID) throw "The template ID is required. Visit https://dashboard.emailjs.com/admin/templates";
+    return true;
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"etqkd":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "sendPost", ()=>sendPost);
+var _emailJSResponseStatus = require("../models/EmailJSResponseStatus");
+var _store = require("../store/store");
+const sendPost = (url, data, headers = {})=>{
+    return new Promise((resolve, reject)=>{
+        const xhr = new XMLHttpRequest();
+        xhr.addEventListener("load", ({ target })=>{
+            const responseStatus = new (0, _emailJSResponseStatus.EmailJSResponseStatus)(target);
+            if (responseStatus.status === 200 || responseStatus.text === "OK") resolve(responseStatus);
+            else reject(responseStatus);
+        });
+        xhr.addEventListener("error", ({ target })=>{
+            reject(new (0, _emailJSResponseStatus.EmailJSResponseStatus)(target));
+        });
+        xhr.open("POST", (0, _store.store)._origin + url, true);
+        Object.keys(headers).forEach((key)=>{
+            xhr.setRequestHeader(key, headers[key]);
+        });
+        xhr.send(data);
+    });
+};
+
+},{"../models/EmailJSResponseStatus":"7E7PA","../store/store":"bpIqO","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"7E7PA":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "EmailJSResponseStatus", ()=>EmailJSResponseStatus);
+class EmailJSResponseStatus {
+    constructor(httpResponse){
+        this.status = httpResponse.status;
+        this.text = httpResponse.responseText;
+    }
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"5YW33":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "sendForm", ()=>sendForm);
+var _store = require("../../store/store");
+var _validateParams = require("../../utils/validateParams");
+var _sendPost = require("../../api/sendPost");
+const findHTMLForm = (form)=>{
+    let currentForm;
+    if (typeof form === "string") currentForm = document.querySelector(form);
+    else currentForm = form;
+    if (!currentForm || currentForm.nodeName !== "FORM") throw "The 3rd parameter is expected to be the HTML form element or the style selector of form";
+    return currentForm;
+};
+const sendForm = (serviceID, templateID, form, userID)=>{
+    const uID = userID || (0, _store.store)._userID;
+    const currentForm = findHTMLForm(form);
+    (0, _validateParams.validateParams)(uID, serviceID, templateID);
+    const formData = new FormData(currentForm);
+    formData.append("lib_version", "3.2.0");
+    formData.append("service_id", serviceID);
+    formData.append("template_id", templateID);
+    formData.append("user_id", uID);
+    return (0, _sendPost.sendPost)("/api/v1.0/email/send-form", formData);
+};
+
+},{"../../store/store":"bpIqO","../../utils/validateParams":"l47ah","../../api/sendPost":"etqkd","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"kvula":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$0ba4 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$0ba4.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+function Error() {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: "Error"
+    }, void 0, false, {
+        fileName: "src/components/Error.js",
+        lineNumber: 5,
+        columnNumber: 5
+    }, this);
+}
+_c = Error;
+exports.default = Error;
+var _c;
+$RefreshReg$(_c, "Error");
+
+  $parcel$ReactRefreshHelpers$0ba4.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"7uU3x":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$4e12 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$4e12.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _data = require("../utils/data");
+var _s = $RefreshSig$();
+function CodingProfile() {
+    _s();
+    const [gfgData, setgfgData] = (0, _react.useState)(null);
+    (0, _react.useEffect)(()=>{
+        fetchData();
+    }, []);
+    const fetchData = async ()=>{
+        const response = await fetch((0, _data.GFG_URL));
+        const json = await response.json();
+        console.log(json);
+        setgfgData(json?.pageProps);
+    };
+    console.log(gfgData);
+    const userData = gfgData?.userInfo;
+    const contestData = gfgData?.contestData;
+    console.log(userData);
+    console.log(contestData);
+    if (gfgData === null) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+        className: "font-bold text-4xl items-center justify-center",
+        children: "No Data Found"
+    }, void 0, false, {
+        fileName: "src/components/CodingProfile.js",
+        lineNumber: 20,
+        columnNumber: 12
+    }, this);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "bg-orange-100 m-4 p-4 ",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    className: "font-bold text-2xl m-4",
+                    children: "GFG Profile Data"
+                }, void 0, false, {
+                    fileName: "src/components/CodingProfile.js",
+                    lineNumber: 25,
+                    columnNumber: 12
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "m-4 p-4 bg-pink-200",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            className: "font-bold text-lg",
+                            children: userData?.name
+                        }, void 0, false, {
+                            fileName: "src/components/CodingProfile.js",
+                            lineNumber: 27,
+                            columnNumber: 15
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            children: [
+                                " Institute Rank : ",
+                                userData?.institute_rank
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/CodingProfile.js",
+                            lineNumber: 28,
+                            columnNumber: 15
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            children: [
+                                "Coding Score: ",
+                                userData?.score
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/CodingProfile.js",
+                            lineNumber: 29,
+                            columnNumber: 15
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            children: [
+                                "Total Promlem solved: ",
+                                userData?.total_problem_solved
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/CodingProfile.js",
+                            lineNumber: 30,
+                            columnNumber: 15
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/CodingProfile.js",
+                    lineNumber: 26,
+                    columnNumber: 12
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "m-4 p-4 bg-pink-200",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            className: "font-bold text-lg",
+                            children: "Contest Info"
+                        }, void 0, false, {
+                            fileName: "src/components/CodingProfile.js",
+                            lineNumber: 35,
+                            columnNumber: 15
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            children: [
+                                "Global rank ",
+                                contestData?.user_global_rank,
+                                " out of ",
+                                contestData?.total_users
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/CodingProfile.js",
+                            lineNumber: 36,
+                            columnNumber: 15
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            children: [
+                                " No of Star : ",
+                                contestData?.user_stars,
+                                " "
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/CodingProfile.js",
+                            lineNumber: 37,
+                            columnNumber: 15
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            children: [
+                                " Rating :",
+                                contestData?.user_contest_data?.current_ratings
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/CodingProfile.js",
+                            lineNumber: 38,
+                            columnNumber: 15
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/CodingProfile.js",
+                    lineNumber: 34,
+                    columnNumber: 12
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "src/components/CodingProfile.js",
+            lineNumber: 24,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "src/components/CodingProfile.js",
+        lineNumber: 23,
+        columnNumber: 5
+    }, this);
+}
+_s(CodingProfile, "Ufe2/e2jK5Zn29OXmD7LXqmR6ew=");
+_c = CodingProfile;
+exports.default = CodingProfile;
+var _c;
+$RefreshReg$(_c, "CodingProfile");
+
+  $parcel$ReactRefreshHelpers$4e12.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../utils/data":"j8lWA","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"jGIyM":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$b173 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$b173.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _projectCard = require("./ProjectCard");
+var _projectCardDefault = parcelHelpers.interopDefault(_projectCard);
+var _data = require("../utils/data");
+const ProjectPage = ()=>{
+    // console.log("this Project page")
+    // console.log(Todo)
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "p-5",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                className: " text-5xl font-extrabold ... bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500",
+                children: "My Projects"
+            }, void 0, false, {
+                fileName: "src/components/ProjectPage.js",
+                lineNumber: 9,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                id: "todo",
+                className: "mt-10",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _projectCardDefault.default), {
+                    data: (0, _data.Todo)
+                }, void 0, false, {
+                    fileName: "src/components/ProjectPage.js",
+                    lineNumber: 13,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/ProjectPage.js",
+                lineNumber: 12,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                id: "simon",
+                className: "mt-10",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _projectCardDefault.default), {
+                    data: (0, _data.SimonGame)
+                }, void 0, false, {
+                    fileName: "src/components/ProjectPage.js",
+                    lineNumber: 18,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/ProjectPage.js",
+                lineNumber: 17,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/ProjectPage.js",
+        lineNumber: 8,
+        columnNumber: 5
+    }, undefined);
+};
+_c = ProjectPage;
+exports.default = ProjectPage;
+var _c;
+$RefreshReg$(_c, "ProjectPage");
+
+  $parcel$ReactRefreshHelpers$b173.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./ProjectCard":"hPo2v","../utils/data":"j8lWA","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hPo2v":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$b90d = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$b90d.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+function ProjectCard({ data }) {
+    console.log("--------------------------------------------------------------------");
+    console.log(data);
+    const { projectDetails, FrontendTech, BackendTech, DatabaseTech, ToolsAndUtilities, DeploymentTech, DevelopmentAndBuildTools, OptionalEnhancements } = data;
+    console.log(FrontendTech);
+    console.log("--------------------------------------------------------------------");
+    // Function to render tech stack dynamically
+    const renderTechStack = (techArray, title)=>{
+        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "m-2 p-2 bg-green-100",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                    className: "font-bold text-xl",
+                    children: title
+                }, void 0, false, {
+                    fileName: "src/components/ProjectCard.js",
+                    lineNumber: 23,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                    className: "flex m-2 bg-gray-100 px-6 list-disc flex-wrap",
+                    children: techArray.map((item, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            className: "mx-6",
+                            children: item
+                        }, index, false, {
+                            fileName: "src/components/ProjectCard.js",
+                            lineNumber: 26,
+                            columnNumber: 13
+                        }, this))
+                }, void 0, false, {
+                    fileName: "src/components/ProjectCard.js",
+                    lineNumber: 24,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "src/components/ProjectCard.js",
+            lineNumber: 22,
+            columnNumber: 7
+        }, this);
+    };
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "bg-yellow-300 p-2",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                id: "title",
+                className: "m-2 flex items-center bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "bg-white flex m-2 p-2 w-12 h-12",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            src: projectDetails.ImgLink,
+                            className: "bg-transparent",
+                            alt: "Project Thumbnail"
+                        }, void 0, false, {
+                            fileName: "src/components/ProjectCard.js",
+                            lineNumber: 38,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "src/components/ProjectCard.js",
+                        lineNumber: 37,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                        className: "font-bold text-2xl",
+                        children: projectDetails.title
+                    }, void 0, false, {
+                        fileName: "src/components/ProjectCard.js",
+                        lineNumber: 40,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/ProjectCard.js",
+                lineNumber: 36,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                id: "Links",
+                className: "flex bg-slate-300 m-2",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                        className: "m-2 p-2 bg-green-100",
+                        href: projectDetails.LiveLink,
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
+                                className: "fa-solid fa-link mr-1"
+                            }, void 0, false, {
+                                fileName: "src/components/ProjectCard.js",
+                                lineNumber: 45,
+                                columnNumber: 11
+                            }, this),
+                            "Live project Link"
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/ProjectCard.js",
+                        lineNumber: 44,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                        className: "m-2 p-2 bg-green-100",
+                        href: projectDetails.GitHubLink,
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
+                                className: "fa-brands fa-github mr-1"
+                            }, void 0, false, {
+                                fileName: "src/components/ProjectCard.js",
+                                lineNumber: 48,
+                                columnNumber: 11
+                            }, this),
+                            " Github Repo link"
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/ProjectCard.js",
+                        lineNumber: 47,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/ProjectCard.js",
+                lineNumber: 43,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                id: "tech-used",
+                className: "bg-slate-300 m-2 p-2",
+                children: [
+                    FrontendTech && renderTechStack(FrontendTech, "Frontend Tech"),
+                    BackendTech && renderTechStack(BackendTech, "Backend Tech"),
+                    DatabaseTech && renderTechStack(DatabaseTech, "Database Tech"),
+                    ToolsAndUtilities && renderTechStack(ToolsAndUtilities, "Tools and Utilities"),
+                    DeploymentTech && renderTechStack(DeploymentTech, "Deployment Tech"),
+                    DevelopmentAndBuildTools && renderTechStack(DevelopmentAndBuildTools, "Development and Build Tools"),
+                    OptionalEnhancements && renderTechStack(OptionalEnhancements, "Optional Enhancements")
+                ]
+            }, void 0, true, {
+                fileName: "src/components/ProjectCard.js",
+                lineNumber: 52,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                id: "Description",
+                className: "bg-slate-300 m-2 p-2",
+                children: projectDetails.description
+            }, void 0, false, {
+                fileName: "src/components/ProjectCard.js",
+                lineNumber: 64,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/ProjectCard.js",
+        lineNumber: 34,
+        columnNumber: 5
+    }, this);
+}
+_c = ProjectCard;
+exports.default = ProjectCard;
+var _c;
+$RefreshReg$(_c, "ProjectCard");
+
+  $parcel$ReactRefreshHelpers$b90d.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;

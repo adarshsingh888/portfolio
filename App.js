@@ -1,28 +1,53 @@
 import React from 'react';
+import './index.css'
 import ReactDOM from 'react-dom/client';
-import 'bootstrap/dist/css/bootstrap.min.css';  // Bootstrap CSS
-import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // Bootstrap JS (with Popper.js bundled)
-import Navbar from './components/Navbar.js';
-import Intro from './components/Intro.js';
-import Skills from './components/Skills.js';
-import Projects from './components/Projects.js';
-import Profile from './components/Profile.js';
-import Work from './components/Work.js';
-import Footer from './components/Footer.js';
+import Navbar from './src/components/Navbar.js';
+import Body from './src/components/Body.js';
+import Footer from './src/components/Footer.js';
+import { createBrowserRouter,Outlet,RouterProvider } from 'react-router-dom';
+import About from './src/components/About.js';
+import Contact from './src/components/Contact.js';
+import Error from './src/components/Error.js';
+import CodingProfile from './src/components/CodingProfile.js';
+import ProjectPage from './src/components/ProjectPage.js';
 
 const App = () => {
   return (
     <div className=''>
       <Navbar />
-      <Intro/>
-      <Skills/>
-      <Projects/>
-      <Profile/>
-      <Work/>
+      <Outlet/>
       <Footer/>
     </div>
   );
 }
+const router=createBrowserRouter([{
+  path:"/",
+  element:<App/>,
+  children:[
+    {
+      path:'/',
+      element:<Body />
+    },
+    {
+      path:'/about',
+      element:<About />
+    },
+    {
+      path:'/contact',
+      element:<Contact />
+    },
+    {
+      path:'/codingprofile',
+      element:<CodingProfile/>
+    },
+    {
+      path:'/projectpage',
+      element:<ProjectPage/>
+    }
+  ],
+  errorElement:<Error/>
+}])
+
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<App />);
+root.render(<RouterProvider router={router}/>);
