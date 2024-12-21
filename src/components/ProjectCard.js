@@ -19,9 +19,9 @@ function ProjectCard({ data }) {
   // Function to render tech stack dynamically
   const renderTechStack = (techArray, title) => {
     return (
-      <div className='m-2 p-2 bg-green-100'>
+      <div className='m-2 p-2 '>
         <h4 className='font-bold text-xl'>{title}</h4>
-        <ul className='flex m-2 bg-gray-100 px-6 list-disc flex-wrap'>
+        <ul className='flex m-2 px-6 list-disc flex-wrap'>
           {techArray.map((item, index) => (
             <li key={index} className='mx-6'>{item}</li>
           ))}
@@ -31,25 +31,25 @@ function ProjectCard({ data }) {
   };
 
   return (
-    <div className='bg-yellow-300 p-2'>
+    <div className=''>
         
-      <div id='title' className='m-2 flex items-center bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%'>
-        <div className='bg-white flex m-2 p-2 w-12 h-12'>
+      <div id='title' className='m-2 flex items-center bg-amber-100'>
+        <div className=' flex m-2 p-2 w-12 h-12'>
           <img src={projectDetails.ImgLink} className='bg-transparent' alt="Project Thumbnail"/>
         </div>
         <h3 className='font-bold text-2xl'>{projectDetails.title}</h3>
       </div>
       
-      <div id='Links' className='flex bg-slate-300 m-2'>
-        <a className='m-2 p-2 bg-green-100' href={projectDetails.LiveLink}>
+      <div id='Links' className='flex  m-2'>
+        <a className='m-2 p-2 bg-green-100 rounded-lg' href={projectDetails.LiveLink}>
           <i className="fa-solid fa-link mr-1"></i>Live project Link
         </a>
-        <a className='m-2 p-2 bg-green-100' href={projectDetails.GitHubLink}>
+        <a className='m-2 p-2 bg-green-100 rounded-lg' href={projectDetails.GitHubLink}>
           <i className="fa-brands fa-github mr-1"></i> Github Repo link
         </a>
       </div>
 
-      <div id='tech-used' className='bg-slate-300 m-2 p-2'>
+      <div id='tech-used' className='m-2 p-2'>
         
         {FrontendTech && renderTechStack(FrontendTech, 'Frontend Tech')}
         {BackendTech && renderTechStack(BackendTech, 'Backend Tech')}
@@ -61,7 +61,7 @@ function ProjectCard({ data }) {
         
       </div>
       
-      <div id='Description' className='bg-slate-300 m-2 p-2'>
+      <div id='Description' className=' m-2 p-2'>
         {projectDetails.description}
       </div>
     </div>

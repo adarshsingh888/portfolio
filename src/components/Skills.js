@@ -39,9 +39,9 @@ const skills = [
 export const Skill_List = () => {
   return (
     <div className="">
-      <div className="flex flex-wrap m-5 p-4 justify-start bg-green-100 ">
+      <div className="flex flex-wrap m-5 p-4 justify-start ">
         {skills.map((skill, index) => (
-             <div className="bg-yellow-500 flex m-4 p-4 justify-center items-center rounded-md"  key={index}>
+             <div className=" flex m-2 p-2 justify-center items-center rounded-md"  key={index}>
              <img src={skill.imageSrc} className="w-5 h-5 mx-1" alt={skill.title} />
              <div className="card-body">
                  <h5 className="mx-1">{skill.title}</h5>
@@ -55,8 +55,8 @@ export const Skill_List = () => {
 
 const Skills = () => {
   return (
-    <div className="m-5 p-4 bg-orange-50 ">
-      <div className="font-bold  p-4 text-2xl bg-amber-200"><p>Skills</p></div>
+    <div className="m-5 p-4">
+      <div className="font-bold  p-4 text-2xl bg-amber-100"><p>Skills</p></div>
       <Skill_List />
       <hr></hr>
     </div>

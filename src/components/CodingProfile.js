@@ -21,9 +21,9 @@ function CodingProfile() {
   }
   return (
     <div>
-      <div className='bg-orange-100 m-4 p-4 '>
+      <div className=' m-4 p-4 bg-slate-50 '>
            <p className='font-bold text-2xl m-4'>GFG Profile Data</p>
-           <div className='m-4 p-4 bg-pink-200'>
+           <div className='m-4 p-4 '>
               <p className='font-bold text-lg'>{userData?.name}</p>
               <p> Institute Rank : {userData?.institute_rank}</p>
               <p>Coding Score: {userData?.score}</p>
@@ -31,7 +31,7 @@ function CodingProfile() {
 
            </div>
 
-           <div className='m-4 p-4 bg-pink-200'>
+           <div className='m-4 p-4 b'>
               <p className='font-bold text-lg'>Contest Info</p>
               <p>Global rank {contestData?.user_global_rank} out of {contestData?.total_users}</p>
               <p> No of Star : {contestData?.user_stars} </p>

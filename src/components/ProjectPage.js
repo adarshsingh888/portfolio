@@ -6,7 +6,9 @@ const ProjectPage = () => {
    // console.log(Todo)
   return (
     <div className="p-5">
-      <h1 className=" text-5xl font-extrabold ... bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">My Projects</h1>
+      <h1 className=" text-5xl font-extrabold ... bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
+        Projects
+      </h1>
       
       {/* Section for TODO List */}
       <div id="todo" className="mt-10">

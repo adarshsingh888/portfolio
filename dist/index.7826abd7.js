@@ -34967,10 +34967,10 @@ var _profilePngDefault = parcelHelpers.interopDefault(_profilePng);
 var _data = require("../utils/data");
 const Intro = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "flex  justify-between m-5 bg-gray-200",
+        className: "flex  justify-between m-5",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "m-5 p-4 bg-orange-50 w-1/2",
+                className: "m-5 p-4 w-1/2",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                         className: "font-bold text-4xl",
@@ -35434,9 +35434,9 @@ const Skill_List = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "",
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "flex flex-wrap m-5 p-4 justify-start bg-green-100 ",
+            className: "flex flex-wrap m-5 p-4 justify-start ",
             children: skills.map((skill, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "bg-yellow-500 flex m-4 p-4 justify-center items-center rounded-md",
+                    className: " flex m-2 p-2 justify-center items-center rounded-md",
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                             src: skill.imageSrc,
@@ -35482,10 +35482,10 @@ const Skill_List = ()=>{
 _c = Skill_List;
 const Skills = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "m-5 p-4 bg-orange-50 ",
+        className: "m-5 p-4",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "font-bold  p-4 text-2xl bg-amber-200",
+                className: "font-bold  p-4 text-2xl bg-amber-100",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                     children: "Skills"
                 }, void 0, false, {
@@ -35642,10 +35642,10 @@ var _todoPngDefault = parcelHelpers.interopDefault(_todoPng);
 var _reactRouterDom = require("react-router-dom");
 const Projects = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "m-5 p-4 bg-orange-50",
+        className: "m-5 p-4",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "font-bold  p-4 text-2xl bg-amber-200",
+                className: "font-bold  p-4 text-2xl bg-amber-100",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                         to: "/projectpage",
@@ -35663,11 +35663,11 @@ const Projects = ()=>{
                 columnNumber: 10
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "flex flex-wrap m-5 p-4 justify-start bg-green-100",
+                className: "flex flex-wrap m-5 p-4 justify-start",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                         to: "/projectpage#simon",
-                        className: " bg-yellow-500 flex m-4 p-4 justify-center items-center rounded-md",
+                        className: " flex m-4 p-4 justify-center items-center rounded-md",
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cardsJsDefault.default), {
                             imageSrc: (0, _simonPngDefault.default),
                             title: "Simon Game Play"
@@ -35683,7 +35683,7 @@ const Projects = ()=>{
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                         to: "/projectpage#todo",
-                        className: " bg-yellow-500 flex m-4 p-4 justify-center items-center rounded-md",
+                        className: "  flex m-4 p-4 justify-center items-center rounded-md",
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cardsJsDefault.default), {
                             imageSrc: (0, _todoPngDefault.default),
                             title: "TODO List"
@@ -35808,10 +35808,10 @@ var _leetcodePng = require("../../assets/Profiles/Leetcode.png");
 var _leetcodePngDefault = parcelHelpers.interopDefault(_leetcodePng);
 const Profile = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "m-5 p-4 bg-orange-50",
+        className: "m-5 p-4 ",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "font-bold  p-4 text-2xl bg-amber-200",
+                className: "font-bold  p-4 text-2xl bg-amber-100",
                 children: "Profiles"
             }, void 0, false, {
                 fileName: "src/components/Profile.js",
@@ -35819,11 +35819,11 @@ const Profile = ()=>{
                 columnNumber: 11
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "flex flex-wrap m-5 p-4 justify-start bg-green-100",
+                className: "flex flex-wrap m-5 p-4 justify-start",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                         href: "https://www.geeksforgeeks.org/user/adarshsingh1234/",
-                        className: "  bg-yellow-500 flex m-4 p-4 justify-center items-center rounded-md ",
+                        className: "  flex m-4 p-4 justify-center items-center rounded-md ",
                         children: [
                             " ",
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cardsDefault.default), {
@@ -35832,7 +35832,7 @@ const Profile = ()=>{
                             }, void 0, false, {
                                 fileName: "src/components/Profile.js",
                                 lineNumber: 14,
-                                columnNumber: 155
+                                columnNumber: 141
                             }, undefined)
                         ]
                     }, void 0, true, {
@@ -35842,14 +35842,14 @@ const Profile = ()=>{
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                         href: "https://www.hackerrank.com/profile/adarsh273013",
-                        className: "  bg-yellow-500 flex m-4 p-4 justify-center items-center rounded-md ",
+                        className: "  flex m-4 p-4 justify-center items-center rounded-md ",
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cardsDefault.default), {
                             imageSrc: (0, _hackerRankPngDefault.default),
                             title: "HackerRank"
                         }, void 0, false, {
                             fileName: "src/components/Profile.js",
                             lineNumber: 15,
-                            columnNumber: 150
+                            columnNumber: 136
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/Profile.js",
@@ -35858,14 +35858,14 @@ const Profile = ()=>{
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                         href: "https://leetcode.com/u/adarsh639443/",
-                        className: "  bg-yellow-500 flex m-4 p-4 justify-center items-center rounded-md ",
+                        className: "   flex m-4 p-4 justify-center items-center rounded-md ",
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cardsDefault.default), {
                             imageSrc: (0, _leetcodePngDefault.default),
                             title: "LeetCode"
                         }, void 0, false, {
                             fileName: "src/components/Profile.js",
                             lineNumber: 16,
-                            columnNumber: 139
+                            columnNumber: 126
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/Profile.js",
@@ -37048,7 +37048,7 @@ function CodingProfile() {
     }, this);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "bg-orange-100 m-4 p-4 ",
+            className: " m-4 p-4 bg-slate-50 ",
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                     className: "font-bold text-2xl m-4",
@@ -37059,7 +37059,7 @@ function CodingProfile() {
                     columnNumber: 12
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "m-4 p-4 bg-pink-200",
+                    className: "m-4 p-4 ",
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                             className: "font-bold text-lg",
@@ -37106,7 +37106,7 @@ function CodingProfile() {
                     columnNumber: 12
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "m-4 p-4 bg-pink-200",
+                    className: "m-4 p-4 b",
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                             className: "font-bold text-lg",
@@ -37201,7 +37201,7 @@ const ProjectPage = ()=>{
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                 className: " text-5xl font-extrabold ... bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500",
-                children: "My Projects"
+                children: "Projects"
             }, void 0, false, {
                 fileName: "src/components/ProjectPage.js",
                 lineNumber: 9,
@@ -37214,12 +37214,12 @@ const ProjectPage = ()=>{
                     data: (0, _data.Todo)
                 }, void 0, false, {
                     fileName: "src/components/ProjectPage.js",
-                    lineNumber: 13,
+                    lineNumber: 15,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/ProjectPage.js",
-                lineNumber: 12,
+                lineNumber: 14,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -37229,12 +37229,12 @@ const ProjectPage = ()=>{
                     data: (0, _data.SimonGame)
                 }, void 0, false, {
                     fileName: "src/components/ProjectPage.js",
-                    lineNumber: 18,
+                    lineNumber: 20,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/ProjectPage.js",
-                lineNumber: 17,
+                lineNumber: 19,
                 columnNumber: 7
             }, undefined)
         ]
@@ -37275,7 +37275,7 @@ function ProjectCard({ data }) {
     // Function to render tech stack dynamically
     const renderTechStack = (techArray, title)=>{
         return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "m-2 p-2 bg-green-100",
+            className: "m-2 p-2 ",
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
                     className: "font-bold text-xl",
@@ -37286,7 +37286,7 @@ function ProjectCard({ data }) {
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-                    className: "flex m-2 bg-gray-100 px-6 list-disc flex-wrap",
+                    className: "flex m-2 px-6 list-disc flex-wrap",
                     children: techArray.map((item, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             className: "mx-6",
                             children: item
@@ -37308,14 +37308,14 @@ function ProjectCard({ data }) {
         }, this);
     };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "bg-yellow-300 p-2",
+        className: "",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 id: "title",
-                className: "m-2 flex items-center bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%",
+                className: "m-2 flex items-center bg-amber-100",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "bg-white flex m-2 p-2 w-12 h-12",
+                        className: " flex m-2 p-2 w-12 h-12",
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                             src: projectDetails.ImgLink,
                             className: "bg-transparent",
@@ -37346,10 +37346,10 @@ function ProjectCard({ data }) {
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 id: "Links",
-                className: "flex bg-slate-300 m-2",
+                className: "flex  m-2",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                        className: "m-2 p-2 bg-green-100",
+                        className: "m-2 p-2 bg-green-100 rounded-lg",
                         href: projectDetails.LiveLink,
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
@@ -37367,7 +37367,7 @@ function ProjectCard({ data }) {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                        className: "m-2 p-2 bg-green-100",
+                        className: "m-2 p-2 bg-green-100 rounded-lg",
                         href: projectDetails.GitHubLink,
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
@@ -37392,7 +37392,7 @@ function ProjectCard({ data }) {
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 id: "tech-used",
-                className: "bg-slate-300 m-2 p-2",
+                className: "m-2 p-2",
                 children: [
                     FrontendTech && renderTechStack(FrontendTech, "Frontend Tech"),
                     BackendTech && renderTechStack(BackendTech, "Backend Tech"),
@@ -37409,7 +37409,7 @@ function ProjectCard({ data }) {
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 id: "Description",
-                className: "bg-slate-300 m-2 p-2",
+                className: " m-2 p-2",
                 children: projectDetails.description
             }, void 0, false, {
                 fileName: "src/components/ProjectCard.js",

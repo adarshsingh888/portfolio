@@ -6,9 +6,9 @@ import { Fb_URL,Insta_URL,GitHub_URL,gmail,whatsapp,twitter_URL,LinkedIn_URL } f
 const Intro = () => {
   return (         
 
-<div className="flex  justify-between m-5 bg-gray-200">
+<div className="flex  justify-between m-5">
 
-      <div className="m-5 p-4 bg-orange-50 w-1/2">     
+      <div className="m-5 p-4 w-1/2">     
         <h2 className="font-bold text-4xl">Welcome</h2>
          <p className="my-4">
               Hi, I’m Adarsh Singh, a final-year B.Tech student specializing in <b>Information Technology</b> at 
