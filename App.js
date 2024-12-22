@@ -13,7 +13,7 @@ import ProjectPage from './src/components/ProjectPage.js';
 
 const App = () => {
   return (
-    <div className=''>
+    <div>
       <Navbar />
       <Outlet/>
       <Footer/>
